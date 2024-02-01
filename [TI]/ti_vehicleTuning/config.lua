@@ -254,39 +254,39 @@ config = {
 
 	        -- Aspiration is not effected by stress, but has the largest effect on torque curve variations.
 	        -- You can comment this portion out safely if you don't want the default engine to have forced induction.
-	        aspiration = {
-	            typeof    = "turbocharger",	-- turbocharger, supercharger
-	            system    = "twin", 		-- turbocharger: single, twin; supercharger: positiveDisplacement, centrifugal
-	            size      = 0.2, 			-- 0-1
-	            quality   = 0.1, 			-- 0-1
-	        },
+	        --aspiration = {
+	        --    typeof    = "turbocharger",	-- turbocharger, supercharger
+	        --    system    = "twin", 		-- turbocharger: single, twin; supercharger: positiveDisplacement, centrifugal
+	        --    size      = 0.2, 			-- 0-1
+	        --    quality   = 0.1, 			-- 0-1
+	        --},
 	    },
 
 	    -- The engine tune is every tunable variable within the UI.
 	    -- Don't remove anything from here, just edit them.
 	    tune = {
 	    	aspiration = {
-	    		turboBoost1 = 0.5,
-	    		turboSize1 = 0.5,
+	    		turboBoost1 = 0.25,
+	    		turboSize1 = 0.25,
 
-	    		turboBoost2 = 0.5,
-	    		turboSize2 = 0.5,
+	    		turboBoost2 = 0.25,
+	    		turboSize2 = 0.25,
 
-	    		superchargerBoost = 0.5,
-	    		superchargerSize = 0.5,
+	    		superchargerBoost = 0.25,
+	    		superchargerSize = 0.25,
 	    	},
 
 	        heads = {
-	            airflow    = 0.81, 			-- 0-1
-	            compRatio  = 0.57, 			-- 0-1     
-	            camProfile = 0.42, 			-- 0-1    
+	            airflow    = 0.40, 			-- 0-1
+	            compRatio  = 0.44, 			-- 0-1     
+	            camProfile = 0.32, 			-- 0-1    
 	            vvlProfile = 0.50, 			-- 0.1
 	        },
 
 	        fuel = {
-	            afRatio = 0.4, 				-- 0-1
-	            timing  = 0.4, 				-- 0-1
-	            limiter = 0.5 				-- 0-1
+	            afRatio = 0.29, 				-- 0-1
+	            timing  = 0.33, 				-- 0-1
+	            limiter = 0.4 				-- 0-1
 	        },
 
 			nitrous = {
