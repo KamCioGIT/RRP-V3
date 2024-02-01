@@ -3,7 +3,7 @@ Materials = {
         label = "Steel",
         strength = 0.4,
         weight = 0.8,
-        prestige = 0.1,
+        prestige = 0.05,
     },
 
     aluminium = {
