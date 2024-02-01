@@ -8,28 +8,28 @@ Materials = {
 
     aluminium = {
         label = "Aluminum",
-        strength = 0.3,
+        strength = 0.2,
         weight = 0.25,
         prestige = 0.075,
     },
 
     forgedSteel = {
         label = "Forged Steel",
-        strength = 0.7,
+        strength = 0.5,
         weight = 1.0,
         prestige = 0.125,
     },
 
     titanium = {
         label = "Titanium",
-        strength = 0.6,
+        strength = 0.5,
         weight = 0.4,
         prestige = 0.15,
     },
 
     super = {
         label = "Super",
-        strength = 1.5,
+        strength = 1.0,
         weight = 0.2,
         prestige = 0.3
     },
