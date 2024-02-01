@@ -202,7 +202,7 @@ config = {
 
 	engineDefaults = {
 	    -- Set to false or nil if you don't want an engine sound overwrite.
-	    sound = 'BTYPE2',
+	    sound = 'nil',
 
 	    -- The engine build is defined on creation by ti_mechEngineer.
 	    build = {
@@ -214,42 +214,42 @@ config = {
 	            cylinders   = 6, 			-- 2-12
 	            bore        = 0.66,			-- 0-1
 	            stroke      = 0.66,			-- 0-1
-	            quality     = 1.0,			-- 0-1
+	            quality     = 0.2,			-- 0-1
 	        },
 
 	        heads = {
 	            layout      = "dohc", 		-- dohc, sohc, pushrod
 	            valves      = 4, 			-- 2,3,4,5
 	            vvl         = true, 		-- true,false
-	            quality     = 1.0, 			-- 0-1
+	            quality     = 0.2, 			-- 0-1
 	        },
 
 	        -- Fuel Component Quality
 	        -- Effects knocking/detonation
 	        fuelDelivery = {
-	            quality     = 1.0, 			-- 0-1
+	            quality     = 0.2, 			-- 0-1
 	        },
 
 	        -- Interal Materials & Quality
 	        -- These components are effected by stress, and can break under certain circumstances.
 	        valves  = {
-	            material    = "titanium", 		-- check `data/params.lua Materials` for more information
-	            quality     = 1.0, 			 	-- 0-1
+	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
+	            quality     = 0.2, 			 	-- 0-1
 	        },
 
 	        pistons = {
-	            material    = "titanium", 		-- check `data/params.lua Materials` for more information
-	            quality     = 1.0, 			 	-- 0-1
+	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
+	            quality     = 0.2, 			 	-- 0-1
 	        },
 
 	        conrods = {
-	            material    = "titanium", 		-- check `data/params.lua Materials` for more information
-	            quality     = 1.0, 			 	-- 0-1
+	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
+	            quality     = 0.2, 			 	-- 0-1
 	        },
 
 	        crankshaft = {
-	            material    = "titanium", 		-- check `data/params.lua Materials` for more information
-	            quality     = 1.0, 			 	-- 0-1
+	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
+	            quality     = 0.2, 			 	-- 0-1
 	        },
 
 	        -- Aspiration is not effected by stress, but has the largest effect on torque curve variations.
@@ -257,14 +257,9 @@ config = {
 	        aspiration = {
 	            typeof    = "turbocharger",	-- turbocharger, supercharger
 	            system    = "twin", 		-- turbocharger: single, twin; supercharger: positiveDisplacement, centrifugal
-	            size      = 1.0, 			-- 0-1
-	            quality   = 1.0, 			-- 0-1
+	            size      = 0.2, 			-- 0-1
+	            quality   = 0.5, 			-- 0-1
 	        },
-
-			nitrous = {
-				size 	= 1.0,
-				quality = 1.0,
-			}
 	    },
 
 	    -- The engine tune is every tunable variable within the UI.
