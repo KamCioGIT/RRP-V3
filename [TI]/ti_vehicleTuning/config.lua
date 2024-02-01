@@ -277,9 +277,9 @@ config = {
 	    	},
 
 	        heads = {
-	            airflow    = 0.40, 			-- 0-1
-	            compRatio  = 0.44, 			-- 0-1     
-	            camProfile = 0.32, 			-- 0-1    
+	            airflow    = 0.45, 			-- 0-1
+	            compRatio  = 0.32, 			-- 0-1     
+	            camProfile = 0.37, 			-- 0-1    
 	            vvlProfile = 0.50, 			-- 0.1
 	        },
 
