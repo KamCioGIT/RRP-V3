@@ -22,7 +22,7 @@ config = {
 	brokenEngineHealth = 100,
 
 	-- Use push script?
-	usePushScript = false,
+	usePushScript = true,
 
 	-- Blacklisted classes from push script (OPTIONAL)
 	pushBlacklist = {
@@ -198,7 +198,7 @@ config = {
 
 	-- Should all vehicles use the default engine below?
 	-- Probably not a great option to have enabled.
-	useDefaultEngine = false,
+	useDefaultEngine = true,
 
 	engineDefaults = {
 	    -- Set to false or nil if you don't want an engine sound overwrite.
