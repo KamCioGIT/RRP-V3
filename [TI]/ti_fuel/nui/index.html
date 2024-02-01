@@ -1,0 +1,648 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/48b18359b6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        :root {
+            --bg: #18191A;
+            --item: #191a1a;
+            --card: #242526;
+            --hover: #2c2e30;
+            --txt-main: #E4E6EB;
+            --txt-second: #B0B3B8;
+
+            --h-main: #bb86fce0;
+            --h-main-t: #bb86fc9a;
+            --h-second: #03dac5c7;
+            --h-second-t: #03dac5a1;
+        }
+
+        * {            
+            font-family:'Akshar', sans-serif;
+            user-select:none;
+        }
+
+        html,body {
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            position:absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+        }
+
+        /* CONTAINER */
+
+        #container {
+            position:absolute;
+            left:50%;
+            top:50%;
+
+
+            width:600px;
+            height:auto;
+            transform: translate(-50%,-50%);       
+
+            display: none;
+            flex-direction: row;
+            gap: 20px;
+
+            padding: 20px;
+
+            background: var(--bg);
+            box-shadow: 0 5px 15px 5px rgba(0,0,0,0.5);
+        } 
+
+        #container > div {
+            position: relative;
+            width: auto;
+            height: auto;         
+        }       
+
+        #container > div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-grow: 1;
+        }      
+
+        #container > div:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+            gap: 20px;
+            flex-grow: 1;
+        }
+
+        /* INFO */
+
+        #info {
+            flex-grow: 1;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;   
+            gap: 2px;
+
+            color: var(--txt-main);
+        }
+
+        #info > div:first-child {
+            font-size: 32px;
+        }
+
+        #info > div:nth-child(2) {
+            font-size: 18px;
+        }
+
+        #info > div:nth-child(3) {
+            font-size: 18px;
+            color: var(--txt-second);
+        }
+
+        #info > div:last-child {
+            font-size: 16px;
+            color: var(--txt-second);
+        }
+
+        /* FUELS */
+
+        #fuels {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        #fuels > div {
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            word-break: break-all;
+            font-size: 14px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--card); 
+            color: var(--txt-second);
+        }
+
+        #fuels > div:hover:not(.selected) {
+            cursor: pointer;
+            color: var(--txt-main); 
+            background: var(--h-main-t);
+        }     
+
+        #fuels > .selected {
+            cursor: pointer;
+            background: var(--h-main);
+            color: var(--txt-main); 
+        }
+
+        /* PLAYER INFO */
+
+        #player-info {
+            text-align: center;
+        }
+
+        #player-info > div:first-child {
+            font-size: 26px;
+            color: var(--txt-main);
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+
+        #player-info > div:nth-child(2) {
+            color: var(--txt-second);
+        }
+
+        #player-info > div:last-child {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        #player-info > div:last-child > div {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        #player-info > div:last-child > div > div:first-child {
+            padding: 5px 5px;
+            flex-grow: 1;
+            text-align: center;
+
+            background: var(--hover);
+            color: var(--txt-second);
+        }
+
+        #player-info > div:last-child > div > div:last-child {
+            padding: 5px 5px;
+            flex-grow: 1;
+            text-align: center;
+
+            background: var(--card);
+            color: var(--txt-main);
+            
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        /* PAYMENT METHOD */
+
+        #payment-method {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #payment-method > div:first-child {
+            font-size: 22px;   
+            color: var(--txt-main);
+            white-space: nowrap;
+        }
+
+        #payment-method > div:last-child {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 5px;
+        }
+
+        #payment-method > div:last-child > div {
+            text-align: center;
+            padding: 5px;
+            background: var(--card);
+            color: var(--txt-second);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        #payment-method > div:last-child > div:hover:not(.selected) {
+            cursor: pointer;
+            background: var(--h-main-t);
+            color: var(--txt-main);
+        }
+
+        #payment-method > div:last-child > .selected {
+            background: var(--h-main);
+            color: var(--txt-main);            
+        }
+
+        /* SELECTION */
+
+        #selection {
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        #selection > div {
+            flex-grow: 1;
+            padding: 5px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--card);
+            color: var(--txt-second)
+        }
+
+        #selection > div:hover {
+            cursor: pointer;
+            background: var(--h-main-t);
+            color: var(--txt-main);
+        }
+
+        #alert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #alert > div {
+            background: var(--bg);
+            color: var(--txt-main);
+            width: 300px;
+            box-shadow: 0 5px 15px 5px rgba(0,0,0,0.5);
+
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        #alert > div > div:first-child {
+            font-size: 26px;
+            text-align: center;
+            margin-top: 10px;   
+            font-weight: 900;         
+        }
+
+        #alert > div > div:nth-child(2) {
+            color: var(--txt-second);
+            margin: 10px;      
+            padding: 0 10px;      
+        }
+
+        #alert > div > div:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+            margin: 10px;
+        }
+
+        #alert > div > div:last-child > div {
+            background: var(--hover);
+            flex-grow: 1;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #alert > div > div:last-child > div:hover {
+            cursor: pointer;
+            background: var(--h-main-t);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <div id="info">
+                <div id="fuel"></div>
+                <div id="stats"></div>
+                <div id="stock"></div>
+                <div id="price"></div>
+            </div>
+
+            <div id="fuels"></div>
+        </div>
+
+        <div>
+            <div id="player-info">
+                <div id="station-name">LTD Gasoline</div>
+                <div>
+                    <div>
+                        <div>Cash</div>
+                        <div id="cash"></div>
+                    </div>
+                    <div>
+                        <div>Bank</div>
+                        <div id="bank"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="payment-method">
+                <div>Payment Method</div>
+                <div>
+                    <div name="cash" class="selected">Cash</div>
+                    <div name="bank">Bank</div>
+                </div>
+            </div>
+
+            <div id="selection">
+                <div onclick="Refuel()">Refuel</div>
+                <div id="jerrycan" onclick="JerryCan()">Jerry Can</div>
+                <div onclick="Cancel()">Cancel</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alert">
+        <div>
+            <div>ALERT</div>
+            <div id="alert-msg"></div>
+            <div>
+                <div onclick="AcceptAlert()">Ok</div>
+                <div onclick="RejectAlert()">Cancel</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let curVeh
+        let curFuelType
+        let curFuelAmount
+        let maxFuelAmount
+
+        let curStationName
+        let curStationFuels
+
+        let playerAccounts
+        let paymentMethod = "Cash"
+        let selectedFuel = "RON91"
+
+        let fuelStats
+
+        let alertPromise
+
+        const DoAlert = (msg) => new Promise(resolve => {
+            alertPromise = resolve
+
+            $("#container").css("filter","blur(4px)")
+            $("#alert").css("display","flex")
+            $("#alert-msg").html(msg)
+        })
+
+        function ResolveAlert(res) {
+            if (!alertPromise) {
+                return
+            }
+
+            alertPromise(res)
+            alertPromise = undefined
+
+            $("#container").css("filter","none")
+            $("#alert").css("display","none")
+        }
+
+        function AcceptAlert() {
+            ResolveAlert(true)
+        }
+
+        function RejectAlert() {
+            ResolveAlert(false)
+        }
+            
+        function Refuel() {
+            $.post(`https://${GetParentResourceName()}/refuel`,JSON.stringify({
+                paymentMethod:paymentMethod,
+                fuelType:curFuelType
+            }))
+
+            $("#container").css("display","none")
+        }
+
+        function JerryCan() {
+            $.post(`https://${GetParentResourceName()}/jerrycan`,JSON.stringify({
+                paymentMethod:paymentMethod,
+                fuelType:curFuelType
+            }))
+
+            $("#container").css("display","none")
+        }
+
+        function Cancel() {
+            $.post(`https://${GetParentResourceName()}/cancel`)
+            $("#container").css("display","none")
+        }
+
+        $("#payment-method > div:last-child > div").on("click",(e) => {
+            $("#payment-method > div:last-child > .selected").removeClass("selected")
+            $(e.target).addClass("selected")
+
+            paymentMethod = e.target.getAttribute('name')
+
+            console.log(paymentMethod)
+        })
+
+        function SetStationName(_curStationName) {
+            curStationName = _curStationName
+            $("#station-name").html(curStationName)
+        }
+
+        function SetStationFuels(_curFuelType,_curStationFuels) {
+            curFuelType = _curFuelType
+            curStationFuels = _curStationFuels
+
+            let targetFuel
+
+            $("#fuels > div").each((k,v) => {
+                if (!curStationFuels[v.innerHTML]) {
+                    $(v).css("display","none")
+                } else {
+                    $(v).css("display","flex")                    
+                }
+
+                if (v.innerHTML == curFuelType) {
+                    targetFuel = v
+                }
+            })
+
+            if (targetFuel) {
+                $(targetFuel).click()
+            } else {
+                $("#fuels > div").first().click()
+            }
+        }
+
+        let dollarSign = "$"
+        let voltSign = "V"
+        let litreSign = "L"
+
+        function SetAccounts(_playerAccounts) {
+            playerAccounts = _playerAccounts  
+            
+            $("#cash").html(dollarSign + (playerAccounts.cash || 0))
+            $("#bank").html(dollarSign + (playerAccounts.bank || 0))        
+        }
+
+        function Open(_veh,_curFuelType,_curFuelAmount,_maxFuelAmount,_curStationName,_curStationFuels,_playerAccounts) {
+            curVeh        = _veh
+            curFuelAmount = _curFuelAmount
+            maxFuelAmount = _maxFuelAmount
+
+            SetStationName(_curStationName)
+            SetAccounts(_playerAccounts)
+            SetStationFuels(_curFuelType,_curStationFuels)
+
+            $("#container").css("display","flex")
+        }
+
+        function Close() {
+            $("#container").css("display","none")
+        }
+
+        function Config(_fuelStats,_dollarSign,_litreSign,_voltSign) {
+            dollarSign = _dollarSign
+            voltSign = _voltSign
+            litreSign = _litreSign
+            fuelStats = _fuelStats
+            $.post(`https://${GetParentResourceName()}/configured`)
+
+            $("#fuels").html("")
+
+            let keys = Object.keys(fuelStats)
+
+            keys.sort((a,b) => {
+                if (a < b) {
+                    return -1;
+                } if (b > a) {
+                    return 1;
+                } else {
+                    return 0
+                }
+            })
+
+            for (let i=0;i<keys.length;i++) {
+                let key = keys[i]
+                let stat = fuelStats[key]
+
+                $("<div/>").text(key).on("click",async(e) => {
+                    let unit = litreSign
+
+                    if (key == "Electric") {
+                        $("#jerrycan").text("Booster Battery")
+                        unit = voltSign
+                    } else {
+                        $("#jerrycan").text("Jerry Can")                        
+                    }
+
+                    if (curVeh && e.target.innerHTML != curFuelType && curFuelAmount != 0.0) {
+                        let res = await DoAlert(`You are attempting to change fuel types to ${e.target.innerHTML} from ${curFuelType}. Beware, this will empty your fuel tank.`)
+
+                        if (res) {
+                            curFuelAmount = 0.0
+                            curFuelType = e.target.innerHTML
+                        } else {
+                            return
+                        }
+                    } else {
+                        curFuelType = e.target.innerHTML
+                    }
+
+                    $("#fuels > .selected").removeClass("selected")
+                    $(e.target).addClass("selected")
+
+                    let maxFuel = Math.min(curStationFuels[curFuelType].stock - curStationFuels[curFuelType].sellUntil,maxFuelAmount - curFuelAmount)
+
+                    $("#fuel").html(curFuelType)
+                    $("#stats").html(fuelStats[curFuelType].knock.toFixed(2) + " Knock Rating, " + fuelStats[curFuelType].power.toFixed(2) + " Power Rating")
+                    $("#stock").html((curStationFuels[curFuelType].stock - curStationFuels[curFuelType].sellUntil).toFixed(2) + unit + " @ " + dollarSign + curStationFuels[curFuelType].sellPrice.toFixed(2) + "/" + unit)
+                    $("#price").html(maxFuel.toFixed(2) + unit + " : " + dollarSign + (curStationFuels[curFuelType].sellPrice * maxFuel).toFixed(2))
+                }).appendTo("#fuels")
+            }
+        }
+
+        window.addEventListener("message",(e) => {
+            let data = e.data
+
+            if (!window[data.func]) {
+                return console.log("No function found for " + (data.func || "UNDEFINED"))
+            }
+
+            window[data.func](...data.args)
+        })
+
+        window.addEventListener("keydown",(e) => {
+            if (e.key == "Escape" || e.key == "Esc") {                
+                $.post(`https://${GetParentResourceName()}/cancel`)
+                $("#container").css("display","none")
+            }
+        })
+
+        if (typeof GetParentResourceName == "undefined") {
+            // DEBUG, FOR HTML BROWSER VIEW
+            Open("87RON",65.0,100.0,"LTD Gasoline Co",{
+                "87RON":{
+                    "price":1.02,
+                    "stock":1513.44
+                },
+
+                "91RON":{
+                    "price":1.12,
+                    "stock":865.23
+                },
+
+                "98RON":{
+                    "price":1.44,
+                    "stock":129.55
+                },
+
+                "100MET":{
+                    "price":2.50,
+                    "stock":150.0
+                },
+
+                "100NIT":{
+                    "price":5.00,
+                    "stock":80.0,
+
+                }
+            },{
+                "bank":3500,
+                "cash":2500
+            })
+        }
+    </script>
+</body>
+
+</html>

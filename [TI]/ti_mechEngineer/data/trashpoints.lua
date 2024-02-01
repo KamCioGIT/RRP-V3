@@ -1,0 +1,52 @@
+local binModel = `prop_bin_13a`
+
+trashPoints = {    
+    trashPoint1 = {
+        characterRestrictions = {
+            'ABC:123',
+        },
+
+        jobRestrictions = {
+            police = 2,
+        },
+
+        groupRestrictions = {
+            police = 2,
+        },
+
+        position =  vector3(-217.82,-1324.33,30.89),
+
+        props = {
+            {
+                position = vector3(-217.82,-1324.33,29.89),
+                heading = 270.0,
+                model = binModel,
+            },
+        }
+
+    },
+    
+    trashPoint2 = {
+        characterRestrictions = {
+            'ABC:123',
+        },
+
+        jobRestrictions = {
+            police = 2,
+        },
+
+        groupRestrictions = {
+            police = 2,
+        },
+
+        position =  vector3(841.94232177734, -822.28851318359, 26.332572937012),
+
+        props = {
+            {
+                position = vector3(841.94232177734, -822.28851318359, 26.332572937012),
+                heading = 90.06,
+                model = binModel,
+            },
+        }
+    },
+}
