@@ -214,42 +214,42 @@ config = {
 	            cylinders   = 6, 			-- 2-12
 	            bore        = 0.66,			-- 0-1
 	            stroke      = 0.66,			-- 0-1
-	            quality     = 0.2,			-- 0-1
+	            quality     = 0.1,			-- 0-1
 	        },
 
 	        heads = {
 	            layout      = "dohc", 		-- dohc, sohc, pushrod
 	            valves      = 4, 			-- 2,3,4,5
 	            vvl         = true, 		-- true,false
-	            quality     = 0.2, 			-- 0-1
+	            quality     = 0.1, 			-- 0-1
 	        },
 
 	        -- Fuel Component Quality
 	        -- Effects knocking/detonation
 	        fuelDelivery = {
-	            quality     = 0.2, 			-- 0-1
+	            quality     = 0.1, 			-- 0-1
 	        },
 
 	        -- Interal Materials & Quality
 	        -- These components are effected by stress, and can break under certain circumstances.
 	        valves  = {
 	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
-	            quality     = 0.2, 			 	-- 0-1
+	            quality     = 0.1, 			 	-- 0-1
 	        },
 
 	        pistons = {
 	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
-	            quality     = 0.2, 			 	-- 0-1
+	            quality     = 0.1, 			 	-- 0-1
 	        },
 
 	        conrods = {
 	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
-	            quality     = 0.2, 			 	-- 0-1
+	            quality     = 0.1, 			 	-- 0-1
 	        },
 
 	        crankshaft = {
 	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
-	            quality     = 0.2, 			 	-- 0-1
+	            quality     = 0.1, 			 	-- 0-1
 	        },
 
 	        -- Aspiration is not effected by stress, but has the largest effect on torque curve variations.
@@ -258,7 +258,7 @@ config = {
 	            typeof    = "turbocharger",	-- turbocharger, supercharger
 	            system    = "twin", 		-- turbocharger: single, twin; supercharger: positiveDisplacement, centrifugal
 	            size      = 0.2, 			-- 0-1
-	            quality   = 0.5, 			-- 0-1
+	            quality   = 0.1, 			-- 0-1
 	        },
 	    },
 
