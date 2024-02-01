@@ -233,22 +233,22 @@ config = {
 	        -- Interal Materials & Quality
 	        -- These components are effected by stress, and can break under certain circumstances.
 	        valves  = {
-	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
+	            material    = "steel", 		-- check `data/params.lua Materials` for more information
 	            quality     = 0.1, 			 	-- 0-1
 	        },
 
 	        pistons = {
-	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
+	            material    = "steel", 		-- check `data/params.lua Materials` for more information
 	            quality     = 0.1, 			 	-- 0-1
 	        },
 
 	        conrods = {
-	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
+	            material    = "steel", 		-- check `data/params.lua Materials` for more information
 	            quality     = 0.1, 			 	-- 0-1
 	        },
 
 	        crankshaft = {
-	            material    = "aluminium", 		-- check `data/params.lua Materials` for more information
+	            material    = "steel", 		-- check `data/params.lua Materials` for more information
 	            quality     = 0.1, 			 	-- 0-1
 	        },
 
