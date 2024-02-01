@@ -1,10 +1,10 @@
 config = {
 	-- Allow wheel resizing?
 	-- Currently has issues, keep disabled until resolved.
-	wheelResizing = false,
+	wheelResizing = true,
 
 	-- Complete disable stancer options
-	disableStancer = true,
+	disableStancer = false,
 
 	-- Refresh rate/thread wait time for world vehicles stance tracker. 100 = default.
 	worldRefreshRate = 100,
