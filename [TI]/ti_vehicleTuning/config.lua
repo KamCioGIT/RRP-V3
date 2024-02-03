@@ -86,7 +86,7 @@ config = {
 	nitrousFlameLerpSize = true,  	-- lerp size based on nitrous ramp, rpm and throttle?
 	nitrousFlameSizeMin = 0, 	  	-- min size of nitrous flame fx
 
-	enginePowerMultiplier = 0.5,  	-- multiplier for raw engine power.
+	enginePowerMultiplier = 0.6,  	-- multiplier for raw engine power.
 
 	nitrousBoostMin = 0.5, 			-- min torque addition for min size & quality nitrous component.
 	nitrousBoostMax = 1.5, 			-- max torque addition for max size & quality nitrous component.

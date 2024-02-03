@@ -44,7 +44,7 @@ Config.jobWhitelist = {
     enabled = true,
     jobs = {
         'mechanic',
-        'bennys',
+        'police',
     }
 }
 
@@ -97,7 +97,7 @@ Config.dynos = {
                 displayCoords = vector3(-217.4, -1318.92, 32.55),
                 displayHeading = 90.0,
                 displayTilt = 3.0,
-                displayType = 'wall_tv_2',
+                displayType = 'wall_tv',
             },
             {
                 displayCoords = vector3(-211.5, -1320.6, 30.89),
