@@ -42,7 +42,7 @@ Config.Chips = {--You can add more chips and customize to your likings
 
     ["tunerchip3"] = {--this is the item name
         jobWhitelist = {"mechanic"},
-        speedBoost = 2.0,
+        speedBoost = false,
         flames = {
             size = 1.3,
             color = { 0.0, 1.0, 0.0 }
