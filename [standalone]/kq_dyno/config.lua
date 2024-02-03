@@ -35,7 +35,7 @@ Config.torqueUnits = 'lb-ft'
 -- 'highperformance2' = Good for servers using handling files which result in faster vehicles (extra)
 -- 'highperformance3' = Good for servers using handling files which result in faster vehicles (extra)
 ---------------------------------------------
-Config.dynoFormula = 'highperformance1'
+Config.dynoFormula = 'highperformance3'
 
 
 
