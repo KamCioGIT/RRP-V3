@@ -277,16 +277,16 @@ config = {
 	    	},
 
 	        heads = {
-	            airflow    = 0.45, 			-- 0-1
-	            compRatio  = 0.32, 			-- 0-1     
-	            camProfile = 0.37, 			-- 0-1    
-	            vvlProfile = 0.50, 			-- 0.1
+	            airflow    = 0.44, 			-- 0-1
+	            compRatio  = 0.42, 			-- 0-1     
+	            camProfile = 0.41, 			-- 0-1    
+	            vvlProfile = 0.52, 			-- 0.1
 	        },
 
 	        fuel = {
 	            afRatio = 0.29, 				-- 0-1
 	            timing  = 0.33, 				-- 0-1
-	            limiter = 0.4 				-- 0-1
+	            limiter = 0.5 				-- 0-1
 	        },
 
 			nitrous = {
