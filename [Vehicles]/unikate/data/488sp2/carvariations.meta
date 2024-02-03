@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleModelInfoVariation>
+  <variationData>
+    <Item>
+      <modelName>488sp</modelName>
+      <colors>
+	<Item>
+          <indices content="char_array">
+            35 
+            35
+            11
+            42
+						35
+						35 
+          </indices>
+          <liveries>
+            <Item value="true" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>488_488sp_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Standard White</Name>
+            <Value value="40" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="488" />
+      <sirenSettings value="0" />
+    </Item>
+    <Item>
+      <modelName>488sp</modelName>
+      <colors>
+	<Item>
+          <indices content="char_array">
+            111 
+            32
+            11
+            11
+						42
+						35 
+          </indices>
+          <liveries>
+            <Item value="true" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>489845_488sp_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Standard White</Name>
+            <Value value="40" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="488" />
+      <sirenSettings value="0" />
+    </Item>
+</variationData>
+</CVehicleModelInfoVariation>
