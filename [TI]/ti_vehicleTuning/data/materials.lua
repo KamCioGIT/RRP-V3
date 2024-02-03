@@ -1,52 +1,57 @@
 Materials = {
     steel = {
         label = "Steel",
-        strength = 0.2,
+        strength = 0.6,
         weight = 0.8,
-        prestige = 0.05,
+        prestige = 0.3,
     },
 
     aluminium = {
         label = "Aluminum",
-        strength = 0.2,
+        strength = 0.4,
         weight = 0.25,
-        prestige = 0.075,
+        prestige = 0.5,
     },
 
     forgedSteel = {
         label = "Forged Steel",
-        strength = 0.25,
+        strength = 1.0,
         weight = 1.0,
-        prestige = 0.125,
+        prestige = 0.8,
     },
 
     titanium = {
         label = "Titanium",
-        strength = 0.3,
+        strength = 0.8,
         weight = 0.4,
-        prestige = 0.15,
+        prestige = 1.0,
     },
 
     super = {
         label = "Super",
-        strength = 0.4,
+        strength = 2.0,
         weight = 0.2,
-        prestige = 0.3
+        prestige = 2.0
     },
 
     unobtanium = {
         label = "Unobtanium",
-        strength = 0.5,
+        strength = 5.0,
         weight = 0.1,
-        prestige = -.75
+        prestige = 5.0
     },
 
     indestructible = {
         label = "Indestructible",
-        strength = 0.7,
+        strength = 10.0,
         weight = 0.0,
-        prestige = 1.5
+        prestige = 10.0
     }
 }
 
+Materials.steel = Materials.steel
 Materials.aluminum = Materials.aluminium
+Materials.forgedSteel = Materials.forgedSteel
+Materials.titanium = Materials.titanium
+Materials.super = Materials.super
+Materials.unobtanium = Materials.unobtanium

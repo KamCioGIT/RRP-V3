@@ -8,21 +8,21 @@ Config.debug = false
 
 --- SETTINGS FOR ESX
 Config.esxSettings = {
-    enabled = true,
+    enabled = false,
     -- Whether or not to use the new ESX export method
     useNewESXExport = true,
 }
 
 --- SETTINGS FOR QBCORE
 Config.qbSettings = {
-    enabled = false,
+    enabled = true,
 }
 
 
 --- BASIC
 
 -- Torque units | 'nm' or 'lb-ft'
-Config.torqueUnits = 'nm'
+Config.torqueUnits = 'lb-ft'
 
 
 --- Horsepower and torque calculation formula
@@ -35,7 +35,7 @@ Config.torqueUnits = 'nm'
 -- 'highperformance2' = Good for servers using handling files which result in faster vehicles (extra)
 -- 'highperformance3' = Good for servers using handling files which result in faster vehicles (extra)
 ---------------------------------------------
-Config.dynoFormula = 'vanilla'
+Config.dynoFormula = 'highperformance3'
 
 
 
@@ -44,7 +44,7 @@ Config.jobWhitelist = {
     enabled = true,
     jobs = {
         'mechanic',
-        'bennys',
+        'police',
     }
 }
 
@@ -56,11 +56,11 @@ Config.webhook = {
     url = 'YOUR_WEBHOOK_URL_HERE',
 
     -- Replace this with the name of your server or a title you want on your dyno sheets
-    title = 'KuzQuality - DynoTech',
+    title = 'RealRoleplay - Dyno',
 
     -- Whether to include certain parts of the users info in the webhook messages
     includeUserName = true,
-    includeSteamId = true,
+    includeSteamId = false,
 }
 
 -- Time it takes for the screens to turn off after a dyno run (in seconds)
@@ -90,14 +90,14 @@ Config.dynos = {
         coords = vector3(-214.28, -1318.14, 30.9),
         heading = 180.0,
         
-        model = 'default_purple',
+        model = 'basic',
         
         displays = {
             {
                 displayCoords = vector3(-217.4, -1318.92, 32.55),
                 displayHeading = 90.0,
                 displayTilt = 3.0,
-                displayType = 'wall_tv_2',
+                displayType = 'wall_tv',
             },
             {
                 displayCoords = vector3(-211.5, -1320.6, 30.89),

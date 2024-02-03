@@ -1,0 +1,46 @@
+{
+    "handling": {
+        "fTractionSpringDeltaMax": 0.15000000596046,
+        "fAntiRollBarBiasFront": 0.69999998807907,
+        "fAntiRollBarForce": 1.29999995231628,
+        "fBrakeForce": 1.79999995231628,
+        "fTractionCurveMax": 4.40000009536743,
+        "fLowSpeedTractionLossMult": 1.0,
+        "fTractionBiasFront": 0.49000000953674,
+        "fTractionCurveLateral": 27.5,
+        "fRollCentreHeightRear": 0.54000002145767,
+        "fTractionLossMult": 0.89999997615814,
+        "fSteeringLock": 40.0,
+        "fSuspensionLowerLimit": -0.10000000149011,
+        "fSuspensionForce": 2.20000004768371,
+        "fClutchChangeRateScaleUpShift": 3.29999995231628,
+        "fCamberStiffnesss": 0.0,
+        "fSuspensionRaise": 0.0,
+        "fSuspensionReboundDamp": 2.09999990463256,
+        "fSuspensionCompDamp": 1.20000004768371,
+        "fRollCentreHeightFront": 0.54000002145767,
+        "fClutchChangeRateScaleDownShift": 3.5,
+        "fSuspensionUpperLimit": 0.10000000149011,
+        "fTractionCurveMin": 4.90000009536743,
+        "fDriveBiasFront": 0.0,
+        "fBrakeBiasFront": 0.30000001192092,
+        "fSuspensionBiasFront": 0.5,
+        "fHandBrakeForce": 1.39999997615814
+    },
+    "stance": {
+        "wheelSize": 0.0,
+        "xOff": {
+            "1": 0.80932456254959,
+            "0": -0.80932456254959,
+            "3": 0.82224076986312,
+            "2": -0.82224076986312
+        },
+        "wheelWidth": 0.0,
+        "yRot": {
+            "1": -0.0,
+            "0": 0.0,
+            "3": -0.0,
+            "2": 0.0
+        }
+    }
+}

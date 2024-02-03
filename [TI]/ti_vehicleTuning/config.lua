@@ -59,7 +59,7 @@ config = {
 
 	-- Used for greater control over turbo inertia model.
 	-- Higher value = faster spooling.
-	inertiaForceMod = 5.0,
+	inertiaForceMod = 3.0,
 
     -- Use this item to trigger the showUiExport below.
     tunerItem = "tuning_laptop",
@@ -86,7 +86,7 @@ config = {
 	nitrousFlameLerpSize = true,  	-- lerp size based on nitrous ramp, rpm and throttle?
 	nitrousFlameSizeMin = 0, 	  	-- min size of nitrous flame fx
 
-	enginePowerMultiplier = 2.0,  	-- multiplier for raw engine power.
+	enginePowerMultiplier = 0.6,  	-- multiplier for raw engine power.
 
 	nitrousBoostMin = 0.5, 			-- min torque addition for min size & quality nitrous component.
 	nitrousBoostMax = 1.5, 			-- max torque addition for max size & quality nitrous component.
@@ -214,42 +214,42 @@ config = {
 	            cylinders   = 6, 			-- 2-12
 	            bore        = 0.66,			-- 0-1
 	            stroke      = 0.66,			-- 0-1
-	            quality     = 0.1,			-- 0-1
+	            quality     = 0.5,			-- 0-1
 	        },
 
 	        heads = {
 	            layout      = "dohc", 		-- dohc, sohc, pushrod
 	            valves      = 4, 			-- 2,3,4,5
 	            vvl         = true, 		-- true,false
-	            quality     = 0.1, 			-- 0-1
+	            quality     = 0.5, 			-- 0-1
 	        },
 
 	        -- Fuel Component Quality
 	        -- Effects knocking/detonation
 	        fuelDelivery = {
-	            quality     = 0.1, 			-- 0-1
+	            quality     = 0.5, 			-- 0-1
 	        },
 
 	        -- Interal Materials & Quality
 	        -- These components are effected by stress, and can break under certain circumstances.
 	        valves  = {
 	            material    = "steel", 		-- check `data/params.lua Materials` for more information
-	            quality     = 0.1, 			 	-- 0-1
+	            quality     = 0.5, 			 	-- 0-1
 	        },
 
 	        pistons = {
 	            material    = "steel", 		-- check `data/params.lua Materials` for more information
-	            quality     = 0.1, 			 	-- 0-1
+	            quality     = 0.5, 			 	-- 0-1
 	        },
 
 	        conrods = {
 	            material    = "steel", 		-- check `data/params.lua Materials` for more information
-	            quality     = 0.1, 			 	-- 0-1
+	            quality     = 0.5, 			 	-- 0-1
 	        },
 
 	        crankshaft = {
 	            material    = "steel", 		-- check `data/params.lua Materials` for more information
-	            quality     = 0.1, 			 	-- 0-1
+	            quality     = 0.5, 			 	-- 0-1
 	        },
 
 	        -- Aspiration is not effected by stress, but has the largest effect on torque curve variations.
