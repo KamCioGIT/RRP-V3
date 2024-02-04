@@ -8,12 +8,7 @@ files {
   'data/audioconfig/*.dat54.rel',
   "data/audioconfig/*.dat10.rel",
   'data/sfx/**/*.awc',
-  'data/sfx/**/*.awc',
-  'data/*.json',
-  'data/audioconfig/tagt3flat6_game.dat151.rel',
-  'data/audioconfig/tagt3flat6_sounds.dat54.rel',
-  'data/sfx/dlc_tagt3flat6/tagt3flat6.awc',
-  'data/sfx/dlc_tagt3flat6/tagt3flat6_npc.awc'
+  'data/*.json'
   
 }
 data_file 'AUDIO_GAMEDATA' 'data/audioconfig/mercedesm113_game.dat'
@@ -212,3 +207,48 @@ data_file 'AUDIO_WAVEPACK' 'data/sfx/dlc_lfasound'
 data_file 'AUDIO_GAMEDATA' 'data/audioconfig/tagt3flat6_game.dat'
 data_file 'AUDIO_SOUNDDATA' 'data/audioconfig/tagt3flat6_sounds.dat'
 data_file 'AUDIO_WAVEPACK' 'data/sfx/dlc_tagt3flat6'
+
+data_file "AUDIO_GAMEDATA" "data/audioconfig/kc26golft_game.dat"
+data_file "AUDIO_SOUNDDATA" "data/audioconfig/kc26golft_sounds.dat"
+data_file "AUDIO_WAVEPACK" "data/sfx/dlc_kc26golft"
+
+data_file "AUDIO_SYNTHDATA" "audioconfig/lg86fer812sf_amp.dat"
+data_file "AUDIO_GAMEDATA" "audioconfig/lg86fer812sf_game.dat"
+data_file "AUDIO_SOUNDDATA" "audioconfig/lg86fer812sf_sounds.dat"
+data_file "AUDIO_WAVEPACK" "sfx/dlc_lg86fer812sf"
+
+data_file 'AUDIO_GAMEDATA' 'audioconfig/bcontinentalgt_game.dat'
+data_file 'AUDIO_SOUNDDATA' 'audioconfig/bcontinentalgt_sounds.dat'
+data_file 'AUDIO_WAVEPACK' 'sfx/dlc_bcontinentalgt'
+
+data_file "AUDIO_SYNTHDATA" "audioconfig/lg157por911_amp.dat"
+data_file "AUDIO_GAMEDATA" "audioconfig/lg157por911_game.dat"
+data_file "AUDIO_SOUNDDATA" "audioconfig/lg157por911_sounds.dat"
+data_file "AUDIO_WAVEPACK" "sfx/dlc_lg157por911"
+
+data_file "AUDIO_SYNTHDATA" "audioconfig/lg116slsamg_amp.dat"
+data_file "AUDIO_GAMEDATA" "audioconfig/lg116slsamg_game.dat"
+data_file "AUDIO_SOUNDDATA" "audioconfig/lg116slsamg_sounds.dat"
+data_file "AUDIO_WAVEPACK" "sfx/dlc_lg116slsamg"
+
+data_file "AUDIO_SYNTHDATA" "audioconfig/lg125mnsrybently_amp.dat"
+data_file "AUDIO_GAMEDATA" "audioconfig/lg125mnsrybently_game.dat"
+data_file "AUDIO_SOUNDDATA" "audioconfig/lg125mnsrybently_sounds.dat"
+data_file "AUDIO_WAVEPACK" "sfx/dlc_lg125mnsrybently"
+
+data_file 'AUDIO_GAMEDATA' 'audioconfig/ars6c8avant_game.dat'
+data_file 'AUDIO_SOUNDDATA' 'audioconfig/ars6c8avant_sounds.dat'
+data_file 'AUDIO_WAVEPACK' 'sfx/dlc_ars6c8avant'
+
+data_file "AUDIO_SYNTHDATA" "audioconfig/kc135bm36_amp.dat"
+data_file "AUDIO_GAMEDATA" "audioconfig/kc135bm36_game.dat"
+data_file "AUDIO_SOUNDDATA" "audioconfig/kc135bm36_sounds.dat"
+data_file "AUDIO_WAVEPACK" "sfx/dlc_kc135bm36"
+
+data_file 'AUDIO_GAMEDATA' 'audioconfig/dchallengerhellcat_game.dat'
+data_file 'AUDIO_SOUNDDATA' 'audioconfig/dchallengerhellcat_sounds.dat'
+data_file 'AUDIO_WAVEPACK' 'sfx/dlc_dchallengerhellcat'
+
+data_file 'AUDIO_GAMEDATA' 'audioconfig/ars7_game.dat'
+data_file 'AUDIO_SOUNDDATA' 'audioconfig/ars7_sounds.dat'
+data_file 'AUDIO_WAVEPACK' 'sfx/dlc_ars7'
