@@ -3,7 +3,7 @@ Config = {}
 Config.debug = false
 
 -- The amount of damage the wheels will take on collisions (10-30 seems reasonable to me, for more realistic experience I'd recommend values between 50-100)
-Config.collisionDamageAmount = 30
+Config.collisionDamageAmount = 50
 
 -- If you define a model specific multiplier it will be used instead of the class multiplier
 -- Vehicle classes https://docs.fivem.net/natives/?_0x29439776AAA00A62
@@ -39,7 +39,7 @@ Config.collisionDamageMultiplier = {
 
 
 -- The amount of damage the wheels will take on falls (10-30 seems reasonable to me, for more realistic experience I'd recommend values between 50-100)
-Config.fallDamageAmount = 30
+Config.fallDamageAmount = 50
 
 -- Multiplier for the fall damage for vehicles that are using off-road tires/wheels
 Config.offroadTireFallDamageMultiplier = 0.7
@@ -102,7 +102,7 @@ Config.setVehicleUndriveable = false
 -- To prevent abuse you can limit the vehicle speed when the wheels fall off
 Config.limitVehicleSpeed = true
 -- Speed limit in kmh
-Config.speedLimit = 50.0
+Config.speedLimit = 80.0
 
 -- There's a few decent wheel models to choose from https://gtahash.ru/?s=wheel
 -- the 'prop_wheel_01' might fit more popular rims but the 'prop_tornado_wheel' has bouncy physics

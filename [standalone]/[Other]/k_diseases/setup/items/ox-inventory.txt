@@ -1,0 +1,70 @@
+	['tylenol'] = {
+		label = 'Tylenol',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['peptobismol'] = {
+		label = 'Pepto-Bismol',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['loperamide'] = {
+		label = 'Loperamide',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['aspirin'] = {
+		label = 'Loperamide',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['ibuprofen'] = {
+		label = 'Ibuprofen',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['dramamine'] = {
+		label = 'Dramamine',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['covidvaccine'] = {
+		label = 'Covid Vaccine',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['doxycycline'] = {
+		label = 'Doxycycline',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['azithromycin'] = {
+		label = 'Azithromycin',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
+	['acyclovir'] = {
+		label = 'Acyclovir',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = ""
+	},
