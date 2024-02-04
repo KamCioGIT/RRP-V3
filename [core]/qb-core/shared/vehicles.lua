@@ -11,16 +11,15 @@ local Vehicles = {
     {['model'] = 'cavalcade2',    ['name'] = 'Cavalcade II',                  ['brand'] = 'Albany',          ['price'] = 16500,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
     {['model'] = 'buccaneer',     ['name'] = 'Buccaneer',                     ['brand'] = 'Albany',          ['price'] = 22500,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
     {['model'] = 'buccaneer2',    ['name'] = 'Buccaneer Rider',               ['brand'] = 'Albany',          ['price'] = 24500,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
-    {['model'] = 'hermes',        ['name'] = 'Hermes',                        ['brand'] = 'Albany',          ['price'] = 535000,  ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
     {['model'] = 'virgo',         ['name'] = 'Virgo',                         ['brand'] = 'Albany',          ['price'] = 22000,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
     {['model'] = 'manana',        ['name'] = 'Manana',                        ['brand'] = 'Albany',          ['price'] = 12800,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
     {['model'] = 'manana2',       ['name'] = 'Manana Custom',                 ['brand'] = 'Albany',          ['price'] = 24000,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
-    {['model'] = 'brigham',       ['name'] = 'Brigham',                       ['brand'] = 'Albany',          ['price'] = 149900,  ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
+    {['model'] = 'brigham',       ['name'] = 'Brigham',                       ['brand'] = 'Albany',          ['price'] = 15000,  ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
     {['model'] = 'btype',         ['name'] = 'Roosevelt',                     ['brand'] = 'Albany',          ['price'] = 75000,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany', 		 ['shop'] = 'pdm'},
     {['model'] = 'btype2',        ['name'] = 'Franken Stange',                ['brand'] = 'Albany',          ['price'] = 87000,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany', 		 ['shop'] = 'pdm'},
     {['model'] = 'btype3',        ['name'] = 'Roosevelt Valor',               ['brand'] = 'Albany',          ['price'] = 63000,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany', 		 ['shop'] = 'pdm'},
     {['model'] = 'alpha',         ['name'] = 'Alpha',                         ['brand'] = 'Albany',          ['price'] = 53000,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
-    {['model'] = 'vstr',          ['name'] = 'V-STR',                         ['brand'] = 'Albany',          ['price'] = 80000,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
+    {['model'] = 'vstr',          ['name'] = 'V-STR',                         ['brand'] = 'Albany',          ['price'] = 10000,   ['category'] = 'Albany', 	['categoryLabel'] = 'Albany',          ['shop'] = 'pdm'},
     
 	--Annis
 	{['model'] = 'savestra',      ['name'] = 'Savestra',                      ['brand'] = 'Annis',           ['price'] = 67000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis', 			 ['shop'] = 'pdm'},
@@ -31,16 +30,12 @@ local Vehicles = {
     {['model'] = 'euros',         ['name'] = 'Euros',                         ['brand'] = 'Annis',           ['price'] = 80000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',           ['shop'] = 'pdm'},
     {['model'] = 'remus',         ['name'] = 'Remus',                         ['brand'] = 'Annis',           ['price'] = 48000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',           ['shop'] = 'pdm'},
     {['model'] = 'r300',          ['name'] = '300R',                          ['brand'] = 'Annis',           ['price'] = 56000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',           ['shop'] = 'pdm'},
-    {['model'] = 'le7b',          ['name'] = 'RE-7B',                         ['brand'] = 'Annis',           ['price'] = 260000,  ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',           ['shop'] = 'pdm'},
-    {['model'] = 's80',           ['name'] = 'S80RR',                         ['brand'] = 'Annis',           ['price'] = 205000,  ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',           ['shop'] = 'pdm'},
-    {['model'] = 'bfinjection',   ['name'] = 'Bf Injection',                  ['brand'] = 'Annis',           ['price'] = 9000,    ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',        	 ['shop'] = 'pdm'},
     {['model'] = 'bifta',         ['name'] = 'Bifta',                         ['brand'] = 'Annis',           ['price'] = 15500,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',         	 ['shop'] = 'pdm'},
     {['model'] = 'blazer',        ['name'] = 'Blazer',                        ['brand'] = 'Annis',           ['price'] = 7500,    ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',        	 ['shop'] = 'pdm'},
     {['model'] = 'blazer4',       ['name'] = 'Blazer Sport',                  ['brand'] = 'Annis',           ['price'] = 9250,    ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',        	 ['shop'] = 'pdm'},
     {['model'] = 'brawler',       ['name'] = 'Brawler',                       ['brand'] = 'Annis',           ['price'] = 40000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',        	 ['shop'] = 'pdm'},
     {['model'] = 'dubsta3',       ['name'] = 'Dubsta 6x6',                    ['brand'] = 'Annis',           ['price'] = 34000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',           ['shop'] = 'pdm'},
     {['model'] = 'dune',          ['name'] = 'Dune Buggy',                    ['brand'] = 'Annis',           ['price'] = 14000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',        	 ['shop'] = 'pdm'},
-    {['model'] = 'hellion',       ['name'] = 'Hellion',                       ['brand'] = 'Annis',           ['price'] = 38000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',        	 ['shop'] = 'pdm'},
     {['model'] = 'nissantitan17', ['name'] = 'Toytan',                        ['brand'] = 'Annis',           ['price'] = 75000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',        	 ['shop'] = 'pdm'},
     {['model'] = '350z',          ['name'] = '360z',                          ['brand'] = 'Annis',           ['price'] = 90000,   ['category'] = 'Annis', 	['categoryLabel'] = 'Annis',        	 ['shop'] = 'pdm'},
     
@@ -81,10 +76,9 @@ local Vehicles = {
 	--Bf
 	{['model'] = 'club',          ['name'] = 'Club',                          ['brand'] = 'BF',              ['price'] = 8000,    ['category'] = 'BF', 	['categoryLabel'] = 'BF',        		 ['shop'] = 'pdm'},
 	{['model'] = 'weevil',        ['name'] = 'Weevil',                        ['brand'] = 'BF',              ['price'] = 9000,    ['category'] = 'BF', 	['categoryLabel'] = 'BF',        		 ['shop'] = 'pdm'},
-    {['model'] = 'weevil2',       ['name'] = 'Weevil Custom',                 ['brand'] = 'BF',              ['price'] = 95000,   ['category'] = 'BF', 	['categoryLabel'] = 'BF',          	 ['shop'] = 'pdm'},
     {['model'] = 'raptor',        ['name'] = 'Raptor',                        ['brand'] = 'BF',              ['price'] = 90000,   ['category'] = 'BF', 	['categoryLabel'] = 'BF',          	 ['shop'] = 'pdm'},
-    {['model'] = 'surfer',        ['name'] = 'Surfer',                        ['brand'] = 'BF',              ['price'] = 9000,    ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
-    {['model'] = 'surfer3',       ['name'] = 'Surfer Custom',                 ['brand'] = 'BF',              ['price'] = 15000,   ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
+    {['model'] = 'surfer',        ['name'] = 'Suffer',                        ['brand'] = 'BF',              ['price'] = 9000,    ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
+    {['model'] = 'surfer3',       ['name'] = 'Suffer Custom',                 ['brand'] = 'BF',              ['price'] = 15000,   ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
     {['model'] = '356a',          ['name'] = 'Roofless',                      ['brand'] = 'BF',              ['price'] = 1000001, ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
     {['model'] = 'amarok',        ['name'] = 'Hancock',                       ['brand'] = 'BF',              ['price'] = 30000,   ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
     {['model'] = 'golf8gti',      ['name'] = 'Club MK8',                      ['brand'] = 'BF',              ['price'] = 80000,   ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
@@ -92,19 +86,9 @@ local Vehicles = {
     {['model'] = 'polo2018',      ['name'] = 'Rolo',                          ['brand'] = 'BF',              ['price'] = 30000,   ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
     {['model'] = 'golf75r',       ['name'] = 'Club MK7.5',                    ['brand'] = 'BF',              ['price'] = 80000,   ['category'] = 'BF', 	['categoryLabel'] = 'BF',            	 ['shop'] = 'pdm'},
     
-	--Brute
-	{['model'] = 'boxville',      ['name'] = 'Boxville LSDWP',                ['brand'] = 'Brute',           ['price'] = 45000,   ['category'] = 'Brute', 	['categoryLabel'] = 'Brute',           ['shop'] = 'truck'},
-    {['model'] = 'boxville2',     ['name'] = 'Boxville Go Postal',            ['brand'] = 'Brute',           ['price'] = 45000,   ['category'] = 'Brute', 	['categoryLabel'] = 'Brute',           ['shop'] = 'truck'},
-    {['model'] = 'boxville3',     ['name'] = 'Boxville Humane Labs',          ['brand'] = 'Brute',           ['price'] = 45000,   ['category'] = 'Brute', 	['categoryLabel'] = 'Brute',           ['shop'] = 'truck'},
-    {['model'] = 'boxville4',     ['name'] = 'Boxville Post OP',              ['brand'] = 'Brute',           ['price'] = 45000,   ['category'] = 'Brute', 	['categoryLabel'] = 'Brute',           ['shop'] = 'truck'},
-    {['model'] = 'pony',          ['name'] = 'Pony',                          ['brand'] = 'Brute',           ['price'] = 45000,   ['category'] = 'Brute', 	['categoryLabel'] = 'Brute',           ['shop'] = 'truck'},
-    {['model'] = 'pony2',         ['name'] = 'Pony (Smoke on the water)',     ['brand'] = 'Brute',           ['price'] = 45000,   ['category'] = 'Brute', 	['categoryLabel'] = 'Brute',           ['shop'] = 'truck'},
-    {['model'] = 'taco',          ['name'] = 'Taco Truck',                    ['brand'] = 'Brute',           ['price'] = 45000,   ['category'] = 'Brute', 	['categoryLabel'] = 'Brute',           ['shop'] = 'pdm'},
-    
 	--Bravado
 	{['model'] = 'gresley',       ['name'] = 'Gresley',                       ['brand'] = 'Bravado',         ['price'] = 25000,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'gauntlet',      ['name'] = 'Gauntlet',                      ['brand'] = 'Bravado',         ['price'] = 28500,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
-    {['model'] = 'gauntlet2',     ['name'] = 'Redwood Gauntlet',              ['brand'] = 'Bravado',         ['price'] = 70000,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'gauntlet3',     ['name'] = 'Classic Gauntlet',              ['brand'] = 'Bravado',         ['price'] = 75000,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'gauntlet4',     ['name'] = 'Gauntlet Hellfire',             ['brand'] = 'Bravado',         ['price'] = 80000,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'gauntlet5',     ['name'] = 'Gauntlet Classic Custom',       ['brand'] = 'Bravado',         ['price'] = 120000,  ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
@@ -125,7 +109,6 @@ local Vehicles = {
     {['model'] = 'youga3',        ['name'] = 'Youga Classic 4x4',             ['brand'] = 'Bravado',         ['price'] = 15000,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'youga',         ['name'] = 'Youga',                         ['brand'] = 'Bravado',         ['price'] = 8000,    ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'youga2',        ['name'] = 'Youga Classic',                 ['brand'] = 'Bravado',         ['price'] = 14500,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
-    {['model'] = 'youga4',        ['name'] = 'Youga Custom',                  ['brand'] = 'Bravado',         ['price'] = 85000,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'trx',           ['name'] = 'T-rex',                         ['brand'] = 'Bravado',         ['price'] = 75000,   ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'rmodcharger',   ['name'] = 'CordLess',                      ['brand'] = 'Bravado',         ['price'] = 125000,  ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
     {['model'] = 'rmodcharger69', ['name'] = 'PowerLess',                     ['brand'] = 'Bravado',         ['price'] = 100000,  ['category'] = 'Bravado', 	['categoryLabel'] = 'Bravado',         ['shop'] = 'pdm'},
@@ -133,7 +116,6 @@ local Vehicles = {
 	--Coil
 	{['model'] = 'cyclone',       ['name'] = 'Cyclone',                       ['brand'] = 'Coil',            ['price'] = 300000,  ['category'] = 'Coil', 	['categoryLabel'] = 'Coil',            ['shop'] = 'pdm'},
     {['model'] = 'voltic',        ['name'] = 'Voltic',                        ['brand'] = 'Coil',            ['price'] = 120000,  ['category'] = 'Coil', 	['categoryLabel'] = 'Coil',            ['shop'] = 'pdm'},
-    {['model'] = 'voltic2',       ['name'] = 'Rocket Voltic',                 ['brand'] = 'Coil',            ['price'] = 9830400, ['category'] = 'Coil', 	['categoryLabel'] = 'Coil',            ['shop'] = 'pdm'},
     
 	--Canis
 	{['model'] = 'seminole',      ['name'] = 'Seminole',                      ['brand'] = 'Canis',           ['price'] = 20000,   ['category'] = 'Canis', 	['categoryLabel'] = 'Canis',           ['shop'] = 'pdm'},
@@ -141,7 +123,6 @@ local Vehicles = {
     {['model'] = 'freecrawler',   ['name'] = 'Freecrawler',                   ['brand'] = 'Canis',           ['price'] = 24000,   ['category'] = 'Canis', 	['categoryLabel'] = 'Canis',        	 ['shop'] = 'pdm'},
     {['model'] = 'kalahari',      ['name'] = 'Kalahari',                      ['brand'] = 'Canis',           ['price'] = 14000,   ['category'] = 'Canis', 	['categoryLabel'] = 'Canis',        	 ['shop'] = 'pdm'},
     {['model'] = 'kamacho',       ['name'] = 'Kamacho',                       ['brand'] = 'Canis',           ['price'] = 50000,   ['category'] = 'Canis', 	['categoryLabel'] = 'Canis',        	 ['shop'] = 'pdm'},
-    {['model'] = 'mesa3',         ['name'] = 'Mesa Merryweather',             ['brand'] = 'Canis',           ['price'] = 400000,  ['category'] = 'Canis', 	['categoryLabel'] = 'Canis',        	 ['shop'] = 'pdm'},
     {['model'] = 'mesa',          ['name'] = 'Mesa',                          ['brand'] = 'Canis',           ['price'] = 12000,   ['category'] = 'Canis', 	['categoryLabel'] = 'Canis',         	 ['shop'] = 'pdm'},
     
 	--Cheval
@@ -160,11 +141,10 @@ local Vehicles = {
     {['model'] = 'sabregt',       ['name'] = 'Sabre GT Turbo',                ['brand'] = 'Declasse',        ['price'] = 23000,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
     {['model'] = 'sabregt2',      ['name'] = 'Sabre GT Turbo Custom',         ['brand'] = 'Declasse',        ['price'] = 26500,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
     {['model'] = 'stalion',       ['name'] = 'Stallion',                      ['brand'] = 'Declasse',        ['price'] = 33000,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
-    {['model'] = 'stalion2',      ['name'] = 'Stallion Burgershot',           ['brand'] = 'Declasse',        ['price'] = 40000,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
     {['model'] = 'tampa',         ['name'] = 'Tampa',                         ['brand'] = 'Declasse',        ['price'] = 24500,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
     {['model'] = 'tulip',         ['name'] = 'Tulip',                         ['brand'] = 'Declasse',        ['price'] = 80000,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
     {['model'] = 'vamos',         ['name'] = 'Vamos',                         ['brand'] = 'Declasse',        ['price'] = 30000,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
-    {['model'] = 'vigero',        ['name'] = 'Vigero',                        ['brand'] = 'Declasse',        ['price'] = 39500,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
+    {['model'] = 'vigero',        ['name'] = 'Vigero',                        ['brand'] = 'Declasse',        ['price'] = 4500,    ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
     {['model'] = 'voodoo',        ['name'] = 'Voodoo',                        ['brand'] = 'Declasse',        ['price'] = 13000,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
     {['model'] = 'yosemite',      ['name'] = 'Yosemite',                      ['brand'] = 'Declasse',        ['price'] = 19500,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
     {['model'] = 'yosemite2',     ['name'] = 'Yosemite Drift',                ['brand'] = 'Declasse',        ['price'] = 55000,   ['category'] = 'Declasse', 	['categoryLabel'] = 'Declasse',        ['shop'] = 'pdm'},
@@ -197,8 +177,6 @@ local Vehicles = {
 	--Dewbauchee
 	{['model'] = 'exemplar',      ['name'] = 'Exemplar',                      ['brand'] = 'Dewbauchee',      ['price'] = 40000,   ['category'] = 'Dewbauchee', 	['categoryLabel'] = 'Dewbauchee',      ['shop'] = 'pdm'},
     {['model'] = 'champion',      ['name'] = 'Champion',                      ['brand'] = 'Dewbauchee',      ['price'] = 205000,  ['category'] = 'Dewbauchee', 	['categoryLabel'] = 'Dewbauchee',      ['shop'] = 'pdm'},
-    {['model'] = 'jb700',         ['name'] = 'JB 700',                        ['brand'] = 'Dewbauchee',      ['price'] = 240000,  ['category'] = 'Dewbauchee', 	['categoryLabel'] = 'Dewbauchee',  	 ['shop'] = 'pdm'},
-    {['model'] = 'jb7002',        ['name'] = 'JB 700W',                       ['brand'] = 'Dewbauchee',      ['price'] = 40000,   ['category'] = 'Dewbauchee', 	['categoryLabel'] = 'Dewbauchee', 	 ['shop'] = 'pdm'},
     {['model'] = 'rapidgt3',      ['name'] = 'Rapid GT Classic',              ['brand'] = 'Dewbauchee',      ['price'] = 90000,   ['category'] = 'Dewbauchee', 	['categoryLabel'] = 'Dewbauchee', 	 ['shop'] = 'pdm'},
     {['model'] = 'massacro',      ['name'] = 'Massacro',                      ['brand'] = 'Dewbauchee',      ['price'] = 110000,  ['category'] = 'Dewbauchee', 	['categoryLabel'] = 'Dewbauchee',      ['shop'] = 'pdm'},
     {['model'] = 'massacro2',     ['name'] = 'Massacro Racecar',              ['brand'] = 'Dewbauchee',      ['price'] = 80000,   ['category'] = 'Dewbauchee', 	['categoryLabel'] = 'Dewbauchee',      ['shop'] = 'pdm'},
@@ -212,13 +190,11 @@ local Vehicles = {
 	{['model'] = 'blista',        ['name'] = 'Blista',                        ['brand'] = 'Dinka',           ['price'] = 13000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',        	 ['shop'] = 'pdm'},
     {['model'] = 'kanjo',         ['name'] = 'Blista Kanjo',                  ['brand'] = 'Dinka',           ['price'] = 12000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',        	 ['shop'] = 'pdm'},
     {['model'] = 'blista2',       ['name'] = 'Blista Compact',                ['brand'] = 'Dinka',           ['price'] = 18950,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',        	 ['shop'] = 'pdm'},
-    {['model'] = 'blista3',       ['name'] = 'Blista Go Go Monkey',           ['brand'] = 'Dinka',           ['price'] = 15000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',        	 ['shop'] = 'pdm'},
     {['model'] = 'kanjosj',       ['name'] = 'Kanjo SJ',                      ['brand'] = 'Dinka',           ['price'] = 143000,  ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
-    {['model'] = 'postlude',      ['name'] = 'Postlude',                      ['brand'] = 'Dinka',           ['price'] = 90000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
+    {['model'] = 'postlude',      ['name'] = 'Postlude',                      ['brand'] = 'Dinka',           ['price'] = 80000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
     {['model'] = 'jester',        ['name'] = 'Jester',                        ['brand'] = 'Dinka',           ['price'] = 132250,  ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
-    {['model'] = 'jester2',       ['name'] = 'Jester Racecar',                ['brand'] = 'Dinka',           ['price'] = 210000,  ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
     {['model'] = 'jester3',       ['name'] = 'Jester Classic',                ['brand'] = 'Dinka',           ['price'] = 85000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
-    {['model'] = 'sugoi',         ['name'] = 'Sugoi',                         ['brand'] = 'Dinka',           ['price'] = 85000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
+    {['model'] = 'sugoi',         ['name'] = 'Sugoi',                         ['brand'] = 'Dinka',           ['price'] = 10000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
     {['model'] = 'jester4',       ['name'] = 'Jester RR',                     ['brand'] = 'Dinka',           ['price'] = 240000,  ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
     {['model'] = 'rt3000',        ['name'] = 'RT3000',                        ['brand'] = 'Dinka',           ['price'] = 65000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',           ['shop'] = 'pdm'},
     {['model'] = 'akuma',         ['name'] = 'Akuma',                         ['brand'] = 'Dinka',           ['price'] = 55000,   ['category'] = 'Dinka', 	['categoryLabel'] = 'Dinka',     		 ['shop'] = 'bikes'},
@@ -236,7 +212,7 @@ local Vehicles = {
     {['model'] = 'cognoscenti',   ['name'] = 'Cognoscenti',                   ['brand'] = 'Enus',            ['price'] = 22500,   ['category'] = 'Enus', 	['categoryLabel'] = 'Enus',            ['shop'] = 'pdm'},
     {['model'] = 'stafford',      ['name'] = 'Stafford',                      ['brand'] = 'Enus',            ['price'] = 30000,   ['category'] = 'Enus', 	['categoryLabel'] = 'Enus',            ['shop'] = 'pdm'},
     {['model'] = 'superd',        ['name'] = 'Super Diamond',                 ['brand'] = 'Enus',            ['price'] = 17000,   ['category'] = 'Enus', 	['categoryLabel'] = 'Enus',            ['shop'] = 'pdm'},
-    {['model'] = 'deity',         ['name'] = 'Deity',                         ['brand'] = 'Enus',            ['price'] = 205000,  ['category'] = 'Enus', 	['categoryLabel'] = 'Enus',            ['shop'] = 'pdm'},
+    {['model'] = 'deity',         ['name'] = 'Deity',                         ['brand'] = 'Enus',            ['price'] = 80000,  ['category'] = 'Enus', 	['categoryLabel'] = 'Enus',            ['shop'] = 'pdm'},
     {['model'] = 'jubilee',       ['name'] = 'Jubilee',                       ['brand'] = 'Enus',            ['price'] = 150000,  ['category'] = 'Enus', 	['categoryLabel'] = 'Enus',            ['shop'] = 'pdm'},
     {['model'] = 'huntley',       ['name'] = 'Huntley S',                     ['brand'] = 'Enus',            ['price'] = 24500,   ['category'] = 'Enus', 	['categoryLabel'] = 'Enus',            ['shop'] = 'pdm'},
     {['model'] = 'cogcabrio',     ['name'] = 'Cognoscenti Cabrio',            ['brand'] = 'Enus',            ['price'] = 30000,   ['category'] = 'Enus', 	['categoryLabel'] = 'Enus',            ['shop'] = 'pdm'},
@@ -254,25 +230,21 @@ local Vehicles = {
     
 	--Emperor
 	{['model'] = 'habanero',      ['name'] = 'Habanero',                      ['brand'] = 'Emperor',         ['price'] = 20000,   ['category'] = 'Emperor', 	['categoryLabel'] = 'Emperor',         ['shop'] = 'pdm'},
-    {['model'] = 'vectre',        ['name'] = 'Vectre',                        ['brand'] = 'Emperor',         ['price'] = 80000,   ['category'] = 'Emperor', 	['categoryLabel'] = 'Emperor',         ['shop'] = 'pdm'},
-    {['model'] = 'sheava',        ['name'] = 'ETR1',                          ['brand'] = 'Emperor',         ['price'] = 220000,  ['category'] = 'Emperor', 	['categoryLabel'] = 'Emperor',         ['shop'] = 'pdm'},
+    {['model'] = 'vectre',        ['name'] = 'Vectre',                        ['brand'] = 'Emperor',         ['price'] = 5000,   ['category'] = 'Emperor', 	['categoryLabel'] = 'Emperor',         ['shop'] = 'pdm'},
     
 	--Maxwell
 	{['model'] = 'asbo',		  ['name'] = 'Asbo',						  ['brand'] = 'Maxwell',		 ['price'] = 4000,	  ['category'] = 'Maxwell', 	['categoryLabel'] = 'Maxwell', 		 ['shop'] = 'pdm'},
-    {['model'] = 'vagrant',       ['name'] = 'Vagrant',                       ['brand'] = 'Maxwell',         ['price'] = 50000,   ['category'] = 'Maxwell', 	['categoryLabel'] = 'Maxwell',         ['shop'] = 'pdm'},
     
 	--Pfister
-	{['model'] = 'astron',        ['name'] = 'Astron',                        ['brand'] = 'Pfister',         ['price'] = 150000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
-    {['model'] = 'comet2',        ['name'] = 'Comet',                         ['brand'] = 'Pfister',         ['price'] = 130000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
+	{['model'] = 'comet2',        ['name'] = 'Comet',                         ['brand'] = 'Pfister',         ['price'] = 130000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'comet3',        ['name'] = 'Comet Retro Custom',            ['brand'] = 'Pfister',         ['price'] = 175000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
-    {['model'] = 'comet4',        ['name'] = 'Comet Safari',                  ['brand'] = 'Pfister',         ['price'] = 110000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'comet5',        ['name'] = 'Comet SR',                      ['brand'] = 'Pfister',         ['price'] = 155000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'neon',          ['name'] = 'Neon',                          ['brand'] = 'Pfister',	     ['price'] = 90000,   ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'comet6',        ['name'] = 'Comet S2',                      ['brand'] = 'Pfister',         ['price'] = 230000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'growler',       ['name'] = 'Growler',                       ['brand'] = 'Pfister',         ['price'] = 205000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'pfister811',    ['name'] = '811',                           ['brand'] = 'Pfister',         ['price'] = 220000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'comet7',        ['name'] = 'Comet S2 Cabrio',               ['brand'] = 'Pfister',         ['price'] = 250000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
-    {['model'] = '911gtr',        ['name'] = '667 GT3RS',                     ['brand'] = 'Pfister',         ['price'] = 275000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
+    {['model'] = '911gtrs',       ['name'] = '667 GT3RS',                     ['brand'] = 'Pfister',         ['price'] = 275000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'gt2rs',         ['name'] = '667 GT2RS',                     ['brand'] = 'Pfister',         ['price'] = 350000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'por911gt3',     ['name'] = '657 GT3RS',                     ['brand'] = 'Pfister',         ['price'] = 175000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
     {['model'] = 'carrera19',     ['name'] = 'Chair',                         ['brand'] = 'Pfister',         ['price'] = 180000,  ['category'] = 'Pfister', 	['categoryLabel'] = 'Pfister',         ['shop'] = 'pdm'},
@@ -295,7 +267,7 @@ local Vehicles = {
     
 	--Imponte
 	{['model'] = 'dukes',         ['name'] = 'Dukes',                         ['brand'] = 'Imponte',         ['price'] = 23500,   ['category'] = 'Imponte', 	['categoryLabel'] = 'Imponte',         ['shop'] = 'pdm'},
-    {['model'] = 'dukes2',        ['name'] = 'Duke O\'Death',                 ['brand'] = 'Imponte',         ['price'] = 60000,   ['category'] = 'Imponte', 	['categoryLabel'] = 'Imponte',         ['shop'] = 'pdm'},
+    {['model'] = 'dukes2',        ['name'] = 'Duke O\'Death',                 ['brand'] = 'Imponte',         ['price'] = 10000,   ['category'] = 'Imponte', 	['categoryLabel'] = 'Imponte',         ['shop'] = 'pdm'},
     {['model'] = 'dukes3',        ['name'] = 'Beater Dukes',                  ['brand'] = 'Imponte',         ['price'] = 45000,   ['category'] = 'Imponte', 	['categoryLabel'] = 'Imponte',         ['shop'] = 'pdm'},
     {['model'] = 'nightshade',    ['name'] = 'Nightshade',                    ['brand'] = 'Imponte',         ['price'] = 70000,   ['category'] = 'Imponte', 	['categoryLabel'] = 'Imponte',         ['shop'] = 'pdm'},
     {['model'] = 'phoenix',       ['name'] = 'Phoenix',                       ['brand'] = 'Imponte',         ['price'] = 65000,   ['category'] = 'Imponte', 	['categoryLabel'] = 'Imponte',         ['shop'] = 'pdm'},
@@ -305,7 +277,7 @@ local Vehicles = {
     {['model'] = 'deluxo',        ['name'] = 'Deluxo',                        ['brand'] = 'Imponte',         ['price'] = 55000,   ['category'] = 'Imponte', 	['categoryLabel'] = 'Imponte', 		 ['shop'] = 'pdm'},
     
 	--Invetero
-	{['model'] = 'coquette3',     ['name'] = 'Coquette BlackFin',             ['brand'] = 'Invetero',        ['price'] = 180000,  ['category'] = 'Invetero', 	['categoryLabel'] = 'Invetero',        ['shop'] = 'pdm'},
+	{['model'] = 'coquette3',     ['name'] = 'Coquette BlackFin',             ['brand'] = 'Invetero',        ['price'] = 55000,   ['category'] = 'Invetero', 	['categoryLabel'] = 'Invetero',        ['shop'] = 'pdm'},
     {['model'] = 'coquette2',     ['name'] = 'Coquette Classic',              ['brand'] = 'Invetero',        ['price'] = 165000,  ['category'] = 'Invetero', 	['categoryLabel'] = 'Invetero', 		 ['shop'] = 'pdm'},
     {['model'] = 'coquette',      ['name'] = 'Coquette',                      ['brand'] = 'Invetero',        ['price'] = 145000,  ['category'] = 'Invetero', 	['categoryLabel'] = 'Invetero',        ['shop'] = 'pdm'},
     {['model'] = 'coquette4',     ['name'] = 'Coquette D10',                  ['brand'] = 'Invetero',        ['price'] = 220000,  ['category'] = 'Invetero', 	['categoryLabel'] = 'Invetero',        ['shop'] = 'pdm'},
@@ -313,7 +285,7 @@ local Vehicles = {
 	--Grotti
 	{['model'] = 'brioso',        ['name'] = 'Brioso R/A',                    ['brand'] = 'Grotti',          ['price'] = 20000,   ['category'] = 'Grotti', 	['categoryLabel'] = 'Grotti',          ['shop'] = 'pdm'},
     {['model'] = 'brioso2',       ['name'] = 'Brioso 300',                    ['brand'] = 'Grotti',          ['price'] = 12000,   ['category'] = 'Grotti', 	['categoryLabel'] = 'Grotti',          ['shop'] = 'pdm'},
-    {['model'] = 'brioso3',       ['name'] = 'Brioso 300 Widebody',           ['brand'] = 'Grotti',          ['price'] = 125000,  ['category'] = 'Grotti', 	['categoryLabel'] = 'Grotti',          ['shop'] = 'pdm'},
+    {['model'] = 'brioso3',       ['name'] = 'Brioso 300 Widebody',           ['brand'] = 'Grotti',          ['price'] = 25000,  ['category'] = 'Grotti', 	['categoryLabel'] = 'Grotti',          ['shop'] = 'pdm'},
     {['model'] = 'gt500',         ['name'] = 'GT500',                         ['brand'] = 'Grotti',          ['price'] = 130000,  ['category'] = 'Grotti', 	['categoryLabel'] = 'Grotti', 		 ['shop'] = 'pdm'},
     {['model'] = 'stinger',       ['name'] = 'Stinger',                       ['brand'] = 'Grotti',          ['price'] = 39500,   ['category'] = 'Grotti', 	['categoryLabel'] = 'Grotti', 		 ['shop'] = 'pdm'},
     {['model'] = 'stingergt',     ['name'] = 'Stinger GT',                    ['brand'] = 'Grotti',          ['price'] = 70000,   ['category'] = 'Grotti', 	['categoryLabel'] = 'Grotti', 		 ['shop'] = 'pdm'},
@@ -332,14 +304,12 @@ local Vehicles = {
     
 	--Hijak
 	{['model'] = 'khamelion',     ['name'] = 'Khamelion',                     ['brand'] = 'Hijak',           ['price'] = 90000,   ['category'] = 'Hijak', 	['categoryLabel'] = 'Hijak',           ['shop'] = 'pdm'},
-    {['model'] = 'ruston',        ['name'] = 'Ruston',                        ['brand'] = 'Hijak',           ['price'] = 130000,  ['category'] = 'Hijak', 	['categoryLabel'] = 'Hijak',           ['shop'] = 'pdm'},
+    {['model'] = 'ruston',        ['name'] = 'Rustoned',                      ['brand'] = 'Hijak',           ['price'] = 130000,  ['category'] = 'Hijak', 	['categoryLabel'] = 'Hijak',           ['shop'] = 'pdm'},
     
 	--Karin
 	{['model'] = 'dilettante',    ['name'] = 'Dilettante',                    ['brand'] = 'Karin',           ['price'] = 9000,    ['category'] = 'Karin', 	['categoryLabel'] = 'Karin',           ['shop'] = 'pdm'},
-    {['model'] = 'dilettante2',   ['name'] = 'Dilettante Patrol',             ['brand'] = 'Karin',           ['price'] = 12000,   ['category'] = 'Karin', 	['categoryLabel'] = 'Karin',           ['shop'] = 'pdm'},
     {['model'] = 'asterope',      ['name'] = 'Asterope',                      ['brand'] = 'Karin',           ['price'] = 11000,   ['category'] = 'Karin', 	['categoryLabel'] = 'Karin',           ['shop'] = 'pdm'},
     {['model'] = 'intruder',      ['name'] = 'Intruder',                      ['brand'] = 'Karin',           ['price'] = 11250,   ['category'] = 'Karin', 	['categoryLabel'] = 'Karin',           ['shop'] = 'pdm'},
-    {['model'] = 'bjxl',          ['name'] = 'BeeJay XL',                     ['brand'] = 'Karin',           ['price'] = 19000,   ['category'] = 'Karin', 	['categoryLabel'] = 'Karin',           ['shop'] = 'pdm'},
     {['model'] = 'previon',       ['name'] = 'Previon',                       ['brand'] = 'Karin',           ['price'] = 149000,  ['category'] = 'Karin', 	['categoryLabel'] = 'Karin',           ['shop'] = 'pdm'},
     {['model'] = 'futo',          ['name'] = 'Futo',                          ['brand'] = 'Karin',           ['price'] = 17500,   ['category'] = 'Karin', 	['categoryLabel'] = 'Karin',           ['shop'] = 'pdm'},
     {['model'] = 'z190',          ['name'] = '190Z',                          ['brand'] = 'Karin',           ['price'] = 78000,   ['category'] = 'Karin', 	['categoryLabel'] = 'Karin', 			 ['shop'] = 'pdm'},
@@ -389,9 +359,6 @@ local Vehicles = {
     {['model'] = 'sanchez2',      ['name'] = 'Sanchez',                       ['brand'] = 'Maibatsu',        ['price'] = 5300,    ['category'] = 'Maibatsu', 	['categoryLabel'] = 'Maibatsu',     	 ['shop'] = 'bikes'},
     {['model'] = 'manchez2',      ['name'] = 'Manchez Scout',                 ['brand'] = 'Maibatsu',        ['price'] = 14000,   ['category'] = 'Maibatsu', 	['categoryLabel'] = 'Maibatsu',     	 ['shop'] = 'bikes'},
     {['model'] = 'manchez3',      ['name'] = 'Manchez Scout Classic',         ['brand'] = 'Maibatsu',        ['price'] = 15000,   ['category'] = 'Maibatsu', 	['categoryLabel'] = 'Maibatsu',     	 ['shop'] = 'bikes'},
-    {['model'] = 'monstrociti',   ['name'] = 'MonstroCiti',                   ['brand'] = 'Maibatsu',        ['price'] = 48000,   ['category'] = 'Maibatsu', 	['categoryLabel'] = 'Maibatsu',        ['shop'] = 'pdm'},
-    {['model'] = 'mule2',         ['name'] = 'Mule',                          ['brand'] = 'Maibatsu',        ['price'] = 40000,   ['category'] = 'Maibatsu', 	['categoryLabel'] = 'Maibatsu',        ['shop'] = 'pdm'},
-    {['model'] = 'mule3',         ['name'] = 'Mule',                          ['brand'] = 'Maibatsu',        ['price'] = 40000,   ['category'] = 'Maibatsu', 	['categoryLabel'] = 'Maibatsu',        ['shop'] = 'pdm'},
     
 	--Nagasaki
 	{['model'] = 'bf400',         ['name'] = 'BF400',                         ['brand'] = 'Nagasaki',        ['price'] = 22000,   ['category'] = 'Nagasaki', 	['categoryLabel'] = 'Nagasaki',     	 ['shop'] = 'bikes'},
@@ -411,12 +378,12 @@ local Vehicles = {
 
 	--Ocelot
 	{['model'] = 'f620',          ['name'] = 'F620',                          ['brand'] = 'Ocelot',          ['price'] = 32500,   ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
-    {['model'] = 'jackal',        ['name'] = 'Jackal',                        ['brand'] = 'Ocelot',          ['price'] = 19000,   ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
+    {['model'] = 'jackal',        ['name'] = 'Jackass',                       ['brand'] = 'Ocelot',          ['price'] = 19000,   ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
     {['model'] = 'ardent',        ['name'] = 'Ardent',                        ['brand'] = 'Ocelot',          ['price'] = 30000,   ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot', 		   ['shop'] = 'pdm'},
 	{['model'] = 'stromberg',     ['name'] = 'Stromberg',                     ['brand'] = 'Ocelot',          ['price'] = 80000,   ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot', 		   ['shop'] = 'pdm'},
     {['model'] = 'swinger',       ['name'] = 'Swinger',                       ['brand'] = 'Ocelot',          ['price'] = 221000,  ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot', 		   ['shop'] = 'pdm'},
     {['model'] = 'jugular',       ['name'] = 'Jugular',                       ['brand'] = 'Ocelot',          ['price'] = 80000,   ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
-    {['model'] = 'locust',        ['name'] = 'Locust',                        ['brand'] = 'Ocelot',          ['price'] = 200000,  ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
+    {['model'] = 'locust',        ['name'] = 'Locust',                        ['brand'] = 'Ocelot',          ['price'] = 25000,   ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
     {['model'] = 'lynx',          ['name'] = 'Lynx',                          ['brand'] = 'Ocelot',          ['price'] = 150000,  ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
     {['model'] = 'pariah',        ['name'] = 'Pariah',                        ['brand'] = 'Ocelot',          ['price'] = 90000,   ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
     {['model'] = 'penetrator',    ['name'] = 'Penetrator',                    ['brand'] = 'Ocelot',          ['price'] = 130000,  ['category'] = 'Ocelot', 	['categoryLabel'] = 'Ocelot',          ['shop'] = 'pdm'},
@@ -477,8 +444,8 @@ local Vehicles = {
     {['model'] = 'manhartx7',     ['name'] = 'DEV7 B',                        ['brand'] = 'Ubermacht',       ['price'] = 145000,  ['category'] = 'Ubermacht', 	['categoryLabel'] = 'Ubermacht',       ['shop'] = 'none'},
     
 	--Pegassi
-	{['model'] = 'toros',         ['name'] = 'Toros',                         ['brand'] = 'Pegassi',         ['price'] = 65000,   ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
-    {['model'] = 'infernus2',     ['name'] = 'Infernus Classic',              ['brand'] = 'Pegassi',         ['price'] = 245000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi', 		 ['shop'] = 'pdm'},
+	{['model'] = 'toros',         ['name'] = 'Toros',                         ['brand'] = 'Pegassi',         ['price'] = 60000,   ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
+    {['model'] = 'infernus2',     ['name'] = 'Infernus Classic',              ['brand'] = 'Pegassi',         ['price'] = 225000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi', 		 ['shop'] = 'pdm'},
     {['model'] = 'monroe',        ['name'] = 'Monroe',                        ['brand'] = 'Pegassi',         ['price'] = 115000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi', 		 ['shop'] = 'pdm'},
     {['model'] = 'infernus',      ['name'] = 'Infernus',                      ['brand'] = 'Pegassi',         ['price'] = 235000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
     {['model'] = 'osiris',        ['name'] = 'Osiris',                        ['brand'] = 'Pegassi',         ['price'] = 220000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
@@ -486,7 +453,7 @@ local Vehicles = {
     {['model'] = 'tempesta',      ['name'] = 'Tempesta',                      ['brand'] = 'Pegassi',         ['price'] = 120000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
     {['model'] = 'tezeract',      ['name'] = 'Tezeract',                      ['brand'] = 'Pegassi',         ['price'] = 220000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
     {['model'] = 'vacca',         ['name'] = 'Vacca',                         ['brand'] = 'Pegassi',         ['price'] = 105000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
-    {['model'] = 'zentorno',      ['name'] = 'Zentorno',                      ['brand'] = 'Pegassi',         ['price'] = 340000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
+    {['model'] = 'zentorno',      ['name'] = 'Zentorno',                      ['brand'] = 'Pegassi',         ['price'] = 315000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
     {['model'] = 'zorrusso',      ['name'] = 'Zorrusso',                      ['brand'] = 'Pegassi',         ['price'] = 277000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
     {['model'] = 'ignus',         ['name'] = 'Ignus',                         ['brand'] = 'Pegassi',         ['price'] = 1120000, ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
     {['model'] = 'torero2',       ['name'] = 'Torero XO',                     ['brand'] = 'Pegassi',         ['price'] = 245000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi',         ['shop'] = 'pdm'},
@@ -510,7 +477,7 @@ local Vehicles = {
     {['model'] = '1016urus',      ['name'] = 'Uranus S',                      ['brand'] = 'Pegassi',         ['price'] = 195000,  ['category'] = 'Pegassi', 	['categoryLabel'] = 'Pegassi', 		 ['shop'] = 'pdm'},
     
 	--Principe
-	{['model'] = 'deveste',       ['name'] = 'Deveste',                       ['brand'] = 'Principe',        ['price'] = 234000,  ['category'] = 'Principe', 	['categoryLabel'] = 'Principe',        ['shop'] = 'pdm'},
+	{['model'] = 'deveste',       ['name'] = 'Devestate',                     ['brand'] = 'Principe',        ['price'] = 200000,  ['category'] = 'Principe', 	['categoryLabel'] = 'Principe',        ['shop'] = 'pdm'},
     {['model'] = 'diablous',      ['name'] = 'Diablous',                      ['brand'] = 'Principe',        ['price'] = 30000,   ['category'] = 'Principe', 	['categoryLabel'] = 'Principe',     	 ['shop'] = 'bikes'},
     {['model'] = 'diablous2',     ['name'] = 'Diablous Custom',               ['brand'] = 'Principe',        ['price'] = 38000,   ['category'] = 'Principe', 	['categoryLabel'] = 'Principe',     	 ['shop'] = 'bikes'},
     {['model'] = 'lectro',        ['name'] = 'Lectro',                        ['brand'] = 'Principe',        ['price'] = 28000,   ['category'] = 'Principe', 	['categoryLabel'] = 'Principe',     	 ['shop'] = 'bikes'},
@@ -537,10 +504,10 @@ local Vehicles = {
     {['model'] = 'jetmax',        ['name'] = 'Jetmax',                        ['brand'] = 'Shitzu',          ['price'] = 40000,   ['category'] = 'Shitzu', 	['categoryLabel'] = 'Shitzu',          ['shop'] = 'boat'},
     
 	--Truffade
-	{['model'] = 'ztype',         ['name'] = 'Z-Type',                        ['brand'] = 'Truffade',        ['price'] = 270000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade', 		 ['shop'] = 'pdm'},
-    {['model'] = 'adder',         ['name'] = 'Adder',                         ['brand'] = 'Truffade',        ['price'] = 280000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade',        ['shop'] = 'pdm'},
-    {['model'] = 'nero',          ['name'] = 'Nero',                          ['brand'] = 'Truffade',        ['price'] = 200000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade',        ['shop'] = 'pdm'},
-    {['model'] = 'nero2',         ['name'] = 'Nero Custom',                   ['brand'] = 'Truffade',        ['price'] = 260000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade',        ['shop'] = 'pdm'},
+	{['model'] = 'ztype',         ['name'] = 'Z-Type',                        ['brand'] = 'Truffade',        ['price'] = 225000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade', 		 ['shop'] = 'pdm'},
+    {['model'] = 'adder',         ['name'] = 'Adder',                         ['brand'] = 'Truffade',        ['price'] = 250000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade',        ['shop'] = 'pdm'},
+    {['model'] = 'nero',          ['name'] = 'Nero',                          ['brand'] = 'Truffade',        ['price'] = 250000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade',        ['shop'] = 'pdm'},
+    {['model'] = 'nero2',         ['name'] = 'Nero Custom',                   ['brand'] = 'Truffade',        ['price'] = 275000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade',        ['shop'] = 'pdm'},
     {['model'] = 'thrax',         ['name'] = 'Thrax',                         ['brand'] = 'Truffade',        ['price'] = 180000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade',        ['shop'] = 'pdm'},
     {['model'] = '2019chiron',    ['name'] = 'Chiron',                        ['brand'] = 'Truffade',        ['price'] = 280000,  ['category'] = 'Truffade', 	['categoryLabel'] = 'Truffade',        ['shop'] = 'pdm'},
     
@@ -554,57 +521,39 @@ local Vehicles = {
     
 	--Vapid	
 	{['model'] = 'stanier',       ['name'] = 'Stanier',                       ['brand'] = 'Vapid',           ['price'] = 19000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'contender',     ['name'] = 'Contender',                     ['brand'] = 'Vapid',           ['price'] = 35000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'contender',     ['name'] = 'Contender',                     ['brand'] = 'Vapid',           ['price'] = 42000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'radi',          ['name'] = 'Radius',                        ['brand'] = 'Vapid',           ['price'] = 18000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'blade',         ['name'] = 'Blade',                         ['brand'] = 'Vapid',           ['price'] = 23500,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'chino',         ['name'] = 'Chino',                         ['brand'] = 'Vapid',           ['price'] = 5000,    ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'chino2',        ['name'] = 'Chino Luxe',                    ['brand'] = 'Vapid',           ['price'] = 8000,    ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'clique',        ['name'] = 'Clique',                        ['brand'] = 'Vapid',           ['price'] = 20000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'chino',         ['name'] = 'Chino',                         ['brand'] = 'Vapid',           ['price'] = 10000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'chino2',        ['name'] = 'Chino Luxe',                    ['brand'] = 'Vapid',           ['price'] = 15000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'dominator',     ['name'] = 'Dominator',                     ['brand'] = 'Vapid',           ['price'] = 62500,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'dominator2',    ['name'] = 'Pißwasser Dominator',           ['brand'] = 'Vapid',           ['price'] = 50000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'dominator3',    ['name'] = 'Dominator GTX',                 ['brand'] = 'Vapid',           ['price'] = 70000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'dominator3',    ['name'] = 'Dominator GTX',                 ['brand'] = 'Vapid',           ['price'] = 150000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'dominator4',    ['name'] = 'Dominator Arena',               ['brand'] = 'Vapid',           ['price'] = 200000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'dominator7',    ['name'] = 'Dominator ASP',                 ['brand'] = 'Vapid',           ['price'] = 110000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'dominator8',    ['name'] = 'Dominator GTT',                 ['brand'] = 'Vapid',           ['price'] = 80000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'ellie',         ['name'] = 'Ellie',                         ['brand'] = 'Vapid',           ['price'] = 42250,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'hotknife',      ['name'] = 'Hotknife',                      ['brand'] = 'Vapid',           ['price'] = 90000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'hustler',       ['name'] = 'Hustler',                       ['brand'] = 'Vapid',           ['price'] = 95000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'impaler',       ['name'] = 'Impaler',                       ['brand'] = 'Vapid',           ['price'] = 95000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'impaler2',      ['name'] = 'Impaler Arena',                 ['brand'] = 'Vapid',           ['price'] = 95000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'impaler3',      ['name'] = 'Impaler Future Shock',          ['brand'] = 'Vapid',           ['price'] = 95000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'impaler4',      ['name'] = 'Impaler Nightmare',             ['brand'] = 'Vapid',           ['price'] = 95000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'imperator',     ['name'] = 'Imperator Arena',               ['brand'] = 'Vapid',           ['price'] = 95000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'imperator2',    ['name'] = 'imperator Future Shock',        ['brand'] = 'Vapid',           ['price'] = 95000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'imperator3',    ['name'] = 'Imperator Nightmare',           ['brand'] = 'Vapid',           ['price'] = 95000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'slamvan',       ['name'] = 'Slam Van',                      ['brand'] = 'Vapid',           ['price'] = 30000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'slamvan2',      ['name'] = 'Lost Slam Van',                 ['brand'] = 'Vapid',           ['price'] = 90000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'slamvan3',      ['name'] = 'Slam Van Custom',               ['brand'] = 'Vapid',           ['price'] = 17000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'clique2',       ['name'] = 'Clique Wagon',                  ['brand'] = 'Vapid',           ['price'] = 102500,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'hotknife',      ['name'] = 'Hotknife',                      ['brand'] = 'Vapid',           ['price'] = 50000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'hustler',       ['name'] = 'Hustler',                       ['brand'] = 'Vapid',           ['price'] = 35000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'impaler',       ['name'] = 'Impaler',                       ['brand'] = 'Vapid',           ['price'] = 45000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'slamvan',       ['name'] = 'Slam Van',                      ['brand'] = 'Vapid',           ['price'] = 20000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'slamvan3',      ['name'] = 'Slam Van Custom',               ['brand'] = 'Vapid',           ['price'] = 30000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'peyote',        ['name'] = 'Peyote',                        ['brand'] = 'Vapid',           ['price'] = 23500,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid', 			 ['shop'] = 'pdm'},
     {['model'] = 'peyote3',       ['name'] = 'Peyote Custom',                 ['brand'] = 'Vapid',           ['price'] = 48000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid', 			 ['shop'] = 'pdm'},
     {['model'] = 'retinue',       ['name'] = 'Retinue',                       ['brand'] = 'Vapid',           ['price'] = 32000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid', 			 ['shop'] = 'pdm'},
     {['model'] = 'retinue2',      ['name'] = 'Retinue MKII',                  ['brand'] = 'Vapid',           ['price'] = 38000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid', 			 ['shop'] = 'pdm'},
     {['model'] = 'peyote2',       ['name'] = 'Peyote Gasser',                 ['brand'] = 'Vapid',           ['price'] = 40000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid', 			 ['shop'] = 'pdm'},
-    {['model'] = 'flashgt',       ['name'] = 'Flash GT',                      ['brand'] = 'Vapid',           ['price'] = 48000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'flashgt',       ['name'] = 'Flash GT',                      ['brand'] = 'Vapid',           ['price'] = 80000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'gb200',         ['name'] = 'GB 200',                        ['brand'] = 'Vapid',           ['price'] = 140000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'bullet',        ['name'] = 'Bullet',                        ['brand'] = 'Vapid',           ['price'] = 120000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'fmj',           ['name'] = 'FMJ',                           ['brand'] = 'Vapid',           ['price'] = 125000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'caracara',      ['name'] = 'Caracara',                      ['brand'] = 'Vapid',           ['price'] = 60000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
-    {['model'] = 'caracara2',     ['name'] = 'Caracara 4x4',                  ['brand'] = 'Vapid',           ['price'] = 80000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
+    {['model'] = 'caracara2',     ['name'] = 'Caracara',                      ['brand'] = 'Vapid',           ['price'] = 80000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
     {['model'] = 'rebel2',        ['name'] = 'Rebel',                         ['brand'] = 'Vapid',           ['price'] = 20000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
-    {['model'] = 'riata',         ['name'] = 'Riata',                         ['brand'] = 'Vapid',           ['price'] = 380000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
-    {['model'] = 'sandking',      ['name'] = 'Sandking XL',                   ['brand'] = 'Vapid',           ['price'] = 25000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
+    {['model'] = 'riata',         ['name'] = 'Riata',                         ['brand'] = 'Vapid',           ['price'] = 50000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
+    {['model'] = 'sandking',      ['name'] = 'Sandking XL',                   ['brand'] = 'Vapid',           ['price'] = 45000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
     {['model'] = 'sandking2',     ['name'] = 'Sandking SWB',                  ['brand'] = 'Vapid',           ['price'] = 38000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
-    {['model'] = 'trophytruck',   ['name'] = 'Trophy Truck',                  ['brand'] = 'Vapid',           ['price'] = 60000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',       	 ['shop'] = 'pdm'},
-    {['model'] = 'trophytruck2',  ['name'] = 'Desert Raid',                   ['brand'] = 'Vapid',           ['price'] = 80000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
-    {['model'] = 'winky',         ['name'] = 'Winky',                         ['brand'] = 'Vapid',           ['price'] = 10000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
-    {['model'] = 'ratel',         ['name'] = 'Ratel',                         ['brand'] = 'Vapid',           ['price'] = 199000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',        	 ['shop'] = 'pdm'},
-    {['model'] = 'bobcatxl',      ['name'] = 'Bobcat XL Open',                ['brand'] = 'Vapid',           ['price'] = 13500,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'bobcatxl',      ['name'] = 'Bobcat XL Open',                ['brand'] = 'Vapid',           ['price'] = 25000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'minivan',       ['name'] = 'Minivan',                       ['brand'] = 'Vapid',           ['price'] = 7000,    ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'minivan2',      ['name'] = 'Minivan Custom',                ['brand'] = 'Vapid',           ['price'] = 10000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
+    {['model'] = 'minivan2',      ['name'] = 'Minivan Custom',                ['brand'] = 'Vapid',           ['price'] = 12500,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'speedo',        ['name'] = 'Speedo',                        ['brand'] = 'Vapid',           ['price'] = 10000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'speedo4',       ['name'] = 'Speedo Custom',                 ['brand'] = 'Vapid',           ['price'] = 15000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
-    {['model'] = 'speedo5',       ['name'] = 'Speedo Custom',                 ['brand'] = 'Vapid',           ['price'] = 238000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'boss429',       ['name'] = 'BO55',                          ['brand'] = 'Vapid',           ['price'] = 80000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'eleanor',       ['name'] = 'BO55 E',                        ['brand'] = 'Vapid',           ['price'] = 80000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
     {['model'] = 'fgt',           ['name'] = 'GX40',                          ['brand'] = 'Vapid',           ['price'] = 90000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'pdm'},
@@ -613,14 +562,10 @@ local Vehicles = {
     
 	--Weeny
 	{['model'] = 'issi2',         ['name'] = 'Issi',                          ['brand'] = 'Weeny',           ['price'] = 7000,    ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',        	 ['shop'] = 'pdm'},
-    {['model'] = 'issi3',         ['name'] = 'Issi Classic',                  ['brand'] = 'Weeny',           ['price'] = 5000,    ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',        	 ['shop'] = 'pdm'},
-    {['model'] = 'issi4',         ['name'] = 'Issi Arena',                    ['brand'] = 'Weeny',           ['price'] = 80000,   ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',        	 ['shop'] = 'pdm'},
-    {['model'] = 'issi5',         ['name'] = 'Issi Future Shock',             ['brand'] = 'Weeny',           ['price'] = 80000,   ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',        	 ['shop'] = 'pdm'},
-    {['model'] = 'issi6',         ['name'] = 'Issi Nightmare',                ['brand'] = 'Weeny',           ['price'] = 80000,   ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',         	 ['shop'] = 'pdm'},
-	{['model'] = 'issi7',         ['name'] = 'Issi Sport',                    ['brand'] = 'Weeny',           ['price'] = 100000,  ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',        	 ['shop'] = 'pdm'},
-    {['model'] = 'issi8',         ['name'] = 'Issi Rally',                    ['brand'] = 'Weeny',           ['price'] = 10000,   ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',           ['shop'] = 'pdm'},
-	{['model'] = 'dynasty',       ['name'] = 'Dynasty',                       ['brand'] = 'Weeny',           ['price'] = 25000,   ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny', 		 	 ['shop'] = 'pdm'},
-    
+    {['model'] = 'issi3',         ['name'] = 'Issi Classic',                  ['brand'] = 'Weeny',           ['price'] = 30000,   ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',        	 ['shop'] = 'pdm'},
+    {['model'] = 'issi7',         ['name'] = 'Issi Sport',                    ['brand'] = 'Weeny',           ['price'] = 50000,   ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',        	 ['shop'] = 'pdm'},
+    {['model'] = 'issi8',         ['name'] = 'Issi Rally',                    ['brand'] = 'Weeny',           ['price'] = 50000,   ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',           ['shop'] = 'pdm'},
+	
 	--Western
 	{['model'] = 'cliffhanger',   ['name'] = 'Cliffhanger',                   ['brand'] = 'Western',         ['price'] = 28500,   ['category'] = 'Western', 	['categoryLabel'] = 'Western',     	 ['shop'] = 'bikes'},
     {['model'] = 'daemon2',       ['name'] = 'Daemon Custom',                 ['brand'] = 'Western',         ['price'] = 23000,   ['category'] = 'Western', 	['categoryLabel'] = 'Western',     	 ['shop'] = 'bikes'},
@@ -633,14 +578,13 @@ local Vehicles = {
     {['model'] = 'powersurge',    ['name'] = 'Powersurge',                    ['brand'] = 'Western',         ['price'] = 7000,    ['category'] = 'Western', 	['categoryLabel'] = 'Western',     	 ['shop'] = 'bikes'},
 	
 	--Progen
-	{['model'] = 'italigto',      ['name'] = 'Itali GTO',                     ['brand'] = 'Progen',          ['price'] = 260000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
-    {['model'] = 'italirsx',      ['name'] = 'Itali RSX',                     ['brand'] = 'Progen',          ['price'] = 260000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
-    {['model'] = 'emerus',        ['name'] = 'Emerus',                        ['brand'] = 'Progen',          ['price'] = 220000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
-    {['model'] = 'gp1',           ['name'] = 'GP1',                           ['brand'] = 'Progen',          ['price'] = 110000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
-    {['model'] = 'italigtb',      ['name'] = 'Itali GTB',                     ['brand'] = 'Progen',          ['price'] = 170000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
-    {['model'] = 'italigtb2',     ['name'] = 'Itali GTB Custom',              ['brand'] = 'Progen',          ['price'] = 250000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
+	{['model'] = 'italigto',      ['name'] = 'Itali GTO',                     ['brand'] = 'Progen',          ['price'] = 360000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
+    {['model'] = 'italirsx',      ['name'] = 'Itali RSX',                     ['brand'] = 'Progen',          ['price'] = 380000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
+    {['model'] = 'emerus',        ['name'] = 'Emerus',                        ['brand'] = 'Progen',          ['price'] = 1400000, ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
+    {['model'] = 'gp1',           ['name'] = 'GP1',                           ['brand'] = 'Progen',          ['price'] = 1000000, ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
+    {['model'] = 'italigtb',      ['name'] = 'Itali GTB',                     ['brand'] = 'Progen',          ['price'] = 320000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
+    {['model'] = 'italigtb2',     ['name'] = 'Itali GTB Custom',              ['brand'] = 'Progen',          ['price'] = 350000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
     {['model'] = 't20',           ['name'] = 'T20',                           ['brand'] = 'Progen',          ['price'] = 1650000, ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
-    {['model'] = 'tyrus',         ['name'] = 'Tyrus',                         ['brand'] = 'Progen',          ['price'] = 230000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
     {['model'] = '675lt',         ['name'] = 'Low Tide',                      ['brand'] = 'Progen',          ['price'] = 320000,  ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
     {['model'] = 'rmodp1gtr',     ['name'] = '1PEE',                          ['brand'] = 'Progen',          ['price'] = 1500000, ['category'] = 'Progen', 	['categoryLabel'] = 'Progen',          ['shop'] = 'pdm'},
 
@@ -649,10 +593,9 @@ local Vehicles = {
     {['model'] = 'seashark3',     ['name'] = 'Seashark Yacht',                ['brand'] = 'Speedophile',     ['price'] = 40000,   ['category'] = 'Speedophile', 	['categoryLabel'] = 'Speedophile',     ['shop'] = 'boat'},
     
 	--Willard
-	{['model'] = 'eudora',        ['name'] = 'Eudora',                        ['brand'] = 'Willard',         ['price'] = 17000,   ['category'] = 'Willard', 	['categoryLabel'] = 'Willard',         ['shop'] = 'pdm'},
+	{['model'] = 'eudora',        ['name'] = 'Eudora',                        ['brand'] = 'Willard',         ['price'] = 25000,   ['category'] = 'Willard', 	['categoryLabel'] = 'Willard',         ['shop'] = 'pdm'},
     {['model'] = 'faction',       ['name'] = 'Faction',                       ['brand'] = 'Willard',         ['price'] = 17000,   ['category'] = 'Willard', 	['categoryLabel'] = 'Willard',         ['shop'] = 'pdm'},
-    {['model'] = 'faction2',      ['name'] = 'Faction Rider',                 ['brand'] = 'Willard',         ['price'] = 19000,   ['category'] = 'Willard', 	['categoryLabel'] = 'Willard',         ['shop'] = 'pdm'},
-    {['model'] = 'faction3',      ['name'] = 'Faction Custom Donk',           ['brand'] = 'Willard',         ['price'] = 35000,   ['category'] = 'Willard', 	['categoryLabel'] = 'Willard',         ['shop'] = 'pdm'},
+    {['model'] = 'faction2',      ['name'] = 'Faction Rider',                 ['brand'] = 'Willard',         ['price'] = 30000,   ['category'] = 'Willard', 	['categoryLabel'] = 'Willard',         ['shop'] = 'pdm'},
     
 	--WMC
 	{['model'] = 'bagger',        ['name'] = 'Bagger',                        ['brand'] = 'WMC',             ['price'] = 13500,   ['category'] = 'WMC', 	['categoryLabel'] = 'WMC',     		 ['shop'] = 'bikes'},
@@ -662,7 +605,6 @@ local Vehicles = {
     
 	--Zirconium
 	{['model'] = 'stratum',       ['name'] = 'Stratum',                       ['brand'] = 'Zirconium',       ['price'] = 15000,   ['category'] = 'Zirconium', 	['categoryLabel'] = 'Zirconium',       ['shop'] = 'pdm'},
-    {['model'] = 'journey',       ['name'] = 'Journey',                       ['brand'] = 'Zirconium',       ['price'] = 6500,    ['category'] = 'Zirconium', 	['categoryLabel'] = 'Zirconium',       ['shop'] = 'pdm'},
 }
 
 for i = 1, #Vehicles do
