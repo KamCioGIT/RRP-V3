@@ -212,11 +212,6 @@ data_file "AUDIO_GAMEDATA" "data/audioconfig/kc26golft_game.dat"
 data_file "AUDIO_SOUNDDATA" "data/audioconfig/kc26golft_sounds.dat"
 data_file "AUDIO_WAVEPACK" "data/sfx/dlc_kc26golft"
 
-
-data_file 'AUDIO_GAMEDATA' 'audioconfig/bcontinentalgt_game.dat'
-data_file 'AUDIO_SOUNDDATA' 'audioconfig/bcontinentalgt_sounds.dat'
-data_file 'AUDIO_WAVEPACK' 'sfx/dlc_bcontinentalgt'
-
 data_file "AUDIO_SYNTHDATA" "audioconfig/lg157por911_amp.dat"
 data_file "AUDIO_GAMEDATA" "audioconfig/lg157por911_game.dat"
 data_file "AUDIO_SOUNDDATA" "audioconfig/lg157por911_sounds.dat"
