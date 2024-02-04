@@ -212,10 +212,6 @@ data_file "AUDIO_GAMEDATA" "data/audioconfig/kc26golft_game.dat"
 data_file "AUDIO_SOUNDDATA" "data/audioconfig/kc26golft_sounds.dat"
 data_file "AUDIO_WAVEPACK" "data/sfx/dlc_kc26golft"
 
-data_file "AUDIO_SYNTHDATA" "audioconfig/lg86fer812sf_amp.dat"
-data_file "AUDIO_GAMEDATA" "audioconfig/lg86fer812sf_game.dat"
-data_file "AUDIO_SOUNDDATA" "audioconfig/lg86fer812sf_sounds.dat"
-data_file "AUDIO_WAVEPACK" "sfx/dlc_lg86fer812sf"
 
 data_file 'AUDIO_GAMEDATA' 'audioconfig/bcontinentalgt_game.dat'
 data_file 'AUDIO_SOUNDDATA' 'audioconfig/bcontinentalgt_sounds.dat'
