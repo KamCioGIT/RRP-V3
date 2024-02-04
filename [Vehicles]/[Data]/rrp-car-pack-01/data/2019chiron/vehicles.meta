@@ -15,7 +15,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>veh_2019chiron</ptfxAssetName>
-      <audioNameHash>nero</audioNameHash>
+      <audioNameHash>veyronsound</audioNameHash>
       <layout>LAYOUT_LOW</layout>
       <coverBoundOffsets>ADDER_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>

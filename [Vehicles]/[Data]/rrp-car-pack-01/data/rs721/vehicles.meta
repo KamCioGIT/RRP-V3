@@ -15,7 +15,7 @@
       <animConvRoofName>rs7_spoiler</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>BUFFALO</audioNameHash>
+      <audioNameHash>ars7</audioNameHash>
       <layout>LAYOUT_STD_LOWROOF</layout>
       <coverBoundOffsets>DOMINATOR_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
