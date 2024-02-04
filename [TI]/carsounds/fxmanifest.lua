@@ -9,7 +9,11 @@ files {
   "data/audioconfig/*.dat10.rel",
   'data/sfx/**/*.awc',
   'data/sfx/**/*.awc',
-  'data/*.json'
+  'data/*.json',
+  'data/audioconfig/tagt3flat6_game.dat151.rel',
+  'data/audioconfig/tagt3flat6_sounds.dat54.rel',
+  'data/sfx/dlc_tagt3flat6/tagt3flat6.awc',
+  'data/sfx/dlc_tagt3flat6/tagt3flat6_npc.awc'
   
 }
 data_file 'AUDIO_GAMEDATA' 'data/audioconfig/mercedesm113_game.dat'
@@ -204,3 +208,7 @@ data_file 'AUDIO_WAVEPACK' 'data/sfx/dlc_vr38dettv6'
 data_file 'AUDIO_GAMEDATA' 'data/audioconfig/lfasound_game.dat'
 data_file 'AUDIO_SOUNDDATA' 'data/audioconfig/lfasound_sounds.dat'
 data_file 'AUDIO_WAVEPACK' 'data/sfx/dlc_lfasound'
+
+data_file 'AUDIO_GAMEDATA' 'data/audioconfig/tagt3flat6_game.dat'
+data_file 'AUDIO_SOUNDDATA' 'data/audioconfig/tagt3flat6_sounds.dat'
+data_file 'AUDIO_WAVEPACK' 'data/sfx/dlc_tagt3flat6'
