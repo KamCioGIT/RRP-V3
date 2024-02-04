@@ -71,6 +71,7 @@ config = {
         'veyronsound',
         'viperv10',
         'vr38dettv6',
+        'tagt3flat6',
     },
 
 	-- Allow players to detach components and engines as inventory items
