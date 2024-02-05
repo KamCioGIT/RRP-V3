@@ -1,5 +1,5 @@
 QBShared = QBShared or {}
-QBShared.ForceJobDefaultDutyAtLogin = true -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
+QBShared.ForceJobDefaultDutyAtLogin = false -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
 QBShared.Jobs = {
 	unemployed = { label = 'Civilian', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Freelancer', payment = 10 } } },
 	bus = { label = 'Bus', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Driver', payment = 50 } } },
@@ -13,29 +13,29 @@ QBShared.Jobs = {
 	hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Sales', payment = 50 } } },
 
 	police = {
-		label = 'Law Enforcement',
+		label = 'MET Police',
 		type = 'leo',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
-			['0'] = { name = 'Recruit', payment = 50 },
-			['1'] = { name = 'Officer', payment = 75 },
-			['2'] = { name = 'Sergeant', payment = 100 },
-			['3'] = { name = 'Lieutenant', payment = 125 },
-			['4'] = { name = 'Chief', isboss = true, payment = 150 },
+			['0'] = { name = 'PCSO', payment = 100 },
+			['1'] = { name = 'ERPT', payment = 250 },
+			['2'] = { name = 'MO-8', payment = 350 },
+			['3'] = { name = 'MO-19', payment = 500 },
+			['4'] = { name = 'MO-1', isboss = true, payment = 500 },
 		},
 	},
 	ambulance = {
-		label = 'EMS',
+		label = 'NHS',
 		type = 'ems',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
-			['0'] = { name = 'Recruit', payment = 50 },
-			['1'] = { name = 'Paramedic', payment = 75 },
-			['2'] = { name = 'Doctor', payment = 100 },
-			['3'] = { name = 'Surgeon', payment = 125 },
-			['4'] = { name = 'Chief', isboss = true, payment = 150 },
+			['0'] = { name = 'Recruit', payment = 100 },
+			['1'] = { name = 'Paramedic', payment = 250 },
+			['2'] = { name = 'Doctor', payment = 350 },
+			['3'] = { name = 'Surgeon', payment = 500 },
+			['4'] = { name = 'Chief', isboss = true, payment = 500 },
 		},
 	},
 	realestate = {
@@ -62,20 +62,8 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 150 },
 		},
 	},
-	cardealer = {
-		label = 'Vehicle Dealer',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = { name = 'Recruit', payment = 50 },
-			['1'] = { name = 'Showroom Sales', payment = 75 },
-			['2'] = { name = 'Business Sales', payment = 100 },
-			['3'] = { name = 'Finance', payment = 125 },
-			['4'] = { name = 'Manager', isboss = true, payment = 150 },
-		},
-	},
-	mechanic = {
-		label = 'LS Customs',
+	redline = {
+		label = 'Redline',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,
@@ -87,47 +75,8 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 150 },
 		},
 	},
-	mechanic2 = {
-		label = 'LS Customs',
-		type = 'mechanic',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = { name = 'Recruit', payment = 50 },
-			['1'] = { name = 'Novice', payment = 75 },
-			['2'] = { name = 'Experienced', payment = 100 },
-			['3'] = { name = 'Advanced', payment = 125 },
-			['4'] = { name = 'Manager', isboss = true, payment = 150 },
-		},
-	},
-	mechanic3 = {
-		label = 'LS Customs',
-		type = 'mechanic',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = { name = 'Recruit', payment = 50 },
-			['1'] = { name = 'Novice', payment = 75 },
-			['2'] = { name = 'Experienced', payment = 100 },
-			['3'] = { name = 'Advanced', payment = 125 },
-			['4'] = { name = 'Manager', isboss = true, payment = 150 },
-		},
-	},
-	beeker = {
-		label = 'Beeker\'s Garage',
-		type = 'mechanic',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = { name = 'Recruit', payment = 50 },
-			['1'] = { name = 'Novice', payment = 75 },
-			['2'] = { name = 'Experienced', payment = 100 },
-			['3'] = { name = 'Advanced', payment = 125 },
-			['4'] = { name = 'Manager', isboss = true, payment = 150 },
-		},
-	},
-	bennys = {
-		label = 'Benny\'s Original Motor Works',
+	exotics = {
+		label = 'Auto Exotics',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,

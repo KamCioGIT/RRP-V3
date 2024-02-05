@@ -186,7 +186,6 @@ Config.BlacklistedVehs = {
     [`titan`] = true,
     [`rhino`] = true,
     [`firetruck`] = true,
-    [`mule`] = true,
     [`maverick`] = true,
     [`blimp`] = true,
     [`airtug`] = true,
@@ -220,7 +219,8 @@ Config.BlacklistedVehs = {
     [`ruiner2`] = true,
     [`deluxo`] = true,
     [`cargoplane2`] = true,
-    [`voltic2`] = true
+    [`voltic2`] = true,
+    [`policeb`] = true
 }
 
 Config.BlacklistedWeapons = {

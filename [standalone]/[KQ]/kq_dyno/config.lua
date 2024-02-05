@@ -35,7 +35,7 @@ Config.torqueUnits = 'lb-ft'
 -- 'highperformance2' = Good for servers using handling files which result in faster vehicles (extra)
 -- 'highperformance3' = Good for servers using handling files which result in faster vehicles (extra)
 ---------------------------------------------
-Config.dynoFormula = 'highperformance3'
+Config.dynoFormula = 'highperformance1'
 
 
 
@@ -43,17 +43,17 @@ Config.dynoFormula = 'highperformance3'
 Config.jobWhitelist = {
     enabled = true,
     jobs = {
-        'mechanic',
-        'police',
+        'redline',
+        'exotics',
     }
 }
 
 -- Discord webhook options
 Config.webhook = {
-    enabled = false, -- Whether to send the dyno sheets to the discord webhook
+    enabled = true, -- Whether to send the dyno sheets to the discord webhook
 
     -- To get the Discord webhook link, right click on a channel > Edit channel > Integrations > Webhooks > View webhooks > New webhook
-    url = 'YOUR_WEBHOOK_URL_HERE',
+    url = 'https://discord.com/api/webhooks/1204109148518748191/gg_wgFrFQtzch0sUet32cmSyBcd4oi9cKayK8Qzx5r0PSkO3mLJls2ENkWDCwCTaqsib',
 
     -- Replace this with the name of your server or a title you want on your dyno sheets
     title = 'RealRoleplay - Dyno',
@@ -86,22 +86,22 @@ Config.screenSheetOffset = {
 --      displayType = display defined in Config.displayTypes
 -- jobs = Table of jobs which are allowed to use the dyno (false or nil to allow everyone to use it)
 Config.dynos = {
-    ['bennys'] = {
-        coords = vector3(-214.28, -1318.14, 30.9),
-        heading = 180.0,
+    ['redline'] = {
+        coords = vector3(556.34, -198.79, 54.13),
+        heading = 90.0,
         
-        model = 'basic',
+        model = '',
         
         displays = {
             {
-                displayCoords = vector3(-217.4, -1318.92, 32.55),
+                displayCoords = vector3(560.62, -197.79, 55.38),
                 displayHeading = 90.0,
                 displayTilt = 3.0,
                 displayType = 'wall_tv',
             },
             {
-                displayCoords = vector3(-211.5, -1320.6, 30.89),
-                displayHeading = 250.0,
+                displayCoords = vector3(552.77, -196.43, 54.51),
+                displayHeading = 235.0,
                 displayType = 'stand',
             }
         },
@@ -123,53 +123,7 @@ Config.dynos = {
         },
         
         jobs = nil,
-    },
-    ['lsc_airport'] = {
-        coords = vector3(-1164.45, -2018.8, 13.18),
-        heading = 315.0,
-
-        model = 'default_red',
-
-        displays = {
-            {
-                displayCoords = vector3(-1164.3, -2014.53, 14.13),
-                displayHeading = 45.0,
-                displayType = 'wall_tv',
-            },
-        },
-
-        jobs = nil,
-    },
-    ['import_export_garage'] = {
-        coords = vector3(980.2, -3002.11, -39.65),
-        heading = 90.0,
-        
-        model = 'default_blue',
-        
-        displays = {
-            {
-                displayCoords = vector3(978.5, -2999.35, -39.62),
-                displayHeading = 0.0,
-                displayType = 'stand',
-            },
-        },
-        
-        jobs = nil,
-    },
-    --['no_model_liberty_walk_mlo'] = {
-    --    coords = vector3(1148.40, -792.69, 57.5),
-    --    heading = 90.0,
-    --
-    --    displays = {
-    --        {
-    --            displayCoords = vector3(1148.29, -795.0, 58.35),
-    --            displayHeading = 190.0,
-    --            displayType = 'monitor',
-    --        },
-    --    },
-    --
-    --    jobs = nil,
-    --},
+    },  
 }
 
 

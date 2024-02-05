@@ -7,7 +7,7 @@ Config = {
     -- set this to false if you want to use distance checks
     UseTarget = GetConvar('UseTarget', 'false') == 'true',
 
-    DefaultTextLocation = "left", -- left, right, top
+    DefaultTextLocation = "top", -- left, right, top
 
     AllowedVehicles = {
     [1] = {
@@ -18,7 +18,7 @@ Config = {
 
     Meter = {
         ["defaultPrice"] = 125.0, -- price per mile
-        ["startingPrice"] = 0  -- static starting price
+        ["startingPrice"] = 150  -- static starting price
     },
 
     Location = vector3(909.5, -177.35, 74.22), -- map blip position

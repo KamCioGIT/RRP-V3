@@ -26,7 +26,7 @@ Config.qbSettings = {
 
 Config.target = {
     enabled = true,
-    system = 'qb-target' -- 'qtarget' or 'qb-target' or 'ox_target' (Other systems might work as well)
+    system = 'ox_target' -- 'qtarget' or 'qb-target' or 'ox_target' (Other systems might work as well)
 }
 
 -- Outfitbag command settings

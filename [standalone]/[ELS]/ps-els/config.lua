@@ -53,8 +53,8 @@ Config.customSirens = false
 Config.passengerControls = true
 
 -- Allow indicator controls for vehicles using this script --
-Config.indicatorControls = true
-Config.indicatorSounds = true -- Should the indicators make a sound? (true/false)
+Config.indicatorControls = false
+Config.indicatorSounds = false -- Should the indicators make a sound? (true/false)
 
 -- Dual Siren Mode --
 Config.dualSiren = true -- Should the script allow dual siren mode? (true/false)

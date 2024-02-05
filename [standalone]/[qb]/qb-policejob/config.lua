@@ -218,7 +218,7 @@ Config.Items = {
     slots = 30,
     items = {
         [1] = {
-            name = "weapon_pistol",
+            name = "weapon_pistolxm3",
             price = 0,
             amount = 1,
             info = {
@@ -243,43 +243,43 @@ Config.Items = {
             authorizedJobGrades = {0, 1, 2, 3, 4}
         },
         [3] = {
-            name = "traffic_tickets_block",
-            price = 0,
-            amount = 1,
-            info = {},
-            type = "item",
-            slot = 3,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
-        },
-        [4] = {
             name = "pistol_ammo",
             price = 0,
             amount = 20,
             info = {},
             type = "item",
-            slot = 4,
+            slot = 3,
             authorizedJobGrades = {3, 4}
         },
-        [5] = {
+        [4] = {
             name = "handcuffs",
             price = 0,
             amount = 20,
+            info = {},
+            type = "item",
+            slot = 4,
+            authorizedJobGrades = {0, 1, 2, 3, 4}
+        },
+        [5] = {
+            name = "empty_evidence_bag",
+            price = 0,
+            amount = 50,
             info = {},
             type = "item",
             slot = 5,
             authorizedJobGrades = {0, 1, 2, 3, 4}
         },
         [6] = {
-            name = "empty_evidence_bag",
+            name = "police_stormram",
             price = 0,
             amount = 50,
             info = {},
             type = "item",
             slot = 6,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {2, 3, 4}
         },
         [7] = {
-            name = "police_stormram",
+            name = "body_cam",
             price = 0,
             amount = 50,
             info = {},
@@ -288,7 +288,7 @@ Config.Items = {
             authorizedJobGrades = {0, 1, 2, 3, 4}
         },
         [8] = {
-            name = "body_cam",
+            name = "radio",
             price = 0,
             amount = 50,
             info = {},
@@ -297,7 +297,7 @@ Config.Items = {
             authorizedJobGrades = {0, 1, 2, 3, 4}
         },
         [9] = {
-            name = "radio",
+            name = "armor",
             price = 0,
             amount = 50,
             info = {},
@@ -305,8 +305,8 @@ Config.Items = {
             slot = 9,
             authorizedJobGrades = {0, 1, 2, 3, 4}
         },
-        [10] = {
-            name = "armor",
+		[10] = {
+            name = "firstaid",
             price = 0,
             amount = 50,
             info = {},
@@ -314,31 +314,13 @@ Config.Items = {
             slot = 10,
             authorizedJobGrades = {0, 1, 2, 3, 4}
         },
-		[11] = {
-            name = "weapon_radargun",
-            price = 0,
-            amount = 10,
-            info = {},
-            type = "weapon",
-            slot = 11,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
-        },
-		[12] = {
-            name = "firstaid",
-            price = 0,
-            amount = 50,
-            info = {},
-            type = "item",
-            slot = 12,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
-        },
-        [13] = {
+        [11] = {
             name = "leo-gps",
             price = 0,
             amount = 50,
             info = {},
             type = "item",
-            slot = 13,
+            slot = 11,
             authorizedJobGrades = {0, 1, 2, 3, 4}
         }
     }
