@@ -27,5 +27,17 @@ Config.times = {
     },
     {
         speed = 175,
+    },
+    {
+        speed = 200,
+    },
+    {
+        speed = 225,
+    },
+    {
+        speed = 250,
+    },
+    {
+        speed = 275,
     }
 }

@@ -90,8 +90,6 @@ Config.dynos = {
         coords = vector3(556.34, -198.79, 54.13),
         heading = 90.0,
         
-        model = '',
-        
         displays = {
             {
                 displayCoords = vector3(560.62, -197.79, 55.38),
