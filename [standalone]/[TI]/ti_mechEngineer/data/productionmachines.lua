@@ -103,7 +103,7 @@ productionMachines = {
 
         props = {
             {
-                position = vector3(-567.33, -920.61, 23.89),
+                position = vector3(-567.33, -920.61, 22.89),
                 heading = 270.43,
                 model = cncModel,
             },  

@@ -33,6 +33,6 @@ deliveryPoints = {
             redline = 2,
         },
 
-        position = vector3(-584.05, -914.00, 23.89, 0.02),
+        position = vector3(-584.05, -914.00, 23.89),
     }
 }
