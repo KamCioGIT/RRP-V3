@@ -36,11 +36,11 @@ engineLifts = {
             mechanic = 2,
         },
 
-        position = vector3(-210.54,-1318.62,29.89),
+        position = vector3(-576.16, -912.83, 23.89),
 
         props = {
             {
-                position = vector3(-210.54,-1318.62,29.89),
+                position = vector3(-210.54,-1318.62,2.89),
                 heading = 340.58,
                 model = craneModel
             }

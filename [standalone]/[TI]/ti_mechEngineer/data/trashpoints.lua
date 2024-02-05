@@ -39,12 +39,12 @@ trashPoints = {
             police = 2,
         },
 
-        position =  vector3(841.94232177734, -822.28851318359, 26.332572937012),
+        position =  vector3(-569.11, -911.67, 23.89),
 
         props = {
             {
-                position = vector3(841.94232177734, -822.28851318359, 26.332572937012),
-                heading = 90.06,
+                position = vector3(-569.11, -911.67, 23.89),
+                heading = 0.06,
                 model = binModel,
             },
         }

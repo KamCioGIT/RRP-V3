@@ -66,7 +66,7 @@ productionMachines = {
         props = {
             {
                 position = vector3(560.98, -186.78, 49.31),
-                heading = 180.0,
+                heading = 0.0,
                 model = cncModel,
             },  
         }       
@@ -77,14 +77,14 @@ productionMachines = {
         },
         
         jobRestrictions = {
-            police = 2,
+            redline = 2,
         },
         
         groupRestrictions = {
-            police = 2,
+            redline = 2,
         },
 
-        position = vector3(-220.35,-1331.48,30.89),
+        position = vector3(-567.33, -920.61, 23.89),
 
         animation = {
             ad = "pickup_object",
@@ -103,8 +103,8 @@ productionMachines = {
 
         props = {
             {
-                position = vector3(-220.35,-1331.48,29.89),
-                heading = 111.43,
+                position = vector3(-567.33, -920.61, 23.89),
+                heading = 270.43,
                 model = cncModel,
             },  
         }       

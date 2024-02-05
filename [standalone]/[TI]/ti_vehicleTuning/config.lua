@@ -13,7 +13,7 @@ config = {
 	enableDebugPrints = false,
 	
 	-- Enable the /getDefaultEngine command (purely for testing purposes).
-	enableDebugCommand = true,
+	enableDebugCommand = false,
 
 	-- Allow tuning of block parameters?
 	allowBlockTuning = false,
@@ -116,15 +116,15 @@ config = {
 	-- Jobs that can use the showStats portion.
 	-- Set to false/nil if everyone can use.
 	showStatsJobs = {
-		police = 0,
-		mechanic = 0,
+		redline = 0,
+		exotics = 0,
 	},
 
     -- jobName = minRank
     -- which jobs should have access to the tuning UI
     -- Set to false/remove entirely if you don't want job restrictors.
 	tuningJobs = {
-		police = 1,
+		na = 1,
 	},
 
 	-- Toggle nitrous
@@ -163,7 +163,7 @@ config = {
 	-- Set to false if unwanted.
     showUiCommand = "showTuningUI",
     showUiExport = "showTuningUI",
-    showUiHotkey = "U",
+    showUiHotkey = "false",
 
 	-- Set the default value of fInitialDriveForce per class when an engine is attached.
 	-- This helps either smooth the performance difference between classes, or helps you magnify the difference.
@@ -176,7 +176,7 @@ config = {
 
 	-- Areas where players with tuningJobs can access the tuning UI.
 	-- NOTE: Having any tuning areas defined will disable the command unless inside a tuning area with the correct job.
-	tuningAreas = {
+	--[[tuningAreas = {
 		{	
 			blip = {
 				position = vector3(205.03, -1468.75, 29.15),
@@ -194,7 +194,7 @@ config = {
 				vector3(192.99, -1485.98, 28.99)
 			}
 		}
-	},
+	},]]--
 
 	-- Should all vehicles use the default engine below?
 	-- Probably not a great option to have enabled.

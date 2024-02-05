@@ -86,7 +86,7 @@ Config.screenSheetOffset = {
 --      displayType = display defined in Config.displayTypes
 -- jobs = Table of jobs which are allowed to use the dyno (false or nil to allow everyone to use it)
 Config.dynos = {
-    ['redline'] = {
+    ['exotics'] = {
         coords = vector3(556.34, -198.79, 54.13),
         heading = 90.0,
         
@@ -106,17 +106,15 @@ Config.dynos = {
         
         jobs = nil,
     },
-    ['lsc_harmony'] = {
-        coords = vector3(1182.66, 2636.5, 37.78),
+    ['redline'] = {
+        coords = vector3(-573.01, -937.18, 23.57),
         heading = 0.0,
-        
-        model = 'default_blue',
-        
+
         displays = {
             {
-                displayCoords = vector3(1182.66, 2634.6, 39.3),
-                displayHeading = 180.0,
-                displayType = 'wall_tv',
+                displayCoords = vector3(-570.24, -934.29, 23.89),
+                displayHeading = 140.0,
+                displayType = 'stand',
             },
         },
         
