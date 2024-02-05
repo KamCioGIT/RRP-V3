@@ -8,7 +8,7 @@ engineSwapPoints = {
     point1 = {
         position = vector3(562.11, -200.34, 50.31),
         heading = 181.0,
-    },
+    }
     point2 = {
         position = vector3(562.11, -200.34, 50.31),
         heading = 181.0,
