@@ -18,7 +18,7 @@ trashPoints = {
 
         props = {
             {
-                position = vector3(553.33, -191.16, 50.31, 89.75),
+                position = vector3(553.33, -191.16, 50.31),
                 heading = 270.0,
                 model = binModel,
             },
