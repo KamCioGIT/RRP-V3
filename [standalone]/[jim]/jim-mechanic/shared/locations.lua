@@ -26,7 +26,7 @@ Config.Locations[#Config.Locations+1] = { --[[ GABZ ALTA STREET BENNYS ]]--
 		{ coords = vec4(-200.28, -1311.62, 31.3, 0.0), prop = true, },
 	},
 	carLift = {
-        { coords = vec4(564.90, -200.18, 50.31, 89.59), useMLOLift = false },
+        { coords = vec4(553.79, -175.37, 54.51, 89.18), useMLOLift = false },
     },
 	garage = {
 		spawn = vec4(-182.74, -1317.61, 0.63, 357.23),

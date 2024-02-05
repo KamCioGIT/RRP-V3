@@ -92,7 +92,7 @@ config = {
 	autoGenerateRecipes = true,
 
 	generatedDefaultTime = 2, 			-- how long should generated recipes take to perform?
-	generatedDefaultMaterials = 10, 	-- how many materials should generated recipes require?
+	generatedDefaultMaterials = 15, 	-- how many materials should generated recipes require?
 	prestigeMaterialMultiplier = 10, 	-- how how should the prestige value of a material be multiplied by before effecting the recipe material count?
 
 	-- Define extra items for auto generated recipes per category.
@@ -115,34 +115,34 @@ config = {
 	-- Maximum engine sizes given vehicle class.
     classRestrictions = {
     	[0] = {
-    		w = 2.5,
-    		d = 1.5,
-    		h = 1.5
+    		w = 1.4,
+    		d = 0.8,
+    		h = 0.9
     	},
     	[1] = {
-    		w = 2.5,
-    		d = 1.5,
-    		h = 1.5
+    		w = 1.6,
+    		d = 0.9,
+    		h = 1.0
     	},
     	[2] = {
-    		w = 2.5,
-    		d = 1.5,
-    		h = 1.5
+    		w = 2.0,
+    		d = 1.3,
+    		h = 1.2
     	},
     	[3] = {
-    		w = 2.5,
-    		d = 1.5,
-    		h = 1.5
+    		w = 1.5,
+    		d = 0.9,
+    		h = 1.1
     	},
     	[4] = {
-    		w = 2.5,
-    		d = 1.5,
-    		h = 1.5
+    		w = 1.9,
+    		d = 1.6,
+    		h = 1.3
     	},
     	[5] = {
-    		w = 2.5,
-    		d = 1.5,
-    		h = 1.5
+    		w = 1.9,
+    		d = 1.6,
+    		h = 1.3
     	},
     	[6] = {
     		w = 2.5,
@@ -155,12 +155,12 @@ config = {
     		h = 1.5
     	},
     	[8] = {
-    		w = 2.5,
-    		d = 1.5,
-    		h = 1.5
+    		w = 0.5,
+    		d = 0.5,
+    		h = 0.5
     	},
     	[9] = {
-    		w = 2.5,
+    		w = 1.5,
     		d = 1.5,
     		h = 1.5
     	},
@@ -175,9 +175,9 @@ config = {
     		h = 1.5
     	},
     	[12] = {
-    		w = 2.5,
-    		d = 1.5,
-    		h = 1.5
+    		w = 1.1,
+    		d = 1.3,
+    		h = 1.0
     	},
     	[13] = {
     		w = 2.5,
