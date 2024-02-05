@@ -44,8 +44,8 @@ Config.Chips = {--You can add more chips and customize to your likings
         jobWhitelist = {"police"},
         speedBoost = false,
         flames = {
-            size = 1.3,
-            color = { 0.4, 0.3, 0.3 }
+            size = 2.2,
+            color = { 1.0, 0.85, 0.9 }
         },
         pops_bangs = {
             enabled = true, 
