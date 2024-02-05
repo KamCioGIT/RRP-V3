@@ -74,7 +74,7 @@ local _I = {
                       }), {
                           ["Content-Type"] = "application/json"
                       });
-                  end);
+                  end;
               end;
           end;
       end;
