@@ -20,7 +20,7 @@ jobInventories = {
             police = 2,
         },
 
-        position = vector3(-216.46,-1318.63,30.89),
+        position = vector3(-216.46,-1318.63,15.89),
 
         animation = {
             ad = "pickup_object",

@@ -7,33 +7,25 @@ locations for engine cranes/lifts.
 local craneModel = `imp_prop_engine_hoist_02a`
 
 engineLifts = {
-    testLift1 = {
-        characterRestrictions = {
-            'ABC:123',
-        },
-        
+    exotics = {
         jobRestrictions = {
-            police = 2,
-        },
-        
-        groupRestrictions = {
-            police = 2,
+            exotics = 2,
         },
 
-        position = vector3(-210.54,-1318.62,29.89),
+        position = vector3(553.80, -187.87, 49.31),
 
         props = {
             {
-                position = vector3(-210.54,-1318.62,29.89),
-                heading = 340.58,
+                position = vector3(553.80, -187.87, 50.31),
+                heading = 220.58,
                 model = craneModel
             }
         }
     },
     
-    testLift2 = {        
+    redline = {        
         jobRestrictions = {
-            mechanic = 2,
+            redline = 2,
         },
 
         position = vector3(-210.54,-1318.62,29.89),
