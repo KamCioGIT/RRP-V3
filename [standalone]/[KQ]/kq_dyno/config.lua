@@ -93,7 +93,7 @@ Config.dynos = {
         displays = {
             {
                 displayCoords = vector3(560.62, -197.79, 55.38),
-                displayHeading = 270.0,
+                displayHeading = 90.0,
                 displayTilt = 3.0,
                 displayType = 'wall_tv',
             },

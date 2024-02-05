@@ -5,19 +5,19 @@ delivery points for produced items
 --]]
 
 deliveryPoints = {
-    exotics = {
-        jobRestrictions = {
-            exotics = 2,
+    testPoint1 = {
+        characterRestrictions = {
+            'ABC:123',
         },
-
-        position = vector3(564.61, -198.24, 50.31),
-    },
-    redline = {
         
         jobRestrictions = {
-            redline = 2,
+            police = 2,
+        },
+        
+        groupRestrictions = {
+            police = 2,
         },
 
-        position = vector3(564.61, -198.24, 50.31),
+        position = vector3(-205.87,-1327.62,30.89),
     }
 }

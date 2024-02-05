@@ -8,32 +8,46 @@ local liftModel = `imp_prop_transmission_lift_01a`
 local engineModel = `prop_car_engine_01`
 
 engineStands = {
-    exotics = {
+    testStand1 = {
+        characterRestrictions = {
+            'ABC:123',
+        },
         
         jobRestrictions = {
-            exotics = 2,
+            police = 2,
+        },
+        
+        groupRestrictions = {
+            police = 2,
         },
 
         position = vector3(-205.0,-1319.0,29.9),
 
         props = {
             stand = {
-                position = vector3(564.47, -195.77, 49.31),
-                heading = 150.0,
+                position = vector3(-205.0,-1319.0,29.9),
+                heading = 120.0,
                 model = liftModel,
             },
             engine = {
-                position = vector3(564.47, -195.77, 50.31),
-                heading = 150.0,
+                position = vector3(-205.0,-1319.0,31.0),
+                heading = 120.0,
                 model = engineModel,
             },      
         }
     },
 
-    redline = {
-
+    testStand2 = {
+        characterRestrictions = {
+            'ABC:123',
+        },
+        
         jobRestrictions = {
-            redline = 2,
+            police = 2,
+        },
+        
+        groupRestrictions = {
+            police = 2,
         },
 
         position = vector3(-205.0,-1322.0,29.9),

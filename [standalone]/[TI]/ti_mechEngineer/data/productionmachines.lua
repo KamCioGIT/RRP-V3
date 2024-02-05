@@ -34,12 +34,19 @@ end
 
 productionMachines = {
     testMachine1 = {
+        characterRestrictions = {
+            'ABC:123',
+        },
         
         jobRestrictions = {
-            exotics = 2,
+            police = 2,
+        },
+        
+        groupRestrictions = {
+            police = 2,
         },
 
-        position = vector3(559.94, -186.67, 50.31),
+        position = vector3(-213.75,-1331.08,30.89),
 
         animation = {
             ad = "pickup_object",
@@ -58,16 +65,23 @@ productionMachines = {
 
         props = {
             {
-                position = vector3(-559.94, -186.67, 50.31),
+                position = vector3(-213.66,-1333.17,29.9),
                 heading = 180.0,
                 model = cncModel,
             },  
         }       
     },
     testMachine2 = {
+        characterRestrictions = {
+            'ABC:123',
+        },
         
         jobRestrictions = {
-            redline = 2,
+            police = 2,
+        },
+        
+        groupRestrictions = {
+            police = 2,
         },
 
         position = vector3(-220.35,-1331.48,30.89),
