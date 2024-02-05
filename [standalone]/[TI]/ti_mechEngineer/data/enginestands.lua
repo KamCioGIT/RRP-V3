@@ -8,7 +8,7 @@ local liftModel = `imp_prop_transmission_lift_01a`
 local engineModel = `prop_car_engine_01`
 
 engineStands = {
-    exoticsstand = {
+    exotics = {
         
         jobRestrictions = {
             exotics = 2,
@@ -30,7 +30,7 @@ engineStands = {
         }
     },
 
-    redlinestand = {
+    redline = {
 
         jobRestrictions = {
             redline = 2,

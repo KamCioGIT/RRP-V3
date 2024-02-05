@@ -5,14 +5,14 @@ delivery points for produced items
 --]]
 
 deliveryPoints = {
-    exoticsdrop = {
+    exotics = {
         jobRestrictions = {
             exotics = 2,
         },
 
         position = vector3(564.61, -198.24, 50.31),
     },
-    redlinedrop = {
+    redline = {
         
         jobRestrictions = {
             redline = 2,

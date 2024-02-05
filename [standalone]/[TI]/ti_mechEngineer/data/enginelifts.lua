@@ -7,7 +7,7 @@ locations for engine cranes/lifts.
 local craneModel = `imp_prop_engine_hoist_02a`
 
 engineLifts = {
-    exoticslift = {
+    exotics = {
         jobRestrictions = {
             exotics = 2,
         },
@@ -23,7 +23,7 @@ engineLifts = {
         }
     },
     
-    redlinelift = {        
+    redline = {        
         jobRestrictions = {
             redline = 2,
         },
