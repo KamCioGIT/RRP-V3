@@ -578,5 +578,12 @@ sparetire                   = { name = "sparetire", label = "Spare Tire", weight
 
     ["kq_outfitbag"] 			 	 = {["name"] = "kq_outfitbag", 				    ["label"] = "Outfit bag",	 		    ["weight"] = 4000, 		["type"] = "item", 		["image"] = "kq_outfitbag.png", 	    ["unique"] = true, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Holds different outfits"},
 
+    
+	['tunerchipr'] 				 	= {['name'] = 'tunerchipr', 			  	  	['label'] = 'Chip remover', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'tunerchipremoval.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
+	
+	['tunerchip1'] 				 	= {['name'] = 'tunerchip1', 			  	  	['label'] = 'Chip 1', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'tunerlaptop.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
+    ['tunerchip2'] 				 	= {['name'] = 'tunerchip2', 			  	  	['label'] = 'Chip 2', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'tunerlaptop.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
+    ['tunerchip3'] 				 	= {['name'] = 'tunerchip3', 			  	  	['label'] = 'Chip 3', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'tunerlaptop.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,		['combinable'] = nil,   ['description'] = ''},
+
 
 }

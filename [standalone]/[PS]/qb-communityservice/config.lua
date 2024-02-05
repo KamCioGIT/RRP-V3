@@ -4,7 +4,7 @@ Config.Core = "QBCore:GetObject"
 
 Config.Locale       				= 'en' 
 
-Config.PoliceJobName				= 'police', 'sjd' --Change with your police job name
+Config.PoliceJobName				= 'police'--Change with your police job name
 
 Config.ServiceExtensionOnEscape		= 20
 

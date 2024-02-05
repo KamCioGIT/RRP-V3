@@ -1,6 +1,6 @@
 Config = Config or {}
 
-Config.Fuel = "cdn-fuel" -- "ps-fuel", "LegacyFuel"
+Config.Fuel = "LegacyFuel" -- "ps-fuel", "LegacyFuel"
 Config.ResourcePerms = 'admin' -- permission to control resource(start stop restart)
 Config.RenewedPhone = true -- if you use qb-phone from renewed. (multijob)
 
@@ -52,64 +52,6 @@ Config.Actions = {
         dropdown = {
             { label = "Player",  option = "dropdown", data = "players" },
             { label = "Confirm", option = "button",   type = "server", event = "ps-adminmenu:server:BringPlayer" },
-        },
-    },
-
-    ["change_weather"] = {
-        label = "Change Weather",
-        perms = "mod",
-        dropdown = {
-            {
-                label = "Weather",
-                option = "dropdown",
-                data = {
-                    { label = "Extrasunny", value = "Extrasunny" },
-                    { label = "Clear",      value = "Clear" },
-                    { label = "Neutral",    value = "Neutral" },
-                    { label = "Smog",       value = "Smog" },
-                    { label = "Foggy",      value = "Foggy" },
-                    { label = "Overcast",   value = "Overcast" },
-                    { label = "Clouds",     value = "Clouds" },
-                    { label = "Clearing",   value = "Clearing" },
-                    { label = "Rain",       value = "Rain" },
-                    { label = "Thunder",    value = "Thunder" },
-                    { label = "Snow",       value = "Snow" },
-                    { label = "Blizzard",   value = "Blizzard" },
-                    { label = "Snowlight",  value = "Snowlight" },
-                    { label = "Xmas",       value = "Xmas" },
-                    { label = "Halloween",  value = "Halloween" },
-                },
-            },
-            { label = "Confirm", option = "button", type = "client", event = "ps-adminmenu:client:ChangeWeather" },
-        },
-    },
-
-    ["change_time"] = {
-        label = "Change Time",
-        perms = "mod",
-        dropdown = {
-            {
-                label = "Time Events",
-                option = "dropdown",
-                data = {
-                    { label = "Sunrise", value = "06" },
-                    { label = "Morning", value = "09" },
-                    { label = "Noon",    value = "12" },
-                    { label = "Sunset",  value = "21" },
-                    { label = "Evening", value = "22" },
-                    { label = "Night",   value = "24" },
-                },
-            },
-            { label = "Confirm", option = "button", type = "client", event = "ps-adminmenu:client:ChangeTime" },
-        },
-    },
-
-    ["change_plate"] = {
-        label = "Change Plate",
-        perms = "mod",
-        dropdown = {
-            { label = "Plate", option = "text" },
-            { label = "Confirm", option = "button", type = "client", event = "ps-adminmenu:client:ChangePlate" },
         },
     },
 

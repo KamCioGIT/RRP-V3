@@ -113,7 +113,7 @@ Config.dynos = {
         displays = {
             {
                 displayCoords = vector3(-570.24, -934.29, 23.89),
-                displayHeading = 140.0,
+                displayHeading = 320.0,
                 displayType = 'stand',
             },
         },

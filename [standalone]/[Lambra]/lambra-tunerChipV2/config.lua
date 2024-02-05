@@ -40,8 +40,8 @@ Config.Chips = {--You can add more chips and customize to your likings
     --  volume = volume of the turbo decompressing sound
     
 
-    ["tunerlaptop"] = {--this is the item name
-        jobWhitelist = {"police"},
+    ["tunerchip1"] = {--this is the item name
+        jobWhitelist = {"redline", "exotics"},
         speedBoost = false,
         flames = {
             size = 1.2,
@@ -58,6 +58,46 @@ Config.Chips = {--You can add more chips and customize to your likings
             type = "turbo1", 
             pressure = 1.4, 
             volume = 0.2
+        }
+    },
+    ["tunerchip2"] = {--this is the item name
+        jobWhitelist = {"redline", "exotics"},
+        speedBoost = false,
+        flames = {
+            size = 0.8,
+            color = { 1.0, 0.85, 0.9 }
+        },
+        pops_bangs = {
+            enabled = false, 
+            delay = {min = 25, max = 300},
+            rpm = 0.6,
+            sounds = {"pops1", "pops2", "pops3", "pops4", "pops5", "pops6", "pops7", "pops8", "pops9", "pops10", "pops11", "pops12", "pops13", "pops14", "pops15"},
+            soundVolume = {min = 0.2, max = 0.02} 
+        },
+        turbo = {
+            type = "turbo1", 
+            pressure = 1.4, 
+            volume = 0.3
+        }
+    },
+    ["tunerchip3"] = {--this is the item name
+        jobWhitelist = {"redline", "exotics"},
+        speedBoost = false,
+        flames = {
+            size = 0.4,
+            color = { 1.0, 0.85, 0.9 }
+        },
+        pops_bangs = {
+            enabled = false, 
+            delay = {min = 25, max = 300},
+            rpm = 0.6,
+            sounds = {"pops1", "pops2", "pops3", "pops4", "pops5", "pops6", "pops7", "pops8", "pops9", "pops10", "pops11", "pops12", "pops13", "pops14", "pops15"},
+            soundVolume = {min = 0.2, max = 0.02} 
+        },
+        turbo = {
+            type = "turbo1", 
+            pressure = 1.4, 
+            volume = 0.4
         }
     },
 }
