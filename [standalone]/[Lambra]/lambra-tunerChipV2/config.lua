@@ -45,14 +45,14 @@ Config.Chips = {--You can add more chips and customize to your likings
         speedBoost = false,
         flames = {
             size = 1.3,
-            color = { 0.4, 0.2, 0.2 }
+            color = { 0.4, 0.3, 0.3 }
         },
         pops_bangs = {
             enabled = true, 
             delay = {min = 25, max = 300},
             rpm = 0.6,
-            sounds = {"pops13", "pops15"},
-            soundVolume = {min = 0.2, max = 0.2} 
+            sounds = {"pops1", "pops2", "pops3", "pops4", "pops5", "pops6", "pops7", "pops8", "pops9", "pops10", "pops11", "pops12", "pops13", "pops14", "pops15"},
+            soundVolume = {min = 0.2, max = 0.02} 
         },
         turbo = {
             type = "turbo1", 
