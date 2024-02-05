@@ -7,18 +7,18 @@ trashPoints = {
         },
 
         jobRestrictions = {
-            police = 2,
+            exotcs = 2,
         },
 
         groupRestrictions = {
-            police = 2,
+            exotcs = 2,
         },
 
-        position =  vector3(-217.82,-1324.33,30.89),
+        position =  vector3(553.33, -191.16, 50.31),
 
         props = {
             {
-                position = vector3(-217.82,-1324.33,29.89),
+                position = vector3(553.33, -191.16, 50.31, 89.75),
                 heading = 270.0,
                 model = binModel,
             },

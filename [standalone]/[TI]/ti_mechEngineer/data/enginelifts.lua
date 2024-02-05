@@ -13,19 +13,19 @@ engineLifts = {
         },
         
         jobRestrictions = {
-            police = 2,
+            exotics = 2,
         },
         
         groupRestrictions = {
-            police = 2,
+            exotics = 2,
         },
 
-        position = vector3(-210.54,-1318.62,29.89),
+        position = vector3(553.78, -187.84, 50.31),
 
         props = {
             {
-                position = vector3(-210.54,-1318.62,29.89),
-                heading = 340.58,
+                position = vector3(553.78, -187.84, 50.31),
+                heading = 230.58,
                 model = craneModel
             }
         }

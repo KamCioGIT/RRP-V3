@@ -11,13 +11,13 @@ deliveryPoints = {
         },
         
         jobRestrictions = {
-            police = 2,
+            exotics = 2,
         },
         
         groupRestrictions = {
-            police = 2,
+            exotics = 2,
         },
 
-        position = vector3(-205.87,-1327.62,30.89),
+        position = vector3(564.62, -198.23, 50.31),
     }
 }

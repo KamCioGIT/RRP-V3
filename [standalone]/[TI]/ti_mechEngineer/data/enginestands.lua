@@ -14,23 +14,23 @@ engineStands = {
         },
         
         jobRestrictions = {
-            police = 2,
+            exotics = 2,
         },
         
         groupRestrictions = {
-            police = 2,
+            exotics = 2,
         },
 
-        position = vector3(-205.0,-1319.0,29.9),
+        position = vector3(564.14, -196.70, 50.31),
 
         props = {
             stand = {
-                position = vector3(-205.0,-1319.0,29.9),
+                position = vector3(564.14, -196.70, 49.31),
                 heading = 120.0,
                 model = liftModel,
             },
             engine = {
-                position = vector3(-205.0,-1319.0,31.0),
+                position = vector3(564.14, -196.70, 50.31),
                 heading = 120.0,
                 model = engineModel,
             },      

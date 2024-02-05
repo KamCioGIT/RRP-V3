@@ -46,7 +46,7 @@ productionMachines = {
             police = 2,
         },
 
-        position = vector3(-213.75,-1331.08,30.89),
+        position = vector3(560.98, -186.78, 50.31),
 
         animation = {
             ad = "pickup_object",
@@ -65,7 +65,7 @@ productionMachines = {
 
         props = {
             {
-                position = vector3(-213.66,-1333.17,29.9),
+                position = vector3(560.98, -186.78, 49.31),
                 heading = 180.0,
                 model = cncModel,
             },  
