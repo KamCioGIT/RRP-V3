@@ -24,8 +24,8 @@ engineLifts = {
 
         props = {
             {
-                position = vector3(553.78, -187.84, 50.31),
-                heading = 230.58,
+                position = vector3(553.78, -187.84, 49.31),
+                heading = 50.58,
                 model = craneModel
             }
         }
