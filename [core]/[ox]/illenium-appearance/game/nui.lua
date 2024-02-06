@@ -114,6 +114,10 @@ RegisterNUICallback("appearance_save", function(appearance, cb)
     client.wearClothes(appearance, "body")
     client.wearClothes(appearance, "bottom")
     client.exitPlayerCustomization(appearance)
+    if newCreate then
+        newCreate = false
+        TriggerEvent('cs:introCinematic:start')
+    end
 end)
 
 RegisterNUICallback("appearance_exit", function(_, cb)

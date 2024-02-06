@@ -65,7 +65,7 @@ Config.Categories = {
   Ubermacht = 'Ubermacht',
   Pegassi = 'Pegassi',
   Principe = 'Principe',
-  Rune = 'AW',
+  AW = 'AW',
   Shitzu = 'Shitzu',
   Truffade = 'Truffade',
   Vulcar = 'Vulcar',
@@ -76,6 +76,7 @@ Config.Categories = {
   Willard = 'Willard',
   WMC = 'WMC',
   Zirconium = 'Zirconium',
+  Starter = 'Starter',
 }
 Config.DealershipLocations = {
   pdm = {
@@ -524,6 +525,59 @@ Config.DealershipLocations = {
     },
     enableFinance = true,
     hideMarkers = false,
+    markers = {
+      id = 21,
+      size = {
+        x = 0.3,
+        y = 0.3,
+        z = 0.3,
+      },
+      color = {
+        r = 255,
+        g = 255,
+        b = 255,
+        a = 120,
+      },
+      bobUpAndDown = 0,
+      faceCamera = 0,
+      rotate = 1,
+      drawOnEnts = 0,
+    },
+    disableShowroomPurchase = false,
+    directSaleDistance = 50,
+    job = 'cardealer',
+  },
+  Starter = {
+    type = 'self-service',
+    openShowroom = vector3(114.81, -142.76, 5.86),
+    openManagement = vector3(114.81, -142.76, 5.86),
+    purchaseSpawn = vector4(-1036.27, -2642.84, 26.00, 327.35),
+    testDriveSpawn = vector4(122.53, -129.93, 5.84, 65.17),
+    sellVehicle = vector4(122.53, -129.93, 5.84, 65.17),
+    enableSellVehicle = false,
+    sellVehiclePercent = 0.6,
+    camera = {
+      name = 'Car',
+      coords = vector4(800.98, -3001.54, -69.61, 210.49),
+      positions = {
+        5,
+        8,
+        12,
+        8,
+      },
+    },
+    categories = {
+      'Starter',
+    },
+    enableTestDrive = false,
+    hideBlip = true,
+    blip = {
+      id = 326,
+      color = 2,
+      scale = 0.6,
+    },
+    enableFinance = false,
+    hideMarkers = true,
     markers = {
       id = 21,
       size = {
