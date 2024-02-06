@@ -89,7 +89,7 @@ Config.DealershipLocations = {
     sellVehiclePercent = 0.6,
     camera = {
       name = 'Car',
-      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
+      coords = vector4(-39.24, -1095.18, 35.49, 71.65),
       positions = {
         5,
         8,
@@ -325,7 +325,7 @@ Config.DealershipLocations = {
     sellVehiclePercent = 0.6,
     camera = {
       name = 'Car',
-      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
+      coords = vector4(560.64, -245.13, 49.57, 62.93),
       positions = {
         5,
         8,
@@ -383,7 +383,7 @@ Config.DealershipLocations = {
     sellVehiclePercent = 0.6,
     camera = {
       name = 'Car',
-      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
+      coords = vector4(-75.91, 74.96, 71.50, 152.63),
       positions = {
         5,
         8,
@@ -440,7 +440,7 @@ Config.DealershipLocations = {
     sellVehiclePercent = 0.6,
     camera = {
       name = 'Car',
-      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
+      coords = vector4(-1253.56, -360.87, 36.50, 88.58),
       positions = {
         5,
         8,
@@ -497,7 +497,7 @@ Config.DealershipLocations = {
     sellVehiclePercent = 0.6,
     camera = {
       name = 'Car',
-      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
+      coords = vector4(118.03, -154.09, 60.35, 135.43),
       positions = {
         5,
         8,
