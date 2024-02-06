@@ -1,550 +1,211 @@
--- Generated with https://configurator.jgscripts.com at 2/5/2024, 3:36:52 PM
-
 Config = {}
-Config.Locale = 'en'
-Config.NumberAndDateFormat = 'en-GB'
-Config.Currency = 'GBP'
-Config.SpeedUnit = 'mph'
+
+Config.Locale = "en"
+Config.NumberAndDateFormat = "en-GB"
+Config.Currency = "GBP"
+Config.SpeedUnit = "mph"
 Config.Logging = false
-Config.Framework = 'QBCore'
-Config.FuelSystem = 'ti_fuel'
-Config.VehicleKeys = 'qb-vehiclekeys'
-Config.Notifications = 'ox_lib'
-Config.PlateFormat = '1AA111AA'
-Config.DrawText = 'ox_lib'
-Config.OpenShowroomPrompt = '[E] Open Showroom'
+Config.PlateFormat = "1AA111AA" -- 1 = number, A = letter (max 8 characters)
+
+Config.Framework = "QBCore"  -- or "ESX"
+Config.FuelSystem = "none" -- or "LegacyFuel", "ps-fuel", "lj-fuel", "ox_fuel", "cdn-fuel", "hyon_gas_station", "okokGasStation", "nd_fuel", "myFuel", "ti_fuel", "none"
+Config.VehicleKeys = "none" -- or "qb-vehiclekeys", "jaksam-vehicles-keys", "qs-vehiclekeys", "mk_vehiclekeys", "wasabi_carlock", "cd_garage", "okokGarage", "t1ger_keys", "none"
+Config.Notifications = "default" -- or "okokNotify", "ox_lib", "ps-ui"
+
+Config.DrawText = "jg-textui" -- or "qb-DrawText", "okokTextUI", "ox_lib", "ps-ui"
+Config.OpenShowroomPrompt = "[E] Open Showroom"
 Config.OpenShowroomKeyBind = 38
-Config.ViewInShowroomPrompt = '[E] View in Showroom'
+Config.ViewInShowroomPrompt = "[E] View in Showroom"
 Config.ViewInShowroomKeyBind = 38
-Config.OpenManagementPrompt = '[E] Dealership Management'
+Config.OpenManagementPrompt = "[E] Dealership Management"
 Config.OpenManagementKeyBind = 38
-Config.SellVehiclePrompt = '[E] Sell Vehicle'
+Config.SellVehiclePrompt = "[E] Sell Vehicle"
 Config.SellVehicleKeyBind = 38
-Config.FinancePayments = 6
-Config.FinanceDownPayment = 0.6
-Config.FinanceInterest = 0.15
-Config.FinancePaymentInterval = 4
-Config.FinancePaymentFailedHoursUntilRepo = 1
-Config.MaxFinancedVehiclesPerPlayer = 1
-Config.DisplayVehiclesPlate = 'DEALER'
-Config.DealerPurchasePrice = 0.8
-Config.VehicleOrderTime = 60
-Config.TestDrivePlate = 'RRP'
+
+Config.FinancePayments = 12
+Config.FinanceDownPayment = 0.1 -- 0.1 means 10%
+Config.FinanceInterest = 0.1 -- 0.1 means 10%
+Config.FinancePaymentInterval = 12 -- in hours
+Config.FinancePaymentFailedHoursUntilRepo = 1 -- in hours
+Config.MaxFinancedVehiclesPerPlayer = 5
+
+Config.TestDrivePlate = "TESTER"
 Config.TestDriveTimeSeconds = 120
+
+Config.DisplayVehiclesPlate = "DEALER"
+Config.DealerPurchasePrice = 0.8 -- 0.8 = Dealers pay 80% of vehicle price
+Config.VehicleOrderTime = 1 -- in mins
+
 Config.Categories = {
-  Albany = 'Albany',
-  Annis = 'Annis',
-  Benefactor = 'Benefactor',
-  BF = 'BF',
-  Brute = 'Brute',
-  Bravado = 'Bravado',
-  Coil = 'Coil',
-  Canis = 'Canis',
-  Cheval = 'Cheval',
-  Declasse = 'Declasse',
-  Dundreary = 'Dundreary',
-  Dewbauchee = 'Dewbauchee',
-  Dinka = 'Dinka',
-  Enus = 'Enus',
-  Emperor = 'Emperor',
-  Maxwell = 'Maxwell',
-  Pfister = 'Pfister',
-  Overflod = 'Overflod',
-  Gallivanter = 'Gallivanter',
-  Imponte = 'Imponte',
-  Invetero = 'Invetero',
-  Grotti = 'Grotti',
-  Hijak = 'Hijak',
-  Karin = 'Karin',
-  Lampadati = 'Lampadati',
-  LCC = 'LCC',
-  Maibatsu = 'Maibatsu',
-  Nagasaki = 'Nagasaki',
-  Ocelot = 'Ocelot',
-  Obey = 'Obey',
-  Ubermacht = 'Ubermacht',
-  Pegassi = 'Pegassi',
-  Principe = 'Principe',
-  Rune = 'AW',
-  Shitzu = 'Shitzu',
-  Truffade = 'Truffade',
-  Vulcar = 'Vulcar',
-  Vapid = 'Vapid',
-  Weeny = 'Weeny',
-  Western = 'Western',
-  Progen = 'Progen',
-  Willard = 'Willard',
-  WMC = 'WMC',
-  Zirconium = 'Zirconium',
+  planes = "Planes",
+  sportsclassics = "Sports Classics",
+  sedans = "Sedans",
+  compacts = "Compacts",
+  motorcycles = "Motorcycles",
+  super = "Super",
+  offroad = "Offroad",
+  helicopters = "Helicopters",
+  coupes = "Coupes",
+  muscle = "Muscle",
+  boats = "Boats",
+  vans = "Vans",
+  sports = "Sports",
+  suvs = "SUVs",
+  commercial = "Commercial",
+  cycles = "Cycles",
+  industrial = "Industrial"
 }
+
 Config.DealershipLocations = {
-  pdm = {
-    type = 'self-service',
+  ["pdm"] = {
+    type = "owned", -- or "owned", "self-service"
     openShowroom = vector3(-55.99, -1096.59, 26.42),
     openManagement = vector3(-30.43, -1106.84, 26.42),
     purchaseSpawn = vector4(-13.68, -1092.31, 26.67, 159.82),
     testDriveSpawn = vector4(-49.77, -1110.83, 26.44, 75.94),
-    sellVehicle = vector3(-27.89, -1082.1, 26.64),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
     camera = {
-      name = 'Car',
-      coords = vector4(-39.24, -1095.18, 35.49, 71.65),
-      positions = {
-        5,
-        8,
-        12,
-        8,
-      },
+      name = "Car",
+      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
+      positions = {5.0, 8.0, 12.0, 8.0}
     },
-    categories = {
-      'Albany',
-      'Brute',
-      'Bravado',
-      'Canis',
-      'Cheval',
-      'Declasse',
-      'Dundreary',
-      'Emperor',
-      'Maxwell',
-      'Imponte',
-      'Invetero',
-      'Hijak',
-      'Lampadati',
-      'Ocelot',
-      'Rune',
-      'Weeny',
-    },
+    categories = {"sedans", "compacts", "motorcycles", "offroad", "coupes", "muscle", "suvs"},
     enableTestDrive = true,
     hideBlip = false,
     blip = {
       id = 326,
       color = 2,
-      scale = 0.6,
+      scale = 0.6
     },
+    enableSellVehicle = true, -- Allow players to sell vehicles back to dealer
+    sellVehiclePercent = 0.6,  -- 60% of current sale price
+    sellVehicle = vector3(-27.89, -1082.1, 26.64),
     enableFinance = true,
     hideMarkers = false,
-    markers = {
-      id = 21,
-      size = {
-        x = 0.3,
-        y = 0.3,
-        z = 0.3,
-      },
-      color = {
-        r = 255,
-        g = 255,
-        b = 255,
-        a = 120,
-      },
-      bobUpAndDown = 0,
-      faceCamera = 0,
-      rotate = 1,
-      drawOnEnts = 0,
-    },
+    markers = { id = 21, size = { x = 0.3, y = 0.3, z = 0.3 }, color = { r = 255, g = 255, b = 255, a = 120 }, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0 },
+    showroomJobWhitelist = {},
+    showroomGangWhitelist = {},
+    societyPurchaseJobWhitelist = {},
+    societyPurchaseGangWhitelist = {},
     disableShowroomPurchase = false,
+    job = "cardealer", -- Owned dealerships only
     directSaleDistance = 50,
-    job = 'cardealer',
   },
-  boats = {
-    type = 'self-service',
-    showroomType = 'car',
+  ["luxury"] = {
+    type = "self-service", -- or "owned", "self-service"
+    openShowroom = vector3(-1257.4, -369.12, 36.98),
+    openManagement = vector3(-1249.04, -346.96, 37.34),
+    purchaseSpawn = vector4(-1233.46, -346.81, 37.33, 23.36),
+    testDriveSpawn = vector4(-1233.46, -346.81, 37.33, 23.36),
+    sellVehicle = vector4(-1233.46, -346.81, 37.33, 23.36),
+    camera = {
+      name = "Car",
+      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
+      positions = {5.0, 8.0, 12.0, 8.0}
+    },
+    categories = {"sportsclassics", "super", "sports"},
+    enableSellVehicle = true, -- Allow players to sell vehicles back to dealer
+    sellVehiclePercent = 0.6,  -- 60% of current sale price
+    enableTestDrive = true,
+    enableFinance = true,
+    hideBlip = false,
+    blip = {
+      id = 523,
+      color = 2,
+      scale = 0.6
+    },
+    hideMarkers = false,
+    markers = { id = 21, size = { x = 0.3, y = 0.3, z = 0.3 }, color = { r = 255, g = 255, b = 255, a = 120 }, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0 },
+    showroomJobWhitelist = {},
+    showroomGangWhitelist = {},
+    societyPurchaseJobWhitelist = {},
+    societyPurchaseGangWhitelist = {},
+  },
+  ["boats"] = {
+    type = "self-service", -- or "owned", "self-service"
     openShowroom = vector3(-739.55, -1333.75, 1.6),
     openManagement = vector3(-731.37, -1310.35, 5.0),
     purchaseSpawn = vector4(-714.42, -1340.01, -0.18, 139.38),
     testDriveSpawn = vector4(-714.42, -1340.01, -0.18, 139.38),
     sellVehicle = vector4(-714.42, -1340.01, -0.18, 139.38),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
     camera = {
-      name = 'Sea',
+      name = "Sea",
       coords = vector4(-808.28, -1491.19, -0.47, 113.53),
-      positions = {
-        5,
-        8,
-        12,
-        8,
-      },
+      positions = {5.0, 8.0, 12.0, 8.0}
     },
-    categories = {},
+    categories = {"boats"},
+    enableSellVehicle = true, -- Allow players to sell vehicles back to dealer
+    sellVehiclePercent = 0.6,  -- 60% of current sale price
     enableTestDrive = false,
     hideBlip = false,
     blip = {
       id = 410,
       color = 2,
-      scale = 0.6,
+      scale = 0.6
     },
-    societyPurchaseJobWhitelist = {},
-    societyPurchaseGangWhitelist = {},
-    enableFinance = true,
     hideMarkers = false,
-    markers = {
-      id = 21,
-      size = {
-        x = 0.3,
-        y = 0.3,
-        z = 0.3,
-      },
-      color = {
-        r = 255,
-        g = 255,
-        b = 255,
-        a = 120,
-      },
-      bobUpAndDown = 0,
-      faceCamera = 0,
-      rotate = 1,
-      drawOnEnts = 0,
-    },
+    markers = { id = 21, size = { x = 0.3, y = 0.3, z = 0.3 }, color = { r = 255, g = 255, b = 255, a = 120 }, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0 },
     showroomJobWhitelist = {},
     showroomGangWhitelist = {},
-    disableShowroomPurchase = false,
-    directSaleDistance = 50,
-    job = 'cardealer',
+    societyPurchaseJobWhitelist = {},
+    societyPurchaseGangWhitelist = {},
   },
-  air = {
-    type = 'self-service',
-    showroomType = 'car',
+  ["air"] = {
+    type = "self-service", -- or "owned", "self-service"
     openShowroom = vector3(-1623.0, -3151.56, 13.99),
     openManagement = vector3(-1637.78, -3177.94, 13.99),
     purchaseSpawn = vector4(-1654.9, -3147.58, 13.99, 324.78),
     testDriveSpawn = vector4(-1654.9, -3147.58, 13.99, 324.78),
     sellVehicle = vector4(-1654.9, -3147.58, 13.99, 324.78),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
     camera = {
-      name = 'Air',
+      name = "Air",
       coords = vector4(-1267.0, -3013.14, -48.5, 310.96),
-      positions = {
-        12,
-        15,
-        20,
-        15,
-      },
+      positions = {12.0, 15.0, 20.0, 15.0}
     },
-    categories = {},
+    categories = {"planes", "helicopters"},
+    enableSellVehicle = true, -- Allow players to sell vehicles back to dealer
+    sellVehiclePercent = 0.6,  -- 60% of current sale price
     enableTestDrive = false,
     hideBlip = false,
     blip = {
       id = 423,
       color = 2,
-      scale = 0.6,
+      scale = 0.6
     },
-    societyPurchaseJobWhitelist = {},
-    societyPurchaseGangWhitelist = {},
-    enableFinance = true,
     hideMarkers = false,
-    markers = {
-      id = 21,
-      size = {
-        x = 0.3,
-        y = 0.3,
-        z = 0.3,
-      },
-      color = {
-        r = 255,
-        g = 255,
-        b = 255,
-        a = 120,
-      },
-      bobUpAndDown = 0,
-      faceCamera = 0,
-      rotate = 1,
-      drawOnEnts = 0,
-    },
+    markers = { id = 21, size = { x = 0.3, y = 0.3, z = 0.3 }, color = { r = 255, g = 255, b = 255, a = 120 }, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0 },
     showroomJobWhitelist = {},
     showroomGangWhitelist = {},
-    disableShowroomPurchase = false,
-    directSaleDistance = 50,
-    job = 'cardealer',
+    societyPurchaseJobWhitelist = {},
+    societyPurchaseGangWhitelist = {},
   },
-  truck = {
-    type = 'self-service',
-    showroomType = 'car',
+  ["truck"] = {
+    type = "self-service", -- or "owned", "self-service"
     openShowroom = vector3(1214.37, -3204.53, 6.03),
     openManagement = vector3(1184.45, -3179.27, 7.1),
     purchaseSpawn = vector4(1196.75, -3205.31, 6.0, 91.12),
     testDriveSpawn = vector4(1196.75, -3205.31, 6.0, 91.12),
     sellVehicle = vector4(1196.75, -3205.31, 6.0, 91.12),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
     camera = {
-      name = 'Truck',
+      name = "Truck",
       coords = vector4(-1267.0, -3013.14, -48.5, 310.96),
-      positions = {
-        7.5,
-        12,
-        15,
-        12,
-      },
+      positions = {7.5, 12.0, 15.0, 12.0}
     },
-    categories = {},
+    categories = {"vans", "commercial", "industrial"},
+    enableSellVehicle = true, -- Allow players to sell vehicles back to dealer
+    sellVehiclePercent = 0.6,  -- 60% of current sale price
     enableTestDrive = true,
+    enableFinance = true,
     hideBlip = false,
     blip = {
       id = 477,
       color = 2,
-      scale = 0.6,
+      scale = 0.6
     },
-    societyPurchaseJobWhitelist = {},
-    societyPurchaseGangWhitelist = {},
-    enableFinance = true,
     hideMarkers = false,
-    markers = {
-      id = 21,
-      size = {
-        x = 0.3,
-        y = 0.3,
-        z = 0.3,
-      },
-      color = {
-        r = 255,
-        g = 255,
-        b = 255,
-        a = 120,
-      },
-      bobUpAndDown = 0,
-      faceCamera = 0,
-      rotate = 1,
-      drawOnEnts = 0,
-    },
+    markers = { id = 21, size = { x = 0.3, y = 0.3, z = 0.3 }, color = { r = 255, g = 255, b = 255, a = 120 }, bobUpAndDown = 0, faceCamera = 0, rotate = 1, drawOnEnts = 0 },
     showroomJobWhitelist = {},
     showroomGangWhitelist = {},
-    disableShowroomPurchase = false,
-    directSaleDistance = 50,
-    job = 'cardealer',
-  },
-  FoxImports = {
-    type = 'self-service',
-    openShowroom = vector3(558.88, -240.82, 49.98),
-    openManagement = vector3(558.88, -240.82, 49.98),
-    purchaseSpawn = vector4(547.76, -258.68, 49.98, 64.66),
-    testDriveSpawn = vector4(547.76, -258.68, 49.98, 64.66),
-    sellVehicle = vector4(547.76, -258.68, 49.98, 64.66),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
-    camera = {
-      name = 'Car',
-      coords = vector4(560.64, -245.13, 49.57, 62.93),
-      positions = {
-        5,
-        8,
-        12,
-        8,
-      },
-    },
-    categories = {
-      'Annis',
-      'Dinka',
-      'Overflod',
-      'Karin',
-      'Maibatsu',
-      'Zirconium',
-    },
-    enableTestDrive = true,
-    hideBlip = false,
-    blip = {
-      id = 326,
-      color = 2,
-      scale = 0.6,
-    },
-    enableFinance = true,
-    hideMarkers = false,
-    markers = {
-      id = 21,
-      size = {
-        x = 0.3,
-        y = 0.3,
-        z = 0.3,
-      },
-      color = {
-        r = 255,
-        g = 255,
-        b = 255,
-        a = 120,
-      },
-      bobUpAndDown = 0,
-      faceCamera = 0,
-      rotate = 1,
-      drawOnEnts = 0,
-    },
-    disableShowroomPurchase = false,
-    directSaleDistance = 50,
-    job = 'cardealer',
-  },
-  Gallivanter = {
-    type = 'self-service',
-    openShowroom = vector3(-66.94, 67.61, 71.83),
-    openManagement = vector3(-66.94, 67.61, 71.83),
-    purchaseSpawn = vector4(-67.47, 82.04, 71.52, 63.85),
-    testDriveSpawn = vector4(-67.47, 82.04, 71.52, 63.85),
-    sellVehicle = vector4(-67.47, 82.04, 71.52, 63.85),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
-    camera = {
-      name = 'Car',
-      coords = vector4(-75.91, 74.96, 71.50, 152.63),
-      positions = {
-        5,
-        8,
-        12,
-        8,
-      },
-    },
-    categories = {
-      'Benefactor',
-      'Coil',
-      'Obey',
-      'Gallivanter',
-      'Progen',
-    },
-    enableTestDrive = true,
-    hideBlip = false,
-    blip = {
-      id = 326,
-      color = 2,
-      scale = 0.6,
-    },
-    enableFinance = true,
-    hideMarkers = false,
-    markers = {
-      id = 21,
-      size = {
-        x = 0.3,
-        y = 0.3,
-        z = 0.3,
-      },
-      color = {
-        r = 255,
-        g = 255,
-        b = 255,
-        a = 120,
-      },
-      bobUpAndDown = 0,
-      faceCamera = 0,
-      rotate = 1,
-      drawOnEnts = 0,
-    },
-    disableShowroomPurchase = false,
-    directSaleDistance = 50,
-    job = 'cardealer',
-  },
-  PDMImports = {
-    type = 'self-service',
-    openShowroom = vector3(-1258.91, -367.79, 36.91),
-    openManagement = vector3(-1249.04, -346.96, 37.34),
-    purchaseSpawn = vector4(-1233.46, -346.81, 37.33, 23.36),
-    testDriveSpawn = vector4(-1233.46, -346.81, 37.33, 23.36),
-    sellVehicle = vector4(-1233.46, -346.81, 37.33, 23.36),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
-    camera = {
-      name = 'Car',
-      coords = vector4(-1253.56, -360.87, 36.50, 88.58),
-      positions = {
-        5,
-        8,
-        12,
-        8,
-      },
-    },
-    categories = {
-      'BF',
-      'Ubermacht',
-      'Vapid',
-      'Vulcar',
-      'Willard',
-    },
-    enableTestDrive = true,
-    hideBlip = false,
-    blip = {
-      id = 523,
-      color = 2,
-      scale = 0.6,
-    },
-    enableFinance = true,
-    hideMarkers = false,
-    markers = {
-      id = 21,
-      size = {
-        x = 0.3,
-        y = 0.3,
-        z = 0.3,
-      },
-      color = {
-        r = 255,
-        g = 255,
-        b = 255,
-        a = 120,
-      },
-      bobUpAndDown = 0,
-      faceCamera = 0,
-      rotate = 1,
-      drawOnEnts = 0,
-    },
-    disableShowroomPurchase = false,
-    directSaleDistance = 50,
-    job = 'cardealer',
-  },
-  HawickAutos = {
-    type = 'self-service',
-    openShowroom = vector3(114.81, -142.76, 54.86),
-    openManagement = vector3(114.81, -142.76, 54.86),
-    purchaseSpawn = vector4(122.53, -129.93, 54.84, 65.17),
-    testDriveSpawn = vector4(122.53, -129.93, 54.84, 65.17),
-    sellVehicle = vector4(122.53, -129.93, 54.84, 65.17),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
-    camera = {
-      name = 'Car',
-      coords = vector4(118.03, -154.09, 60.35, 135.43),
-      positions = {
-        5,
-        8,
-        12,
-        8,
-      },
-    },
-    categories = {
-      'Dewbauchee',
-      'Enus',
-      'Pfister',
-      'Grotti',
-      'Pegassi',
-      'Overflod',
-      'Principe',
-      'Truffade',
-    },
-    enableTestDrive = true,
-    hideBlip = false,
-    blip = {
-      id = 326,
-      color = 2,
-      scale = 0.6,
-    },
-    enableFinance = true,
-    hideMarkers = false,
-    markers = {
-      id = 21,
-      size = {
-        x = 0.3,
-        y = 0.3,
-        z = 0.3,
-      },
-      color = {
-        r = 255,
-        g = 255,
-        b = 255,
-        a = 120,
-      },
-      bobUpAndDown = 0,
-      faceCamera = 0,
-      rotate = 1,
-      drawOnEnts = 0,
-    },
-    disableShowroomPurchase = false,
-    directSaleDistance = 50,
-    job = 'cardealer',
+    societyPurchaseJobWhitelist = {},
+    societyPurchaseGangWhitelist = {},
   },
 }
-Config.Config = {}
