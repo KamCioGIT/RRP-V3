@@ -124,7 +124,8 @@ config = {
     -- which jobs should have access to the tuning UI
     -- Set to false/remove entirely if you don't want job restrictors.
 	tuningJobs = {
-		na = 1,
+		redline = 1,
+		exotics = 1,
 	},
 
 	-- Toggle nitrous
