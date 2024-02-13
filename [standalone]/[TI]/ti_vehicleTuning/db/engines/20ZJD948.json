@@ -1,0 +1,111 @@
+{
+    "name": "2JZ",
+    "heads": {
+        "name": "2JZ-GTE Heads",
+        "stats": {
+            "config": "DOHC",
+            "vvl": false,
+            "quality": 50.0,
+            "material": "aluminium",
+            "valves": 4
+        }
+    },
+    "exhaust": {
+        "name": "2JZ-GTE Exhaust",
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium",
+            "diameter": 50.0
+        }
+    },
+    "intake": {
+        "name": "2JZ-GTE Intake",
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium",
+            "system": "performance"
+        }
+    },
+    "typeof": "engine",
+    "block": {
+        "name": "2JZ",
+        "stats": {
+            "stroke": 86.0,
+            "bore": 86.0,
+            "quality": 50.0,
+            "material": "aluminium",
+            "cylinders": 6,
+            "layout": "inline"
+        }
+    },
+    "variant": "GTE",
+    "pistons": {
+        "name": "2JZ-GTE Pistons",
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium",
+            "diameter": 86.0
+        }
+    },
+    "aspiration": {
+        "name": "2JZ-GTE Twin Turbos",
+        "stats": {
+            "turbine2": 25.0,
+            "turbine": 40.0,
+            "compressor2": 12.0,
+            "compressor": 25.0,
+            "quality": 50.0,
+            "material": "aluminium",
+            "method": "twin",
+            "system": "turbocharger"
+        }
+    },
+    "crankshaft": {
+        "name": "2JZ-GTE Crankshaft",
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium"
+        }
+    },
+    "conrods": {
+        "name": "2JZ-GTE Conrods",
+        "stats": {
+            "quality": 50.0,
+            "length": 86.0,
+            "material": "aluminium"
+        }
+    },
+    "headers": {
+        "name": "2JZ-GTE Headers",
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium",
+            "diameter": 30.0
+        }
+    },
+    "intercooler": {
+        "name": "2JZ-GTE Intercooler",
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium",
+            "size": 500.0
+        }
+    },
+    "sound": "toysupmk4",
+    "fuel": {
+        "name": "2JZ-GTE Fuel System",
+        "stats": {
+            "quality": 50.0,
+            "method": "direct",
+            "deliver": "per-cylinder",
+            "system": "injection"
+        }
+    },
+    "valves": {
+        "name": "2JZ-GTE Valves",
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium"
+        }
+    }
+}

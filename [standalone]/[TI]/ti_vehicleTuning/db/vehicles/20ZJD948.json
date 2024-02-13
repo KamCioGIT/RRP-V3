@@ -1,0 +1,46 @@
+{
+    "engine": {
+        "build": {
+            "heads": {
+                "quality": 0.5,
+                "vvl": false,
+                "valves": 4,
+                "layout": "DOHC"
+            },
+            "block": {
+                "bore": 0.66,
+                "quality": 0.3,
+                "stroke": 0.66,
+                "cylinders": 6,
+                "layout": "inline"
+            },
+            "pistons": {
+                "quality": 0.5,
+                "material": "aluminium"
+            },
+            "aspiration": {
+                "quality": 0.57,
+                "system": "twin",
+                "typeof": "turbocharger",
+                "size": 0.002875
+            },
+            "fuelDelivery": {
+                "quality": 0.5
+            },
+            "conrods": {
+                "quality": 0.5,
+                "material": "aluminium"
+            },
+            "crankshaft": {
+                "quality": 0.5,
+                "material": "aluminium"
+            },
+            "valves": {
+                "quality": 0.5,
+                "material": "aluminium"
+            }
+        },
+        "nitrousLevel": 0,
+        "sound": "toysupmk4"
+    }
+}

@@ -1,113 +1,20 @@
 {
     "testStand1": {
-        "variant": "GTE",
-        "crankshaft": {
-            "stats": {
-                "quality": 100,
-                "material": "steel"
-            },
-            "label": "CRAK",
-            "name": "crak"
-        },
-        "fuel": {
-            "stats": {
-                "method": "direct",
-                "deliver": "per-cylinder",
-                "system": "injection",
-                "quality": 50.0
-            },
-            "name": "2JZ-GTE Fuel System"
-        },
-        "intake": {
-            "stats": {
-                "quality": 50.0,
-                "system": "performance",
-                "material": "aluminium"
-            },
-            "name": "2JZ-GTE Intake"
-        },
-        "heads": {
-            "stats": {
-                "quality": 50.0,
-                "valves": 4,
-                "material": "aluminium",
-                "vvl": false,
-                "config": "DOHC"
-            },
-            "name": "2JZ-GTE Heads"
-        },
-        "intercooler": {
-            "stats": {
-                "quality": 50.0,
-                "size": 500.0,
-                "material": "aluminium"
-            },
-            "name": "2JZ-GTE Intercooler"
-        },
-        "headers": {
-            "stats": {
-                "quality": 50.0,
-                "diameter": 30.0,
-                "material": "aluminium"
-            },
-            "name": "2JZ-GTE Headers"
-        },
         "block": {
             "stats": {
-                "bore": 86.0,
-                "stroke": 86.0,
-                "layout": "inline",
-                "cylinders": 6,
-                "material": "aluminium",
-                "quality": 50.0
+                "material": "steel",
+                "quality": 100,
+                "layout": "flat",
+                "stroke": 60,
+                "bore": 60,
+                "cylinders": 6
             },
-            "name": "2JZ"
+            "name": "flat 6",
+            "label": "FLAT 6"
         },
-        "pistons": {
-            "stats": {
-                "quality": 50.0,
-                "diameter": 86.0,
-                "material": "aluminium"
-            },
-            "name": "2JZ-GTE Pistons"
-        },
-        "typeof": "engine",
-        "name": "2JZ",
-        "exhaust": {
-            "stats": {
-                "quality": 50.0,
-                "diameter": 50.0,
-                "material": "aluminium"
-            },
-            "name": "2JZ-GTE Exhaust"
-        },
-        "conrods": {
-            "stats": {
-                "length": 86.0,
-                "material": "aluminium",
-                "quality": 50.0
-            },
-            "name": "2JZ-GTE Conrods"
-        },
-        "aspiration": {
-            "stats": {
-                "method": "twin",
-                "material": "aluminium",
-                "compressor2": 12.0,
-                "quality": 50.0,
-                "system": "turbocharger",
-                "turbine2": 25.0,
-                "compressor": 25.0,
-                "turbine": 40.0
-            },
-            "name": "2JZ-GTE Twin Turbos"
-        },
-        "valves": {
-            "stats": {
-                "quality": 50.0,
-                "material": "aluminium"
-            },
-            "name": "2JZ-GTE Valves"
-        }
+        "label": "FLAT 6",
+        "sound": "",
+        "name": "flat 6",
+        "variant": ""
     }
 }

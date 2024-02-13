@@ -1,3 +1,19 @@
 {
-    "MDR89087": []
+    "MDR89087": [
+        {
+            "item": {
+                "stats": {
+                    "material": "steel",
+                    "diameter": 60,
+                    "quality": 100
+                },
+                "name": "pistons flat 6",
+                "label": "PISTONS FLAT 6"
+            },
+            "recipe": "pistons",
+            "category": "pistons",
+            "time": 1707785507,
+            "typeof": "component"
+        }
+    ]
 }
