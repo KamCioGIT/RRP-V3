@@ -9,7 +9,7 @@ function getRandomSongNumber() {
   function setNewSong() {
   if (random == 1) {
     document.getElementById("loading").src = "song/song1.mp3";
-    songname.innerHTML = "50 Cent - Big Rich Town";
+    songname.innerHTML = "Lil Baby - Crazy";
   }
   else if (random == 2) {
     document.getElementById("loading").src = "song/song2.mp3";
@@ -18,6 +18,38 @@ function getRandomSongNumber() {
   else if (random == 3) {
     document.getElementById("loading").src = "song/song3.mp3";
     songname.innerHTML = "Chase & Status & Hedex - Liquor & Cigarettes";
+  }
+  else if (random == 4) {
+    document.getElementById("loading").src = "song/song4.mp3";
+    songname.innerHTML = "Burna Boys - City Boys";
+  }
+  else if (random == 5) {
+    document.getElementById("loading").src = "song/song5.mp3";
+    songname.innerHTML = "Country Dons - Back To Back Freestyle";
+  }
+  else if (random == 6) {
+    document.getElementById("loading").src = "song/song6.mp3";
+    songname.innerHTML = "D-Block Europe - Money Cant Buy Heart";
+  }
+  else if (random == 7) {
+    document.getElementById("loading").src = "song/song7.mp3";
+    songname.innerHTML = "Baby D - Let Me Be Your Fantasy";
+  }
+  else if (random == 8) {
+    document.getElementById("loading").src = "song/song8.mp3";
+    songname.innerHTML = "Artful Dodger - Moving To Fast";
+  }
+  else if (random == 9) {
+    document.getElementById("loading").src = "song/song9.mp3";
+    songname.innerHTML = "Daniel Bedingfield - Gotta Get Thru This";
+  }
+  else if (random == 10) {
+    document.getElementById("loading").src = "song/song10.mp3";
+    songname.innerHTML = "Boney M - Sunny";
+  }
+  else if (random == 11) {
+    document.getElementById("loading").src = "song/song11.mp3";
+    songname.innerHTML = "Gadjo - So Many Times";
   }
 
   }
