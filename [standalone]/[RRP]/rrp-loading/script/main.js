@@ -1,7 +1,7 @@
 // Function for getting random number between 1 and 3 for song choose
 
 function getRandomSongNumber() {
-    return random = Math.floor(Math.random() * 3) + 1;
+    return random = Math.floor(Math.random() * 11) + 1;
   }
 // Function for getting random number between 1 and 3 for song choose
 
