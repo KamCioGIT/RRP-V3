@@ -177,7 +177,7 @@ config = {
 
 	-- Areas where players with tuningJobs can access the tuning UI.
 	-- NOTE: Having any tuning areas defined will disable the command unless inside a tuning area with the correct job.
-	--[[tuningAreas = {
+	[[tuningAreas = {
 		{	
 			blip = {
 				position = vector3(205.03, -1468.75, 29.15),
@@ -195,7 +195,7 @@ config = {
 				vector3(192.99, -1485.98, 28.99)
 			}
 		}
-	},]]--
+	},]]
 
 	-- Should all vehicles use the default engine below?
 	-- Probably not a great option to have enabled.
