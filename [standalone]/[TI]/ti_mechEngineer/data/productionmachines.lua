@@ -39,14 +39,14 @@ productionMachines = {
         },
         
         jobRestrictions = {
-            police = 2,
+            exotics = 2,
         },
         
         groupRestrictions = {
-            police = 2,
+            exotics = 2,
         },
 
-        position = vector3(560.98, -186.78, 50.31),
+        position = vector3(560.30, -188.11, 50.31),
 
         animation = {
             ad = "pickup_object",
