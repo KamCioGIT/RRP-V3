@@ -417,7 +417,7 @@ Config.AdditionalItems = {
 }
 
 Config.PlantsList = {
-    ['og-kush'] = {
+    --[[['og-kush'] = {
         ['label'] = 'OG Kush',
         ['item'] = 'ogkush',
         ['stages'] = {
@@ -472,7 +472,7 @@ Config.PlantsList = {
             ['stage-g'] = 'bkr_prop_weed_lrg_01b',
         },
         ['highestStage'] = 'stage-g'
-    },
+    },]]
     ['purple-haze'] = {
         ['label'] = 'Purple Haze',
         ['item'] = 'purplehaze',
@@ -487,7 +487,7 @@ Config.PlantsList = {
         },
         ['highestStage'] = 'stage-g'
     },
-    ['white-widow'] = {
+    --[[['white-widow'] = {
         ['label'] = 'White Widow',
         ['item'] = 'whitewidow',
         ['stages'] = {
@@ -500,7 +500,7 @@ Config.PlantsList = {
             ['stage-g'] = 'bkr_prop_weed_lrg_01b',
         },
         ['highestStage'] = 'stage-g'
-    },
+    },]]
 }
 
 --[[

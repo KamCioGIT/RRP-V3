@@ -158,6 +158,9 @@ Config.items = {
     ['rolling_paper'] = {
         [1] = 'p_cs_papers_02',
     },
+    ['tunerlaptop'] = {
+        [1] = 'gr_prop_gr_laptop_01c',
+    },
 }
 
 -- https://docs.fivem.net/docs/game-references/controls/
