@@ -1,0 +1,168 @@
+Config = {}
+
+Config.debug = false
+
+--- SETTINGS FOR ESX
+Config.esxSettings = {
+    enabled = false,
+    -- Whether or not to use the new ESX export method
+    useNewESXExport = true,
+
+    oldEsx = false, -- use this when on a very old version of esx
+}
+
+--- SETTINGS FOR QBCORE
+Config.qbSettings = {
+    enabled = true,
+    useNewQBExport = true, -- Make sure to uncomment the old export inside fxmanifest.lua if you're still using it
+}
+
+
+Config.sql = {
+    driver = 'oxmysql', -- oxmysql or ghmattimysql or mysql
+    -- If you're using an older version of oxmysql set this to false
+    newOxMysql = true,
+}
+
+
+-- I DO NOT RECOMMEND USING TARGET AS SOME SMALLER PROPS MAY BE DIFFICULT TO PICKUP FROM THE TRUCK BED (USING CERTAIN TARGET SYSTEMS)
+Config.target = {
+    enabled = true,
+    system = 'ox_target' -- 'qtarget' or 'qb-target' or 'ox_target'  (Other systems might work as well)
+}
+
+-- Saving placed items in the database
+Config.objectPersistence = {
+    -- Whether the script should save items placed on the ground in the database and load them back up after restart
+    enabled = true,
+
+    -- Whether to show warnings when items that somehow got duplicated by an client got picked up twice
+    -- (The players wont receive the duplicated item regardless)
+    showWarnings = true,
+
+    -- Whether to display a little hint when placing an item which will be persistent
+    showHint = true,
+}
+
+-- When not using target
+-- '3d-text', 'top-left', 'help-text'
+Config.inputType = '3d-text'
+
+-- Font used for the 3d text
+Config.textFont = 4
+
+-- Scale used for the 3d text
+Config.textScale = 1.0
+
+-- Outline shown on props that the player can pickup
+Config.outline = {
+    enabled = true,
+    color = {
+        r = 126,
+        g = 207,
+        b = 147,
+        a = 144,
+    }
+}
+
+-- The opacity of the placement box color
+Config.boxOpacity = 150
+
+-- Command which will open the "place an item" menu
+Config.menuCommand = {
+    enabled = true,
+    command = 'placeitem',
+    
+    aliasEnabled = true,
+    aliasCommand = 'pi',
+}
+
+-- Whether or not to disable item stacking (placing items on top of other items)
+-- This can rarely cause collision issues with some vehicles. Therefore its off by default
+Config.disallowItemStacking = true
+
+-- Whether or not to make all items placeable.
+-- When disabled only the items defined below will be placeable
+Config.makeEverythingPlaceable = {
+    enabled = false,
+    fallbackProp = 'hei_prop_heist_box',
+}
+
+-- Whether or not players will be allowed to place items on roofs of cars
+Config.allowPlacingOnRoofs = true
+
+-- All placeable items with the amounts and props defined
+-- https://gta-objects.xyz/objects
+Config.items = {
+    ['gold'] = {
+        [1] = 'prop_gold_bar',
+        [6] = 'prop_ld_gold_chest',
+    },
+    ['traffic_cone'] = {
+        [1] = 'prop_mp_cone_02',
+    },
+    ['coke'] = {
+        [1] = 'hei_prop_hei_drug_pack_01a',
+        [5] = 'hei_prop_hei_drug_pack_01b',
+    },
+    ['pd_meth'] = {
+        [1] = 'bkr_prop_meth_smallbag_01a',
+        [4] = 'bkr_prop_meth_bigbag_04a',
+        [6] = 'bkr_prop_meth_bigbag_01a',
+    },
+}
+
+-- https://docs.fivem.net/docs/game-references/controls/
+-- Use the input index for the "input" value
+Config.keybinds = {
+    openMenu = {
+        enabled = true,
+        key = 'F4',
+    },
+    pickup = {
+        label = 'E',
+        name = 'INPUT_PICKUP',
+        input = 38,
+        duration = 1000,
+    },
+    place = {
+        label = 'E',
+        name = 'INPUT_PICKUP',
+        input = 38,
+    },
+    cancelPlacing = {
+        label = 'Backspace',
+        name = 'INPUT_CELLPHONE_CANCEL',
+        input = 177,
+    },
+    exit = {
+        label = 'Escape',
+        name = 'INPUT_CELLPHONE_CANCEL',
+        input = 177,
+    },
+    arrowUp = {
+        label = 'Arrow up',
+        name = 'INPUT_CELLPHONE_UP',
+        input = 172,
+    },
+    arrowDown = {
+        label = 'Arrow down',
+        name = 'INPUT_CELLPHONE_DOWN',
+        input = 173,
+    },
+    upAlternative = {
+        label = 'Scroll up',
+        name = 'INPUT_VEH_CINEMATIC_UP_ONLY',
+        input = 96,
+    },
+    downAlternative = {
+        label = 'Scroll down',
+        name = 'INPUT_VEH_CINEMATIC_DOWN_ONLY',
+        input = 97,
+    },
+    confirm = {
+        label = 'Enter',
+        name = 'INPUT_FRONTEND_ACCEPT',
+        input = 201,
+    },
+}

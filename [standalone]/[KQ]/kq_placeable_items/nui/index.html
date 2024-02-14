@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="items menu">
+        <label class="menu-header" id="main-header">Place an item</label>
+        <div id="items">
+        </div>
+    </div>
+    <div class="amounts menu">
+        <label class="menu-header" id="amount-header">Select amount</label>
+        <div id="amounts">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let selected = 0;
+    let selectedSize = 0;
+
+    let itemSelected = false;
+
+    let items = [];
+    let active = false
+
+    let noItemsLocale = 'You don\'t have any placeable items';
+
+    $(document).ready(function () {
+        window.addEventListener('message', ({data}) => {
+            if (data.event === 'open') {
+                items = JSON.parse(data.items);
+
+                setLocale(JSON.parse(data.locale));
+
+                toggleUI(true);
+
+                selected = 0;
+                selectedSize = 0;
+                itemSelected = false;
+
+                drawItems();
+
+                active = false
+                setTimeout(() => {
+                    active = true;
+                }, 300)
+
+                $('.items').show();
+                $('.amounts').hide();
+            }
+            if (data.event === 'down') {
+                nextItem();
+            }
+            if (data.event === 'up') {
+                previousItem();
+            }
+            if (data.event === 'confirm') {
+                if (itemSelected) {
+                    confirmSize();
+                } else {
+                    confirm();
+                }
+            }
+            if (data.event === 'close') {
+                close();
+            }
+        });
+
+        function setLocale(locale) {
+            noItemsLocale = locale.no_item;
+            $('#main-header').html(locale.place);
+            $('#amount-header').html(locale.amount);
+        }
+
+        function toggleUI(bool) {
+            if (bool) {
+                $('body').fadeIn(200);
+            } else {
+                $('body').fadeOut(200);
+            }
+        }
+
+        function previousItem() {
+            if (itemSelected) {
+                const item = items[selected]
+                selectedSize = selectedSize > 0 ? --selectedSize : (item.sizes.length - 1);
+                drawSizes(item)
+            } else {
+                selected = selected > 0 ? --selected : (items.length - 1);
+                drawItems();
+            }
+        }
+
+        function nextItem() {
+            if (itemSelected) {
+                const item = items[selected]
+                selectedSize = selectedSize < (item.sizes.length - 1) ? ++selectedSize : 0;
+                drawSizes(item);
+            } else {
+                selected = selected < (items.length - 1) ? ++selected : 0;
+                drawItems();
+            }
+        }
+
+        function confirm() {
+            selectedSize = 0;
+
+            if (!items.length || !items[selected]) {
+                return;
+            }
+
+            if (items[selected].sizes.length === 1) {
+                confirmSize();
+                return
+            }
+
+            itemSelected = true;
+            drawSizes(items[selected])
+            $('.items').hide();
+            $('.amounts').show();
+        }
+
+        function confirmSize() {
+            toggleUI(false);
+
+            fetch(`https://${GetParentResourceName()}/PlaceItem`, {
+                method: 'POST',
+                body: JSON.stringify({
+                    item: items[selected].name,
+                    size: items[selected].sizes[selectedSize],
+                })
+            });
+        }
+
+        function close() {
+            toggleUI(false);
+        }
+
+        function drawItems() {
+            let html = '';
+
+            if (items.length) {
+                items.forEach((item, index) => {
+                    html += '' +
+                        '<div class="item ' + (index === selected ? 'selected' : '') + '">' +
+                        '    <span>' + item.label + '</span>' +
+                        '</div>';
+                });
+            } else {
+                html += '' +
+                    '<div class="no-items">' +
+                    '    <span>' + noItemsLocale + '</span>' +
+                    '</div>';
+            }
+
+            $('#items').html(html);
+        }
+
+        function drawSizes(item) {
+            let html = '';
+            item.sizes.sort();
+            item.sizes.forEach((size, index) => {
+                html += '' +
+                   '<div class="item ' + (index === selectedSize ? 'selected' : '') + '">' +
+                   '    <span>' + size + '</span>' +
+                   '</div>';
+            });
+
+            $('#amounts').html(html);
+        }
+    });
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+    body {
+        display: none;
+    }
+
+    .menu {
+        opacity: 90%;
+        background-color: black;
+        padding: 0.5vh;
+        width: 30vh;
+        height: auto;
+        position: fixed;
+        top: 45vh;
+        left: 55vw;
+    }
+
+    .menu-header {
+        color: white;
+        font-weight: bold;
+        font-size: 1.6vh;
+        padding: 0.3vh 0.3vh 0.6vh;
+        display: block;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .item {
+        padding: 0.5vh;
+        color: white;
+    }
+
+    .item.selected {
+        background-color: white;
+        color: black;
+    }
+
+    .no-items {
+        padding: 0.5vh;
+        color: white;
+        font-style: italic;
+    }
+
+    .item span, .no-items span {
+        font-size: 1.5vh;
+        font-weight: lighter;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+</style>
