@@ -155,6 +155,9 @@ Config.items = {
     ['wine'] = {
         [1] = 'prop_wine_rose',
     },
+    ['rolling_paper'] = {
+        [1] = 'p_cs_papers_02',
+    },
 }
 
 -- https://docs.fivem.net/docs/game-references/controls/
