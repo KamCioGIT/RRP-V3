@@ -60,7 +60,7 @@ exports {
 	'RegisterMethod'
 }
 
---[[ dependencies {
+[[ dependencies {
 	'/server:5848', -- ⚠️PLEASE READ⚠️ This requires at least server build 5848 or higher
 	'k4mb1shellstarter', -- ⚠️PLEASE READ⚠️ You need https://github.com/quasar-scripts/k4mb1shellstarter
 	'PolyZone',
