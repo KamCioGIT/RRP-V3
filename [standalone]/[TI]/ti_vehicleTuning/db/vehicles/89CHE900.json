@@ -1,0 +1,46 @@
+{
+    "engine": {
+        "sound": "brabus850",
+        "build": {
+            "aspiration": {
+                "quality": 0.57,
+                "size": 0.002875,
+                "typeof": "turbocharger",
+                "system": "twin"
+            },
+            "block": {
+                "bore": 0.66,
+                "layout": "inline",
+                "quality": 0.3,
+                "cylinders": 6,
+                "stroke": 0.66
+            },
+            "valves": {
+                "quality": 0.5,
+                "material": "aluminium"
+            },
+            "fuelDelivery": {
+                "quality": 0.5
+            },
+            "conrods": {
+                "quality": 0.5,
+                "material": "aluminium"
+            },
+            "crankshaft": {
+                "quality": 1.0,
+                "material": "steel"
+            },
+            "pistons": {
+                "quality": 0.5,
+                "material": "aluminium"
+            },
+            "heads": {
+                "quality": 0.5,
+                "valves": 4,
+                "layout": "DOHC",
+                "vvl": false
+            }
+        },
+        "nitrousLevel": 0
+    }
+}

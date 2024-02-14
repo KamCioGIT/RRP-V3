@@ -1,0 +1,112 @@
+{
+    "name": "2JZ",
+    "conrods": {
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium",
+            "length": 86.0
+        },
+        "name": "2JZ-GTE Conrods"
+    },
+    "headers": {
+        "stats": {
+            "quality": 50.0,
+            "diameter": 30.0,
+            "material": "aluminium"
+        },
+        "name": "2JZ-GTE Headers"
+    },
+    "block": {
+        "stats": {
+            "bore": 86.0,
+            "layout": "inline",
+            "material": "aluminium",
+            "quality": 50.0,
+            "cylinders": 6,
+            "stroke": 86.0
+        },
+        "name": "2JZ"
+    },
+    "aspiration": {
+        "stats": {
+            "method": "twin",
+            "turbine": 40.0,
+            "material": "aluminium",
+            "system": "turbocharger",
+            "quality": 50.0,
+            "compressor": 25.0,
+            "compressor2": 12.0,
+            "turbine2": 25.0
+        },
+        "name": "2JZ-GTE Twin Turbos"
+    },
+    "pistons": {
+        "stats": {
+            "quality": 50.0,
+            "diameter": 86.0,
+            "material": "aluminium"
+        },
+        "name": "2JZ-GTE Pistons"
+    },
+    "fuel": {
+        "stats": {
+            "deliver": "per-cylinder",
+            "quality": 50.0,
+            "method": "direct",
+            "system": "injection"
+        },
+        "name": "2JZ-GTE Fuel System"
+    },
+    "heads": {
+        "stats": {
+            "config": "DOHC",
+            "material": "aluminium",
+            "quality": 50.0,
+            "valves": 4,
+            "vvl": false
+        },
+        "name": "2JZ-GTE Heads"
+    },
+    "sound": "brabus850",
+    "intercooler": {
+        "stats": {
+            "quality": 50.0,
+            "size": 500.0,
+            "material": "aluminium"
+        },
+        "name": "2JZ-GTE Intercooler"
+    },
+    "typeof": "engine",
+    "variant": "GTE",
+    "crankshaft": {
+        "name": "crak",
+        "stats": {
+            "quality": 100,
+            "material": "steel"
+        },
+        "label": "CRAK"
+    },
+    "valves": {
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium"
+        },
+        "name": "2JZ-GTE Valves"
+    },
+    "exhaust": {
+        "stats": {
+            "quality": 50.0,
+            "diameter": 50.0,
+            "material": "aluminium"
+        },
+        "name": "2JZ-GTE Exhaust"
+    },
+    "intake": {
+        "stats": {
+            "quality": 50.0,
+            "material": "aluminium",
+            "system": "performance"
+        },
+        "name": "2JZ-GTE Intake"
+    }
+}
