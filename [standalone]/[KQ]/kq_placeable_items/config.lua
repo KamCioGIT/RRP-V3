@@ -94,21 +94,66 @@ Config.allowPlacingOnRoofs = true
 -- All placeable items with the amounts and props defined
 -- https://gta-objects.xyz/objects
 Config.items = {
-    ['gold'] = {
-        [1] = 'prop_gold_bar',
-        [6] = 'prop_ld_gold_chest',
+    
+    ['phone'] = {
+        [1] = 'prop_player_phone_01',
     },
-    ['traffic_cone'] = {
-        [1] = 'prop_mp_cone_02',
+    ['laptop'] = {
+        [1] = 'prop_laptop_02_closed',
     },
-    ['coke'] = {
-        [1] = 'hei_prop_hei_drug_pack_01a',
-        [5] = 'hei_prop_hei_drug_pack_01b',
+
+    --weapons
+    ['weapon_bat'] = {
+        [1] = 'p_cs_bbbat_01',
     },
-    ['pd_meth'] = {
-        [1] = 'bkr_prop_meth_smallbag_01a',
-        [4] = 'bkr_prop_meth_bigbag_04a',
-        [6] = 'bkr_prop_meth_bigbag_01a',
+    ['weapon_crowbar'] = {
+        [1] = 'prop_ing_crowbar',
+    },
+    ['weapon_pistol'] = {
+        [1] = 'w_pi_pistol',
+    },
+    ['weapon_pistolxm3'] = {
+        [1] = 'w_pi_heavypistol',
+    },
+    ['weapon_petrolcan'] = {
+        [1] = 'w_am_jerrycan',
+    },
+    ['clip_attachment'] = {
+        [1] = 'w_pi_pistol_mag1',
+    },
+    ['clip_attachment'] = {
+        [1] = 'w_pi_pistol_mag1',
+    },
+
+    --ammo
+    ['pistol_ammo'] = {
+        [1] = 'prop_ld_ammo_pack_01',
+    },
+
+    --drink
+    ['water_bottle'] = {
+        [1] = 'apa_mp_h_acc_bottle_01',
+    },
+    ['coffee'] = {
+        [1] = 'p_ing_coffeecup_01',
+    },
+    ['kurkakola'] = {
+        [1] = 'prop_ecola_can',
+    },
+    ['beer'] = {
+        [1] = 'prop_beer_am',
+    },
+    ['whiskey'] = {
+        [1] = 'prop_whiskey_bottle',
+    },
+    ['vodka'] = {
+        [1] = 'prop_vodka_bottle',
+    },
+    ['grape'] = {
+        [1] = 'p_kitch_juicer_s',
+    },
+    ['wine'] = {
+        [1] = 'prop_wine_rose',
     },
 }
 
