@@ -81,35 +81,98 @@ var songname = document.getElementById("songname");
 
 window.addEventListener("keyup", function(event) {
     if (event.which == 37) { // ArrowLEFT
-        if (document.getElementById("loading").src.endsWith("song2.mp3")) {
+        if (document.getElementById("loading").src.endsWith("song11.mp3")) {
             document.getElementById("loading").src = "song/song1.mp3";
-            songname.innerHTML = "50 Cent - Big Rich Town";
+            songname.innerHTML = "Lil Baby - Crazy";
 
         } else if (document.getElementById("loading").src.endsWith("song1.mp3")) {
+            document.getElementById("loading").src = "song/song2.mp3";
+            songname.innerHTML = "Linkin Park - In The End";
+
+        } else if (document.getElementById("loading").src.endsWith("song2.mp3")) {
             document.getElementById("loading").src = "song/song3.mp3";
             songname.innerHTML = "Chase & Status & Hedex - Liquor & Cigarettes";
 
         } else if (document.getElementById("loading").src.endsWith("song3.mp3")) {
-            document.getElementById("loading").src = "song/song2.mp3";
-            songname.innerHTML = "Linkin Park - In The End";
+            document.getElementById("loading").src = "song/song4.mp3";
+            songname.innerHTML = "Burna Boys - City Boys";
+
+        } else if (document.getElementById("loading").src.endsWith("song4.mp3")) {
+            document.getElementById("loading").src = "song/song5.mp3";
+            songname.innerHTML = "Country Dons - Back To Back Freestyle";
+
+        } else if (document.getElementById("loading").src.endsWith("song5.mp3")) {
+            document.getElementById("loading").src = "song/song6.mp3";
+            songname.innerHTML = "D-Block Europe - Money Cant Buy Heart";
+
+        } else if (document.getElementById("loading").src.endsWith("song6.mp3")) {
+            document.getElementById("loading").src = "song/song7.mp3";
+            songname.innerHTML = "Baby D - Let Me Be Your Fantasy";
+
+        } else if (document.getElementById("loading").src.endsWith("song7.mp3")) {
+            document.getElementById("loading").src = "song/song8.mp3";
+            songname.innerHTML = "Artful Dodger - Moving To Fast";
+
+        } else if (document.getElementById("loading").src.endsWith("song8.mp3")) {
+            document.getElementById("loading").src = "song/song9.mp3";
+            songname.innerHTML = "Daniel Bedingfield - Gotta Get Thru This";
+
+        } else if (document.getElementById("loading").src.endsWith("song9.mp3")) {
+            document.getElementById("loading").src = "song/song10.mp3";
+            songname.innerHTML = "Boney M - Sunny";
+
+        } else if (document.getElementById("loading").src.endsWith("song10.mp3")) {
+            document.getElementById("loading").src = "song/song11.mp3";
+            songname.innerHTML = "Gadjo - So Many Times";
         }
         document.getElementById("loading").play();
         mutetext.innerHTML = "MUTE";
     }
 
     if (event.which == 39) { // ArrowRIGHT
-        if (document.getElementById("loading").src.endsWith("song2.mp3")) {
-            document.getElementById("loading").src = "song/song3.mp3";
-            songname.innerHTML = "Chase & Status & Hedex - Liquor & Cigarettes";
+       if (document.getElementById("loading").src.endsWith("song2.mp3")) {
+            document.getElementById("loading").src = "song/song1.mp3";
+            songname.innerHTML = "Lil Baby - Crazy";
 
         } else if (document.getElementById("loading").src.endsWith("song3.mp3")) {
-            document.getElementById("loading").src = "song/song1.mp3";
-            songname.innerHTML = "50 Cent - Big Rich Town";
-
-        } else if (document.getElementById("loading").src.endsWith("song1.mp3")) {
             document.getElementById("loading").src = "song/song2.mp3";
             songname.innerHTML = "Linkin Park - In The End";
 
+        } else if (document.getElementById("loading").src.endsWith("song4.mp3")) {
+            document.getElementById("loading").src = "song/song3.mp3";
+            songname.innerHTML = "Chase & Status & Hedex - Liquor & Cigarettes";
+
+        } else if (document.getElementById("loading").src.endsWith("song5.mp3")) {
+            document.getElementById("loading").src = "song/song4.mp3";
+            songname.innerHTML = "Burna Boys - City Boys";
+
+        } else if (document.getElementById("loading").src.endsWith("song6.mp3")) {
+            document.getElementById("loading").src = "song/song5.mp3";
+            songname.innerHTML = "Country Dons - Back To Back Freestyle";
+
+        } else if (document.getElementById("loading").src.endsWith("song7.mp3")) {
+            document.getElementById("loading").src = "song/song6.mp3";
+            songname.innerHTML = "D-Block Europe - Money Cant Buy Heart";
+
+        } else if (document.getElementById("loading").src.endsWith("song8.mp3")) {
+            document.getElementById("loading").src = "song/song7.mp3";
+            songname.innerHTML = "Baby D - Let Me Be Your Fantasy";
+
+        } else if (document.getElementById("loading").src.endsWith("song9.mp3")) {
+            document.getElementById("loading").src = "song/song8.mp3";
+            songname.innerHTML = "Artful Dodger - Moving To Fast";
+
+        } else if (document.getElementById("loading").src.endsWith("song10.mp3")) {
+            document.getElementById("loading").src = "song/song9.mp3";
+            songname.innerHTML = "Daniel Bedingfield - Gotta Get Thru This";
+
+        } else if (document.getElementById("loading").src.endsWith("song11.mp3")) {
+            document.getElementById("loading").src = "song/song10.mp3";
+            songname.innerHTML = "Boney M - Sunny";
+
+        } else if (document.getElementById("loading").src.endsWith("song1.mp3")) {
+            document.getElementById("loading").src = "song/song11.mp3";
+            songname.innerHTML = "Gadjo - So Many Times";
         }
         document.getElementById("loading").play();
         mutetext.innerHTML = "MUTE";
