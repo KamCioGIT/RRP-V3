@@ -41,7 +41,7 @@ Config.objectPersistence = {
     showWarnings = true,
 
     -- Whether to display a little hint when placing an item which will be persistent
-    showHint = true,
+    showHint = false,
 }
 
 -- When not using target
@@ -79,7 +79,7 @@ Config.menuCommand = {
 
 -- Whether or not to disable item stacking (placing items on top of other items)
 -- This can rarely cause collision issues with some vehicles. Therefore its off by default
-Config.disallowItemStacking = true
+Config.disallowItemStacking = false
 
 -- Whether or not to make all items placeable.
 -- When disabled only the items defined below will be placeable
@@ -94,7 +94,7 @@ Config.allowPlacingOnRoofs = true
 -- All placeable items with the amounts and props defined
 -- https://gta-objects.xyz/objects
 Config.items = {
-    
+
     ['phone'] = {
         [1] = 'prop_player_phone_01',
     },
