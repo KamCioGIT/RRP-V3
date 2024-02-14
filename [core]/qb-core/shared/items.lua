@@ -607,7 +607,7 @@ sparetire                   = { name = "sparetire", label = "Spare Tire", weight
 
     -- Animals
     ['egg']              	 	= {['name'] = 'egg',               			['label'] = 'Egg',                		['weight'] = 50,       	['type'] = 'item',      ['image'] = 'egg.png',        				['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,   ['description'] = 'Fresh eggs!'},
-    ['milk_pail']              	= {['name'] = 'milk_pail',               	['label'] = 'Milk Pail',       			['weight'] = 1000,      ['type'] = 'item',      ['image'] = 'milk_pail.png',        		['unique'] = false,     ['useable'] = true,     ['shouldClose'] = false,    ['combinable'] = nil,   ['description'] = 'Fresh milk, straight from the cow!'},
+    --['milk_pail']              	= {['name'] = 'milk_pail',               	['label'] = 'Milk Pail',       			['weight'] = 1000,      ['type'] = 'item',      ['image'] = 'milk_pail.png',        		['unique'] = false,     ['useable'] = true,     ['shouldClose'] = false,    ['combinable'] = nil,   ['description'] = 'Fresh milk, straight from the cow!'},
     ['milk']              	 	= {['name'] = 'milk',               		['label'] = 'Milk',                		['weight'] = 250,       ['type'] = 'item',      ['image'] = 'milk.png',        				['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,   ['description'] = 'A bottle of fresh milk!'},
     
 }

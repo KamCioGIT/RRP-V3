@@ -1915,3 +1915,23 @@ $("#item-give").droppable({
         );
     },
 });
+
+$("#item-kq-place").droppable({
+    hoverClass: "button-hover",
+    drop: function(event, ui) {
+        setTimeout(function() {
+            IsDragging = false;
+        }, 300);
+        formData = ui.draggable.data("item");
+
+        $.post(
+            "https://kq_placeable_items/HookPlaceItem",
+            JSON.stringify({
+                item: formData.name,
+                size: formData.amount || 1,
+            })
+        );
+
+        Inventory.Close();
+    },
+});
