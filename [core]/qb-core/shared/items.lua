@@ -613,6 +613,5 @@ sparetire                   = { name = "sparetire", label = "Spare Tire", weight
     --custom
     ['dildo']              	 	= {['name'] = 'dildo',               		['label'] = 'Dildo',                    ['weight'] = 250,       ['type'] = 'item',      ['image'] = 'dildo.png',        				['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,   ['description'] = 'Eww Its Sticky'},
     ['golf_ball']              	= {['name'] = 'golf_ball',                  ['label'] = 'Golf Ball',                ['weight'] = 250,       ['type'] = 'item',      ['image'] = 'golf_ball.png',        			['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,   ['description'] = 'Smack It Over Your Mums Head'},
-    ['cash']              	    = {['name'] = 'cash',                       ['label'] = 'Cash',                     ['weight'] = 10,        ['type'] = 'item',      ['image'] = 'cash.png',        			        ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,   ['description'] = '£££ Money Money Money £££'},
     
 }
