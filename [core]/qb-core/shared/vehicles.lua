@@ -529,6 +529,7 @@ local Vehicles = {
     {['model'] = 'specialtf',     ['name'] = 'Tism',                          ['brand'] = 'AW',              ['price'] = 45000,   ['category'] = 'AW',      	['categoryLabel'] = 'AW', 			 ['shop'] = 'pdm'},
     {['model'] = 'hexerz2',       ['name'] = 'Chop Chop',                     ['brand'] = 'AW',              ['price'] = 20000,   ['category'] = 'AW', 	        ['categoryLabel'] = 'AW', 			 ['shop'] = 'pdm'},
     {['model'] = 'Gto66c',        ['name'] = 'BNK',                           ['brand'] = 'AW',              ['price'] = 35000,   ['category'] = 'AW', 	        ['categoryLabel'] = 'AW', 			 ['shop'] = 'pdm'},
+    {['model'] = 'pe208',         ['name'] = '802',                           ['brand'] = 'AW',              ['price'] = 4000,    ['category'] = 'AW', 	        ['categoryLabel'] = 'AW', 			 ['shop'] = 'pdm'},
     
 	--Shitzu
 	{['model'] = 'defiler',       ['name'] = 'Defiler',                       ['brand'] = 'Shitzu',          ['price'] = 30000,   ['category'] = 'Shitzu', 	['categoryLabel'] = 'Shitzu',     	 ['shop'] = 'bikes'},
@@ -601,6 +602,7 @@ local Vehicles = {
     {['model'] = 'rr21shelbystreet', ['name'] = 'Triceratops',                ['brand'] = 'Vapid',           ['price'] = 100000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'PDMImports'},
     {['model'] = 'Mustang65',     ['name'] = 'BO55 V',                        ['brand'] = 'Vapid',           ['price'] = 80000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'PDMImports'},
     {['model'] = 'Gt17',          ['name'] = 'GX17',                          ['brand'] = 'Vapid',           ['price'] = 120000,  ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'PDMImports'},
+    {['model'] = 'st3',           ['name'] = 'ST-D',                          ['brand'] = 'Vapid',           ['price'] = 20000,   ['category'] = 'Vapid', 	['categoryLabel'] = 'Vapid',           ['shop'] = 'PDMImports'},
     
 	--Weeny
 	{['model'] = 'issi2',         ['name'] = 'Issi',                          ['brand'] = 'Weeny',           ['price'] = 7000,    ['category'] = 'Weeny', 	['categoryLabel'] = 'Weeny',        	 ['shop'] = 'pdm'},
