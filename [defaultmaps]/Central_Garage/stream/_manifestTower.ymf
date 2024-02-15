@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CPackFileMetaData>
+  <MapDataGroups/>
+  <HDTxdBindingArray/>
+  <imapDependencies/>
+  <imapDependencies_2>
+    <Item>
+      <imapName>ne_sh_tower_obj_1</imapName>
+      <manifestFlags/>
+      <itypDepArray>
+        <Item>v_potted</Item>
+        <Item>v_traffic_lights</Item>
+        <Item>v_palm</Item>
+        <Item>v_fences_2</Item>
+        <Item>lev_des</Item>
+        <Item>v_minigame</Item>
+        <Item>v_coin_op</Item>
+        <Item>v_garden</Item>
+      </itypDepArray>
+    </Item>
+    <Item>
+      <imapName>ne_tower_v1_01</imapName>
+      <manifestFlags/>
+      <itypDepArray>
+        <Item>ne_tower_v1_01</Item>
+        <Item>ne_sh_tower_v1</Item>
+        <Item>ne_sh_tower_v002</Item>
+        <Item>rojo_trinity_billboard</Item>
+      </itypDepArray>
+    </Item>
+  </imapDependencies_2>
+  <itypDependencies_2/>
+  <Interiors/>
+</CPackFileMetaData>
