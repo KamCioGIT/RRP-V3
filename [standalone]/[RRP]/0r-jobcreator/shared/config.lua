@@ -12,15 +12,15 @@ Config.PanelCommand = "jobcreator"
 
 Config.Default      = {
     --- ("qb_notify" | "ox_notify" | "okok_notify" | "custom_notify") System to be used
-    NotifyType = "qb_notify",
+    NotifyType = "ox_notify",
     ---("qb_inventory" | "ox_inventory" | "custom") System to be used
     InventoryType = "qb_inventory",
     ---("qb_target" | "ox_target") System to be used
     TargetType = "ox_target",
     ---("qb_menu" | "ox_menu") System to be used
-    MenuType = "qb_menu",
+    MenuType = "ox_menu",
     ---("qb_textui" | "ox_textui" | "draw_text_marker") System to be used
-    TextUI_Type = "qb_textui",
+    TextUI_Type = "ox_textui",
     ---("qb_progressbar" | "ox_progressbar_1" | "custom_progressbar") System to be used
-    ProgressBarType = "qb_progressbar"
+    ProgressBarType = "ox_progressbar"
 }
