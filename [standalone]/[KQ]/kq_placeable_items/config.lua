@@ -559,6 +559,11 @@ Config.items = {
 	['firework4'] = {
         [1] = 'ind_prop_firework_02',
     },
+
+    -- Golf Ball
+	['golf_ball'] = {
+        [1] = 'prop_golf_ball',
+    },
 }
 
 -- https://docs.fivem.net/docs/game-references/controls/
