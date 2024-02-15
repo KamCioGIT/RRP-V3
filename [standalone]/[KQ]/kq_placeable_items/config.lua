@@ -1,6 +1,6 @@
 Config = {}
 
-Config.debug = false
+Config.debug = true
 
 --- SETTINGS FOR ESX
 Config.esxSettings = {
@@ -27,7 +27,7 @@ Config.sql = {
 
 -- I DO NOT RECOMMEND USING TARGET AS SOME SMALLER PROPS MAY BE DIFFICULT TO PICKUP FROM THE TRUCK BED (USING CERTAIN TARGET SYSTEMS)
 Config.target = {
-    enabled = true,
+    enabled = false,
     system = 'ox_target' -- 'qtarget' or 'qb-target' or 'ox_target'  (Other systems might work as well)
 }
 
