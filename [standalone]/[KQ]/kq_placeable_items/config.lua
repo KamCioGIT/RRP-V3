@@ -296,269 +296,269 @@ Config.items = {
     },
     ['egg'] = {
         [1] = 'v_ret_247_eggs',
-    ],
+    },
 --fruits
 
     ['pineapple'] = {
         [1] = 'prop_pineapple',
-    ],
+    },
 	
 	['lemon'] = {
         [1] = 'prop_bar_lemons',
-    ],
+    },
 	
 	['cherry'] = {
         [1] = 'apa_mp_h_acc_fruitbowl_02]',
-    ],
+    },
 	
 	['tomato'] = {
         [1] = 'ex_mp_h_acc_fruitbowl_02',
-    ],
+    },
 	
 	['coconut'] = {
         [1] = 'ex_mp_h_acc_fruitbowl_01',
-    ],
+    },
 	
 	['cherry'] = {
         [1] = 'ex_mp_h_acc_fruitbowl_02',
-    ],
+    },
 	
 	['blueberry'] = {
         [1] = 'ex_mp_h_acc_fruitbowl_01',
-    ],
+    },
 	
 	['strawberry'] = {
         [1] = 'ex_mp_h_acc_fruitbowl_02',
-    ],
+    },
 	
 	['apple'] = {
         [1] = 'apa_mp_h_acc_fruitbowl_01',
-    ],
+    },
 	
 	['orange'] = {
         [1] = 'ex_mp_h_acc_fruitbowl_02',
-    ],
+    },
 --crops
 
 	['lettuce'] = {
         [1] = 'prop_veg_crop_03_cab',
-    ],
+    },
 	
 	['maize'] = {
         [1] = 'v_res_fa_tincorn',
-    ],
+    },
 	
 	['barley'] = {
         [1] = 'prop_veg_crop_05',
-    ],
+    },
 --Jim-Recycle Items
 	
 	['kq_outfitbag'] = {
         [1] = 'prop_nigel_bag_pickup',
-    ],
+    },
 	
 	['can'] = {
         [1] = 'v_res_tt_can03',
-    ],
+    },
 	
 	['recyclablematerial'] = {
         [1] = 'prop_woodpile_03a',
-    ],
+    },
 --jim-mining stuff
 
 	['can'] = {
         [1] = 'v_res_tt_cancrsh02',
-    ],
+    },
 	
 	['bottle'] = {
         [1] = 'watercooler_bottle001',
-    ],
+    },
 	
 	['pan'] = {
         [1] = 'prop_copper_pan',
-    ],
+    },
 	
 	['drillbit'] = {
         [1] = 'gr_prop_gr_part_drill_01a',
-    ],
+    },
 	
 	['miningdrill'] = {
         [1] = 'hei_prop_heist_drill',
-    ],
+    },
 	
 	['pickaxe'] = {
         [1] = 'prop_tool_pickaxe',
-    ],
+    },
 	
 	['silveringot'] = {
         [1] = 'ex_office_swag_silver',
-    ],
+    },
 	
 	['goldingot'] = {
         [1] = 'hei_prop_heist_gold_bar',
-    ],
+    },
 	
 	['silverearring'] = {
         [1] = 'p_tmom_earrings_s',
-    ],
+    },
 	
 	['silverchain'] = {
         [1] = 'p_stretch_necklace_s',
-    ],
+    },
 	
 	['goldchain'] = {
         [1] = 'p_ortega_necklace_s',
-    ],
+    },
 --Repair Parts
 
 	['newoil'] = {
         [1] = 'prop_oilcan_01a',
-    ],
+    },
 	
 	['carbattery'] = {
         [1] = 'prop_car_battery_01',
-    ],
+    },
 	
 	['sparetire'] = {
         [1] = 'prop_rub_wheel_01',
-    ],
+    },
 --Cosmetics 
 
 	['underglow_controller'] = {
         [1] = 'v_res_tre_remote',
-    ],
+    },
 	
 	['customplate'] = {
         [1] = 'p_num_plate_03',
-    ],
+    },
 	
 	['hood'] = {
         [1] = 'imp_prop_impexp_bonnet_02a',
-    ],
+    },
 	
 	['spoiler'] = {
         [1] = 'imp_prop_impexp_spoiler_03a',
-    ],
+    },
 	
 	['bumper'] = {
         [1] = 'imp_prop_impexp_front_bumper_02a',
-    ],
+    },
 	
 	['exhaust'] = {
         [1] = 'imp_prop_impexp_exhaust_02',
-    ],
+    },
 	
 	['seat'] = {
         [1] = 'prop_ejector_seat_01',
-    ],
+    },
 	
 	['rims'] = {
         [1] = 'prop_wheel_rim_03',
-    ],
+    },
 	
 	['paintcan'] = {
         [1] = 'ng_proc_paintcan01a',
-    ],
+    },
 	
 	['tires'] = {
         [1] = 'prop_rub_wheel_01',
-    ],
+    },
 --Vehicle Extra Damage Items
 
 	['cables1'] = {
         [1] = 'prop_cablespool_06',
-    ],
+    },
 	
 	['cables2'] = {
         [1] = 'prop_cablespool_03',
-    ],
+    },
 	
 	['cables3'] = {
         [1] = 'prop_tool_cable02',
-    ],
+    },
 	
 	['fueltank1'] = {
         [1] = 'prop_byard_gastank01',
-    ],
+    },
 	
 	['cylind2'] = {
         [1] = 'prop_gascyl_02a',
-    ],
+    },
 	
 	['cylind3'] = {
         [1] = 'prop_gascyl_01a',
-    ],
+    },
 -- Other Tools
 
 	['casinochips'] = {
         [1] = 'ng_proc_concchips01',
-    ],
+    },
 	
 	['moneybag'] = {
         [1] = 'prop_big_bag_01',
-    ],
+    },
 	
 	['parachute'] = {
         [1] = 'p_parachute_s_shop',
-    ],
+    },
 	
 	['lighter'] = {
         [1] = 'ex_prop_exec_lighter_01',
-    ],
+    },
 	
 	['markedbills'] = {
         [1] = 'bkr_prop_cutter_moneystack_01a',
-    ],
+    },
 	
 	['labkey'] = {
         [1] = 'bkr_prop_jailer_keys_01a',
-    ],
+    },
 	
 	['printerdocument'] = {
         [1] = 'ng_proc_paper_news_rag',
-    ],
+    },
 	
 	['newscam'] = {
         [1] = 'prop_pap_camera_01',
-    ],
+    },
 	
 	['newsmic'] = {
         [1] = 'p_ing_microphonel_01',
-    ],
+    },
 --sea tools 
 
 	['dendrogyra_coral'] = {
         [1] = 'prop_coral_pillar_01',
-    ],
+    },
 	
 	['antipatharia_coral'] = {
         [1] = 'prop_coral_kelp_04',
-    ],
+    },
 	
 	['diving_gear'] = {
         [1] = 'p_s_scuba_tank_s',
-    ],
+    },
 	
 	['diving_fill'] = {
         [1] = 'p_michael_scuba_tank_s',
-    ],
+    },
 --Firework Tools
 
 	['firework1'] = {
         [1] = 'ind_prop_firework_03',
-    ],
+    },
 	
 	['firework2'] = {
         [1] = 'w_lr_firework_rocket',
-    ],
+    },
 	
 	['firework3'] = {
         [1] = 'ind_prop_firework_01',
-    ],
+    },
 	
 	['firework4'] = {
         [1] = 'ind_prop_firework_02',
-    ],
+    },
 }
 
 -- https://docs.fivem.net/docs/game-references/controls/
