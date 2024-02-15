@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Sounds = true -- Sets audio alerts.
+Config.Sounds = false -- Sets audio alerts.
 Config.LoopSound = true -- Sets whether the audio alerts should be repeated.
 Config.Volume = 0.4 -- Sets the volume of the audio alerts.
 Config.Notification = false -- Sets the use of pNotify.
