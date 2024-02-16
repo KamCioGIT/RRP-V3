@@ -18,33 +18,33 @@ Config.Variables = {
 Config.Diseases = {
     ['Common Cold'] = {
         hasDiseases = true,
-        iterations = 15,
+        iterations = 5,
     },
 
-    ['Bad Stomach'] = {
-        hasDiseases = true,
-        iterations = 15,
-    },
+    --['Bad Stomach'] = {
+    --    hasDiseases = true,
+    --    iterations = 15,
+    --},
 
-    ['Diarrhea'] = {
-        hasDiseases = true,
-        iterations = 10,
-        chance = 50
-    },
+    --['Diarrhea'] = {
+    --    hasDiseases = true,
+    --    iterations = 10,
+    --    chance = 50
+    --},
 
-    ['Headache'] = {
-        hasDiseases = true,
-        iterations = 10,
-    },
+    --['Headache'] = {
+    --    hasDiseases = true,
+    --    iterations = 10,
+    --},
 
-    ['Dizzy'] = {
-        hasDiseases = true,
-        iterations = 10,
-    },
+    --['Dizzy'] = {
+    --    hasDiseases = true,
+    --    iterations = 10,
+    --},
 
     ['Covid'] = {
         hasDiseases = true,
-        iterations = 100,
+        iterations = 20,
     },
 
     -------Only if using SexV---------
