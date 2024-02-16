@@ -477,9 +477,9 @@ Config.JobGarageLocations = {
     },
   },
   Police = {
-    coords = vector3(434.48, -1016.97, 28.83),
-    spawn = vector4(434.55, -1014.54, 28.49, 91.56),
-    distance = 15,
+    coords = vector3(450.15, -984.72, 25.70),
+    spawn = vector4(445.81, -988.82, 25.16, 269.70),
+    distance = 5,
     job = 'police',
     type = 'car',
     blip = {
@@ -507,20 +507,7 @@ Config.JobGarageLocations = {
       rotate = 1,
       drawOnEnts = 0,
     },
-    vehiclesType = 'spawner',
-    showLiveriesExtrasMenu = true,
-    vehicles = {
-      {
-        vehicle = 'police',
-        plate = 'PD',
-        minJobGrade = 0,
-      },
-      {
-        vehicle = 'police2',
-        plate = false,
-        minJobGrade = 3,
-      },
-    },
+    vehiclesType = 'personal',
   },
 }
 Config.GangGarageShowBlips = false
