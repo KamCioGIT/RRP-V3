@@ -1,20 +1,41 @@
 {
-    "NUQ33554": [],
     "MDR89087": [
         {
             "category": "pistons",
-            "typeof": "component",
-            "time": 1707785507,
             "recipe": "pistons",
             "item": {
-                "label": "PISTONS FLAT 6",
                 "name": "pistons flat 6",
                 "stats": {
-                    "material": "steel",
                     "diameter": 60,
-                    "quality": 100
+                    "quality": 100,
+                    "material": "steel"
+                },
+                "label": "PISTONS FLAT 6"
+            },
+            "typeof": "component",
+            "time": 1707785507
+        },
+        {
+            "item": {
+                "variant": "",
+                "name": "flat 6",
+                "sound": "",
+                "label": "FLAT 6",
+                "block": {
+                    "name": "flat 6",
+                    "stats": {
+                        "layout": "flat",
+                        "bore": 60,
+                        "quality": 100,
+                        "cylinders": 6,
+                        "stroke": 60,
+                        "material": "steel"
+                    },
+                    "label": "FLAT 6"
                 }
-            }
+            },
+            "typeof": "engine"
         }
-    ]
+    ],
+    "NUQ33554": []
 }
