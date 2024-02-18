@@ -793,7 +793,7 @@ Config.DealershipLocations = {
       rotate = 1,
       drawOnEnts = 0,
     },
-    disableShowroomPurchase = true,
+    disableShowroomPurchase = false,
     directSaleDistance = 50,
     job = 'police',
   },
