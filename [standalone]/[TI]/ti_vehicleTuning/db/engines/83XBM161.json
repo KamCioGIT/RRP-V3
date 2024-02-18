@@ -1,0 +1,134 @@
+{
+    "label": "ENGINE BLOCK",
+    "exhaust": {
+        "label": "EXHAUST",
+        "stats": {
+            "cats": "none",
+            "mufflers": "none",
+            "system": "twin",
+            "quality": 100,
+            "material": "steel",
+            "diameter": 100
+        },
+        "name": "exhaust"
+    },
+    "crankshaft": {
+        "label": "CRANKSHAFT",
+        "stats": {
+            "material": "steel",
+            "quality": 100
+        },
+        "name": "crankshaft"
+    },
+    "conrods": {
+        "label": "CONROD",
+        "stats": {
+            "length": 120,
+            "material": "steel",
+            "quality": 100
+        },
+        "name": "conrod"
+    },
+    "nitrous": {
+        "label": "NOS",
+        "stats": {
+            "size": 100,
+            "quality": 100,
+            "material": "steel"
+        },
+        "name": "nos"
+    },
+    "name": "engine block",
+    "sound": "ars7",
+    "variant": "",
+    "fuel": {
+        "label": "FUEL",
+        "stats": {
+            "material": "steel",
+            "quality": 100
+        },
+        "name": "fuel"
+    },
+    "valves": {
+        "label": "VALVES",
+        "stats": {
+            "material": "steel",
+            "quality": 100
+        },
+        "name": "valves"
+    },
+    "intake": {
+        "label": "INTAKE",
+        "stats": {
+            "system": "race",
+            "quality": 100,
+            "material": "steel"
+        },
+        "name": "intake"
+    },
+    "intercooler": {
+        "label": "INTERCOOLER",
+        "stats": {
+            "size": 2000,
+            "quality": 100,
+            "material": "steel"
+        },
+        "name": "intercooler"
+    },
+    "block": {
+        "label": "ENGINE BLOCK",
+        "stats": {
+            "bore": 120,
+            "layout": "flat",
+            "cylinders": 10,
+            "quality": 100,
+            "material": "steel",
+            "stroke": 120
+        },
+        "name": "engine block"
+    },
+    "pistons": {
+        "label": "PISTON",
+        "stats": {
+            "diameter": 120,
+            "material": "steel",
+            "quality": 100
+        },
+        "name": "piston"
+    },
+    "aspiration": {
+        "label": "ASPIRATION",
+        "stats": {
+            "turbine": 120,
+            "compressor": 120,
+            "system": "turbocharger",
+            "compressor2": 120,
+            "method": "twin",
+            "quality": 100,
+            "material": "steel",
+            "turbine2": 120
+        },
+        "name": "aspiration"
+    },
+    "headers": {
+        "label": "HEADERS",
+        "stats": {
+            "system": "raceTube",
+            "quality": 100,
+            "material": "steel",
+            "diameter": 100
+        },
+        "name": "headers"
+    },
+    "heads": {
+        "label": "HEADS",
+        "stats": {
+            "vvl": true,
+            "valves": 2,
+            "quality": 100,
+            "config": "sohc",
+            "material": "steel"
+        },
+        "name": "heads"
+    }
+}

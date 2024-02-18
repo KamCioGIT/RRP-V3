@@ -1,0 +1,50 @@
+{
+    "engine": {
+        "sound": "ars7",
+        "build": {
+            "crankshaft": {
+                "material": "steel",
+                "quality": 1.0
+            },
+            "valves": {
+                "material": "steel",
+                "quality": 1.0
+            },
+            "nitrous": {
+                "size": 1.0,
+                "quality": 100
+            },
+            "block": {
+                "bore": 1.0,
+                "layout": "flat",
+                "cylinders": 10,
+                "quality": 0.8,
+                "stroke": 1.0
+            },
+            "fuelDelivery": {
+                "quality": 1.0
+            },
+            "conrods": {
+                "material": "steel",
+                "quality": 1.0
+            },
+            "aspiration": {
+                "system": "twin",
+                "quality": 1.0,
+                "size": 0.012,
+                "typeof": "turbocharger"
+            },
+            "pistons": {
+                "material": "steel",
+                "quality": 1.0
+            },
+            "heads": {
+                "quality": 1.0,
+                "valves": 2,
+                "layout": "sohc",
+                "vvl": true
+            }
+        },
+        "nitrousLevel": 0
+    }
+}
