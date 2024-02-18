@@ -59,7 +59,7 @@ Config.Locations = {                -- Edit the various interaction points for p
         -- Pillbox
         [1] = vector3(312.52, -581.62, 43.27),
         -- Ocean
-        [2] = vector3(-1823.23, -380.86, 49.42, 319.69),
+        [2] = vector3(-1823.23, -380.86, 49.42),
         -- Grove
         [3] = vector3(356.93, -1401.24, 32.50),
     },
