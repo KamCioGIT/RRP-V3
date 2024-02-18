@@ -742,7 +742,7 @@ Config.DealershipLocations = {
     job = 'cardealer',
   },
   Police = {
-    type = 'owned',
+    type = 'self-service',
     openShowroom = vector3(435.29, -976.40, 25.70),
     openManagement = vector3(819.14, -894.50, 0.32),
     purchaseSpawn = vector4(431.86, -982.78, 25.16, 180.44),

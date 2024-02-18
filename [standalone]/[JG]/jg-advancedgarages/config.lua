@@ -507,7 +507,7 @@ Config.JobGarageLocations = {
       rotate = 1,
       drawOnEnts = 0,
     },
-    vehiclesType = 'personal',
+    vehiclesType = 'owned',
   },
 }
 Config.GangGarageShowBlips = false
