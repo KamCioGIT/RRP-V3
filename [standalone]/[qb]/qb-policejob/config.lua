@@ -86,7 +86,6 @@ Config.Locations = {
     },
     ["stations"] = {
         [1] = {label = "MET Police Station", coords = vector4(453.05, -979.02, 38.34, 354.56), sprite= 137, scale= 0.7, colour= 29},
-		[2] = {label = "Specialist Joint Department", coords = vector4(1842.50, 3681.63, 43.68, 356.09), sprite= 137, scale= 0.7, colour= 3},
     },
 }
 
