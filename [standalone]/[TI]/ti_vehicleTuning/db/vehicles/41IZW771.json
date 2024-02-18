@@ -1,0 +1,113 @@
+{
+    "handling": {
+        "fBrakeForce": 3.04999995231628,
+        "fAntiRollBarBiasFront": 0.52999997138977,
+        "fTractionCurveLateral": 26.5,
+        "fTractionSpringDeltaMax": 0.02999999932944,
+        "fSuspensionCompDamp": 4.5,
+        "fSteeringLock": 45.0,
+        "fDriveBiasFront": 0.0,
+        "fClutchChangeRateScaleDownShift": 3.0,
+        "fSuspensionRaise": 0.0,
+        "fTractionCurveMax": 4.0,
+        "fHandBrakeForce": 0.55000001192092,
+        "fSuspensionBiasFront": 0.5,
+        "fSuspensionForce": 6.0,
+        "fLowSpeedTractionLossMult": 0.0,
+        "fAntiRollBarForce": 0.0,
+        "fTractionLossMult": 0.40000000596046,
+        "fCamberStiffnesss": 0.0,
+        "fBrakeBiasFront": 0.60000002384185,
+        "fRollCentreHeightFront": 0.23999999463558,
+        "fSuspensionUpperLimit": 0.15000000596046,
+        "fTractionCurveMin": 3.70000004768371,
+        "fTractionBiasFront": 0.47999998927116,
+        "fRollCentreHeightRear": 0.25,
+        "fSuspensionReboundDamp": 8.80000019073486,
+        "fClutchChangeRateScaleUpShift": 3.0,
+        "fSuspensionLowerLimit": -0.05999999865889
+    },
+    "engine": {
+        "damagedComponents": [
+            "conrods",
+            "pistons"
+        ],
+        "tune": {
+            "aspiration": {
+                "superchargerBoost": 0.25,
+                "superchargerSize": 0.25,
+                "turboBoost1": 0.25,
+                "turboSize2": 0.25,
+                "turboSize1": 0.25,
+                "turboBoost2": 0.25
+            },
+            "nitrous": {
+                "rampEndBoost": 1.0,
+                "rampStart": 0.3,
+                "rampEnd": 1.0,
+                "rampStartBoost": 1.0
+            },
+            "heads": {
+                "airflow": 1.0,
+                "compRatio": 0.42,
+                "camProfile": 0.41,
+                "vvlProfile": 0.52
+            },
+            "fuel": {
+                "limiter": 0.5,
+                "timing": 0.33,
+                "afRatio": 0.29
+            }
+        },
+        "build": {
+            "conrods": {
+                "material": "steel",
+                "quality": 0.5
+            },
+            "pistons": {
+                "material": "steel",
+                "quality": 0.5
+            },
+            "fuelDelivery": {
+                "quality": 0.5
+            },
+            "valves": {
+                "material": "steel",
+                "quality": 0.5
+            },
+            "block": {
+                "bore": 0.66,
+                "stroke": 0.66,
+                "quality": 0.5,
+                "layout": "inline",
+                "cylinders": 6
+            },
+            "crankshaft": {
+                "material": "steel",
+                "quality": 0.5
+            },
+            "heads": {
+                "valves": 4,
+                "vvl": true,
+                "quality": 0.5,
+                "layout": "dohc"
+            }
+        }
+    },
+    "stance": {
+        "wheelWidth": 0.0,
+        "xOff": {
+            "3": 0.70243400335311,
+            "0": -0.70243400335311,
+            "1": 0.70243400335311,
+            "2": -0.70243400335311
+        },
+        "wheelSize": 0.0,
+        "yRot": {
+            "3": -0.0,
+            "0": 0.0,
+            "1": -0.0,
+            "2": 0.0
+        }
+    }
+}
