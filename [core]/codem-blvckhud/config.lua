@@ -21,7 +21,7 @@ Config.EnableThirst = true
 Config.EnableHud = true
 Config.EnableArmor = true
 Config.EnableStamina = true
-Config.EnableSpeedometer = false
+Config.EnableSpeedometer = true
 
 
 
