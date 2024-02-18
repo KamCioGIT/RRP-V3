@@ -1,4 +1,11 @@
 Crafting = {
+	NOS = {
+		Header = Loc[Config.Lan]["crafting"].repairheader,
+		Anims = { animDict = "mini@repair", anim = "fixing_a_ped",},
+		Recipes = {
+		
+		},
+	},
 	Repairs = {
 		Header = Loc[Config.Lan]["crafting"].repairheader,
 		Anims = { animDict = "mini@repair", anim = "fixing_a_ped",},
