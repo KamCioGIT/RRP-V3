@@ -92,7 +92,7 @@ config = {
 	autoGenerateRecipes = true,
 
 	generatedDefaultTime = 2, 			-- how long should generated recipes take to perform?
-	generatedDefaultMaterials = 15, 	-- how many materials should generated recipes require?
+	generatedDefaultMaterials = 5, 	-- how many materials should generated recipes require?
 	prestigeMaterialMultiplier = 10, 	-- how how should the prestige value of a material be multiplied by before effecting the recipe material count?
 
 	-- Define extra items for auto generated recipes per category.
