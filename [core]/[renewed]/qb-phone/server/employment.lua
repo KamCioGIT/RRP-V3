@@ -20,7 +20,7 @@ local function getJobs(cid)
     return jobs, employees
 end exports('getJobs', getJobs)
 
-local FirstStart = true
+local FirstStart = false
 
 CreateThread(function()
     ---- Convertion Tool I guess LOL ----
