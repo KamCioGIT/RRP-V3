@@ -651,6 +651,27 @@ local Vehicles = {
     
 	--Zirconium
 	{['model'] = 'stratum',       ['name'] = 'Stratum',                       ['brand'] = 'Zirconium',       ['price'] = 15000,   ['category'] = 'Zirconium', 	['categoryLabel'] = 'Zirconium',       ['shop'] = 'FoxImports'},
+
+	-- Donation
+	{['model'] = 'centuria',        ['name'] = 'Chiro',                       ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'chargerf8',       ['name'] = 'F9 Decharge',                 ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'dl_g900',         ['name'] = 'Benefactor Big G',            ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'm135iwb',         ['name'] = 'I135',                        ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'm140iss',         ['name'] = 'I140',                        ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'rd',        	    ['name'] = 'rd',                          ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'rolls6x6',        ['name'] = '280 6X6',                     ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'ttsto',           ['name'] = 'ttsto',                       ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'urus_stretch_6',  ['name'] = 'Long',                        ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = '17m760i',         ['name'] = '187I',                        ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'ben17',           ['name'] = 'ContiSilent GT',              ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'c63hr',           ['name'] = '36HR',                        ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'ferrari812super', ['name'] = '12',                          ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'gt3hycade',       ['name'] = '667 GT3WB',                   ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'mansurus',        ['name'] = 'Short WB',                    ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'r34h',            ['name'] = 'Elegy R34',                   ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 's1',              ['name'] = '1S WB',                       ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'sf90',            ['name'] = 'Ninty',                       ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    
 }
 
 for i = 1, #Vehicles do

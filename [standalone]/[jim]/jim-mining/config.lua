@@ -11,8 +11,8 @@ Config = {
 	JimShops = false, 		-- Set this to true if using jim-shops
 
 	Inv = "qb",				--"qb" or "ox"
-	Menu = "ox",			--"qb" or "ox"
-	ProgressBar = "ox",		--"qb" or "ox"
+	Menu = "qb",			--"qb" or "ox"
+	ProgressBar = "qb",		--"qb" or "ox"
 	Notify = "ox",			--"qb" or "ox"
 
 	DrillSound = true,		-- disable drill sounds
@@ -137,14 +137,14 @@ Config = {
 ------------------------------------------------------------
 --Mining Store Items
 	Items = {
-		label = "Mining Store",  slots = 9,
+		label = "Mining Store",  slots = 7,
 		items = {
 			{ name = "bandage", price = 50, amount = 100, info = {}, type = "item", slot = 3, },
 			{ name = "weapon_flashlight", price = 100, amount = 100, info = {}, type = "item", slot = 4, },
 			{ name = "goldpan", price = 50, amount = 100, info = {}, type = "item", slot = 5, },
 			{ name = "pickaxe",	price = 150, amount = 100, info = {}, type = "item", slot = 6, },
-			{ name = "miningdrill",	price = 5000, amount = 50, info = {}, type = "item", slot = 7, },
-			{ name = "mininglaser",	price = 60000, amount = 5, info = {}, type = "item", slot = 8, },
+			{ name = "miningdrill",	price = 1000, amount = 50, info = {}, type = "item", slot = 7, },
+			{ name = "mininglaser",	price = 30000, amount = 5, info = {}, type = "item", slot = 8, },
 			{ name = "drillbit", price = 30, amount = 100, info = {}, type = "item", slot = 9, },
 		},
 	},
