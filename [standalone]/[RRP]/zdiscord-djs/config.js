@@ -26,7 +26,7 @@ const DebugLogs = false;
 const EnableDiscordBot = true;
 
 // DISCORD BOT
-const DiscordBotToken = "MTA4OTkwcCwA3hZk_4lJA8cwOA.G94cxx.pW2sHZoZ8yXmVzEK6JYKeHkwcCwA3hZk_4lJA8";
+const DiscordBotToken = "MTA4OTkwcCwA3hZk_4l1MjcwOA.G94cxx.pW2sHZoZ8yXmVzEK6JYKeHkwcCwA3hZk_4lJA8";
 const DiscordGuildId = "1139510569381138442";
 
 // STAFF CHAT
