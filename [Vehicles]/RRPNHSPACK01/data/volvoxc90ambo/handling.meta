@@ -27,7 +27,7 @@
       <fCamberStiffnesss value="0.000000" />
       <fTractionBiasFront value="0.490000" />
       <fTractionLossMult value="1.00000" />
-      <fSuspensionForce value="1.700000" />
+      <fSuspensionForce value="1.000000" />
       <fSuspensionCompDamp value="1.000000" />
       <fSuspensionReboundDamp value="1.600000" />
       <fSuspensionUpperLimit value="0.100000" />
@@ -35,8 +35,8 @@
       <fSuspensionRaise value="0.000000" />
       <fSuspensionBiasFront value="0.500000" />
       <fAntiRollBarForce value="0.600000" />
-      <fAntiRollBarBiasFront value="0.650000" />
-      <fRollCentreHeightFront value="0.400000" />
+      <fAntiRollBarBiasFront value="0.750000" />
+      <fRollCentreHeightFront value="0.6500000" />
       <fRollCentreHeightRear value="0.3500000" />
       <fCollisionDamageMult value="0.35000" />
       <fWeaponDamageMult value="0.500000" />
