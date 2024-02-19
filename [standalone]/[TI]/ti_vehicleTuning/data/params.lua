@@ -79,31 +79,31 @@ TuningParameters = {
         --     max = config.maxVehicleSpeed
         -- },
 
-        fClutchChangeRateScaleUpShift = {
-            label = "Upshift Rate",
-            description = "",
-            category = "transmission",
-            min = 0.0,
-            max = 10.0,
-        },
+        -- fClutchChangeRateScaleUpShift = {
+            -- label = "Upshift Rate",
+            -- description = "",
+            -- category = "transmission",
+            -- min = 0.0,
+            -- max = 10.0,
+        -- },
 
-        fClutchChangeRateScaleDownShift = {
-            label = "Downshift Rate",
-            description = "",
-            category = "transmission",
-            min = 0.0,
-            max = 10.0,
-        },
+        -- fClutchChangeRateScaleDownShift = {
+            -- label = "Downshift Rate",
+            -- description = "",
+            -- category = "transmission",
+            -- min = 0.0,
+            -- max = 10.0,
+        -- },
 
         -- BRAKES
 
-        fBrakeForce = {
-            label = "Brake Force",
-            description = "",
-            category = "brakes",
-            min = 0.0,
-            max = 10.0,
-        },
+        -- fBrakeForce = {
+            -- label = "Brake Force",
+            -- description = "",
+            -- category = "brakes",
+            -- min = 0.0,
+            -- max = 10.0,
+        -- },
 
         fBrakeBiasFront = {
             label = "Brake Bias Front",
@@ -113,55 +113,55 @@ TuningParameters = {
             max = 1.0,
         },
 
-        fHandBrakeForce = {
-            label = "Handbrake Force",
-            description = "",
-            category = "brakes",
-            min = 0.0,
-            max = 10.0,
-        },
+        -- fHandBrakeForce = {
+            -- label = "Handbrake Force",
+            -- description = "",
+            -- category = "brakes",
+            -- min = 0.0,
+            -- max = 10.0,
+        -- },
 
         -- TRACTION
 
-        fTractionCurveMax = {
-            label = "Traction Curve Max",
-            description = "",
-            category = "traction",
-            min = 0.0,
-            max = 10.0,
-        },
+        -- fTractionCurveMax = {
+            -- label = "Traction Curve Max",
+            -- description = "",
+            -- category = "traction",
+            -- min = 0.0,
+            -- max = 10.0,
+        -- },
 
-        fTractionCurveMin = {
-            label = "Traction Curve Min",
-            description = "",
-            category = "traction",
-            min = 0.0,
-            max = 10.0,
-        },
+        -- fTractionCurveMin = {
+            -- label = "Traction Curve Min",
+            -- description = "",
+            -- category = "traction",
+            -- min = 0.0,
+            -- max = 10.0,
+        -- },
 
-        fTractionCurveLateral = {
-            label = "Traction Curve Lateral",
-            description = "",
-            category = "traction",
-            min = 0.0,
-            max = 50.0,
-        },
+        -- fTractionCurveLateral = {
+            -- label = "Traction Curve Lateral",
+            -- description = "",
+            -- category = "traction",
+            -- min = 0.0,
+            -- max = 50.0,
+        -- },
 
-        fTractionSpringDeltaMax = {
-            label = "Traction Spring Delta Max",
-            description = "",
-            category = "traction",
-            min = 0.0,
-            max = 10.0,
-        },
+        -- fTractionSpringDeltaMax = {
+            -- label = "Traction Spring Delta Max",
+            -- description = "",
+            -- category = "traction",
+            -- min = 0.0,
+            -- max = 10.0,
+        -- },
 
-        fLowSpeedTractionLossMult = {
-            label = "Traction Loss Mult Low Speed",
-            description = "",
-            category = "traction",
-            min = 0.0,
-            max = 10.0,
-        },
+        -- fLowSpeedTractionLossMult = {
+            -- label = "Traction Loss Mult Low Speed",
+            -- description = "",
+            -- category = "traction",
+            -- min = 0.0,
+            -- max = 10.0,
+        -- },
 
         fTractionBiasFront = {
             label = "Traction Bias Front",
@@ -175,8 +175,8 @@ TuningParameters = {
             label = "Traction Loss Mult",
             description = "",
             category = "traction",
-            min = 0.0,
-            max = 10.0,
+            min = 0.8,
+            max = 4.0,
         },
 
         -- SUSPENSION
@@ -271,20 +271,20 @@ TuningParameters = {
             max = 1.0,
         },
 
-        fRollCentreHeightFront = {
-            label = "Anti Roll Bar Center Height Front",
-            description = "",
-            category = "anti roll bar",
-            min = -5.0,
-            max = 5.0,
-        },
+        -- fRollCentreHeightFront = {
+            -- label = "Anti Roll Bar Center Height Front",
+            -- description = "",
+            -- category = "anti roll bar",
+            -- min = -5.0,
+            -- max = 5.0,
+        -- },
 
-        fRollCentreHeightRear = {
-            label = "Anti Roll Bar Center Height Rear",
-            description = "",
-            category = "anti roll bar",
-            min = -5.0,
-            max = 5.0,
-        },
+        -- fRollCentreHeightRear = {
+            -- label = "Anti Roll Bar Center Height Rear",
+            -- description = "",
+            -- category = "anti roll bar",
+            -- min = -5.0,
+            -- max = 5.0,
+        -- },
     }
 }
