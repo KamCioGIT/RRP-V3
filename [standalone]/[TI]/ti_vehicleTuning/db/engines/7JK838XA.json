@@ -1,0 +1,122 @@
+{
+    "aspiration": {
+        "stats": {
+            "quality": 50,
+            "method": "centrifugal",
+            "material": "steel",
+            "system": "supercharger",
+            "compressor": 80
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "crankshaft": {
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "exhaust": {
+        "stats": {
+            "mufflers": "reverseFlow",
+            "material": "steel",
+            "quality": 50,
+            "cats": "300cpsi",
+            "system": "twin",
+            "diameter": 50
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "label": "BMW",
+    "headers": {
+        "stats": {
+            "system": "raceTube",
+            "quality": 50,
+            "material": "steel",
+            "diameter": 50
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "sound": "predatorv8",
+    "pistons": {
+        "stats": {
+            "diameter": 50,
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "block": {
+        "stats": {
+            "quality": 50,
+            "bore": 50,
+            "cylinders": 6,
+            "stroke": 50,
+            "material": "steel",
+            "layout": "v60"
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "fuel": {
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "conrods": {
+        "stats": {
+            "quality": 50,
+            "material": "steel",
+            "length": 50
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "variant": "",
+    "intake": {
+        "stats": {
+            "system": "performance",
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "valves": {
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "intercooler": {
+        "stats": {
+            "material": "steel",
+            "size": 800,
+            "quality": 50
+        },
+        "name": "bmw",
+        "label": "BMW"
+    },
+    "name": "bmw",
+    "heads": {
+        "stats": {
+            "vvl": true,
+            "config": "sohc",
+            "quality": 50,
+            "valves": 4,
+            "material": "steel"
+        },
+        "name": "bmw",
+        "label": "BMW"
+    }
+}

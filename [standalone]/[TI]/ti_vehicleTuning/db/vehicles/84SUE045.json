@@ -6,13 +6,13 @@
             "3": 0.00000100418833,
             "2": 0.00000100437159
         },
-        "wheelWidth": 0.50000000715254,
-        "wheelSize": 0.76000002384185,
+        "wheelWidth": 0.0,
+        "wheelSize": 0.0,
         "xOff": {
-            "1": 0.80619885444641,
-            "0": -0.80617167472839,
-            "3": 0.82994783639907,
-            "2": -0.82992149114608
+            "1": 0.78619885444641,
+            "0": -0.78617167472839,
+            "3": 0.75994783639907,
+            "2": -0.75992149114608
         }
     },
     "handling": {
@@ -21,61 +21,61 @@
         "fSuspensionLowerLimit": -0.14000000059604,
         "fClutchChangeRateScaleUpShift": 5.19999980926513,
         "fSuspensionCompDamp": 1.20000004768371,
-        "fLowSpeedTractionLossMult": 1.0,
+        "fDriveBiasFront": 0.0,
         "fCamberStiffnesss": 0.0,
         "fRollCentreHeightFront": 0.5,
         "fSuspensionForce": 2.59999990463256,
-        "fAntiRollBarForce": 0.89999997615814,
-        "fBrakeForce": 1.79999995231628,
+        "fSuspensionRaise": 0.0,
+        "fSuspensionBiasFront": 0.44999998807907,
         "fHandBrakeForce": 0.80000001192092,
-        "fTractionSpringDeltaMax": 0.15000000596046,
+        "fBrakeForce": 1.79999995231628,
         "fSuspensionUpperLimit": 0.09000000357627,
         "fTractionCurveLateral": 22.5,
         "fAntiRollBarBiasFront": 0.68000000715255,
-        "fSuspensionBiasFront": 0.44999998807907,
-        "fSuspensionRaise": 0.0,
+        "fTractionSpringDeltaMax": 0.15000000596046,
+        "fTractionLossMult": 1.0,
         "fSuspensionReboundDamp": 2.40000009536743,
         "fTractionCurveMin": 5.0,
-        "fRollCentreHeightRear": 0.5,
-        "fBrakeBiasFront": 0.60000002384185,
-        "fTractionLossMult": 1.0,
         "fTractionCurveMax": 4.19999980926513,
-        "fDriveBiasFront": 0.0,
+        "fBrakeBiasFront": 0.60000002384185,
+        "fLowSpeedTractionLossMult": 1.0,
+        "fRollCentreHeightRear": 0.5,
+        "fAntiRollBarForce": 0.89999997615814,
         "fClutchChangeRateScaleDownShift": 5.19999980926513
     },
     "engine": {
         "build": {
             "crankshaft": {
-                "quality": 0.5,
-                "material": "steel"
+                "material": "steel",
+                "quality": 0.5
             },
             "pistons": {
+                "material": "steel",
+                "quality": 0.5
+            },
+            "block": {
                 "quality": 0.5,
-                "material": "steel"
+                "bore": 0.66,
+                "cylinders": 6,
+                "stroke": 0.66,
+                "layout": "inline"
             },
             "fuelDelivery": {
                 "quality": 0.5
             },
             "valves": {
-                "quality": 0.5,
-                "material": "steel"
+                "material": "steel",
+                "quality": 0.5
+            },
+            "conrods": {
+                "material": "steel",
+                "quality": 0.5
             },
             "heads": {
                 "valves": 4,
+                "vvl": true,
                 "quality": 0.5,
-                "layout": "dohc",
-                "vvl": true
-            },
-            "conrods": {
-                "quality": 0.5,
-                "material": "steel"
-            },
-            "block": {
-                "layout": "inline",
-                "bore": 0.66,
-                "cylinders": 6,
-                "stroke": 0.66,
-                "quality": 0.5
+                "layout": "dohc"
             }
         },
         "tune": {
@@ -88,21 +88,21 @@
                 "superchargerSize": 0.25
             },
             "fuel": {
-                "afRatio": 1.0,
-                "limiter": 0.37,
-                "timing": 1.0
+                "afRatio": 0.75,
+                "limiter": 0.21,
+                "timing": 0.75
             },
             "nitrous": {
                 "rampEndBoost": 1.0,
                 "rampStart": 0.3,
-                "rampStartBoost": 1.0,
-                "rampEnd": 1.0
+                "rampEnd": 1.0,
+                "rampStartBoost": 1.0
             },
             "heads": {
-                "camProfile": 0.32,
-                "compRatio": 0.18,
-                "vvlProfile": 0.33,
-                "airflow": 0.97
+                "camProfile": 0.33,
+                "compRatio": 0.39,
+                "vvlProfile": 0.34,
+                "airflow": 1.0
             }
         }
     }
