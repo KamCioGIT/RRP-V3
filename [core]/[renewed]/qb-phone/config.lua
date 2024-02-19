@@ -11,7 +11,7 @@ Config.BillingCommissions = { -- This is a percentage (0.10) == 10%
 }
 
 -- Web hook for camera ( NOT GO PRO )
-Config.Webhook = ''
+Config.Webhook = 'https://discord.com/api/webhooks/1168021464692310076/xzo0htQm-p60fw0Gq2HlDhAEJk10Bc9lp2WMJHAg1YbI9hJVl_6l2-9uY4pR5EVCxQcz'
 
 -- Item name for pings app ( Having a VPN sends an anonymous ping, else sends the players name)
 Config.VPNItem = 'vpn'
