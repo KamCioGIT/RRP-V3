@@ -1,17 +1,17 @@
-
+print("^2Jim-Mining ^7v^4"..GetResourceMetadata(GetCurrentResourceName(), 'version', nil):gsub("%.", "^7.^4").."^7 - ^2Mining Script by ^1Jimathy^7")
 
 Loc = {}
 
 Config = {
 	Debug = false, -- enable debug mode
-	img = "qb-inventory/html/images", --Set this to the image directory of your inventory script or "nil" if using newer qb-menu
+	img = "qb-inventory/html/images/", --Set this to the image directory of your inventory script or "nil" if using newer qb-menu
 
 	Lan = "en", -- Pick your language here
 
 	JimShops = false, 		-- Set this to true if using jim-shops
 
 	Inv = "qb",				--"qb" or "ox"
-	Menu = "qb",			--"qb" or "ox"
+	Menu = "ox",			--"qb" or "ox"
 	ProgressBar = "ox",		--"qb" or "ox"
 	Notify = "ox",			--"qb" or "ox"
 
@@ -25,7 +25,7 @@ Config = {
 	Timings = { -- Time it takes to do things
 		["Cracking"] = math.random(5000, 10000),
 		["Washing"] = math.random(10000, 12000),
-		["Panning"] = math.random(35000, 50000),
+		["Panning"] = math.random(25000, 30000),
 		["Pickaxe"] = math.random(15000, 18000),
 		["Mining"] = math.random(10000, 15000),
 		["Laser"] = math.random(7000, 10000),
@@ -50,13 +50,22 @@ Config = {
 	},
 
 	PanPool = {		-- Rewards from panning
-		"goldore",
 		"can",
 		"goldore",
 		"can",
-		"can",
+		"goldore",
 		"bottle",
+		"stone",
 		"goldore",
+		"bottle",
+		"can",
+		"silverore",
+		"can",
+		"silverore",
+		"bottle",
+		"stone",
+		"silverore",
+		"bottle",
 	},
 
 ------------------------------------------------------------
@@ -108,14 +117,14 @@ Config = {
 		['ruby_necklace_silver'] = 220,
 		['sapphire_necklace_silver'] = 220,
 
-		['diamond_earring'] = 300,
-		['emerald_earring'] = 300,
-		['ruby_earring'] = 300,
-		['sapphire_earring'] = 300,
-		['diamond_earring_silver'] = 275,
-		['emerald_earring_silver'] = 275,
-		['ruby_earring_silver'] = 275,
-		['sapphire_earring_silver'] = 275,
+		['diamond_earring'] = 150,
+		['emerald_earring'] = 150,
+		['ruby_earring'] = 150,
+		['sapphire_earring'] = 150,
+		['diamond_earring_silver'] = 125,
+		['emerald_earring_silver'] = 125,
+		['ruby_earring_silver'] = 125,
+		['sapphire_earring_silver'] = 125,
 
 		['gold_ring'] = 100,
 		['goldchain'] = 125,
@@ -128,16 +137,15 @@ Config = {
 ------------------------------------------------------------
 --Mining Store Items
 	Items = {
-		label = "Mining Store",  slots = 8,
+		label = "Mining Store",  slots = 9,
 		items = {
-			{ name = "water_bottle", price = 2, amount = 100, info = {}, type = "item", slot = 1, },
-			{ name = "sandwich", price = 2, amount = 250, info = {}, type = "item", slot = 2, },
-			{ name = "bandage", price = 5, amount = 100, info = {}, type = "item", slot = 3, },
-			{ name = "goldpan", price = 50, amount = 100, info = {}, type = "item", slot = 4, },
-			{ name = "pickaxe",	price = 150, amount = 100, info = {}, type = "item", slot = 5, },
-			{ name = "miningdrill",	price = 3200, amount = 50, info = {}, type = "item", slot = 6, },
-			{ name = "mininglaser",	price = 15000, amount = 5, info = {}, type = "item", slot = 7, },
-			{ name = "drillbit", price = 5, amount = 100, info = {}, type = "item", slot = 8, },
+			{ name = "bandage", price = 50, amount = 100, info = {}, type = "item", slot = 3, },
+			{ name = "weapon_flashlight", price = 100, amount = 100, info = {}, type = "item", slot = 4, },
+			{ name = "goldpan", price = 50, amount = 100, info = {}, type = "item", slot = 5, },
+			{ name = "pickaxe",	price = 150, amount = 100, info = {}, type = "item", slot = 6, },
+			{ name = "miningdrill",	price = 5000, amount = 50, info = {}, type = "item", slot = 7, },
+			{ name = "mininglaser",	price = 60000, amount = 5, info = {}, type = "item", slot = 8, },
+			{ name = "drillbit", price = 30, amount = 100, info = {}, type = "item", slot = 9, },
 		},
 	},
 }
