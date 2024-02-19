@@ -13,7 +13,7 @@ const LanguageLocaleCode = "en";
 // PUBLIC VALUES
 const FiveMServerName = "RealRoleplay";
 const DiscordInviteLink = "https://discord.gg/ugyn8TpUjv";
-const FiveMServerIP = "127.0.0.1";
+const FiveMServerIP = "5.249.160.151:30124";
 
 // This spams the console, only enable for testing if needed
 const DebugLogs = false;
@@ -26,7 +26,7 @@ const DebugLogs = false;
 const EnableDiscordBot = true;
 
 // DISCORD BOT
-const DiscordBotToken = "MTA4OTkwcCwA3hZk_4l1MjcwOA.G94cxx.pW2sHZoZ8yXmVzEK6JYKeHkwcCwA3hZk_4lJA8";
+const DiscordBotToken = "MTA4OTI0MTMxNzYxMzI1MjcwOA.G94cxx.pW2sHZoZ8yXmVzEK6JYKeHkwcCwA3hZk_4lJA8";
 const DiscordGuildId = "1139510569381138442";
 
 // STAFF CHAT
@@ -47,16 +47,16 @@ const DiscordAdminRoleId = "1174504695390294208";
 const DiscordGodRoleId = "1174504695390294208";
 
 // DISCORD BOT STATUS
-const EnableBotStatusMessages = false;
+const EnableBotStatusMessages = true;
 const BotStatusMessages = [
     "{servername}",
     "{playercount} online",
 ];
 
 // ACE PERMISSIONS
-const EnableAutoAcePermissions = false;
+const EnableAutoAcePermissions = true;
 const AutoAcePermissions = {
-    // "example": "000000000000000000",
+    "admin": "1139510569435680804",
     // "example2": [ "000000000000000000", "000000000000000000"],
 };
 
@@ -68,13 +68,13 @@ const SaveScreenshotsToServer = false;
  * WEBHOOK LOGGING SETTINGS
 **************************/
 
-const EnableLoggingWebhooks = false;
-const LoggingWebhookName = "zLogs";
+const EnableLoggingWebhooks = true;
+const LoggingWebhookName = "RRPLogs";
 // put "&" in front of the id if you're to ping a role
 const LoggingAlertPingId = "&000000000000000000";
 // example: "bank": "https://discord.com/webhook/...",
 const LoggingWebhooks = {
-    "example": "https://discord.com/api/webhooks/000000000/sEcRRet-ToK3n_5tUfF_tH8t_YUo-S40u1d-n07-sHar3",
+    "example": "https://discord.com/api/webhooks/1209191929569615912/VXa95Nf0kkfF9TPX_9uaHsvTqea66tB5M0-mPotwfnK6To-wyq6XwiHwqYbc4bGwM_Cv",
 };
 
 
