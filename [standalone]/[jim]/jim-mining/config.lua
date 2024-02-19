@@ -50,20 +50,13 @@ Config = {
 	},
 
 	PanPool = {		-- Rewards from panning
-		"fatnug",
-		"gravel",
-		"goldore",
-		"fatnug",
-		"can",
-		"fatnug",
 		"goldore",
 		"can",
-		"gravel",
-		"fatnug",
+		"goldore",
+		"can",
 		"can",
 		"bottle",
 		"goldore",
-		"gravel",
 	},
 
 ------------------------------------------------------------
@@ -75,9 +68,6 @@ Config = {
 		"goldore",
 		"silverore",
 		"carbon",
-		"fatnug",
-		"gravel",
-		"essexchain",
 	},
 
 	SellingPrices = { -- Selling Prices
@@ -86,9 +76,6 @@ Config = {
 		['silverore'] = 60,
 		['ironore'] = 50,
 		['carbon'] = 60,
-		['fatnug'] = 300,
-		['gravel'] = 20,
-		['essexchain'] = 250000,
 
 		['goldingot'] = 75,
 		['silveringot'] = 65,
@@ -167,7 +154,6 @@ Crafting = {
 		{ ["steel"] = { ["ironore"] = 1, ["carbon"] = 1 } },
 		{ ["aluminum"] = { ["can"] = 2, }, ['amount'] = 3 },
 		{ ["glass"] = { ["bottle"] = 2, }, ['amount'] = 2 },
-		{ ["essexchain"] = { ["fatnug"] = 500, }, ['amount'] = 1 },
 	},
 	GemCut = {
 		{ ["emerald"] = { ["uncut_emerald"] = 1, } },
