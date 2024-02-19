@@ -1,95 +1,95 @@
 {
     "fuels": {
-        "RON95": {
-            "buyUntil": 500.0,
-            "max": 500.0,
-            "restockTime": 60,
-            "buyPrice": 0.75,
-            "stock": 500.0,
+        "Diesel": {
+            "min": 0.0,
             "restockAmount": 5.0,
             "sellUntil": 0.0,
-            "min": 0.0,
-            "sellPrice": 1.5
+            "buyUntil": 1000.0,
+            "max": 1000.0,
+            "restockTime": 60,
+            "sellPrice": 1.0,
+            "stock": 1000.0,
+            "buyPrice": 0.5
         },
         "RON98": {
+            "min": 0.0,
+            "restockAmount": 5.0,
+            "sellUntil": 0.0,
             "buyUntil": 250.0,
             "max": 250.0,
             "restockTime": 60,
-            "buyPrice": 1.0,
+            "sellPrice": 2.0,
             "stock": 250.0,
-            "restockAmount": 5.0,
-            "sellUntil": 0.0,
-            "min": 0.0,
-            "sellPrice": 2.0
-        },
-        "RON91": {
-            "buyUntil": 1000.0,
-            "max": 1000.0,
-            "restockTime": 60,
-            "buyPrice": 0.5,
-            "stock": 1000.0,
-            "restockAmount": 5.0,
-            "sellUntil": 0.0,
-            "min": 0.0,
-            "sellPrice": 1.0
-        },
-        "MET100": {
-            "buyUntil": 100.0,
-            "max": 100.0,
-            "restockTime": 60,
-            "buyPrice": 8.0,
-            "stock": 100.0,
-            "restockAmount": 5.0,
-            "sellUntil": 0.0,
-            "min": 0.0,
-            "sellPrice": 4.0
+            "buyPrice": 1.0
         },
         "Electric": {
+            "min": 0.0,
+            "restockAmount": 100.0,
+            "sellUntil": 0.0,
             "buyUntil": 100000.0,
             "max": 100000.0,
             "restockTime": 1,
-            "buyPrice": 0.1,
+            "sellPrice": 0.2,
             "stock": 100000.0,
-            "restockAmount": 100.0,
-            "sellUntil": 0.0,
-            "min": 0.0,
-            "sellPrice": 0.2
+            "buyPrice": 0.1
         },
-        "Diesel": {
-            "buyUntil": 1000.0,
-            "max": 1000.0,
-            "restockTime": 60,
-            "buyPrice": 0.5,
-            "stock": 1000.0,
+        "MET100": {
+            "min": 0.0,
             "restockAmount": 5.0,
             "sellUntil": 0.0,
-            "min": 0.0,
-            "sellPrice": 1.0
+            "buyUntil": 100.0,
+            "max": 100.0,
+            "restockTime": 60,
+            "sellPrice": 4.0,
+            "stock": 100.0,
+            "buyPrice": 8.0
         },
         "MET80/NIT20": {
+            "min": 0.0,
+            "restockAmount": 5.0,
+            "sellUntil": 0.0,
             "buyUntil": 50.0,
             "max": 50.0,
             "restockTime": 60,
-            "buyPrice": 2.5,
+            "sellPrice": 5.0,
             "stock": 50.0,
+            "buyPrice": 2.5
+        },
+        "RON91": {
+            "min": 0.0,
             "restockAmount": 5.0,
             "sellUntil": 0.0,
+            "buyUntil": 1000.0,
+            "max": 1000.0,
+            "restockTime": 60,
+            "sellPrice": 1.0,
+            "stock": 1000.0,
+            "buyPrice": 0.5
+        },
+        "RON95": {
             "min": 0.0,
-            "sellPrice": 5.0
+            "restockAmount": 5.0,
+            "sellUntil": 0.0,
+            "buyUntil": 500.0,
+            "max": 500.0,
+            "restockTime": 60,
+            "sellPrice": 1.5,
+            "stock": 500.0,
+            "buyPrice": 0.75
         }
     },
     "addons": [
         {
             "Electric": {
+                "min": 0.0,
+                "restockAmount": 100.0,
+                "sellUntil": 0.0,
                 "buyUntil": 100000.0,
                 "max": 100000.0,
                 "restockTime": 1,
-                "buyPrice": 0.1,
+                "sellPrice": 0.2,
                 "stock": 100000.0,
-                "restockAmount": 100.0,
-                "sellUntil": 0.0,
-                "min": 0.0,
-                "sellPrice": 0.2
+                "buyPrice": 0.1
             }
         }
     ]
