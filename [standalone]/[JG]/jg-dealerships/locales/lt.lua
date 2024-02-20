@@ -211,4 +211,6 @@ Locales['lt'] = {
   dealershipDoesntSellVehicle = "This dealership can't purchase this vehicle",
   dealershipWantsYourVehicle = "Congratulations! This dealership would like to purchase your vehicle.",
   purchasePrice = "Offered price: ",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }

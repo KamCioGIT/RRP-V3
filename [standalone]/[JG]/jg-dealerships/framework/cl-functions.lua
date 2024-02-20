@@ -12,13 +12,13 @@ function Framework.Client.TriggerCallback(cbRef, cb, ...)
     
     if Config.Framework == "QBCore" then
       return QBCore.Functions.TriggerCallback(cbRef, function(res)
-        cb(res)
         cbWaiting = false
+        cb(res)
       end, table.unpack(args))
     elseif Config.Framework == "ESX" then
       return ESX.TriggerServerCallback(cbRef, function(res)
-        cb(res)
         cbWaiting = false
+        cb(res)
       end, table.unpack(args))
     end
   end)
@@ -171,18 +171,21 @@ function Framework.Client.VehicleRemoveKeys(plate, vehicleEntity)
 end
 
 function Framework.Client.GetPlate(vehicle)
-  if Config.Framework == "QBCore" then
-    return QBCore.Functions.GetPlate(vehicle)
-  elseif Config.Framework == "ESX" then
-    return ESX.Game.GetVehicleProperties(vehicle).plate
-  end
+  return string.gsub(GetVehicleNumberPlateText(vehicle), '^%s*(.-)%s*$', '%1')
 end
 
-function Framework.Client.GetModelColumn(vehicle) -- returns either hash or model name
+function Framework.Client.GetModelColumn(vehicle)
   if Config.Framework == "QBCore" then
-    return vehicle.vehicle
+    return vehicle.vehicle or tonumber(vehicle.hash) 
   elseif Config.Framework == "ESX" then
-    return json.decode(vehicle.vehicle).model
+    if not vehicle or not vehicle.vehicle then return nil end
+
+    if type(vehicle.vehicle) == "string" then
+      if not json.decode(vehicle.vehicle) then return nil end
+      return json.decode(vehicle.vehicle).model
+    else
+      return vehicle.vehicle.model
+    end
   end
 end
 
@@ -273,7 +276,14 @@ function Framework.Client.GetSocietyBalance(society, type)
     balance = data
   end, society, type)
 
-  while balance == -1 do Wait(0) end
+  timeout = 0
+  while balance == -1 do
+    timeout = timeout + 1
+    Wait(0)
+    if timeout > 250 then
+      return Framework.Client.Notify("Error: could not get society balance for " .. society, "error")
+    end
+  end
   return balance
 end
 

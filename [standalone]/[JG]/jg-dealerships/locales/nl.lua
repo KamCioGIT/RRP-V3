@@ -211,4 +211,6 @@ Locales['nl'] = {
   dealershipDoesntSellVehicle = "Deze autodealer verkoopt dit voertuig niet",
   dealershipWantsYourVehicle = "Gefeliciteerd! Deze autodealer wil je voertuig kopen.",
   purchasePrice = "Aangeboden prijs: ",
+  
+  spawnCodeInvalid = "Spawn code invalid"
 }

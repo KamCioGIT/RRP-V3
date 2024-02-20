@@ -211,4 +211,6 @@ Locales['es'] = {
   dealershipDoesntSellVehicle = "Este concesionario no puede comprar este vehículo",
   dealershipWantsYourVehicle = "Enhorabuena. Este concesionario desea comprar su vehículo.",
   purchasePrice = "Precio ofertado: ",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }

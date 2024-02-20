@@ -211,4 +211,6 @@ Locales['tr'] = {
   dealershipDoesntSellVehicle = "Bu bayi bu aracı satın alamaz",
   dealershipWantsYourVehicle = "Tebrikler! Bu bayi aracınızı satın almak istiyor.",
   purchasePrice = "Teklif edilen fiyat: ",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }

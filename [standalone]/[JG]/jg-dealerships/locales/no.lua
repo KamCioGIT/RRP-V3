@@ -211,4 +211,6 @@ Locales['no'] = {
   dealershipDoesntSellVehicle = "Dette forhandleren kan ikke kjøpe dette kjøretøyet",
   dealershipWantsYourVehicle = "Gratulerer! Denne forhandleren vil gjerne kjøpe kjøretøyet ditt.",
   purchasePrice = "Tilbudt pris: ",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }

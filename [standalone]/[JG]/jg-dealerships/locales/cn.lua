@@ -211,4 +211,6 @@ Locales['cn'] = {
   dealershipDoesntSellVehicle = "该经销商无法购买此车",
   dealershipWantsYourVehicle = "恭喜您！本经销商希望购买您的车辆.",
   purchasePrice = "报价: ",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }

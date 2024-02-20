@@ -83,7 +83,7 @@ Framework.Server.CreateCallback("jg-dealerships:server:get-society-balance", fun
   end
 end)
 
-function Framework.Server.SaveVehicleToGarage(src, purchaseType, society, societyType, model, plate, props, financed, financeData)
+function Framework.Server.SaveVehicleToGarage(src, purchaseType, society, societyType, model, plate, financed, financeData)
   if Config.Framework == "QBCore" then
     local playerData = Framework.Server.GetPlayer(src).PlayerData
     local license = playerData.license
@@ -91,52 +91,68 @@ function Framework.Server.SaveVehicleToGarage(src, purchaseType, society, societ
 
     if purchaseType == "society" then
       if societyType == "job" then
-        MySQL.insert.await("INSERT INTO player_vehicles (license,citizenid,vehicle,hash,mods,plate,financed,finance_data,job_vehicle,job_vehicle_rank) VALUES(?,?,?,?,?,?,?,?,?,?)", {license, society, model, joaat(model), json.encode(props), plate, financed, json.encode(financeData), 1, 0})
+        MySQL.insert.await("INSERT INTO player_vehicles (license,citizenid,hash,plate,financed,finance_data,job_vehicle,job_vehicle_rank) VALUES(?,?,?,?,?,?,?,?,?)", {license, society, model, joaat(model), plate, financed, json.encode(financeData), 1, 0})
       elseif societyType == "gang" then
-        MySQL.insert.await("INSERT INTO player_vehicles (license,citizenid,vehicle,hash,mods,plate,financed,finance_data,gang_vehicle,gang_vehicle_rank) VALUES(?,?,?,?,?,?,?,?,?,?)", {license, society, model, joaat(model), json.encode(props), plate, financed, json.encode(financeData), 1, 0})
+        MySQL.insert.await("INSERT INTO player_vehicles (license,citizenid,hash,plate,financed,finance_data,gang_vehicle,gang_vehicle_rank) VALUES(?,?,?,?,?,?,?,?,?)", {license, society, model, joaat(model), plate, financed, json.encode(financeData), 1, 0})
       end
     else
-      MySQL.insert.await("INSERT INTO player_vehicles (license,citizenid,vehicle,hash,mods,plate,financed,finance_data) VALUES(?,?,?,?,?,?,?,?)", {license, citizenid, model, joaat(model), json.encode(props), plate, financed, json.encode(financeData)})
+      MySQL.insert.await("INSERT INTO player_vehicles (license,citizenid,vehicle,hash,plate,financed,finance_data) VALUES(?,?,?,?,?,?,?)", {license, citizenid, model, joaat(model), plate, financed, json.encode(financeData)})
     end
   elseif Config.Framework == "ESX" then
     local identifier = Framework.Server.GetPlayerIdentifier(src)
 
     if purchaseType == "society" then
       if societyType == "job" then
-        MySQL.insert.await("INSERT INTO owned_vehicles (owner,plate,vehicle,financed,finance_data,job_vehicle,job_vehicle_rank) VALUES(?,?,?,?,?,?,?)", {society, plate, json.encode(props), financed, json.encode(financeData), 1, 0})
+        MySQL.insert.await("INSERT INTO owned_vehicles (owner,plate,financed,finance_data,job_vehicle,job_vehicle_rank) VALUES(?,?,?,?,?,?)", {society, plate, financed, json.encode(financeData), 1, 0})
       elseif societyType == "gang" then
-        MySQL.insert.await("INSERT INTO owned_vehicles (owner,plate,vehicle,financed,finance_data,gang_vehicle,gang_vehicle_rank) VALUES(?,?,?,?,?,?,?)", {society, plate, json.encode(props), financed, json.encode(financeData), 1, 0})
+        MySQL.insert.await("INSERT INTO owned_vehicles (owner,plate,financed,finance_data,gang_vehicle,gang_vehicle_rank) VALUES(?,?,?,?,?,?)", {society, plate, financed, json.encode(financeData), 1, 0})
       end
     else
-      MySQL.insert.await("INSERT INTO owned_vehicles (owner,plate,vehicle,financed,finance_data) VALUES(?,?,?,?,?)", {identifier, plate, json.encode(props), financed, json.encode(financeData)})
+      MySQL.insert.await("INSERT INTO owned_vehicles (owner,plate,financed,finance_data) VALUES(?,?,?,?)", {identifier, plate, financed, json.encode(financeData)})
     end
   end
 end
 
 function Framework.Server.VehicleGeneratePlate()
-  local format = Config.PlateFormat or "1AA111AA"
-  local plate = ""
+  local plateFormat = Config.PlateFormat or "1AA111AA"
+  local attempts = 0
 
-  for i = 1, #format do
-    local char = format:sub(i, i)
+  while attempts < 20 do
+    local charsetNumbers = "0123456789"
+    local charsetLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    local plate = ""
+    local i = 0
 
-    if char == "A" then
-      plate = plate .. randomChar("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-    elseif char == "1" then
-      plate = plate .. randomChar("123456789")
-    elseif char == " " then
-      plate = plate .. " "
+    while i <= 8 do
+      local c = plateFormat:sub(i, i)
+      if c == "A" then
+        local randLetterPos = math.random(1, #charsetLetters)
+        local randLetter = charsetLetters:sub(randLetterPos, randLetterPos)
+        plate = plate .. randLetter -- Ensure only one character is added
+      elseif c == "1" then
+        local randNumberPos = math.random(1, #charsetNumbers)
+        local randNumber = charsetNumbers:sub(randNumberPos, randNumberPos)
+        plate = plate .. randNumber -- Ensure only one character is added
+      elseif c == "^" then
+        i = i + 1 -- Skip the caret and use the next character
+        if i <= #plateFormat then
+          plate = plate .. plateFormat:sub(i, i)
+        end
+      else
+        plate = plate .. c
+      end
+      i = i + 1
     end
 
-    if #plate >= 8 then break end
+    local result = MySQL.scalar.await("SELECT plate FROM " .. Framework.VehiclesTable .. " WHERE plate = ?", {plate})
+    if not result then
+      return plate:upper()
+    end
+
+    attempts = attempts + 1
   end
 
-  local result = MySQL.scalar.await("SELECT plate FROM " .. Framework.VehiclesTable .. " WHERE plate = ?", {plate})
-  if result then
-    return Framework.Server.VehicleGeneratePlate()
-  else
-    return plate:upper()
-  end
+  return false
 end
 
 --
@@ -325,3 +341,18 @@ function Framework.Server.GetJobs()
     return ESX.GetJobs()
   end
 end
+
+--
+-- ti_fuel
+--
+
+RegisterNetEvent("jg-dealerships:server:save-ti-fuel-type", function(plate, type)
+  MySQL.query.await("ALTER TABLE " .. Framework.VehiclesTable .. " ADD COLUMN IF NOT EXISTS `ti_fuel_type` VARCHAR(100) DEFAULT '';")
+  MySQL.update.await("UPDATE " .. Framework.VehiclesTable .. " SET ti_fuel_type = ? WHERE plate = ?", {type, plate});
+end)
+
+Framework.Server.CreateCallback('jg-dealerships:server:get-ti-fuel-type', function(src, cb, plate)
+  MySQL.query.await("ALTER TABLE " .. Framework.VehiclesTable .. " ADD COLUMN IF NOT EXISTS `ti_fuel_type` VARCHAR(100) DEFAULT '';")
+  local data = MySQL.single.await("SELECT ti_fuel_type FROM  " .. Framework.VehiclesTable .. " WHERE plate = ?", {plate});
+  cb(data.ti_fuel_type)
+end)

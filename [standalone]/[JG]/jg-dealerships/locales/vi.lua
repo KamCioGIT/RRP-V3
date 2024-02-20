@@ -136,4 +136,6 @@ Locales['vi'] = {
   noLiveries = "Không có liveries này",
   noExtras = "Không có extras này",
   none = "Không có",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }

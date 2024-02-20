@@ -55,6 +55,7 @@ CREATE TABLE IF NOT EXISTS `dealership_sales` (
   `vehicle` varchar(100) NOT NULL,
   `plate` varchar(255) NOT NULL,
   `player` varchar(255) NOT NULL,
+  `seller` varchar(255),
   `purchase_type` varchar(50) NOT NULL,
   `paid` float NOT NULL DEFAULT 0,
   `owed` float NOT NULL DEFAULT 0,

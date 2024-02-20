@@ -6,8 +6,11 @@ RegisterNetEvent("jg-dealerships:client:start-test-drive:config", function(vehic
 
 end)
 
-RegisterNetEvent("jg-dealerships:client:sell-vehicle:config", function(vehicle)
-
+RegisterNetEvent("jg-dealerships:client:sell-vehicle:config", function(vehicle, plate)
+  --
+  -- Add code here to run before the vehicle is deleted
+  --
+  DeleteEntity(vehicle)
 end)
 
 RegisterNetEvent("jg-dealerships:client:showroom-pre-check", function(dealershipId, cb)

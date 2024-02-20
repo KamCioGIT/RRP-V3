@@ -1,8 +1,7 @@
--- TODO: Text UI toggle for management panel and also display vehicles?
---
--- Blips
---
 local blips = {}
+local resetTextUIs = false
+local drawTextVisible, currentText
+local sleep = 1000
 
 local function createBlip(name, coords, blipId, blipColour, blipScale)
   local blip = AddBlipForCoord(coords.x, coords.y, coords.z)
@@ -15,34 +14,6 @@ local function createBlip(name, coords, blipId, blipColour, blipScale)
   EndTextCommandSetBlipName(blip)
   return blip
 end
-
-RegisterNetEvent("jg-dealerships:client:create-blips", function()
-  for _, blip in pairs(blips) do RemoveBlip(blip) end
-
-  Framework.Client.TriggerCallback("jg-dealerships:server:get-blips-data", function(data)
-    for _, dealer in pairs(data.dealerships) do
-      if dealer and dealer.config and not dealer.config.hideBlip then
-        if isShowroomAccessAllowed(dealer.name) then
-          local blipName = Locale.dealership .. ": " .. dealer.label
-          local blip = createBlip(blipName, dealer.config.openShowroom, dealer.config.blip.id, dealer.config.blip.color, dealer.config.blip.scale)
-          blips[#blips + 1] = blip
-        end
-      end
-    end
-  end)
-end)
-
--- Create blips on load
-CreateThread(function()
-  TriggerEvent("jg-dealerships:client:create-blips")
-end)
-
---
--- Text UI prompts
---
-local resetTextUIs = false
-local drawTextVisible, currentText
-local sleep = 1000
 
 function showDrawText(id, text)
   if drawTextVisible ~= id or currentText ~= text then
@@ -94,52 +65,65 @@ end
 local function createToggleThread(func)
   CreateThread(function()
     while not resetTextUIs do
-      sleep = 1000
+      sleep = 2000
       func()
       Wait(sleep)
     end
   end)
 end
 
-function createTextUIs()
+function createTextUIs(blipsData)
+  if not blipsData.dealerships then return false end
   resetTextUIs = false
-  Framework.Client.TriggerCallback("jg-dealerships:server:get-blips-data", function(data)
-    for _, dealer in pairs(data.dealerships) do
-      if dealer.config then
-        if isShowroomAccessAllowed(dealer.name) or (dealer.type == "owned" and dealer.managementAccess) then
-          createToggleThread(function()
-            toggleDrawText(dealer.name, dealer.config.openShowroom, (dealer.config.hideMarkers and 5 or 1), "open-showroom", Config.OpenShowroomPrompt, Config.OpenShowroomKeyBind)
-            if not dealer.config.hideMarkers then toggleMarker(dealer.config.openShowroom, dealer.config.markers) end
-          end)
 
-          if dealer.config.enableSellVehicle then
-            createToggleThread(function()
-              toggleDrawText(dealer.name, dealer.config.sellVehicle, 5, "sell-vehicle", Config.SellVehiclePrompt, Config.SellVehicleKeyBind)
-              if not dealer.config.hideMarkers then toggleMarker(dealer.config.sellVehicle, dealer.config.markers) end
-            end)
-          end
-        end
-      
-        if dealer.type == "owned" and dealer.managementAccess then
+  for _, dealer in pairs(blipsData.dealerships) do
+    if dealer.config then
+      if isShowroomAccessAllowed(dealer.name) or (dealer.type == "owned" and dealer.managementAccess) then
+        createToggleThread(function()
+          toggleDrawText(dealer.name, dealer.config.openShowroom, (dealer.config.hideMarkers and 5 or 1), "open-showroom", Config.OpenShowroomPrompt, Config.OpenShowroomKeyBind)
+          if not dealer.config.hideMarkers then toggleMarker(dealer.config.openShowroom, dealer.config.markers) end
+        end)
+
+        if dealer.config.enableSellVehicle then
           createToggleThread(function()
-            toggleDrawText(dealer.name, dealer.config.openManagement, (dealer.config.hideMarkers and 5 or 1), "open-management", Config.OpenManagementPrompt, Config.OpenManagementKeyBind)
-            if not dealer.config.hideMarkers then toggleMarker(dealer.config.openManagement, dealer.config.markers) end
+            toggleDrawText(dealer.name, dealer.config.sellVehicle, 5, "sell-vehicle", Config.SellVehiclePrompt, Config.SellVehicleKeyBind)
+            if not dealer.config.hideMarkers then toggleMarker(dealer.config.sellVehicle, dealer.config.markers) end
           end)
         end
       end
+    
+      if dealer.type == "owned" and dealer.managementAccess then
+        createToggleThread(function()
+          toggleDrawText(dealer.name, dealer.config.openManagement, (dealer.config.hideMarkers and 5 or 1), "open-management", Config.OpenManagementPrompt, Config.OpenManagementKeyBind)
+          if not dealer.config.hideMarkers then toggleMarker(dealer.config.openManagement, dealer.config.markers) end
+        end)
+      end
     end
-  end)
+  end
 end
 
-RegisterNetEvent("jg-dealerships:client:create-text-uis", function()
+RegisterNetEvent("jg-dealerships:client:update-blips-text-uis", function()
   Citizen.CreateThread(function()
-    resetTextUIs = true;
-    Wait(1500)
-    createTextUIs()
+    for _, blip in pairs(blips) do RemoveBlip(blip) end
+    resetTextUIs = true
+
+    Framework.Client.TriggerCallback("jg-dealerships:server:get-blips-data", function(blipsData)
+      for _, dealer in pairs(blipsData.dealerships) do
+        if dealer and dealer.config and not dealer.config.hideBlip then
+          if isShowroomAccessAllowed(dealer.name) or (dealer.type == "owned" and dealer.managementAccess) then
+            local blipName = Locale.dealership .. ": " .. dealer.label
+            local blip = createBlip(blipName, dealer.config.openShowroom, dealer.config.blip.id, dealer.config.blip.color, dealer.config.blip.scale)
+            blips[#blips + 1] = blip
+          end
+        end
+      end
+
+      createTextUIs(blipsData)
+    end)
   end)
 end)
 
 Citizen.CreateThread(function()
   while not Framework.Client.GetPlayerIdentifier() do Wait(1000) end
-  createTextUIs()
+  TriggerEvent("jg-dealerships:client:update-blips-text-uis")
 end)

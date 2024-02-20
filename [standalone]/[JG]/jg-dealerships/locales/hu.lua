@@ -211,4 +211,6 @@ Locales['hu'] = {
   dealershipDoesntSellVehicle = "Ez a kereskedés nem tudja megvásárolni ezt a járművet",
   dealershipWantsYourVehicle = "Gratulálunk! Ez a kereskedés szeretné megvásárolni az Ön járművét.",
   purchasePrice = "Kínált ár: ",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }

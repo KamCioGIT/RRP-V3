@@ -1,4 +1,5 @@
-RegisterNetEvent("jg-dealerships:server:purchase-vehicle:config", function(playerSrc, vehNetId, plate, purchaseType, amountToPay)
+RegisterNetEvent("jg-dealerships:server:purchase-vehicle:config", function(vehNetId, plate, purchaseType, amount, paymentMethod, financed)
+  local src = source
   local vehicle = NetworkGetEntityFromNetworkId(vehNetId)
 
 end)

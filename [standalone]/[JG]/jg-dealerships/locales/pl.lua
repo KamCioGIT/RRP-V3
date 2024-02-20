@@ -211,4 +211,6 @@ Locales['pl'] = {
   dealershipDoesntSellVehicle = "Ten dealer samochodowy nie sprzedaje tego pojazdu",
   dealershipWantsYourVehicle = "Gratulacje! Ten dealer samochodowy chce kupić twój pojazd.",
   purchasePrice = "Zaproponowana cena: ",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }

@@ -211,4 +211,6 @@ Locales['cs'] = {
   dealershipDoesntSellVehicle = "Tento prodejce nemůže koupit toto vozidlo",
   dealershipWantsYourVehicle = "Gratulujeme! Tento prodejce by rád zakoupil vaše vozidlo.",
   purchasePrice = "Nabízená cena: ",
+
+  spawnCodeInvalid = "Spawn code invalid"
 }
