@@ -145,9 +145,8 @@ Config = {
 		"rubber",
 		"aluminum",
 		"bottle",
-		"meth",
-		"weapon_golfclub",
-		"weapon_knuckle",
+		"weed_purplehaze",
+		"weed_purplehaze_seed",
 	},
 	ScrapItems = {
 		"steel",

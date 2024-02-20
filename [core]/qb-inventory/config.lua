@@ -12,7 +12,7 @@ Config.KeyBinds = {
 
 Config.CleanupDropTime = 15 * 60                -- How many seconds it takes for drops to be untouched before being deleted
 Config.MaxDropViewDistance = 12.5               -- The distance in GTA Units that a drop can be seen
-Config.UseItemDrop = false                      -- This will enable item object to spawn on drops instead of markers
+Config.UseItemDrop = true                      -- This will enable item object to spawn on drops instead of markers
 Config.ItemDropObject = `prop_nigel_bag_pickup` -- if Config.UseItemDrop is true, this will be the prop that spawns for the item
 
 Config.VendingObjects = {
@@ -22,7 +22,7 @@ Config.VendingObjects = {
 }
 
 Config.BinObjects = {
-    'prop_bin_05a',
+    '',
 }
 
 Config.CraftingObject = `prop_toolchest_05`
@@ -195,34 +195,27 @@ Config.CraftingItems = {
         },
     },
     {
-        name = 'pistol_ammo',
+        name = 'laptop',
         amount = 50,
         threshold = 250,
         points = 8,
         costs = {
-            ['metalscrap'] = 50,
+            ['plastic'] = 50,
             ['steel'] = 37,
             ['copper'] = 26,
         },
     },
     {
-        name = 'ironoxide',
+        name = 'laptop_green',
         amount = 50,
         threshold = 300,
         points = 9,
         costs = {
-            ['iron'] = 60,
-            ['glass'] = 30,
-        },
-    },
-    {
-        name = 'aluminumoxide',
-        amount = 50,
-        threshold = 300,
-        points = 10,
-        costs = {
-            ['aluminum'] = 60,
-            ['glass'] = 30,
+            ['laptop'] = 1,
+            ['gatecrack'] = 2,
+            ['electronickit'] = 2,
+            ['radioscanner'] = 1,
+            ['screwdriverset'] = 1,
         },
     },
     {
@@ -388,8 +381,8 @@ BackEngineVehicles = {
 }
 
 Config.MaximumAmmoValues = {
-    ['pistol'] = 250,
-    ['smg'] = 250,
-    ['shotgun'] = 200,
-    ['rifle'] = 250,
+    ['pistol'] = 25,
+    ['smg'] = 25,
+    ['shotgun'] = 20,
+    ['rifle'] = 25,
 }
