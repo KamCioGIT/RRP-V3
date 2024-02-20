@@ -48,7 +48,7 @@ Config.sopLink = {
 
 -- Google Docs Link
 Config.RosterLink = {
-    ['police'] = 'https://docs.google.com/spreadsheets/d/1quo27_IHwN-Y3zucutNZZUI8YF0h77e3kYEfZAgTfA0/edit#gid=532093419',
+    ['police'] = 'https://sites.google.com/view/rrp-police/team-information/roster?authuser=0',
     ['ambulance'] = '',
     ['sjd'] = '',
     ['doj'] = '',
