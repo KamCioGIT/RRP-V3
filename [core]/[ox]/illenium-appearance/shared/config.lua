@@ -545,7 +545,7 @@ Config.Stores = {
     },
     {
         type = "surgeon",
-        coords = vector4(308.99, -572.34, 28.85, 248.74),
+        coords = vector4(303.54, -592.17, 43.27, 68.93),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
