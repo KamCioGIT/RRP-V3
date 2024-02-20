@@ -1,4 +1,4 @@
--- Generated with https://configurator.jgscripts.com at 2/16/2024, 4:53:53 PM
+-- Generated with https://configurator.jgscripts.com at 2/20/2024, 3:09:15 PM
 
 Config = {}
 Config.Locale = 'en'
@@ -409,14 +409,14 @@ Config.DealershipLocations = {
   FoxImports = {
     type = 'self-service',
     showroomType = 'car',
-    openShowroom = vector3(558.88, -240.82, 49.98),
-    openManagement = vector3(558.88, -240.82, 49.98),
-    purchaseSpawn = vector4(547.76, -258.68, 49.98, 64.66),
-    testDriveSpawn = vector4(547.76, -258.68, 49.98, 64.66),
-    sellVehicle = vector4(547.76, -258.68, 49.98, 64.66),
+    openShowroom = vector3(-66.94, 67.61, 71.83),
+    openManagement = vector3(-66.94, 67.61, 71.83),
+    purchaseSpawn = vector4(-67.47, 82.04, 71.52, 63.85),
+    testDriveSpawn = vector4(-67.47, 82.04, 71.52, 63.85),
+    sellVehicle = vector4(-67.47, 82.04, 71.52, 63.85),
     camera = {
       name = 'Car',
-      coords = vector4(560.64, -245.13, 49.57, 62.93),
+      coords = vector4(-75.91, 74.96, 71.50, 152.63),
       positions = {
         5,
         8,
@@ -475,16 +475,17 @@ Config.DealershipLocations = {
     job = 'cardealer',
   },
   Gallivanter = {
-    type = 'self-service',
-    showroomType = 'car',
-    openShowroom = vector3(-66.94, 67.61, 71.83),
-    openManagement = vector3(-66.94, 67.61, 71.83),
-    purchaseSpawn = vector4(-67.47, 82.04, 71.52, 63.85),
-    testDriveSpawn = vector4(-67.47, 82.04, 71.52, 63.85),
-    sellVehicle = vector4(-67.47, 82.04, 71.52, 63.85),
+    type = 'owned',
+    openShowroom = vector3(558.88, -240.82, 49.98),
+    openManagement = vector3(558.88, -240.82, 49.98),
+    purchaseSpawn = vector4(547.76, -258.68, 49.98, 64.66),
+    testDriveSpawn = vector4(547.76, -258.68, 49.98, 64.66),
+    sellVehicle = vector4(547.76, -258.68, 49.98, 64.66),
+    enableSellVehicle = true,
+    sellVehiclePercent = 0.6,
     camera = {
       name = 'Car',
-      coords = vector4(-75.91, 74.96, 71.50, 152.63),
+      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
       positions = {
         5,
         8,
@@ -506,15 +507,6 @@ Config.DealershipLocations = {
       color = 2,
       scale = 0.6,
     },
-    societyPurchaseJobWhitelist = {
-      police = {
-        4,
-        5,
-      },
-    },
-    societyPurchaseGangWhitelist = {},
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
     enableFinance = true,
     hideMarkers = false,
     markers = {
@@ -535,8 +527,6 @@ Config.DealershipLocations = {
       rotate = 1,
       drawOnEnts = 0,
     },
-    showroomJobWhitelist = {},
-    showroomGangWhitelist = {},
     disableShowroomPurchase = false,
     directSaleDistance = 50,
     job = 'cardealer',
@@ -743,13 +733,12 @@ Config.DealershipLocations = {
   },
   Police = {
     type = 'self-service',
+    showroomType = 'car',
     openShowroom = vector3(435.29, -976.40, 25.70),
     openManagement = vector3(819.14, -894.50, 0.32),
     purchaseSpawn = vector4(431.86, -982.78, 25.16, 180.44),
     testDriveSpawn = '',
     sellVehicle = '',
-    enableSellVehicle = false,
-    sellVehiclePercent = 0.6,
     camera = {
       name = 'Car',
       coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
@@ -773,6 +762,15 @@ Config.DealershipLocations = {
       color = 2,
       scale = 0.6,
     },
+    societyPurchaseJobWhitelist = {
+      police = {
+        4,
+        5,
+      },
+    },
+    societyPurchaseGangWhitelist = {},
+    enableSellVehicle = false,
+    sellVehiclePercent = 0.6,
     enableFinance = true,
     hideMarkers = false,
     markers = {
@@ -793,6 +791,8 @@ Config.DealershipLocations = {
       rotate = 1,
       drawOnEnts = 0,
     },
+    showroomJobWhitelist = {},
+    showroomGangWhitelist = {},
     disableShowroomPurchase = false,
     directSaleDistance = 50,
     job = 'police',
