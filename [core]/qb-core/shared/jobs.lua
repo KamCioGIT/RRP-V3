@@ -1,21 +1,21 @@
 QBShared = QBShared or {}
 QBShared.ForceJobDefaultDutyAtLogin = false -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
 QBShared.Jobs = {
-	unemployed = { label = 'Civilian', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Freelancer', payment = 10 } } },
-	bus = { label = 'Bus', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Driver', payment = 50 } } },
-	judge = { label = 'Honorary', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Judge', payment = 100 } } },
-	lawyer = { label = 'Law Firm', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Associate', payment = 50 } } },
-	reporter = { label = 'Reporter', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Journalist', payment = 50 } } },
-	trucker = { label = 'Trucker', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Driver', payment = 50 } } },
-	tow = { label = 'Towing', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Driver', payment = 50 } } },
-	garbage = { label = 'Garbage', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Collector', payment = 50 } } },
-	vineyard = { label = 'Vineyard', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Picker', payment = 50 } } },
-	hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Sales', payment = 50 } } },
+	unemployed = { label = 'Civilian', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Freelancer', payment = 10 } } },
+	bus = { label = 'Bus', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Driver', payment = 50 } } },
+	judge = { label = 'Honorary', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Judge', payment = 100 } } },
+	lawyer = { label = 'Law Firm', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Associate', payment = 50 } } },
+	reporter = { label = 'Reporter', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Journalist', payment = 50 } } },
+	trucker = { label = 'Trucker', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Driver', payment = 50 } } },
+	tow = { label = 'Towing', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Driver', payment = 50 } } },
+	garbage = { label = 'Garbage', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Collector', payment = 50 } } },
+	vineyard = { label = 'Vineyard', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Picker', payment = 50 } } },
+	hotdog = { label = 'Hotdog', defaultDuty = false, offDutyPay = false, grades = { ['0'] = { name = 'Sales', payment = 50 } } },
 
 	police = {
 		label = 'MET Police',
 		type = 'leo',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
 			['0'] = { name = 'PCSO', payment = 100 },
@@ -28,7 +28,7 @@ QBShared.Jobs = {
 	ambulance = {
 		label = 'NHS',
 		type = 'ems',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
 			['0'] = { name = 'Recruit', payment = 100 },
@@ -40,7 +40,7 @@ QBShared.Jobs = {
 	},
 	realestate = {
 		label = 'Real Estate',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
 			['0'] = { name = 'Recruit', payment = 50 },
@@ -52,7 +52,7 @@ QBShared.Jobs = {
 	},
 	taxi = {
 		label = 'Taxi',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
 			['0'] = { name = 'Recruit', payment = 50 },
@@ -65,7 +65,7 @@ QBShared.Jobs = {
 	redline = {
 		label = 'Redline',
 		type = 'mechanic',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
 			['0'] = { name = 'Recruit', payment = 50 },
@@ -78,7 +78,7 @@ QBShared.Jobs = {
 	exotics = {
 		label = 'Auto Exotics',
 		type = 'mechanic',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
 			['0'] = { name = 'Recruit', payment = 50 },
