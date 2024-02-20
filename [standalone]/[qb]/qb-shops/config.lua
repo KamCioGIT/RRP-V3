@@ -50,13 +50,6 @@ Config.Products = {
         {name = 'cleaningkit',       price = 150, amount = 150, info = {}, type = 'item'},
         {name = 'advancedrepairkit', price = 500, amount = 50,  info = {}, type = 'item', requiredJob = { 'mechanic' }},
     },
-    ['weedshop'] = {
-        {name = 'joint',          price = 10,  amount = 50,   info = {}, type = 'item'},
-        {name = 'weapon_poolcue', price = 100, amount = 50,   info = {}, type = 'item'},
-        {name = 'weed_nutrition', price = 20,  amount = 50,   info = {}, type = 'item'},
-        {name = 'empty_weed_bag', price = 2,   amount = 1000, info = {}, type = 'item'},
-        {name = 'rolling_paper',  price = 2,   amount = 1000, info = {}, type = 'item'},
-    },
     ['gearshop'] = {
         {name = 'diving_gear', price = 2500, amount = 10, info = {}, type = 'item'},
         {name = 'jerry_can',   price = 200,  amount = 50, info = {}, type = 'item'},
@@ -71,10 +64,6 @@ Config.Products = {
         {name = 'weapon_knife',         price = 250,  amount = 250, info = {}, type = 'weapon'},
         {name = 'weapon_bat',           price = 250,  amount = 250, info = {}, type = 'weapon'},
         {name = 'weapon_hatchet',       price = 250,  amount = 250, info = {}, type = 'weapon'},
-        {name = 'pistol_ammo',          price = 250,  amount = 250, info = {}, type = 'item',   requiredLicense = { 'weapon' }},
-        {name = 'weapon_pistol',        price = 2500, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-        {name = 'weapon_snspistol',     price = 1500, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-        {name = 'weapon_vintagepistol', price = 4000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
     },
     ['casino'] = {
         {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
@@ -647,23 +636,6 @@ Config.Locations = {
         ['blipscale'] = 0.8,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(937.16, 1.0, 78.76, 152.4)
-    },
-
-    -- Weedshop Locations
-    ['weedshop'] = {
-        ['label'] = 'Smoke On The Water',
-        ['coords'] = vector4(-1168.26, -1573.2, 4.66, 105.24),
-        ['ped'] = 'a_m_y_hippy_01',
-        ['scenario'] = 'WORLD_HUMAN_AA_SMOKE',
-        ['radius'] = 1.5,
-        ['targetIcon'] = 'fas fa-cannabis',
-        ['targetLabel'] = 'Open Weed Shop',
-        ['products'] = Config.Products['weedshop'],
-        ['showblip'] = true,
-        ['blipsprite'] = 140,
-        ['blipscale'] = 0.8,
-        ['blipcolor'] = 0,
-        ['delivery'] = vector4(-1162.13, -1568.57, 4.39, 328.52)
     },
 
     -- Sea Word Locations
