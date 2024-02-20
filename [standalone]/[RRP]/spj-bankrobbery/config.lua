@@ -244,31 +244,31 @@ Config.LaptopUses = 2
 ---- LAPTOP LOCATIONS ----
 Config.LaptopLocations = {
     ["Hunter"] = {
-        ["coords"] = vector4(347.78, -1255.41, 32.7, 326.1),
+        ["coords"] = vector4(347.78, -1255.41, 3.7, 326.1),
         ["TradeItem"] = "usb_green",
         ["laptop"] = "laptop_green",
         ["price"] = 2000,
     },
     ["Fernando"] = {
-        ["coords"] = vector4(-458.22, -2266.08, 8.52, 290.63),
+        ["coords"] = vector4(-458.22, -2266.08, 0.52, 290.63),
         ["TradeItem"] = "usb_blue",
         ["laptop"] = "laptop_blue",
         ["price"] = 2000,
     },
     ["Rico"] = {
-        ["coords"] = vector4(1689.93, 3581.6, 35.62, 216.85),
+        ["coords"] = vector4(1689.93, 3581.6, 3.62, 216.85),
         ["TradeItem"] = "usb_red",
         ["laptop"] = "laptop_red",
         ["price"] = 2000,
     },
     ["Gustavo"] = {
-        ["coords"] = vector4(-1423.84, 6760.71, 5.88, 90.47),
+        ["coords"] = vector4(-1423.84, 6760.71, 0.88, 90.47),
         ["TradeItem"] = "usb_gold",
         ["laptop"] = "laptop_gold",
         ["price"] = 2000,
     },
     ["Fisher"] = {
-        ["coords"] = vector4(1470.19, 6550.24, 14.9, 92.8),
+        ["coords"] = vector4(1470.19, 6550.24, 1.9, 92.8),
         ["TradeItem"] = "usb_pink",
         ["laptop"] = "laptop_pink",
         ["price"] = 2000,
