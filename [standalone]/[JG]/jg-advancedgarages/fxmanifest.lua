@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 
 description 'Advanced Garages for FiveM'
-version 'v2.2.4'
+version 'v2.2.6'
 author 'JG Scripts'
 
 shared_scripts {'config.lua', 'locales/*.lua', 'main.lua', 'framework/main.lua'}

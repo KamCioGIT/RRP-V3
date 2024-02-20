@@ -1,4 +1,4 @@
--- Generated with https://configurator.jgscripts.com at 2/4/2024, 1:12:21 PM
+-- Generated with https://configurator.jgscripts.com at 2/20/2024, 6:07:26 PM
 
 Config = {}
 Config.Framework = 'QBCore'
@@ -508,6 +508,19 @@ Config.JobGarageLocations = {
       drawOnEnts = 0,
     },
     vehiclesType = 'owned',
+    showLiveriesExtrasMenu = true,
+    vehicles = {
+      {
+        vehicle = 'police',
+        plate = 'PD',
+        minJobGrade = 0,
+      },
+      {
+        vehicle = 'police2',
+        plate = false,
+        minJobGrade = 3,
+      },
+    },
   },
 }
 Config.GangGarageShowBlips = false
@@ -631,3 +644,4 @@ Config.VehicleLabels = {
   spawnName = 'Pretty Vehicle Label',
 }
 Config.__v2Config = true
+Config.Config = {}

@@ -4,7 +4,7 @@
 RegisterNetEvent("jg-advancedgarages:client:InsertVehicle:config", function(vehicle, vehicleDbData, type)
   -- PARAMS:
   -- vehicle: Current vehicle FiveM native data
-  -- vehicleDbData: The row of the owned vehicle from the datbase
+  -- vehicleDbData: The row of the owned vehicle from the datbase (NOT available if it's a vehicle from a "spawner" garage)
   -- type: is either "public", "gang" or "job"
 
   -- Code placed in here will be run when the player inserts their vehicle (if the vehicle is owned; and passes all the checks)
@@ -20,7 +20,7 @@ end)
 RegisterNetEvent("jg-advancedgarages:client:TakeOutVehicle:config", function(vehicle, vehicleDbData, type)
   -- PARAMS:
   -- vehicle: Vehicle FiveM native data
-  -- vehicleDbData: The row of the owned vehicle from the datbase
+  -- vehicleDbData: The row of the owned vehicle from the datbase (NOT available if it's a vehicle from a "spawner" garage)
   -- type: is either "public", "gang" or "job"
 
   -- Code placed in here will be run after a vehicle has been taken out of a garage
