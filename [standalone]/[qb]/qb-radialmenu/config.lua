@@ -33,6 +33,13 @@ Config.MenuItems = {
                 event = 'qb-trunk:client:GetIn',
                 shouldClose = true
             }, {
+                id = 'billperson',
+                title = 'Billing Menu',
+                icon = 'rectangle-list',
+                type = 'client',
+                event = 'billing:client:engageChooseBillViewMenu',
+                shouldClose = true
+            }, {
                 id = 'interactions',
                 title = 'Interaction',
                 icon = 'triangle-exclamation',

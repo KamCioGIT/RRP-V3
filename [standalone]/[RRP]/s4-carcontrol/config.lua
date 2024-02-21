@@ -21,7 +21,7 @@ Config.TemperatureType = "C" -- F / C
 
 Config.OpenKey = "o" 
 
-Config.OpenKeyMini = "m" 
+Config.OpenKeyMini = "n" 
 
 Config.RadarBlip = 40
 
