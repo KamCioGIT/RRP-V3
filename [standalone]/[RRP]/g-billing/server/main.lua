@@ -155,7 +155,7 @@ AddEventHandler('g-billing:server:payBill', function(data)
     local bill = data.bill
     if player.Functions.GetMoney('bank') >= bill.amount then
         player.Functions.RemoveMoney('bank', bill.amount, Lang:t('other.bill_pay_desc'))
-        exports['qb-management']:AddMoney(bill.sender_account, bill.amount)
+        exports['Renewed-Banking']:addAccountMoney(bill.sender_account, bill.amount)
         local sender = QBCore.Functions.GetPlayerByCitizenId(bill.sender_citizenid)
         local datetime = os.date('%Y-%m-%d %H:%M:%S')
         if sender then
