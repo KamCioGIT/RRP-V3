@@ -33,7 +33,7 @@ engineLifts = {
     
     testLift2 = {        
         jobRestrictions = {
-            mechanic = 2,
+            redline = 2,
         },
 
         position = vector3(-576.16, -912.83, 23.89),
