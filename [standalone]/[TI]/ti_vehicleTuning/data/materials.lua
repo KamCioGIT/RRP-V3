@@ -25,33 +25,33 @@ Materials = {
         strength = 0.8,
         weight = 0.4,
         prestige = 1.0,
-    },
+    }--,
 
-    super = {
-        label = "Super",
-        strength = 2.0,
-        weight = 0.2,
-        prestige = 2.0
-    },
+    -- super = {
+        -- label = "Super",
+        -- strength = 2.0,
+        -- weight = 0.2,
+        -- prestige = 2.0
+    -- },
 
-    unobtanium = {
-        label = "Unobtanium",
-        strength = 5.0,
-        weight = 0.1,
-        prestige = 5.0
-    },
+    -- unobtanium = {
+        -- label = "Unobtanium",
+        -- strength = 5.0,
+        -- weight = 0.1,
+        -- prestige = 5.0
+    -- },
 
-    indestructible = {
-        label = "Indestructible",
-        strength = 10.0,
-        weight = 0.0,
-        prestige = 10.0
-    }
+    -- indestructible = {
+        -- label = "Indestructible",
+        -- strength = 10.0,
+        -- weight = 0.0,
+        -- prestige = 10.0
+    -- }
 }
 
 Materials.steel = Materials.steel
 Materials.aluminum = Materials.aluminium
 Materials.forgedSteel = Materials.forgedSteel
 Materials.titanium = Materials.titanium
-Materials.super = Materials.super
-Materials.unobtanium = Materials.unobtanium
+-- Materials.super = Materials.super
+-- Materials.unobtanium = Materials.unobtanium
