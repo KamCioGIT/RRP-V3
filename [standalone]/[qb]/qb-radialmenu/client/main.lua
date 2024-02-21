@@ -101,7 +101,7 @@ local function SetupVehicleMenu()
             Controls()
         end
     end
-end, false)
+end
 
 local function SetupSubItems()
     SetupJobMenu()
