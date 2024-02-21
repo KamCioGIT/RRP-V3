@@ -135,7 +135,8 @@ Config.DarkModeApplications = new Map([
     ['discord', true],
     ['darkweb', true],
     ['racing', true],
-    ['safari', true]
+    ['safari', true],
+    ['kingkongracing', true]
 ]);
 
 Config.WorkWithWifiApps = new Map([

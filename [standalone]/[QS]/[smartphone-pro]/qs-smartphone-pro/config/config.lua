@@ -1020,7 +1020,7 @@ Config.Markets = {
     },
     {
         id = 2, -- Market id (unique)
-        name = 'Pillbox Medical Center',
+        name = 'NHS',
         image = 'https://static.wikia.nocookie.net/esgta/images/e/e7/PillboxHillMedicalCenterGTAV.png',
         description = 'If you need a doctor, contact the Los Santos Emergency Center!',
         job = {
@@ -1066,7 +1066,7 @@ Config.Darkweb = {
         --[8] = { item = 'url_weapontint', label = 'Custom Weapon Tint', price = 2000, isWeapon = false, deliveryTime = 1 * 60 * 1000 },
         --[9] = { item = 'weapon_molotov', label = 'Molotov', price = 500, isWeapon = false, deliveryTime = 1 * 60 * 1000 },
         --[10] = { item = 'weapon_stickybomb', label = 'Sticky Bomd', price = 900, isWeapon = false, deliveryTime = 1 * 60 * 1000 },
-    },
+		},
 }
 
 --[[
@@ -1090,7 +1090,7 @@ Config.DefaultPhoneMapBlips = {
 Config.RentelVehicles = {
     ['tribike3'] = { ['model'] = 'tribike3', ['label'] = 'Classic ARO 26', ['price'] = 100 },
     ['bmx'] = { ['model'] = 'bmx', ['label'] = 'BMX Zprinter Myland', ['price'] = 120 },
-    ['Fortwo17'] = { ['model'] = 'Fortwo17', ['label'] = 'Smark Fortwo', ['price'] = 250 },
+    ['fortwo17'] = { ['model'] = 'fortwo17', ['label'] = 'Smark Fortwo', ['price'] = 250 },
     ['specialtf'] = { ['model'] = 'specialtf', ['label'] = 'Aw Tism', ['price'] = 2000 },
 }
 
@@ -1646,15 +1646,15 @@ Config.StoreApps = {
         isGame = true,
         game = {
             name = 'fruitchop',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/rkWfy2pXq0r',
+            iframe = 'https://cdn-factory.marketjs.com/en/fruit-slice-frenzy/index.html',
             css = {
                 -- If you make it with css, you can use it like this .fruitchop-app iframe { css values },
-                width = '220%',
-                height = '49%',
+                width = '215%',
+                height = '50%',
                 transform = 'rotate(90deg)', -- Required for rotate
                 border = 'none',
                 position = 'absolute',
-                left = '-59%',
+                left = '-60%',
                 top = '25%',
             },
             rotate = true
@@ -1669,542 +1669,110 @@ Config.StoreApps = {
         }
     },
     {
-        app = 'rampageracer',
-        image = 'https://static.gamezop.com/p7HOjYF4O/cover.jpg',
-        label = 'Rampage Racer',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 21000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Run like lightning',
-        age = '16+',
-        isGame = true,
-        game = {
-            name = 'rampageracer',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/p7HOjYF4O',
-            css = {
-                -- If you make it with css, you can use it like this .rampageracer-app iframe { css values },
-                width = '220%',
-                height = '49%',
-                transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '-59%',
-                top = '25%',
-            },
-            rotate = true
-        },
-        extraDescription = {
-            {
-                header = 'Rampage Racer',
-                head = 'Collect all the coins without crashing',
-                image = 'https://cdn.akamai.steamstatic.com/steam/apps/2025330/ss_ea35d6137c0c61a4ce8c64a7ec032499c44675a3.1920x1080.jpg?t=1693228147',
-                footer = 'Epic racing game where you can race against other vehicles'
-            }
-        }
-    },
-    {
-        app = 'hoopball',
-        image = 'https://static.gamezop.com/H15Qk3pQ5CH/cover.jpg',
-        label = 'Hoopfall Legends',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 25000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Get to the ball and score points',
-        age = '6+',
-        isGame = true,
-        game = {
-            name = 'hoopball',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/H15Qk3pQ5CH',
-            css = {
-                -- If you make it with css, you can use it like this .hoopball-app iframe { css values },
-                width = '100%',
-                height = '110%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '0',
-                top = '0',
-            },
-            rotate = false
-        },
-        extraDescription = {
-            {
-                header = 'Hoopball Legends',
-                head = 'Cross the ball with your float to earn points',
-                image = 'https://static.gamezop.com/H15Qk3pQ5CH/game-2.png',
-                footer = 'The best phone archery game ever seen'
-            }
-        }
-    },
-    {
-        app = 'escaperun',
-        image = 'https://static.gamezop.com/Skz4pzkDqyX/cover.jpg',
-        label = 'Escape Run',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 33000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Escape from the dangerous mountain',
-        age = '16+',
-        isGame = true,
-        game = {
-            name = 'escaperun',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/Skz4pzkDqyX',
-            css = {
-                -- If you make it with css, you can use it like this .escaperun-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '0',
-                top = '0',
-            },
-            rotate = false
-        },
-        extraDescription = {
-            {
-                header = 'Escape Run',
-                head = 'Run through the mountains like never before',
-                image = 'https://gamaverse.com/c/i/y/yeti-sensation.jpg',
-                footer = 'Help Bigfoot escape from the mountains'
-            }
-        }
-    },
-    {
-        app = 'blazingblades',
-        image = 'https://static.gamezop.com/UYiznUAya/cover.jpg',
-        label = 'Blazing Blades',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 36000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Cut wood with knives',
-        age = '16+',
-        isGame = true,
-        game = {
-            name = 'blazingblades',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/UYiznUAya',
-            css = {
-                -- If you make it with css, you can use it like this .blazingblades-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '0',
-                top = '0',
-            },
-            rotate = false
-        },
-        extraDescription = {
-            {
-                header = 'Blazing Blades',
-                head = 'Throw knives against the wood and break all the blocks',
-                image = 'https://play-lh.googleusercontent.com/VKwcARTUgmE7OX4X7KkvAcCML9vouz28vHJS3Ksf8eHjWcRFwqoI9G42L8EhbdGEDts',
-                footer = 'Strategy game with knives!'
-            }
-        }
-    },
-    {
-        app = 'stayroad',
-        image = 'https://gameforge.com/de-DE/littlegames/includes/images/games/3383_5eb3e307ed0d6.jpg',
-        label = 'Stay Road',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 22000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Run like lightning',
-        age = '16+',
-        isGame = true,
-        game = {
-            name = 'stayroad',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/HJ-72IFXyg',
-            css = {
-                -- If you make it with css, you can use it like this .stayroad-app iframe { css values },
-                width = '220%',
-                height = '49%',
-                transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '-59%',
-                top = '25%',
-            },
-            rotate = true
-        },
-        extraDescription = {
-            {
-                header = 'Stay Road',
-                head = 'Collect all the coins without crashing',
-                image = 'https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/6/18/jnhtjx1nozaocxki9ekx/ios-racers-lead-asphalt-9',
-                footer = 'Epic racing game where you can race against other vehicles'
-            }
-        }
-    },
-    {
-        app = 'fizzfuss',
-        image = 'https://play-lh.googleusercontent.com/8gnlbPpJZQ51TJmZT3M1LgrSbaLYp0xlDNeL3jiJhmON9xjVj_pNeO5aGemtjnoP4TY=w240-h480-rw',
-        label = 'Fizz Fuss',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 1000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Serve beer in your new restaurant',
-        age = '16+',
-        isGame = true,
-        game = {
-            name = 'fizzfuss',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/S1VZ-LjQUUl',
-            css = {
-                -- If you make it with css, you can use it like this .fizzfuss-app iframe { css values },
-                width = '220%',
-                height = '49%',
-                transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '-59%',
-                top = '25%',
-            },
-            rotate = true
-        },
-        extraDescription = {
-            {
-                header = 'Fizz Run',
-                head = 'Serve beer in your new restaurant',
-                image = 'https://static.gamezop.com/S1VZ-LjQUUl/cover.jpg',
-                footer = 'Your new restaurant has a good reputation, dont break it!'
-            }
-        }
-    },
-    {
-        app = 'crunching',
-        image = 'https://static.gamezop.com/EJnzu1fb9g/cover.jpg',
-        label = 'Crunching Ninjas',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 27000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Ninja animals that collect items',
-        age = '16+',
-        isGame = true,
-        game = {
-            name = 'crunching',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/EJnzu1fb9g',
-            css = {
-                -- If you make it with css, you can use it like this .crunching-app iframe { css values },
-                width = '220%',
-                height = '49%',
-                transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '-59%',
-                top = '25%',
-            },
-            rotate = true
-        },
-        extraDescription = {
-            {
-                header = 'Crunching Ninjas',
-                head = 'Ninja animals that collect items',
-                image = 'https://is3-ssl.mzstatic.com/image/thumb/Purple49/v4/9f/6c/9f/9f6c9f22-a7c8-e7fd-a9f0-4ff4edabaacf/source/512x512bb.jpg',
-                footer = 'Epic ninja game, unlock all the animals and have fun collecting items'
-            }
-        }
-    },
-    {
-        app = 'gunmaster',
-        image = 'https://static.gamezop.com/REwFeKcoN/cover.jpg',
-        label = 'Gun Master',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 22000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Destroy your enemies',
-        age = '18+',
-        isGame = true,
-        game = {
-            name = 'gunmaster',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/REwFeKcoN',
-            css = {
-                -- If you make it with css, you can use it like this .gunmaster-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '0',
-                top = '0',
-            },
-            rotate = false
-        },
-        extraDescription = {
-            {
-                header = 'Gun Mater',
-                head = 'Destroy your enemies',
-                image = 'https://i0.wp.com/www.levelwinner.com/wp-content/uploads/2018/04/mr-gun-ketchapp-sc-800x400.jpg?resize=800%2C400',
-                footer = 'Bang Bang, destroy your enemy quickly to climb steps!'
-            }
-        }
-    },
-    {
-        app = 'pixelzombie',
-        image = 'https://static.gamezop.com/S14VrK8B/cover.jpg',
-        label = 'Pixel Zombie',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 39000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'A pixel world dominated by zombies',
-        age = '16+',
-        isGame = true,
-        game = {
-            name = 'pixelzombie',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/S14VrK8B',
-            css = {
-                -- If you make it with css, you can use it like this .pixelzombie-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '0',
-                top = '0',
-            },
-            rotate = false
-        },
-        extraDescription = {
-            {
-                header = 'Pixel Zombie',
-                head = 'A pixel world dominated by zombies',
-                image = 'https://i.pinimg.com/736x/30/04/23/300423e5eadc2873303de3c72c560dd7.jpg',
-                footer = 'Destroy them to save humanity!'
-            }
-        }
-    },
-    {
-        app = 'piratehunt',
-        image = 'https://static.gamezop.com/B1gBpzJwqJQ/cover.jpg',
-        label = 'Pirate Hunt',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 30000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Hunt down the pirates',
-        age = '12+',
-        isGame = true,
-        game = {
-            name = 'piratehunt',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/B1gBpzJwqJQ',
-            css = {
-                -- If you make it with css, you can use it like this .piratehunt-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '0',
-                top = '0',
-            },
-            rotate = false
-        },
-        extraDescription = {
-            {
-                header = 'Pirate Hunt',
-                head = 'Hunt down the pirates',
-                image = 'https://www.visitsealife.com/weymouth/media/i4mfdysx/untitled-design-4.png',
-                footer = 'Rescue the maiden to win and destroy those damn pirates!'
-            }
-        }
-    },
-    {
-        app = 'saloonrobbery',
-        image = 'https://static.gamezop.com/SJ8X6zyPcyX/cover.jpg',
-        label = 'Saloon Robbery',
+        app = 'chikenblast',
+        image = 'https://media.discordapp.net/attachments/1166657197263036428/1209754762157752370/icon1.png?ex=65e812eb&is=65d59deb&hm=9de0c74afbc107c084964c8426c16774bd9c622e8be1471e99bab732eb4a58af&=&format=webp&quality=lossless',
+        label = 'Chiken Blast',
         job = false,      -- or { 'ambulance' }
         blockedJobs = {}, -- or { 'ambulance' }
         timeout = 28000,
         creator = 'Gamezop Inc',
         category = 'Games',
-        description = 'Save the tavern from evildoers!',
-        age = '3+',
+        description = 'Collect colorful chickens and complete the game',
+        age = '16+',
         isGame = true,
         game = {
-            name = 'saloonrobbery',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/SJ8X6zyPcyX',
+            name = 'chikenblast',
+            iframe = 'https://cdn-factory.marketjs.com/en/chicken-blast/index.html',
             css = {
-                -- If you make it with css, you can use it like this .saloonrobbery-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
+                -- If you make it with css, you can use it like this .chikenblast-app iframe { css values },
+                width = '215%',
+                height = '50%',
+                transform = 'rotate(90deg)', -- Required for rotate
                 border = 'none',
                 position = 'absolute',
-                left = '0',
-                top = '0',
+                left = '-60%',
+                top = '25%',
             },
-            rotate = false
+            rotate = true
         },
         extraDescription = {
             {
-                header = 'Saloon Robbery',
-                head = 'Save the tavern from evildoers!',
-                image = 'https://assets.bgames.com/2/116912/102917/1200x630/saloon-robbery.webp',
-                footer = 'Reload and shoot, watch out for the damsel in distress!'
+                header = 'Chiken Blast',
+                head = 'Collect colorful chickens and complete the game',
+                image = 'https://www.marketjs.com/item/chicken-blast/chicken-blast.jpg',
+                footer = 'The most played chicken game this 2024'
             }
         }
     },
     {
-        app = 'bubblesmash',
-        image = 'https://play-lh.googleusercontent.com/Wv0dxGDwi86bxKj8sqq6ni56G32CFhQJqhbdYNWePbrwvhAyyEwr6-FGoCCyGhpK5Qk',
-        label = 'Bubble Smash',
+        app = 'kingkongracing',
+        image = 'https://media.discordapp.net/attachments/1166657197263036428/1209755365189877781/icon1.png?ex=65e8137b&is=65d59e7b&hm=6c05c7c25bc64e198a1b9427f3044a931f640f95d56c8e43a852385a8eeb2c50&=&format=webp&quality=lossless',
+        label = 'King Kong Racing',
         job = false,      -- or { 'ambulance' }
         blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 31000,
+        timeout = 28000,
         creator = 'Gamezop Inc',
         category = 'Games',
-        description = 'Explosive bubbles, skill!',
+        description = 'Epic monkey races',
         age = '3+',
         isGame = true,
         game = {
-            name = 'bubblesmash',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/ryJGkhT7qAB',
+            name = 'kingkongracing',
+            iframe = 'https://cdn-factory.marketjs.com/en/king-kong-kart-racing/index.html',
             css = {
-                -- If you make it with css, you can use it like this .bubblesmash-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
+                -- If you make it with css, you can use it like this .kingkongracing-app iframe { css values },
+                width = '215%',
+                height = '50%',
+                transform = 'rotate(90deg)', -- Required for rotate
                 border = 'none',
                 position = 'absolute',
-                left = '0',
-                top = '0',
+                left = '-60%',
+                top = '25%',
             },
-            rotate = false
+            rotate = true
         },
         extraDescription = {
             {
-                header = 'Bubble Smash',
-                head = 'Explosive bubbles, skill!',
-                image = 'https://play-lh.googleusercontent.com/pK-BwCRozSv6BENBkHDl8dVOlf0IRswBvujdl_s2uod8IwoRBHjRMQrf24QWN4Lpww=w526-h296-rw',
-                footer = 'Intelligence game for people with a lot of brains!'
+                header = 'King Kong Racing',
+                head = 'Epic monkey races',
+                image = 'https://a.silvergames.com/screenshots/king-kong-kart-racing/2_kart-race.jpg',
+                footer = 'Be the champion of the world of monkeys!'
             }
         }
     },
     {
-        app = 'mergemania',
-        image = 'https://static.gamezop.com/hfPOimYqY/cover.jpg',
-        label = 'Merge Mania',
+        app = 'mmacitybrawl',
+        image = 'https://media.discordapp.net/attachments/1166657197263036428/1209756749528170516/icon1.png?ex=65e814c5&is=65d59fc5&hm=dc7a49d2aa0df0fc0072811c7d775c29623a7baef2807c52d387b8f263d77e44&=&format=webp&quality=lossless',
+        label = 'MMA City Brawl',
         job = false,      -- or { 'ambulance' }
         blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 23000,
+        timeout = 28000,  --28000,
         creator = 'Gamezop Inc',
         category = 'Games',
-        description = 'Destroy by stacking the numbers',
-        age = '3+',
+        description = 'Online street fights!',
+        age = '18+',
         isGame = true,
         game = {
-            name = 'mergemania',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/hfPOimYqY',
+            name = 'mmacitybrawl',
+            iframe = 'https://cdn-factory.marketjs.com/en/mma-city-brawl/index.html',
             css = {
-                -- If you make it with css, you can use it like this .mergemania-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
+                -- If you make it with css, you can use it like this .mmacitybrawl-app iframe { css values },
+                width = '215%',
+                height = '50%',
+                transform = 'rotate(90deg)', -- Required for rotate
                 border = 'none',
                 position = 'absolute',
-                left = '0',
-                top = '0',
+                left = '-60%',
+                top = '25%',
             },
-            rotate = false
+            rotate = true
         },
         extraDescription = {
             {
-                header = 'Merge Mania',
-                head = 'Destroy by stacking the numbers',
-                image = 'https://play-lh.googleusercontent.com/89IK7_BQK1Pk9K9VeZhTPCVqeoHbPCOSgya2OGuTvq_01hGKz3nEKRIywN4rted92PV5=w3840',
-                footer = 'Intelligence game for people with a lot of brains!'
-            }
-        }
-    },
-    {
-        app = 'boulderblast',
-        image = 'https://static.gamezop.com/HkTQJhTXqRS/cover.jpg',
-        label = 'Boulder Blast',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 36000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Aim and shoot with your cannon!',
-        age = '3+',
-        isGame = true,
-        game = {
-            name = 'boulderblast',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/HkTQJhTXqRS',
-            css = {
-                -- If you make it with css, you can use it like this .boulderblast-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '0',
-                top = '0',
-            },
-            rotate = false
-        },
-        extraDescription = {
-            {
-                header = 'Boulder Blast',
-                head = 'Aim and shoot with your cannon!',
-                image = 'https://static.gamezop.com/HkTQJhTXqRS/cover.jpg',
-                footer = 'Break all the stones without them touching you to win!'
-            }
-        }
-    },
-    {
-        app = 'bowlingstars',
-        image = 'https://static.gamezop.com/BkdJhTX50B/cover.jpg',
-        label = 'Bowling Stars',
-        job = false,      -- or { 'ambulance' }
-        blockedJobs = {}, -- or { 'ambulance' }
-        timeout = 45000,
-        creator = 'Gamezop Inc',
-        category = 'Games',
-        description = 'Furutistic bowling game!',
-        age = '12+',
-        isGame = true,
-        game = {
-            name = 'bowlingstars',
-            iframe = 'https://zv1y2i8p.play.gamezop.com/g/BkdJhTX50B',
-            css = {
-                -- If you make it with css, you can use it like this .bowlingstars-app iframe { css values },
-                width = '100%',
-                height = '100%',
-                -- transform = 'rotate(90deg)', -- Required for rotate
-                border = 'none',
-                position = 'absolute',
-                left = '0',
-                top = '0',
-            },
-            rotate = false
-        },
-        extraDescription = {
-            {
-                header = 'Bowling Stars',
-                head = 'Get ready for a next-generation 3D game!',
-                image = 'https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/280c84e84b0f6bcb5c3d75abf97cf36a.png',
-                footer = 'Play bowling in 3D and make your bowling accordingly!'
+                header = 'MMA City Brawl',
+                head = 'Online street fights!',
+                image = 'https://www.marketjs.com/item/mma-city-brawl/mma-city-brawl.jpg',
+                footer = 'Fight with other players to be the champion!'
             }
         }
     },

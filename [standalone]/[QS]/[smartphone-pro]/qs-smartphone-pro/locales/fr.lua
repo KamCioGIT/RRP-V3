@@ -171,6 +171,9 @@ Locales['fr'] = {
     ['PHONE_NUI_MUTE_SPEAKER'] = 'Haut-parleur',
     ['PHONE_NUI_MUTE_VIDEO'] = 'Vidéo',
     ['PHONE_NUI_SEARCH'] = 'Recherche en cours...',
+    ['PHONE_NUI_WIDGET_FONT'] = 'Font et couleur',
+    ['PHONE_NUI_WIDGET_ADD'] = 'Ajouter des widgets',
+    ['PHONE_NUI_WIDGET_CHOOSE'] = 'Choisir le widget',
     ['PHONE_NUI_DATES_JANUARY'] = 'Janvier',
     ['PHONE_NUI_DATES_FEBRUARY'] = 'Février',
     ['PHONE_NUI_DATES_MARCH'] = 'Mars',
@@ -854,6 +857,8 @@ Locales['fr'] = {
     ['PHONE_NUI_SPOTIFY_FOOTER_PLAYLIST'] = 'Playlist',
     ['PHONE_NUI_SPOTIFY_NO_ARTIST'] = 'Pas d\'artiste',
     ['PHONE_NUI_SPOTIFY_NO_TRACK'] = 'Pas de chanson',
+    ['PHONE_NUI_SPOTIFY_SEARCH_TITLE'] = 'Rechercher',
+    ['PHONE_NUI_SPOTIFY_SEARCH_PLACEHOLDER'] = 'Recherche par lien',
 
     -- Emergencies
     ['PHONE_NOTIFICATION_EMERGENCY_TITLE'] = 'Urgences',
