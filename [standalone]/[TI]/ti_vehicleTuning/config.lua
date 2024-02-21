@@ -177,25 +177,25 @@ config = {
 
 	-- Areas where players with tuningJobs can access the tuning UI.
 	-- NOTE: Having any tuning areas defined will disable the command unless inside a tuning area with the correct job.
-	-- tuningAreas = {
-		-- {	
-			-- blip = {
-				-- position = vector3(205.03, -1468.75, 29.15),
-				-- sprite = 446,
-				-- color = 5,
-				-- scale = 0.75,
-				-- display = 2,
-				-- text = "Tuner Shop",
-			-- },
+	tuningAreas = {
+		{	
+			blip = {
+				position = vector3(1000.03, -1000.75, 29.15),
+				sprite = 446,
+				color = 5,
+				scale = 0,
+				display = 2,
+				text = "N/A",
+			},
 
-			-- zone = {
-				-- vector3(217.88, -1459.27, 29.22),
-				-- vector3(239.20, -1481.22, 29.55),
-				-- vector3(211.86, -1509.55, 29.97),
-				-- vector3(192.99, -1485.98, 28.99)
-			-- }
-		-- }
-	-- },
+			zone = {
+				vector3(217.88, -1459.27, 29.22),
+				vector3(239.20, -1481.22, 29.55),
+				vector3(211.86, -1509.55, 29.97),
+				vector3(192.99, -1485.98, 28.99)
+			}
+		}
+	},
 
 	-- Should all vehicles use the default engine below?
 	-- Probably not a great option to have enabled.
