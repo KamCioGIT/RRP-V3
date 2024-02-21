@@ -2,7 +2,7 @@
 <CHandlingDataMgr>
   <HandlingData>
     <Item type="CHandlingData">
-      <handlingName>rs6_criminals</handlingName>
+      <handlingName>rs6_gang</handlingName>
      <fMass value="1600.000000" />
       <fInitialDragCoeff value="5.000000" />
       <fPercentSubmerged value="85.000000" />
@@ -10,17 +10,17 @@
       <vecInertiaMultiplier x="1.200000" y="1.200000" z="1.300000" />
       <fDriveBiasFront value="0.500000" />
       <nInitialDriveGears value="8" />
-      <fInitialDriveForce value="0.43200000" />
+      <fInitialDriveForce value="0.33200000" />
       <fDriveInertia value="1.000000" />
       <fClutchChangeRateScaleUpShift value="7.200000" />
       <fClutchChangeRateScaleDownShift value="7.200000" />
-      <fInitialDriveMaxFlatVel value="232.000000" />
+      <fInitialDriveMaxFlatVel value="202.000000" />
       <fBrakeForce value="1.7000000" />
       <fBrakeBiasFront value="0.650000" />
       <fHandBrakeForce value="0.400000" />
       <fSteeringLock value="45.000000" />
-      <fTractionCurveMax value="3.50000" />
-      <fTractionCurveMin value="3.30000" />
+      <fTractionCurveMax value="2.20000" />
+      <fTractionCurveMin value="1.20000" />
       <fTractionCurveLateral value="25.500000" />
       <fTractionSpringDeltaMax value="0.150000" />
       <fLowSpeedTractionLossMult value="0.700000" />
