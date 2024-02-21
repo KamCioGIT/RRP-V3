@@ -1,0 +1,6 @@
+.git
+.vscode
+will_delete.*
+.DS_Store
+__MACOSX
+build
