@@ -3,10 +3,10 @@ print("^2Jim-Mining ^7v^4"..GetResourceMetadata(GetCurrentResourceName(), 'versi
 Config = {
 	Lan = "en", -- Pick your language here
 	System = {
-		Debug = false, -- enable debug mode
+		Debug = true, -- enable debug mode
 		Menu = "ox",			--"qb" or "ox"
-		ProgressBar = "gta",		--"qb" or "ox"
-		Notify = "gta",			--"qb" or "ox"
+		ProgressBar = "ox",		--"qb" or "ox"
+		Notify = "ox",			--"qb" or "ox"
 
 	},
 	General = {
