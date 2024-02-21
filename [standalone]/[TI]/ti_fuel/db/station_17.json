@@ -22,17 +22,6 @@
             "sellUntil": 0.0,
             "restockAmount": 5.0
         },
-        "Diesel": {
-            "min": 0.0,
-            "buyUntil": 1000.0,
-            "buyPrice": 0.5,
-            "sellPrice": 1.0,
-            "max": 1000.0,
-            "stock": 1000.0,
-            "restockTime": 60,
-            "sellUntil": 0.0,
-            "restockAmount": 5.0
-        },
         "Electric": {
             "min": 0.0,
             "buyUntil": 100000.0,
@@ -43,6 +32,17 @@
             "restockTime": 1,
             "sellUntil": 0.0,
             "restockAmount": 100.0
+        },
+        "Diesel": {
+            "min": 0.0,
+            "buyUntil": 1000.0,
+            "buyPrice": 0.5,
+            "sellPrice": 1.0,
+            "max": 1000.0,
+            "stock": 1000.0,
+            "restockTime": 60,
+            "sellUntil": 0.0,
+            "restockAmount": 5.0
         },
         "RON95": {
             "min": 0.0,
@@ -78,5 +78,19 @@
             "restockAmount": 5.0
         }
     },
-    "addons": []
+    "addons": [
+        {
+            "Electric": {
+                "min": 0.0,
+                "buyUntil": 100000.0,
+                "buyPrice": 0.1,
+                "sellPrice": 0.2,
+                "max": 100000.0,
+                "stock": 100000.0,
+                "restockTime": 1,
+                "sellUntil": 0.0,
+                "restockAmount": 100.0
+            }
+        }
+    ]
 }

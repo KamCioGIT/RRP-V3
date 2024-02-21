@@ -44,17 +44,6 @@
             "stock": 1000.0,
             "restockTime": 60
         },
-        "MET100": {
-            "sellUntil": 0.0,
-            "max": 100.0,
-            "buyUntil": 100.0,
-            "buyPrice": 8.0,
-            "min": 0.0,
-            "restockAmount": 5.0,
-            "sellPrice": 4.0,
-            "stock": 100.0,
-            "restockTime": 60
-        },
         "Electric": {
             "sellUntil": 0.0,
             "max": 100000.0,
@@ -75,6 +64,17 @@
             "restockAmount": 5.0,
             "sellPrice": 5.0,
             "stock": 50.0,
+            "restockTime": 60
+        },
+        "MET100": {
+            "sellUntil": 0.0,
+            "max": 100.0,
+            "buyUntil": 100.0,
+            "buyPrice": 8.0,
+            "min": 0.0,
+            "restockAmount": 5.0,
+            "sellPrice": 4.0,
+            "stock": 100.0,
             "restockTime": 60
         }
     },
