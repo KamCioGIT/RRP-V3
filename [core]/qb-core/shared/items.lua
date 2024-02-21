@@ -329,7 +329,7 @@ QBShared.Items = {
     walkstick                    = { name = 'walkstick', label = 'Walking Stick', weight = 1000, type = 'item', image = 'walkstick.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Walking stick for ya\'ll grannies out there.. HAHA' },
 
     -- Communication
-    phone                        = { name = 'phone', label = 'Phone', weight = 500, type = 'item', image = 'phone.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'Neat phone ya got there' },
+    --phone                        = { name = 'phone', label = 'Phone', weight = 500, type = 'item', image = 'phone.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'Neat phone ya got there' },
     radio                        = { name = 'radio', label = 'Radio', weight = 500, type = 'item', image = 'radio.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'You can communicate with this through a signal' },
     iphone                       = { name = 'iphone', label = 'iPhone', weight = 1000, type = 'item', image = 'iphone.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Very expensive phone' },
     samsungphone                 = { name = 'samsungphone', label = 'Samsung S10', weight = 1000, type = 'item', image = 'samsungphone.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'Very expensive phone' },
@@ -338,7 +338,7 @@ QBShared.Items = {
     fitbit                       = { name = 'fitbit', label = 'Fitbit', weight = 500, type = 'item', image = 'fitbit.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'I like fitbit' },
     radioscanner                 = { name = 'radioscanner', label = 'Radio Scanner', weight = 1000, type = 'item', image = 'radioscanner.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'With this you can get some police alerts. Not 100% effective however' },
     pinger                       = { name = 'pinger', label = 'Pinger', weight = 1000, type = 'item', image = 'pinger.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'With a pinger and your phone you can send out your location' },
-    cryptostick                  = { name = 'cryptostick', label = 'Crypto Stick', weight = 200, type = 'item', image = 'cryptostick.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Why would someone ever buy money that doesn\'t exist.. How many would it contain..?' },
+    --cryptostick                  = { name = 'cryptostick', label = 'Crypto Stick', weight = 200, type = 'item', image = 'cryptostick.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Why would someone ever buy money that doesn\'t exist.. How many would it contain..?' },
 
     -- Theft and Jewelry
     rolex                        = { name = 'rolex', label = 'Golden Watch', weight = 500, type = 'item', image = 'rolex.png', unique = false, useable = false, shouldClose = true, combinable = nil, description = 'A golden watch seems like the jackpot to me!' },
@@ -629,5 +629,121 @@ sparetire                   = { name = "sparetire", label = "Spare Tire", weight
     ['laptop_blue']                     = {['name'] = 'laptop_blue',                       	['label'] = 'Blue Laptop',              ['weight'] = 200,         ['type'] = 'item',         ['image'] = 'laptop_blue.png',             ['unique'] = false,          ['useable'] = true,      ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'Nice Looking Laptop You Got There, Dont Do Anything Illegal With It'},
     ['laptop_red']                     	= {['name'] = 'laptop_red',                       	['label'] = 'Red Laptop',               ['weight'] = 200,         ['type'] = 'item',         ['image'] = 'laptop_red.png',              ['unique'] = false,          ['useable'] = true,      ['shouldClose'] = true,      ['combinable'] = nil,   ['description'] = 'Nice Looking Laptop You Got There, Dont Do Anything Illegal With It'},
     
+	cryptostick = {
+    ['name'] = 'cryptostick',
+    ['label'] = 'Crypto Stick',
+    ['weight'] = 50,
+    ['type'] = 'item',
+    ['image'] = 'cryptostick.png',
+    ['unique'] = false,
+    ['useable'] = true,
+    ['shouldClose'] = false,
+    ['combinable'] = nil,
+    ['description'] = 'A suspicious USB...'
+},
+
+	phone_dongle = {
+    ['name'] = 'phone_dongle',
+    ['label'] = 'Phone Dongle',
+    ['weight'] = 50,
+    ['type'] = 'item',
+    ['image'] = 'phone_dongle.png',
+    ['unique'] = false,
+    ['useable'] = true,
+    ['shouldClose'] = false,
+    ['combinable'] = nil,
+    ['description'] = 'Telephone key to make a bypass, maybe...'
+},
+
+	powerbank = {
+    ['name'] = 'powerbank',
+    ['label'] = 'Power Bank',
+    ['weight'] = 50,
+    ['type'] = 'item',
+    ['image'] = 'powerbank.png',
+    ['unique'] = false,
+    ['useable'] = true,
+    ['shouldClose'] = false,
+    ['combinable'] = nil,
+    ['description'] = 'Portable charger for high-end phones'
+},
+
+	phone = {
+    ["name"] = "phone",
+    ["label"] = "Classic Phone",
+    ["weight"] = 150,
+    ["type"] = "item",
+    ["image"] = "phone.png",
+    ["unique"] = true,
+    ["useable"] = true,
+    ["shouldClose"] = true,
+    ["combinable"] = nil,
+    ["description"] = "Neat phone ya got there"
+	},
+
+	black_phone = {
+    ["name"] = "black_phone",
+    ["label"] = "Black Phone",
+    ["weight"] = 150,
+    ["type"] = "item",
+    ["image"] = "black_phone.png",
+    ["unique"] = true,
+    ["useable"] = true,
+    ["shouldClose"] = true,
+    ["combinable"] = nil,
+    ["description"] = "Neat phone ya got there"
+	},
+
+	yellow_phone = {
+    ["name"] = "yellow_phone",
+    ["label"] = "Yellow Phone",
+    ["weight"] = 150,
+    ["type"] = "item",
+    ["image"] = "yellow_phone.png",
+    ["unique"] = true,
+    ["useable"] = true,
+    ["shouldClose"] = true,
+    ["combinable"] = nil,
+    ["description"] = "Neat phone ya got there"
+	},
+
+	red_phone = {
+    ["name"] = "red_phone",
+    ["label"] = "Red Phone",
+    ["weight"] = 150,
+    ["type"] = "item",
+    ["image"] = "red_phone.png",
+    ["unique"] = true,
+    ["useable"] = true,
+    ["shouldClose"] = true,
+    ["combinable"] = nil,
+    ["description"] = "Neat phone ya got there"
+	},
+
+	green_phone = {
+    ["name"] = "green_phone",
+    ["label"] = "Green Phone",
+    ["weight"] = 150,
+    ["type"] = "item",
+    ["image"] = "green_phone.png",
+    ["unique"] = true,
+    ["useable"] = true,
+    ["shouldClose"] = true,
+    ["combinable"] = nil,
+    ["description"] = "Neat phone ya got there"
+	},
+
+	white_phone = {
+    ["name"] = "white_phone",
+    ["label"] = "White Phone",
+    ["weight"] = 150,
+    ["type"] = "item",
+    ["image"] = "white_phone.png",
+    ["unique"] = true,
+    ["useable"] = true,
+    ["shouldClose"] = true,
+    ["combinable"] = nil,
+    ["description"] = "Neat phone ya got there"
+},
 
 }

@@ -334,6 +334,16 @@ function setItemInfo(title, description) {
 }
 
 function generateDescription(itemData) {
+		let phoneMeta = ['phone', 'black_phone', 'yellow_phone', 'white_phone', 'red_phone', 'green_phone']
+	if (phoneMeta.includes(itemData.name)) {
+		return "<p><strong>Phone Number: </strong><span>" +
+        itemData.info.phoneNumber +
+        "</span></p><p><strong>Firstname: </strong><span>" +
+        itemData.info.charinfo.firstname +
+        "</span></p><p><strong>Lastname: </strong><span>" +
+        itemData.info.charinfo.lastname +
+        "</span></p>";
+	}
     if (itemData.type === "weapon") {
         let ammo = itemData.info.ammo ?? 0;
         return `<p><strong>Serial Number: </strong><span>${itemData.info.serie}</span></p>
