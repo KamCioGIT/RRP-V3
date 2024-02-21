@@ -1,5 +1,3 @@
-Loc = Loc or {}
-
 Loc["de"] = {
     error = {
         ["cancelled"] = "Abgebrochen!",
