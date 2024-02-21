@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s4-carcontrol</title>
+    <link rel="stylesheet" href="../web/style.css">
+    <link rel="stylesheet" href="https://res-fa-server.github.io/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js'></script>
+    <script src="https://www.youtube.com/player_api"></script>
+</head>
+    <body>
+
+        <div class="notifs">
+         
+        </div>
+
+        <div class="mini">
+            <div class="mid">
+                <div class="mid-box">
+                    <h1>Window's</h1>
+                    <div class="tool-box winx w-0" data-w="0">
+                        <img src="../assets/window.png" />
+                    </div>
+                    <div class="tool-box winx w-1 flip-x"  data-w="1">
+                        <img src="../assets/window.png" />
+                    </div>
+                    <div class="tool-box winx w-2 flip-y"  data-w="2">
+                        <img src="../assets/window.png" />
+                    </div>
+                    <div class="tool-box winx w-3 flip-y rot-180"  data-w="3">
+                        <img src="../assets/window.png" />
+                    </div>
+                </div>
+                <div class="mid-box mmm">
+                    <h1 class="t-c">Door's</h1>
+                    <div class="tool-box-mid d-0" data-w="0">
+                        <img src="../assets/front_door.png" />
+                    </div>
+                    <div class="tool-box-mid d-4" data-w="4">
+                        <img src="../assets/hood.png" />
+                    </div>
+                    <div class="tool-box-mid d-1 flip-x" data-w="1">
+                        <img src="../assets/front_door.png" />
+                    </div>
+                    <div class="tool-box-mid d-2 flip-y" data-w="2">
+                        <img src="../assets/front_door.png" />
+                    </div>
+                    <div class="tool-box-mid d-5" data-w="5">
+                        <img src="../assets/trunk.png" />
+                    </div>
+                    <div class="tool-box-mid d-3 flip-x rot-180" data-w="3">
+                        <img src="../assets/front_door.png" />
+                    </div>
+                </div>
+                <div class="mid-box">
+                    <h1 class="t-r">Seat's</h1>
+                    <div class="tool-box seat s-1" data-w="-1">
+                        <img src="../assets/steering.png" />
+                    </div>
+                    <div class="tool-box seat s-2" data-w="0">
+                        <img src="../assets/seat3.png" />
+                    </div>
+                    <div class="tool-box seat s-4" data-w="1">
+                        <img src="../assets/seat3.png" />
+                    </div>
+                    <div class="tool-box seat s-3" data-w="2">
+                        <img src="../assets/seat3.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tablet">
+            <div class="ust main">
+                <div class="box">
+                    <div class="car_info">
+                        <div class="i_ lights"></div> 
+                        <div class="i_ handbrake"></div> 
+                        <div class="i_ rain"></div> 
+                        <div class="i_ cardoors"></div> 
+                    </div>
+                    <div class="gear">
+                        <p class="park">P</p>
+                        <p class="rear R">R</p>
+                        <p class="neutral N">N</p>
+                        <p class="drive D">D</p>
+                    </div>
+                    <div id="speed" class="gauge-container"></div>
+                    <div class="car_overlay"></div>
+                    <div class="car_img"></div>
+                    <div class="f_light"></div>
+                    <div class="r_light"></div>
+                    <div class="smode_light"></div>
+                    
+                    <div class="drive_mode">
+                        <i class="fa-thin fa-angle-left"></i>
+                        <span>Comfort</span>
+                        <i class="fa-thin fa-angle-right"></i>
+                    </div>
+                    <div class="alt_icons">
+                        <i class="fa-sharp fa-light fa-steering-wheel"></i>
+                        <i class="fa-thin fa-microphone"></i>
+                        <i class="fa-thin fa-camera"></i>
+                    </div>
+                    <i class="fa-regular fa-ellipsis bottomi"></i>
+                </div>
+                <div class="box box_2">
+                    <div class="half map">
+                        <div class="navi">
+                            <i class="fa-thin fa-magnifying-glass search"></i><span>Navigate</span>
+                        </div>
+                        <div class="left-top">
+                            <i class="fa-thin fa-location-arrow center"></i>
+                        </div>
+                        <iframe src="https://cokluk.github.io/map/" style="border:0px #ffffff none;pointer-events: none;"></iframe>
+                        <div class="navi_name">
+                            <span>Los Angeles, Street name</span> 
+                        </div>
+                    </div>
+                    <div class="half">
+                        <div class="top-half">
+                            <span class="city">Los Santos</span>
+                            <div class="weather"></div>
+                            <h1>13°</h1>
+                            <!-- <span class="forecast"> 10 - 15</span> -->
+                            <h2>Thunder</h2>
+                            <div class="f_list">
+                                <div class="f_">
+                                    <span>23:00</span>
+                                    <i class="fa-thin fa-moon center"></i>
+                                    <b>13°</b>
+                                </div>
+                                <div class="f_">
+                                    <span>00:00</span>
+                                    <i class="fa-thin fa-cloud center"></i>
+                                    <b>13°</b>
+                                </div>
+                                <div class="f_">
+                                    <span>01:00</span>
+                                    <i class="fa-thin fa-cloud center"></i>
+                                    <b>13°</b>
+                                </div>
+                                <div class="f_">
+                                    <span>02:00</span>
+                                    <i class="fa-thin fa-moon center"></i>
+                                    <b>13°</b>
+                                </div>
+                                <div class="f_">
+                                    <span>03:00</span>
+                                    <i class="fa-thin fa-moon center"></i>
+                                    <b>13°</b>
+                                </div>
+                                <div class="f_">
+                                    <span>04:00</span>
+                                    <i class="fa-thin fa-sun center"></i>
+                                    <b>13°</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-half">
+                           <img class="carplay center" src="../assets/carplay.png" />
+                           <h3>Do you want to connect to CarPlay?</h3>
+                           <a href="#" class="carplay_con">Connect</a>
+                        </div>
+                    </div>
+                    
+                    <div class="music">
+                        <div class="album_img"></div>
+                        <h1>0Resmon</h1>
+                        <div class="media_control">
+                            <i class="fa-thin fa-backward-step back" id="m_prev"></i>
+                            <i class="fa-solid fa-play play" id="m_play"></i>
+                            <i class="fa-solid fa-pause pause" id="m_pause"></i>
+                            <i class="fa-thin fa-forward-step forward"  id="m_next"></i>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="ust bigmap dn">
+                <iframe src="https://cokluk.github.io/map/players.html" ></iframe>
+            </div>
+
+            <div class="ust spotify dn">
+                <div class="spotify-top">
+                    <div class="s-icon" data-menu="playing">
+                        <i class="fa-duotone fa-tv-music"></i>
+                    </div>
+                    <div class="s-icon" data-menu="albums">
+                        <i class="fa-duotone fa-album-collection"></i>
+                    </div>
+                    <div class="s-icon" data-menu="share">
+                        <i class="fa-duotone fa-airplay"></i>
+                    </div>
+                    <div class="s-icon" data-menu="search">
+                        <i class="fa-duotone fa-magnifying-glass"></i>
+                    </div>
+ 
+                </div>
+                <div class="spotify-bot">
+                    <div class="spotify-item s-playing" style="display: none;">
+                        <div class="sp-player"></div>
+                        <h1>Ati242 - Hoşçakal</h1>
+                        <div class="cur-track-img"></div>
+                        <div class="track-controls">
+                            <i class="fal fa-undo-alt" id="loop"></i>
+                            <i class="fal fa-chevron-left"  id="prev"></i>
+                            <i class="fal fa-pause" id="pause-button" style="display: none;"></i>
+                            <i class="fal fa-play" id="play-button"></i>
+                            <i class="fal fa-chevron-right" id="next"></i>
+                            <i class="fal fa-random" id="mix"></i>
+                        </div>
+                    </div>
+                    <div class="spotify-item s-search" style="display: none;">
+                        <div class="search-con">
+                            <i class="fa-duotone fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Search" />
+                        </div>
+                        <div class="search-res">
+                         
+                        </div>
+                    </div>
+                    <div class="spotify-item s-share">
+                        <h1>Enter share code:</h1><br>
+                        <input type="number" min="111111" max="999999" maxlength="6">
+                        <a href="#"><i class="fad fa-copy"></i> Join to album</a>
+                    </div>
+                    <div class="spotify-item s-albums">
+                        <div class="album-con">
+                            <a class="create-new-album" href="#"><i class="fad fa-plus-circle"></i> Create new album</a>
+                            <a class="back-to-albums" href="#"><i class="fal fa-angle-left"></i> Back / Refresh</a>
+                        </div>
+                        <div class="album-res">
+                            
+                        </div>
+                        <div class="album-name">
+                            <h2>Set Album Name</h2><i class="fad fa-times-circle c-album"></i>
+                            <hr>
+                            <input type="text" />
+                            <a class="cr-album" href="#"><i class="fad fa-plus-circle"></i> Create</a>
+                        </div>
+                    </div>
+                    <div class="album-selector">
+                        <i class="fad fa-times-circle c-album-selector"></i>
+                        <h2>Select Album</h2>
+                        <div class="a-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ust doors dn">
+                <i class="minimize fa-sharp fa-light fa-arrows-minimize"></i>
+                <img class="carimg" src="../assets/car2.png" />
+                <div class="mid">
+                    <div class="mid-box">
+                        <h1>Window's</h1>
+                        <div class="tool-box winx w-0" data-w="0">
+                            <img src="../assets/window.png" />
+                        </div>
+                        <div class="tool-box winx w-1 flip-x"  data-w="1">
+                            <img src="../assets/window.png" />
+                        </div>
+                        <div class="tool-box winx w-2 flip-y"  data-w="2">
+                            <img src="../assets/window.png" />
+                        </div>
+                        <div class="tool-box winx w-3 flip-y rot-180"  data-w="3">
+                            <img src="../assets/window.png" />
+                        </div>
+                    </div>
+                    <div class="mid-box mmm">
+                        <h1 class="t-c">Door's</h1>
+                        <div class="tool-box-mid d-0" data-w="0">
+                            <img src="../assets/front_door.png" />
+                        </div>
+                        <div class="tool-box-mid d-4" data-w="4">
+                            <img src="../assets/hood.png" />
+                        </div>
+                        <div class="tool-box-mid d-1 flip-x" data-w="1">
+                            <img src="../assets/front_door.png" />
+                        </div>
+                        <div class="tool-box-mid d-2 flip-y" data-w="2">
+                            <img src="../assets/front_door.png" />
+                        </div>
+                        <div class="tool-box-mid d-5" data-w="5">
+                            <img src="../assets/trunk.png" />
+                        </div>
+                        <div class="tool-box-mid d-3 flip-x rot-180" data-w="3">
+                            <img src="../assets/front_door.png" />
+                        </div>
+                    </div>
+                    <div class="mid-box">
+                        <h1 class="t-r">Seat's</h1>
+                        <div class="tool-box seat s-1" data-w="-1">
+                            <img src="../assets/steering.png" />
+                        </div>
+                        <div class="tool-box seat s-2" data-w="0">
+                            <img src="../assets/seat3.png" />
+                        </div>
+                        <div class="tool-box seat s-4" data-w="1">
+                            <img src="../assets/seat3.png" />
+                        </div>
+                        <div class="tool-box seat s-3" data-w="2">
+                            <img src="../assets/seat3.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="tool-box-bot engine">
+                        <img src="../assets/engine.png" />
+                    </div>
+                    <div class="tool-box-bot all-doors">
+                        <img src="../assets/alldoors.png" />
+                    </div>
+                    <div class="tool-box-bot car-lights">
+                        <img src="../assets/lights.png" />
+                    </div>
+                    <div class="tool-box-bot car-indi">
+                        <img src="../assets/warning.png" />
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="ust settings dn">
+                <div class="halfy">
+                    <img src="../assets/car3.png" />
+                    <div class="colorpicker" style="z-index:1000;"></div>
+                </div>
+                <div class="halfy">
+                    <h1>Settings</h1>
+ 
+                    <div class="set-box sportmode" data-s="sportmode">
+                        <h2>Sport Mode</h2>
+                        <h3>Disabled</h3>
+                    </div>
+                    <div class="set-box neon" data-s="neon">
+                        <h2>Neon ambient lighting</h2>
+                        <h3>Disabled</h3>
+                    </div>
+                    <div class="set-box ambient" data-s="ambient">
+                        <h2>Ambient lighting</h2>
+                        <h3>Disabled</h3>
+                    </div>
+                    <div class="set-box" data-s="setLight">
+                        <h2>Set Ambient light</h2>
+                    </div>
+                    <div class="set-box" data-s="setNeonLight">
+                        <h2>Set Neon Ambient light</h2>
+                    </div>
+                    
+                </div>
+               
+            </div>
+            
+            <div class="alt">
+                <div class="ac-panel">
+                    <i class="fa-thin fa-angle-left outer"></i>
+                    <input type="number" value="26" /> 
+                    <i class="fa-thin fa-angle-right inner"></i>
+                    <div class="seat-ico"></div>
+                </div>
+                <div class="a-box" data-app="doors"><i class="fa-solid fa-car center"></i></div>
+                <div class="a-box" data-app="bigmap"><i class="fa-thin fa-location-arrow center"></i></div>
+                <div class="a-box" data-app="main"><i class="fa-thin fa-grid-2 center"></i></div>
+                <div class="a-box" data-app="spotify"><i class="fa-thin fa-music center"></i></div>
+                <div class="a-box" data-app="settings"><i class="fa-thin fa-gear center"></i></div>
+              
+                <div class="ac-panel flip">
+                    <i class="fa-thin fa-angle-left outer"></i>
+                    <input class="flip" type="number" value="26" /> 
+                    <i class="fa-thin fa-angle-right inner"></i>
+                    <div class="seat-ico"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="audio-vol">
+            <div class="vol-box">
+                <i class="far fa-volume-down"></i>
+                <input type="range" max="1" min="0" step="0.01" class="slider" id="range1">
+                <i class="fa-thin fa-volume-up"></i>
+            </div>
+        </div>
+
+        <search></search>
+        <script src="../web/gauge.js"></script>
+        <script src="../web/s4.js"></script>
+    </body>
+</html>
