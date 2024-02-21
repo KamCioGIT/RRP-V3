@@ -37,7 +37,7 @@ Config.MenuItems = {
                 title = 'Billing Menu',
                 icon = 'rectangle-list',
                 type = 'client',
-                event = 'billing:client:engageChooseBillViewMenu',
+                event = 'g-billing:client:engageChooseBillViewMenu',
                 shouldClose = true
             }, {
                 id = 'interactions',
