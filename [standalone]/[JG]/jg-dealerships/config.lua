@@ -1,4 +1,4 @@
--- Generated with https://configurator.jgscripts.com at 2/20/2024, 3:09:15 PM
+-- Generated with https://configurator.jgscripts.com at 2/21/2024, 1:05:48 AM
 
 Config = {}
 Config.Locale = 'en'
@@ -476,13 +476,12 @@ Config.DealershipLocations = {
   },
   Gallivanter = {
     type = 'owned',
+    showroomType = 'car',
     openShowroom = vector3(558.88, -240.82, 49.98),
     openManagement = vector3(563.56, -240.47, 49.98),
     purchaseSpawn = vector4(547.76, -258.68, 49.98, 64.66),
     testDriveSpawn = vector4(547.76, -258.68, 49.98, 64.66),
     sellVehicle = vector4(547.76, -258.68, 49.98, 64.66),
-    enableSellVehicle = true,
-    sellVehiclePercent = 0.6,
     camera = {
       name = 'Car',
       coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
@@ -507,6 +506,15 @@ Config.DealershipLocations = {
       color = 2,
       scale = 0.6,
     },
+    societyPurchaseJobWhitelist = {
+      police = {
+        4,
+        5,
+      },
+    },
+    societyPurchaseGangWhitelist = {},
+    enableSellVehicle = true,
+    sellVehiclePercent = 0.6,
     enableFinance = true,
     hideMarkers = false,
     markers = {
@@ -527,6 +535,8 @@ Config.DealershipLocations = {
       rotate = 1,
       drawOnEnts = 0,
     },
+    showroomJobWhitelist = {},
+    showroomGangWhitelist = {},
     disableShowroomPurchase = false,
     directSaleDistance = 50,
     job = 'cardealer',
@@ -799,3 +809,5 @@ Config.DealershipLocations = {
   },
 }
 Config.Config = {}
+Config.DisplayVehiclesHidePurchasePrompt = false
+Config.DisplayVehiclesPurchasePromptDistance = 3.1
