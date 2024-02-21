@@ -19,9 +19,9 @@ Config.VolumeDownKey = "SUBTRACT" -- (numpad minus)
 
 Config.TemperatureType = "C" -- F / C
 
-Config.OpenKey = "o" 
+Config.OpenKey = "F5" 
 
-Config.OpenKeyMini = "n" 
+Config.OpenKeyMini = "" 
 
 Config.RadarBlip = 40
 
