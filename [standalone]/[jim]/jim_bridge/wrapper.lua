@@ -26,7 +26,7 @@ for k, v in pairs(Exports) do
     if GetResourceState(v):find("start") then print("^6Bridge^7: '^3"..v.."^7' ^2export found ^7") end
 end
 
-local itemResource, vehResource, jobResource = "", "", ""
+local itemResource, jobResource = "", ""
 
 -- Load item lists
 if GetResourceState(OXInv):find("start") then itemResource = OXInv
@@ -56,7 +56,7 @@ else
 end
 
 -- Load Vehicles
-if GetResourceState(QBXExport):find("start") or GetResourceState(QBExport):find("start") then vehResource = QBExport
+if GetResourceState(QBXExport):find("start") or GetResourceState(QBExport):find("start") then
     Core = Core or exports[QBExport]:GetCoreObject()
     if GetResourceState(QBExport):find("start") and not GetResourceState(QBXExport):find("start") then
         RegisterNetEvent('QBCore:Client:UpdateObject', function()
@@ -1291,6 +1291,9 @@ function sendPhoneMail(data) local phoneResource = ""
 
     elseif GetResourceState("qb-phone"):find("start") then phoneResource = "qb-phone"
         TriggerServerEvent('qb-phone:server:sendNewMail', data)
+
+    elseif GetResourceState("jpr-phonesystem"):find("start") then phoneResource = "jpr-phonesystem"
+        TriggerServerEvent(GetCurrentResourceName()..":jpr:SendMail", data)
     end
 
     if phoneResource ~= "" then if Config.System.Debug then print("^6Bridge^7[^3"..phoneResource.."^7]: ^2Sending mail to player") end
@@ -1321,6 +1324,19 @@ RegisterNetEvent(GetCurrentResourceName()..":yflip:SendMail", function(data)
         content = data.message,
         actions = data.buttons,
     }, 'source', src)
+end)
+
+RegisterNetEvent(GetCurrentResourceName()..":jpr:SendMail", function(data)
+    local QBCore = exports['qb-core']:GetCoreObject()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    TriggerEvent('jpr-phonesystem:server:sendEmail', {
+        Assunto = data.subject, -- Subject
+        Conteudo = data.message, -- Content
+        Enviado = data.sender, -- Submitted by
+        Destinatario = Player.PlayerData.citizenid, -- Target
+        Event = {}, -- Optional 
+    })
 end)
 
 function registerCommand(command, options)
