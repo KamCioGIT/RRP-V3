@@ -81,23 +81,27 @@ local function SetupVehicleMenu()
         title = 'Car Control',
         icon = 'car',
         type = 'client',
-        event = 'tgiann-carcontrol:open',
+        event = 's4-carcontrol:carcontrol',
         shouldClose = true,
     }
 
-    local ped = PlayerPedId()
-    local Vehicle = GetVehiclePedIsIn(ped) ~= 0 and GetVehiclePedIsIn(ped) or getNearestVeh()
-   
-
-    if Vehicle == 0 then                 --fixed for new vehcontrol
-        if vehicleIndex then
-            RemoveOption(vehicleIndex)
-            vehicleIndex = nil
+    local ped = GetPlayerPed(-1)
+    local veh = GetVehiclePedIsUsing(ped)
+ 
+    if GetVehiclePedIsIn(ped, false) ~= 0 then    
+        if NetworkGetNetworkIdFromEntity(GetPedInVehicleSeat(veh, -1)) ==  NetworkGetNetworkIdFromEntity(ped) then 
+            SetNuiFocus(1, 1)
+            SetNuiFocusKeepInput(true)
+            SetCursorLocation(0.5, 0.5)
+            SendNUIMessage({ action = "open", data = GetInfo() }) 
+            updatestate = "open"
+            Open = true
+            Pm = true
+            CheckUpdate()
+            Controls()
         end
-    else
-        vehicleIndex = AddOption(VehicleMenu, vehicleIndex)
     end
-end
+end, false)
 
 local function SetupSubItems()
     SetupJobMenu()
