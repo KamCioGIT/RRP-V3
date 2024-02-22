@@ -26,17 +26,16 @@ Citizen.CreateThread(function()
 end)
 
 function IsIntersecting(object, vehicle)
-    return false
-    -- return UseCache('isIntersecting', function()
-        -- if vehicle then
-            -- if IsEntityTouchingEntity(object, vehicle) then
-                -- return true
-            -- end
-        -- end
+    return UseCache('isIntersecting', function()
+        if vehicle then
+            if IsEntityTouchingEntity(object, vehicle) then
+                return false
+            end
+        end
         
         for _, near in pairs(nearbyObjects) do
             if IsEntityTouchingEntity(object, near) and object ~= near then
-                return true
+                return false
             end
         end
         
