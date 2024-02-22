@@ -1,3 +1,88 @@
+-- Placing checks
+
+local nearbyObjects = {}
+Citizen.CreateThread(function()
+    while true do
+        local sleep = 3000
+        
+        if IS_PLACING then
+            sleep = 1500
+            local newTable = {}
+            
+            local allObjects = GetGamePool('CObject')
+            local coords = GetEntityCoords(PlayerPedId())
+            
+            for _, obj in pairs(allObjects) do
+                if GetDistanceBetweenCoords(coords, GetEntityCoords(obj), 1) < 10.0 then
+                    table.insert(newTable, obj)
+                end
+            end
+            
+            nearbyObjects = newTable
+        end
+        
+        Citizen.Wait(sleep)
+    end
+end)
+
+function IsIntersecting(object, vehicle)
+    return UseCache('isIntersecting', function()
+        if vehicle then
+            if IsEntityTouchingEntity(object, vehicle) then
+                return true
+            end
+        end
+        
+        for _, near in pairs(nearbyObjects) do
+            if IsEntityTouchingEntity(object, near) and object ~= near then
+                return true
+            end
+        end
+        
+        return false
+    end, 50)
+end
+
+function IsASupportiveEntity(object, entity)
+    local objMin, objMax = GetModelDimensions(GetEntityModel(object))
+    local entMin, entMax = GetModelDimensions(GetEntityModel(entity))
+    
+    local objSize = (objMax.x - objMin.x) * (objMax.y - objMin.y)
+    local entSize = (entMax.x - entMin.x) * (entMax.y - entMin.y)
+    
+    if not IsEntityAVehicle(entity) and Config.disallowItemStacking then
+        return false
+    end
+    
+    return objSize < entSize
+end
+
+function IsSupported(object)
+    return UseCache('isSupported', function()
+        local coords = GetEntityCoords(object)
+        local min, max = GetModelDimensions(GetEntityModel(object))
+        
+        local checks = {
+            coords + vector3(0.0, 0.0, min.z + 0.01),
+            coords + vector3(min.x, 0.0, min.z + 0.01),
+            coords + vector3(max.x, 0.0, min.z + 0.01),
+            coords + vector3(0.0, min.x, min.z + 0.01),
+            coords + vector3(0.0, max.x, min.z + 0.01),
+        }
+        
+        local supports = 0
+        for _, check in pairs(checks) do
+            local ray = StartShapeTestSweptSphere(check, check + vector3(0.0, 0.0, -0.1), 0.03, 4294967295, object, 1)
+            local result, hit, endCoords, normal, entity = GetShapeTestResult(ray)
+            if hit == 1 then
+                supports = supports + 1
+            end
+        end
+        
+        return supports >= (#checks - 1)
+    end, 50)
+end
+
 -- This function is responsible for drawing all the 3d texts ('Press [E] to take off the wheel' e.g)
 function Draw3DText(coords, textInput, scaleX)
     scaleX = scaleX * Config.textScale

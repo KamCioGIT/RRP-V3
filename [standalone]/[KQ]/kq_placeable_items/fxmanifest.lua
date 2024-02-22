@@ -4,7 +4,7 @@ lua54 'yes'
 
 author 'KuzQuality | Kuzkay'
 description 'Placeable items by KuzQuality'
-version '1.4.0'
+version '1.4.1'
 
 
 ui_page 'nui/index.html'
