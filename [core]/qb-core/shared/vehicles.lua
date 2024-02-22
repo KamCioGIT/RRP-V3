@@ -670,6 +670,14 @@ local Vehicles = {
     {['model'] = 'mansurus',        ['name'] = 'Short WB',                    ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
     {['model'] = 'r34h',            ['name'] = 'Elegy R34',                   ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
     {['model'] = 's1',              ['name'] = '1S WB',                       ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = '911turbos',       ['name'] = '667 Turbo',                   ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'e92bb',           ['name'] = '504M Tuned',                  ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'g81hr',           ['name'] = '323M Touring',                ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'hycaders6',       ['name'] = '6SRA WB',                     ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'royalcustome39m5_wb', ['name'] = 'Van',                     ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'rygbus',          ['name'] = '306M WB',                     ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'v60hr',           ['name'] = '60V (AirRide)',               ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
+    {['model'] = 'xp210',           ['name'] = 'Haris',                       ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
     {['model'] = 'sf90',            ['name'] = 'Ninty',                       ['brand'] = 'Dono',             ['price'] = 14000,   ['category'] = 'Dono', 	['categoryLabel'] = 'Dono',     		 ['shop'] = 'dono'},
     
 }
