@@ -27,6 +27,7 @@ end)
 
 function IsIntersecting(object, vehicle)
     return UseCache('isIntersecting', function()
+    return false
         if vehicle then
             if IsEntityTouchingEntity(object, vehicle) then
                 return true
