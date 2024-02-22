@@ -26,8 +26,8 @@ Citizen.CreateThread(function()
 end)
 
 function IsIntersecting(object, vehicle)
-    return UseCache('isIntersecting', function()
     return false
+    return UseCache('isIntersecting', function()
         if vehicle then
             if IsEntityTouchingEntity(object, vehicle) then
                 return true
