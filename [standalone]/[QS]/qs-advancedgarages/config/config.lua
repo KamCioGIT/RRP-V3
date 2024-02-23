@@ -147,7 +147,7 @@ Config.ImpoundPrice = 500              -- Impound default value to remove vehicl
 
 Config.DisableBlips = false            -- Disable all blips or show them on your map?
 Config.ShortNames = false              -- This config will shorten the names so your blips are much less
-Config.startCinematic = 5              -- Cinematic Cams being AFK in the garage, it's a beautiful cinematic cam (by default it is 1.3, one and a half minutes)
+Config.startCinematic = 1              -- Cinematic Cams being AFK in the garage, it's a beautiful cinematic cam (by default it is 1.3, one and a half minutes)
 Config.PlayerToVehicleAnimation = true -- Enable or disable the animation of the player entering the car
 Config.SetEntityAlpha = true           -- When he saves the car, he makes animations and degrades the car
 Config.GarageSync = true               -- This option will make the garages share the same number of slots and players will see all the cars inside their shell
