@@ -228,7 +228,7 @@ Config.Garages = {
         system, please do not remove all impound.
     ]]
     ['Hayes Autos'] = {
-        owner = false,     -- If it is public, put false
+        owner = true,     -- If it is public, put false
         available = true, -- If it is public, set true
         isImpound = true, -- If it is an impound, set it to false (Only for impound zone)
         type = 'vehicle',
@@ -262,7 +262,7 @@ Config.Garages = {
         }
     },
     ['Airport Impound Hangar'] = {
-        owner = false,
+        owner = true,
         available = true,
         isImpound = true,
         type = 'plane',
@@ -296,7 +296,7 @@ Config.Garages = {
         }
     },
     ['Boat Impound Pier'] = {
-        owner = false,
+        owner = true,
         available = true,
         isImpound = true,
         type = 'boat',
@@ -338,7 +338,7 @@ Config.Garages = {
     ['Legion Square'] = {
         owner = true,
         available = true,
-        isImpound = false,
+        isImpound = true,
         job = false, -- You can give it a job by simply adding 'police' for example
         type = 'vehicle',
         shell = {
