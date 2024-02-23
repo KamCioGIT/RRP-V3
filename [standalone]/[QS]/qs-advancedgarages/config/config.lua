@@ -105,7 +105,7 @@ Config.Menu = 'ox_lib'
 Config.Fuel = 'ti_fuel'
 Config.Weather = 'qb-weathersync'
 Config.Vehiclekeys = 'qb-vehiclekeys'
-Config.UseTarget = 'ox_target'
+Config.UseTarget = 'qtarget'
 
 --[[
     General and visual configuration, please read each
