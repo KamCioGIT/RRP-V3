@@ -809,7 +809,7 @@ Config.DealershipLocations = {
     job = 'police',
   },
   dono = {
-    type = 'self-service',
+    type = 'owned',
     openShowroom = vector3(264.00, -756.69, 30.82),
     openManagement = vector3(264.00, -756.69, 30.82),
     purchaseSpawn = vector4(264.00, -756.69, 30.82, 100.00),
