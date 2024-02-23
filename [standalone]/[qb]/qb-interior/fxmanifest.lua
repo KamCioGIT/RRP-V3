@@ -12,7 +12,7 @@ client_scripts {
 }
 
 files {
-    'stream/starter_shells_k4mb1.ytyp'
+    'stream/starter_shells_k4mb1.ytyp',
 	-- Default (included)
 	'stream/defaultshells/shellprops.ytyp',
 	'stream/startingapt/shellpropsv11.ytyp',

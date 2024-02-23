@@ -29,11 +29,11 @@ Config.items = {
 -- Commands used to trigger rope placements
 Config.commands = {
     towing = {
-        enabled = true,
+        enabled = false,
         command = 'towrope',
     },
     winch = {
-        enabled = true,
+        enabled = false,
         command = 'winch',
     }
 }
