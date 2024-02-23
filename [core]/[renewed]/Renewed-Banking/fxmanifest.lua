@@ -32,5 +32,5 @@ files {
   'locales/*.json'
 }
 
-provide 'qb-management'
+--provide 'qb-management'
 provide 'esx_society'
