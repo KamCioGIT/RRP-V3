@@ -564,6 +564,184 @@ Config.items = {
 	['golf_ball'] = {
         [1] = 'prop_golf_ball',
     },
+	
+	-- Housing
+	-- Sofa
+	['sofas1'] = {
+        [1] = 'apa_mp_h_stn_sofacorn_01',
+        [2] = 'apa_mp_h_stn_sofacorn_05',
+        [3] = 'apa_mp_h_stn_sofacorn_06',
+        [4] = 'apa_mp_h_stn_sofacorn_07',
+        [5] = 'apa_mp_h_stn_sofacorn_08',
+        [6] = 'apa_mp_h_stn_sofacorn_09',
+        [7] = 'apa_mp_h_stn_sofacorn_10',
+    },
+	['sofas2'] = {
+        [1] = 'apa_mp_h_stn_sofa2seat_02',
+        [2] = 'hei_heist_stn_sofa2seat_03',
+        [3] = 'hei_heist_stn_sofa2seat_06',
+    },
+	['sofas3'] = {
+        [1] = 'hei_heist_stn_sofacorn_05',
+        [2] = 'hei_heist_stn_sofacorn_06',
+    },
+	['sofas4'] = {
+        [1] = 'apa_mp_h_stn_sofa_daybed_01',
+        [2] = 'apa_mp_h_stn_sofa_daybed_02',
+    },
+	['sofas5'] = {
+        [1] = 'apa_mp_h_yacht_sofa_01',
+        [2] = 'apa_mp_h_yacht_sofa_02',
+        [3] = 'p_yacht_sofa_01_s',
+        [4] = 'prop_yaught_sofa_01',
+        [5] = 'p_yacht_sofa_01_s',
+    },
+	['sofas6'] = {
+        [1] = 'ex_mp_h_off_sofa_003',
+        [2] = 'ex_mp_h_off_sofa_01',
+        [3] = 'ex_mp_h_off_sofa_02',
+    },
+	['sofas7'] = {
+        [1] = 'hei_heist_stn_sofa3seat_01',
+        [2] = 'hei_heist_stn_sofa3seat_02',
+        [3] = 'hei_heist_stn_sofa3seat_06',
+    },
+	['sofas8'] = {
+        [1] = 'prop_t_sofa',
+        [2] = 'prop_t_sofa_02',
+    },
+	['sofas9'] = {
+        [1] = 'v_tre_sofa_mess_b_s',
+        [2] = 'v_tre_sofa_mess_c_s',
+        [3] = 'xm_lab_sofa_01',
+        [4] = 'xm_lab_sofa_02',
+    },
+	['sofas10'] = {
+        [1] = 'prop_bench_01a',
+        [2] = 'prop_bench_01b',
+        [3] = 'prop_bench_01c',
+        [4] = 'prop_bench_02',
+        [5] = 'prop_bench_03',
+        [6] = 'prop_bench_04',
+        [7] = 'prop_bench_05',
+        [8] = 'prop_bench_08',
+        [8] = 'prop_bench_10',
+        [8] = 'prop_bench_11',
+    },
+	['sofas11'] = {
+        [1] = 'bkr_prop_clubhouse_sofa_01a',
+    },
+	['sofas12'] = {
+        [1] = 'imp_prop_impexp_sofabed_01a',
+    },
+	['sofas13'] = {
+        [1] = 'p_res_sofa_l_s',
+    },
+	['sofas14'] = {
+        [1] = 'p_v_med_p_sofa_s',
+    },
+	['sofas15'] = {
+        [1] = 'gr_dlc_gr_yacht_props_lounger',
+    },
+	-- Carpet
+	['carpets1'] = {
+        [1] = 'hei_heist_acc_rugwooll_01',
+        [2] = 'hei_heist_acc_rugwooll_02',
+        [3] = 'hei_heist_acc_rugwooll_03',
+        [4] = 'hei_heist_acc_rughidel_01',
+    },
+	['carpets2'] = {
+        [1] = 'apa_mp_h_acc_rugwoolm_01',
+        [2] = 'apa_mp_h_acc_rugwoolm_02',
+        [3] = 'apa_mp_h_acc_rugwoolm_03',
+        [4] = 'apa_mp_h_acc_rugwoolm_04',
+    },
+	['carpets3'] = {
+        [1] = 'apa_mp_h_acc_rugwools_01',
+        [2] = 'apa_mp_h_acc_rugwools_03',
+    },
+	['carpets4'] = {
+        [1] = 'prop_yoga_mat_01',
+        [2] = 'prop_yoga_mat_02',
+        [3] = 'prop_yoga_mat_03',
+        [4] = 'p_yoga_mat_01_s',
+    },
+	-- Beds
+	['bed'] = {
+        [1] = 'v_res_d_bed',
+        [2] = 'v_res_lestersbed',
+        [3] = 'v_res_mbbed',
+        [4] = 'v_res_mdbed',
+        [5] = 'v_res_msonbed',
+        [6] = 'v_res_tre_bed1',
+        [7] = 'v_res_tre_bed2',
+        [8] = 'v_res_tt_bed',
+        [9] = 'apa_mp_h_bed_with_table_02',
+        [10] = 'apa_mp_h_bed_wide_05',
+        [11] = 'apa_mp_h_bed_double_08',
+        [12] = 'apa_mp_h_bed_double_09',
+        [13] = 'apa_mp_h_yacht_bed_01',
+        [14] = 'apa_mp_h_yacht_bed_02',
+        [15] = 'bkr_prop_biker_campbed_01',
+        [16] = 'ex_prop_exec_bed_01',
+        [17] = 'gr_prop_bunker_bed_01',
+        [18] = 'p_mbbed_s',
+        [19] = 'gr_prop_gr_campbed_01',
+    },
+	-- Table
+	['table1'] = {
+        [1] = 'apa_mp_h_din_table_01',
+        [2] = 'apa_mp_h_din_table_04',
+        [3] = 'apa_mp_h_din_table_05',
+        [4] = 'apa_mp_h_din_table_06',
+        [5] = 'apa_mp_h_din_table_11',
+        [6] = 'hei_heist_din_table_04',
+        [7] = 'hei_heist_din_table_06',
+        [8] = 'hei_heist_din_table_07',
+    },
+	['table2'] = {
+        [1] = 'apa_mp_h_yacht_coffee_table_01',
+        [2] = 'apa_mp_h_yacht_coffee_table_02',
+        [3] = 'prop_fbi3_coffee_table',
+        [4] = 'prop_t_coffe_table',
+    },
+	['table3'] = {
+        [1] = 'apa_mp_h_yacht_side_table_01',
+        [2] = 'apa_mp_h_yacht_side_table_02',
+    },
+	['table4'] = {
+        [1] = 'ba_prop_int_edgy_table_01',
+        [2] = 'ba_prop_int_edgy_table_02',
+    },
+	['table5'] = {
+        [1] = 'bkr_prop_weed_table_01a',
+        [2] = 'bkr_prop_weed_table_01b',
+        [3] = 'bkr_prop_coke_table01a',
+        [4] = 'bkr_prop_meth_table01a',
+    },
+	['table6'] = {
+        [1] = 'gr_dlc_gr_yacht_props_table_01',
+        [2] = 'gr_dlc_gr_yacht_props_table_02',
+        [3] = 'gr_dlc_gr_yacht_props_table_03',
+    },
+	['table7'] = {
+        [1] = 'prop_pooltable_02',
+        [2] = 'prop_pooltable_3b',
+    },
+	['table8'] = {
+        [1] = 'prop_table_02',
+        [2] = 'prop_table_04',
+        [3] = 'prop_table_05',
+        [4] = 'prop_table_06',
+        [5] = 'prop_table_07',
+        [6] = 'prop_table_08',
+    },
+	['table9'] = {
+        [1] = 'prop_table_02',
+        [2] = 'apa_mp_h_str_sideboards_02',
+        [3] = 'apa_mp_h_tab_sidelrg_07',
+        [4] = 'apa_mp_h_tab_sidesml_01',
+    },
 }
 
 -- https://docs.fivem.net/docs/game-references/controls/
