@@ -1,4 +1,4 @@
--- Generated with https://configurator.jgscripts.com at 2/21/2024, 1:05:48 AM
+-- Generated with https://configurator.jgscripts.com at 2/23/2024, 12:19:11 PM
 
 Config = {}
 Config.Locale = 'en'
@@ -98,6 +98,7 @@ Config.Categories = {
   MO8 = 'MO-8',
   MO19 = 'MO-19',
   MO1 = 'MO-1',
+  Dono = 'Dono',
 }
 Config.DealershipLocations = {
   pdm = {
@@ -806,6 +807,59 @@ Config.DealershipLocations = {
     disableShowroomPurchase = false,
     directSaleDistance = 50,
     job = 'police',
+  },
+  dono = {
+    type = 'self-service',
+    openShowroom = vector3(264.00, -756.69, 30.82),
+    openManagement = vector3(264.00, -756.69, 30.82),
+    purchaseSpawn = vector4(264.00, -756.69, 30.82, 100.00),
+    testDriveSpawn = vector4(-961.02, -3358.58, 13.94, 56.13),
+    sellVehicle = '',
+    enableSellVehicle = false,
+    sellVehiclePercent = 0.6,
+    camera = {
+      name = 'Car',
+      coords = vector4(-146.6166, -596.6301, 166.0000, 120.0),
+      positions = {
+        5,
+        8,
+        12,
+        8,
+      },
+    },
+    categories = {
+      'Dono',
+    },
+    enableTestDrive = true,
+    hideBlip = false,
+    blip = {
+      id = 326,
+      color = 2,
+      scale = 0.6,
+    },
+    enableFinance = false,
+    hideMarkers = false,
+    markers = {
+      id = 21,
+      size = {
+        x = 0.3,
+        y = 0.3,
+        z = 0.3,
+      },
+      color = {
+        r = 255,
+        g = 255,
+        b = 255,
+        a = 120,
+      },
+      bobUpAndDown = 0,
+      faceCamera = 0,
+      rotate = 1,
+      drawOnEnts = 0,
+    },
+    disableShowroomPurchase = false,
+    directSaleDistance = 50,
+    job = 'cardealer',
   },
 }
 Config.Config = {}
