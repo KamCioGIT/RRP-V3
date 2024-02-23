@@ -183,9 +183,9 @@ Config.Framework = esxHas and 'esx' or qbHas and 'qb' or 'none' -- You can chang
 
 Config.MenuType = 'ox_lib'
 Config.Inventory = 'qb-inventory'
-Config.Wardrobe = 'qb-clothing'
-Config.Garage = nil -- or some option above
-Config.Logout = 'drop'
+Config.Wardrobe = 'illenium-appearance'
+Config.Garage = 'qs-advancedgarages' -- or some option above
+Config.Logout = 'qb-multicharacter'
 Config.Weather = 'qb-weathersync'
 Config.HelpNotification = 'DrawText3D'
 
@@ -201,9 +201,9 @@ Config.DefaultBucket = 0 -- Default bucket, you can ignore it
     you need to give it a description.
 ]]
 
-Config.Smartphone = false -- This enables dispatch email to real estate agents
+Config.Smartphone = true -- This enables dispatch email to real estate agents
 
-Config.RemoveRain = false
+Config.RemoveRain = true
 Config.HideMapDecorateMode = true
 Config.SetEntityVisible = true -- Be invisible inside decorate mode?
 Config.DecorateDistance = 100  -- Distance you can fly decorating.
@@ -219,10 +219,10 @@ Config.LimitOfHouses = 5       -- Limit of houses for each player.
 ]]
 
 Config.BlipsOptions = {
-    ShowAllHouses = true,      -- Shows all houses equally with owner and without owner alike
+    ShowAllHouses = false,      -- Shows all houses equally with owner and without owner alike
     ShowAvailableForJob = true, -- Shows houses available to sell only for Job -> Config.Realestatejob
-    OwnedHouses = false,        -- Shows the houses that the player bought
-    AvalibleHouses = false,     -- Shows the houses that are not bought
+    OwnedHouses = true,        -- Shows the houses that the player bought
+    AvalibleHouses = true,     -- Shows the houses that are not bought
     BoughtHouses = false,       -- Shows houses bought by other players
 }
 
@@ -345,7 +345,7 @@ Config.MenuOptions = {        -- Options to menus/radial!
     givehousekey = true,
     removehousekey = true,
     toggledoorlock = true,
-    decorate = true,
+    --decorate = true,
     setwardrobe = true,
     setstash = true,
     setcharger = false, -- only for Smartphone
