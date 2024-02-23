@@ -105,7 +105,7 @@ Config.Menu = 'ox_lib'
 Config.Fuel = 'ti_fuel'
 Config.Weather = 'qb-weathersync'
 Config.Vehiclekeys = 'qb-vehiclekeys'
-Config.UseTarget = 'ox_target'
+Config.UseTarget = 'none'
 
 --[[
     General and visual configuration, please read each
@@ -147,7 +147,7 @@ Config.ImpoundPrice = 500              -- Impound default value to remove vehicl
 
 Config.DisableBlips = false            -- Disable all blips or show them on your map?
 Config.ShortNames = false              -- This config will shorten the names so your blips are much less
-Config.startCinematic = 1              -- Cinematic Cams being AFK in the garage, it's a beautiful cinematic cam (by default it is 1.3, one and a half minutes)
+Config.startCinematic = 5              -- Cinematic Cams being AFK in the garage, it's a beautiful cinematic cam (by default it is 1.3, one and a half minutes)
 Config.PlayerToVehicleAnimation = true -- Enable or disable the animation of the player entering the car
 Config.SetEntityAlpha = true           -- When he saves the car, he makes animations and degrades the car
 Config.GarageSync = true               -- This option will make the garages share the same number of slots and players will see all the cars inside their shell
@@ -181,15 +181,13 @@ Config.MenuSounds = true -- The menu includes sound effects, choose whether to u
 ]]
 
 Config.AllowedJobs = {
-    'redline',
-    'exotics',
+    'mechanic',
+    'realestate',
     -- 'realestatejob'
 }
 
 Config.ImpoundJobs = {
     'police',
-    'redline',
-    'exotics'
     -- 'sheriff'
 }
 
@@ -338,7 +336,7 @@ Config.Garages = {
     ['Legion Square'] = {
         owner = true,
         available = true,
-        isImpound = true,
+        isImpound = false,
         job = false, -- You can give it a job by simply adding 'police' for example
         type = 'vehicle',
         shell = {
@@ -1662,8 +1660,8 @@ Config.JobGarages = {
         grade = 1,
         price = 100, -- Put a price or 0
         coords = {
-            menuCoords = vec3(452.15, -982.99, 25.70),
-            spawnCoords = vec4(452.15, -982.99, 25.70, 177.70),
+            menuCoords = vec3(457.9, -1017.28, 28.28),
+            spawnCoords = vec4(446.48, -1019.35, 27.55, 91.14),
         },
         vehicles = {
             `police`,
@@ -1712,6 +1710,91 @@ Config.JobGarages = {
             vec3(438.395599, -1022.175842, 28.622681)
         }
     },
+    {
+        job = 'ambulance',
+        name = 'ambulance-1',
+        price = 100, -- Put a price or 0
+        coords = {
+            menuCoords = vec3(294.356049, -606.052734, 43.315796),
+            spawnCoords = vec4(294.356049, -606.052734, 42.315796, 99.212593),
+        },
+        vehicles = {
+            `ambulance`,
+        },
+        liveries = {
+            [`ambulance`] = 3
+        },
+        tuning = {
+            [`ambulance`] = {
+                modEngine = 3,
+                modBrakes = 2,
+                modTransmission = 2,
+                modSuspension = 3,
+                modArmor = true,
+                windowTint = 1
+            }
+        },
+        extras = {},
+        vehicleCamera = {
+            vehicleCoords = vec4(283.107697, -605.182434, 42.894531, 79.370079),
+            camera = {
+                coords = vec3(278.268127, -609.507690, 43.412451),
+                rotation = vec3(3.0, 2.0, -40.0),
+                ped = vec4(282.065948, -606.870300, 43.113525, 127.881889)
+            }
+        },
+        cinematicCams = {
+            vec3(280.496704, -607.186829, 43.079834),
+            vec3(284.901093, -608.241760, 43.298950)
+        }
+    },
+    {
+        job = 'mechanic',
+        name = 'mechanic-1',
+        price = 100, -- Put a price or 0
+        coords = {
+            menuCoords = vec3(-192.712082, -1290.448364, 31.285034),
+            spawnCoords = vec4(-184.035156, -1290.698853, 30.285034, 175.748032),
+        },
+        vehicles = {
+            `slamtruck`,
+            `flatbed`,
+        },
+        liveries = {
+            [`slamtruck`] = 1
+        },
+        tuning = {
+            [`slamtruck`] = {
+                modEngine = 3,
+                modBrakes = 2,
+                modTransmission = 2,
+                modSuspension = 3,
+                modArmor = true,
+                windowTint = 1
+            },
+            [`flatbed`] = {
+                modEngine = 3,
+                modBrakes = 2,
+                modTransmission = 2,
+                modSuspension = 3,
+                modArmor = true,
+                windowTint = 1
+            }
+        },
+        extras = {},
+        vehicleCamera = {
+            vehicleCoords = vec4(-197.353851, -1304.004395, 30.981689, 291.968506),
+            camera = {
+                coords = vec3(-194.782410, -1299.046143, 31.285034),
+                rotation = vec3(3.0, 2.0, 170.0),
+                ped = vec4(-198.184616, -1302.672485, 31.285034, 325.55)
+            }
+        },
+        cinematicCams = {
+            vec3(280.496704, -607.186829, 43.079834),
+            vec3(284.901093, -608.241760, 43.298950)
+        }
+    }
 }
 
 --[[
