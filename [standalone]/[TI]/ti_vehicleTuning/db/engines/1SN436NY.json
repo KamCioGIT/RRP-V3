@@ -1,0 +1,131 @@
+{
+    "variant": "AMG GT v1 (Steel)",
+    "intercooler": {
+        "label": "GLE",
+        "stats": {
+            "quality": 50,
+            "material": "steel",
+            "size": 1300
+        },
+        "name": "gle"
+    },
+    "fuel": {
+        "label": "GLE",
+        "stats": {
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "gle"
+    },
+    "exhaust": {
+        "label": "GLE",
+        "stats": {
+            "diameter": 76,
+            "cats": "none",
+            "quality": 50,
+            "system": "twin",
+            "material": "steel",
+            "mufflers": "straightThrough"
+        },
+        "name": "gle"
+    },
+    "conrods": {
+        "label": "GLE",
+        "stats": {
+            "length": 92,
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "gle"
+    },
+    "block": {
+        "label": "GLE",
+        "stats": {
+            "layout": "v60",
+            "bore": 83,
+            "stroke": 92,
+            "cylinders": 8,
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "gle"
+    },
+    "valves": {
+        "label": "GLE",
+        "stats": {
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "gle"
+    },
+    "sound": "f430v8",
+    "aspiration": {
+        "label": "GLE",
+        "stats": {
+            "method": "centrifugal",
+            "quality": 50,
+            "system": "supercharger",
+            "material": "steel",
+            "compressor": 107
+        },
+        "name": "gle"
+    },
+    "label": "GLE",
+    "name": "gle",
+    "crankshaft": {
+        "label": "GLE",
+        "stats": {
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "gle"
+    },
+    "nitrous": {
+        "label": "GLE",
+        "stats": {
+            "quality": 50,
+            "material": "steel",
+            "size": 75
+        },
+        "name": "gle"
+    },
+    "intake": {
+        "label": "GLE",
+        "stats": {
+            "quality": 50,
+            "system": "performance",
+            "material": "steel"
+        },
+        "name": "gle"
+    },
+    "headers": {
+        "label": "GLE",
+        "stats": {
+            "quality": 50,
+            "system": "raceTube",
+            "material": "steel",
+            "diameter": 76
+        },
+        "name": "gle"
+    },
+    "heads": {
+        "label": "GLE",
+        "stats": {
+            "vvl": true,
+            "quality": 50,
+            "material": "steel",
+            "valves": 4,
+            "config": "dohc"
+        },
+        "name": "gle"
+    },
+    "pistons": {
+        "label": "GLE",
+        "stats": {
+            "quality": 50,
+            "diameter": 83,
+            "material": "steel"
+        },
+        "name": "gle"
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "intake": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "system": "standard",
+            "material": "steel"
+        }
+    },
+    "label": "TOYOTA",
+    "name": "toyota",
+    "block": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "material": "steel",
+            "cylinders": 6,
+            "bore": 50,
+            "layout": "v60",
+            "stroke": 50
+        }
+    },
+    "pistons": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "diameter": 50,
+            "material": "steel"
+        }
+    },
+    "headers": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "diameter": 50,
+            "system": "shortTube",
+            "material": "steel"
+        }
+    },
+    "exhaust": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "mufflers": "straightThrough",
+            "system": "single",
+            "diameter": 50,
+            "cats": "200cpsi",
+            "material": "steel"
+        }
+    },
+    "intercooler": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "material": "steel",
+            "size": 900
+        }
+    },
+    "variant": "",
+    "valves": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        }
+    },
+    "fuel": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        }
+    },
+    "crankshaft": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        }
+    },
+    "conrods": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "length": 50,
+            "material": "steel"
+        }
+    },
+    "sound": "toysupmk4",
+    "aspiration": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "turbine": 50,
+            "method": "single",
+            "compressor": 50,
+            "system": "turbocharger",
+            "material": "steel"
+        }
+    },
+    "heads": {
+        "label": "TOYOTA",
+        "name": "toyota",
+        "stats": {
+            "quality": 50,
+            "valves": 4,
+            "config": "sohc",
+            "vvl": true,
+            "material": "steel"
+        }
+    }
+}

@@ -8,7 +8,7 @@ EngineItems = {
 	            cylinders   = 6,
 	            bore        = 86.0,
 	            stroke      = 86.0,
-	            material    = "aluminium",
+	            material    = "aluminum",
 	            quality     = 50.0,
 		    }
 		}
@@ -78,7 +78,7 @@ EngineItems = {
             	config      = "DOHC",
 	            valves      = 4,
 	            vvl         = true,
-	            material    = "aluminium",
+	            material    = "aluminum",
 	            quality     = 50.0,
 			}
 		}

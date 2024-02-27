@@ -1,0 +1,132 @@
+{
+    "variant": "",
+    "intercooler": {
+        "label": "RS6",
+        "stats": {
+            "quality": 100,
+            "material": "steel",
+            "size": 1250
+        },
+        "name": "rs6"
+    },
+    "fuel": {
+        "label": "RS6",
+        "stats": {
+            "quality": 80,
+            "material": "steel"
+        },
+        "name": "rs6"
+    },
+    "exhaust": {
+        "label": "RS6",
+        "stats": {
+            "diameter": 100,
+            "cats": "none",
+            "quality": 80,
+            "system": "twin",
+            "material": "steel",
+            "mufflers": "straightThrough"
+        },
+        "name": "rs6"
+    },
+    "conrods": {
+        "label": "DICK",
+        "stats": {
+            "length": 89,
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "dick"
+    },
+    "block": {
+        "label": "RS7 GHAUSGFJ",
+        "stats": {
+            "layout": "v60",
+            "bore": 84,
+            "stroke": 89,
+            "cylinders": 8,
+            "material": "steel",
+            "quality": 50
+        },
+        "name": "rs7 ghausgfj"
+    },
+    "headers": {
+        "label": "RS6",
+        "stats": {
+            "quality": 75,
+            "diameter": 70,
+            "material": "steel",
+            "system": "raceTube"
+        },
+        "name": "rs6"
+    },
+    "sound": "",
+    "aspiration": {
+        "label": "RS6",
+        "stats": {
+            "method": "centrifugal",
+            "quality": 75,
+            "system": "supercharger",
+            "material": "steel",
+            "compressor": 90
+        },
+        "name": "rs6"
+    },
+    "label": "RS7 GHAUSGFJ",
+    "name": "rs7 ghausgfj",
+    "crankshaft": {
+        "category": "crankshaft",
+        "label": "RS6",
+        "stats": {
+            "quality": 75,
+            "material": "steel"
+        },
+        "name": "rs6"
+    },
+    "nitrous": {
+        "label": "RS6",
+        "stats": {
+            "quality": 100,
+            "material": "steel",
+            "size": 75
+        },
+        "name": "rs6"
+    },
+    "intake": {
+        "label": "RS6",
+        "stats": {
+            "quality": 80,
+            "system": "race",
+            "material": "steel"
+        },
+        "name": "rs6"
+    },
+    "valves": {
+        "label": "RS6",
+        "stats": {
+            "quality": 75,
+            "material": "steel"
+        },
+        "name": "rs6"
+    },
+    "heads": {
+        "label": "RS6",
+        "stats": {
+            "vvl": true,
+            "quality": 80,
+            "material": "steel",
+            "valves": 4,
+            "config": "dohc"
+        },
+        "name": "rs6"
+    },
+    "pistons": {
+        "label": "RS6",
+        "stats": {
+            "quality": 75,
+            "diameter": 84,
+            "material": "steel"
+        },
+        "name": "rs6"
+    }
+}

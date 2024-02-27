@@ -25,12 +25,12 @@ if not config.autoGenerateRecipes then
             typeof = "component",
             category = "aspiration",
             materials = {
-                aluminium = {
-                    label = "Aluminium",
+                aluminum = {
+                    label = "aluminum",
                     requiredItems = {
                         {
-                            name = "aluminium",
-                            label = "Aluminium",
+                            name = "aluminum",
+                            label = "aluminum",
                             count = 5,
                             keep = false,
                         }
@@ -43,12 +43,12 @@ if not config.autoGenerateRecipes then
             time = 1,
             label = "Custom Block",
             typeof = "engineblock",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -60,12 +60,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Conrods",
             typeof = "component",
             category = "conrods",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -77,12 +77,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Crankshaft",
             typeof = "component",
             category = "crankshaft",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -94,12 +94,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Nitrous",
             typeof = "component",
             category = "nitrous",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -111,12 +111,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Exhaust",
             typeof = "component",
             category = "exhaust",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -128,12 +128,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Fuel",
             typeof = "component",
             category = "fuel",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -145,12 +145,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Headers",
             typeof = "component",
             category = "headers",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -162,12 +162,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Heads",
             typeof = "component",
             category = "heads",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -179,12 +179,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Intake",
             typeof = "component",
             category = "intake",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -196,12 +196,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Intercooler",
             typeof = "component",
             category = "intercooler",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -213,12 +213,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Pistons",
             typeof = "component",
             category = "pistons",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },
@@ -230,12 +230,12 @@ if not config.autoGenerateRecipes then
             label = "Custom Valves",
             typeof = "component",
             category = "valves",
-            material = "aluminium",
+            material = "aluminum",
 
             requiredItems = {
                 {
-                    name = "aluminium",
-                    label = "Aluminium",
+                    name = "aluminum",
+                    label = "aluminum",
                     count = 5,
                     keep = false,
                 },

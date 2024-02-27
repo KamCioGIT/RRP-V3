@@ -18,7 +18,7 @@ premadeItems = {
                 cylinders   = 6,
                 bore        = 86.0,
                 stroke      = 86.0,
-                material    = "aluminium",
+                material    = "aluminum",
                 layout      = "inline",
                 quality     = 50.0,
             }
@@ -29,7 +29,7 @@ premadeItems = {
 
             stats = {
                 size = 500.0,
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0
             }
         },
@@ -44,7 +44,7 @@ premadeItems = {
                 turbine = 40.0,
                 compressor2 = 12.0,
                 turbine2 = 25.0,
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0
             }
         },
@@ -54,7 +54,7 @@ premadeItems = {
 
             stats = {
                 system = "performance",
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0
             }
         },
@@ -77,7 +77,7 @@ premadeItems = {
                 config = "DOHC",
                 valves = 4,
                 vvl = false,
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0
             }
         },
@@ -86,7 +86,7 @@ premadeItems = {
             name = "2JZ-GTE Valves",
 
             stats = {
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0
             }
         },
@@ -95,7 +95,7 @@ premadeItems = {
             name = "2JZ-GTE Crankshaft",
 
             stats = {
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0,
             }
         },
@@ -105,7 +105,7 @@ premadeItems = {
 
             stats = {
                 length = 86.0,
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0,
             }
         },
@@ -115,7 +115,7 @@ premadeItems = {
 
             stats = {
                 diameter = 86.0,
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0,
             }
         },
@@ -125,7 +125,7 @@ premadeItems = {
 
             stats = {
                 diameter = 30.0,
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0,
             }
         },
@@ -135,7 +135,7 @@ premadeItems = {
 
             stats = {
                 diameter = 50.0,
-                material = "aluminium",
+                material = "aluminum",
                 quality = 50.0,
             }
         },
@@ -151,7 +151,7 @@ premadeItems = {
             cylinders = 6,
             bore = 86.0,
             stroke = 86.0,
-            material = "aluminium",
+            material = "aluminum",
             quality = 50.0,
         }
     },
@@ -164,7 +164,7 @@ premadeItems = {
 
         stats = {
             quality = 50.0,
-            material = "aluminium",
+            material = "aluminum",
         }
     },
 

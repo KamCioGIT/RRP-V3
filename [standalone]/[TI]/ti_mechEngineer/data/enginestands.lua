@@ -21,16 +21,16 @@ engineStands = {
             exotics = 2,
         },
 
-        position = vector3(564.14, -196.70, 50.31),
+        position = vector3(566.06, -195.75, 50.31),
 
         props = {
             stand = {
-                position = vector3(564.14, -196.70, 49.31),
+                position = vector3(566.06, -195.75, 49.31),
                 heading = 120.0,
                 model = liftModel,
             },
             engine = {
-                position = vector3(564.14, -196.70, 50.31),
+                position = vector3(566.06, -195.75, 50.31),
                 heading = 120.0,
                 model = engineModel,
             },      
@@ -60,6 +60,34 @@ engineStands = {
             },
             engine = {
                 position = vector3(-573.09, -911.88, 23.89),
+                heading = 90.0,
+                model = engineModel,
+            },      
+        }
+    },
+    testStand3 = {
+        characterRestrictions = {
+            'ABC:123',
+        },
+        
+        jobRestrictions = {
+            exotics = 2,
+        },
+        
+        groupRestrictions = {
+            exotics = 2,
+        },
+
+        position = vector3(563.88, -186.72, 50.31),
+
+        props = {
+            stand = {
+                position = vector3(563.88, -186.72, 49.31),
+                heading = 90.0,
+                model = liftModel,
+            },
+            engine = {
+                position = vector3(563.88, -186.72, 50.31),
                 heading = 90.0,
                 model = engineModel,
             },      

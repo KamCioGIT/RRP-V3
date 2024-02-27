@@ -1,10 +1,10 @@
 local Items = {
     {
-        name = "aluminium",
-        label = "Aluminium",
+        name = "aluminum",
+        label = "aluminum",
         weight = 0.5,
-        description = "A billet of processed aluminium",
-        image = "aluminium.png",
+        description = "A billet of processed aluminum",
+        image = "aluminum.png",
     },
     {       
         typeof = "item",

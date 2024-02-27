@@ -1,0 +1,105 @@
+{
+    "handling": {
+        "fTractionLossMult": 1.0,
+        "fSuspensionForce": 3.19,
+        "fDriveBiasFront": 0.0,
+        "fCamberStiffnesss": 0.0,
+        "fSuspensionBiasFront": 0.5,
+        "fSuspensionCompDamp": 0.69999998807907,
+        "fAntiRollBarBiasFront": 0.44,
+        "fSuspensionLowerLimit": -0.14000000059604,
+        "fSuspensionUpperLimit": 1.06,
+        "fSuspensionReboundDamp": 1.39999997615814,
+        "fAntiRollBarForce": 0.40000000596046,
+        "fBrakeBiasFront": 0.72,
+        "fTractionBiasFront": 0.71,
+        "fSteeringLock": 40.0,
+        "fSuspensionRaise": 0.0
+    },
+    "stance": {
+        "wheelSize": 1.0,
+        "wheelWidth": 1.14,
+        "yRot": {
+            "0": 0.0,
+            "1": -0.0,
+            "2": 0.0,
+            "3": -0.0
+        },
+        "xOff": {
+            "0": -0.76958400011062,
+            "1": 0.76958400011062,
+            "2": -0.80237698554992,
+            "3": 0.80199998617172
+        }
+    },
+    "engine": {
+        "tune": {
+            "nitrous": {
+                "rampEnd": 1.0,
+                "rampStart": 0.3,
+                "rampStartBoost": 1.0,
+                "rampEndBoost": 1.0
+            },
+            "fuel": {
+                "afRatio": 0.42,
+                "limiter": 0.66,
+                "timing": 0.42
+            },
+            "heads": {
+                "compRatio": 0.34,
+                "camProfile": 0.7,
+                "vvlProfile": 0.56,
+                "airflow": 0.5
+            },
+            "aspiration": {
+                "turboBoost2": 0.25,
+                "superchargerSize": 0.79,
+                "superchargerBoost": 0.55,
+                "turboBoost1": 0.25,
+                "turboSize2": 0.25,
+                "turboSize1": 0.25
+            }
+        },
+        "sound": "BTYPE2",
+        "build": {
+            "conrods": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "block": {
+                "bore": 0.5,
+                "stroke": 0.5,
+                "cylinders": 6,
+                "quality": 0.3,
+                "layout": "inline"
+            },
+            "aspiration": {
+                "system": "centrifugal",
+                "typeof": "supercharger",
+                "quality": 0.5,
+                "size": 0.01
+            },
+            "crankshaft": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "pistons": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "fuelDelivery": {
+                "quality": 0.5
+            },
+            "valves": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "heads": {
+                "vvl": true,
+                "valves": 4,
+                "quality": 0.5,
+                "layout": "dohc"
+            }
+        }
+    }
+}

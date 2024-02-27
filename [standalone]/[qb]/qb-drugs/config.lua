@@ -31,7 +31,7 @@ Config = {
        -- },
     },
     UseTarget = GetConvar('UseTarget', 'false') == 'true', -- Use qb-target interactions (don't change this, go to your server.cfg and add setr UseTarget true)
-    PoliceCallChance = 50,                                 --in percentage (if 99, theres the 99% to call the police)
+    PoliceCallChance = 70,                                 --in percentage (if 99, theres the 99% to call the police)
 
     -- Shop Config
     Products = {
@@ -54,8 +54,8 @@ Config = {
 
     DrugsPrice = {
         ['weed_purplehaze'] = {
-            min = 50,
-            max = 100,
+            min = 100,
+            max = 150,
         },
     },
 

@@ -1,0 +1,105 @@
+{
+    "engine": {
+        "build": {
+            "heads": {
+                "quality": 0.75,
+                "valves": 4,
+                "vvl": true,
+                "layout": "sohc"
+            },
+            "valves": {
+                "quality": 0.75,
+                "material": "aluminum"
+            },
+            "aspiration": {
+                "quality": 0.75,
+                "size": 0.006,
+                "typeof": "turbocharger",
+                "system": "twin"
+            },
+            "block": {
+                "layout": "v60",
+                "cylinders": 6,
+                "bore": 0.4,
+                "quality": 0.55,
+                "stroke": 0.4
+            },
+            "pistons": {
+                "quality": 0.75,
+                "material": "aluminum"
+            },
+            "conrods": {
+                "quality": 0.6,
+                "material": "aluminum"
+            },
+            "fuelDelivery": {
+                "quality": 0.75
+            },
+            "crankshaft": {
+                "quality": 0.75,
+                "material": "aluminum"
+            }
+        },
+        "tune": {
+            "nitrous": {
+                "rampStart": 0.3,
+                "rampEnd": 1.0,
+                "rampEndBoost": 1.0,
+                "rampStartBoost": 1.0
+            },
+            "fuel": {
+                "timing": 0.45,
+                "afRatio": 0.5,
+                "limiter": 0.5
+            },
+            "aspiration": {
+                "turboSize1": 0.6,
+                "superchargerSize": 0.25,
+                "turboSize2": 0.6,
+                "superchargerBoost": 0.25,
+                "turboBoost1": 1.0,
+                "turboBoost2": 1.0
+            },
+            "heads": {
+                "camProfile": 0.67,
+                "airflow": 1.0,
+                "vvlProfile": 0.65,
+                "compRatio": 0.33
+            }
+        },
+        "sound": "bcontinentalgt"
+    },
+    "stance": {
+        "wheelSize": 1.01,
+        "yRot": {
+            "3": -0.0,
+            "2": 0.0,
+            "1": -0.0,
+            "0": 0.0
+        },
+        "wheelWidth": 0.88999999999998,
+        "xOff": {
+            "3": 0.96172951459884,
+            "2": -0.89147721529006,
+            "1": 0.98226027488708,
+            "0": -0.91154377460479
+        }
+    },
+    "handling": {
+        "fSuspensionLowerLimit": -0.30000001192092,
+        "fSteeringLock": 45.0,
+        "fAntiRollBarBiasFront": 0.30000001192092,
+        "fSuspensionRaise": 0.05,
+        "fCamberStiffnesss": 0.0,
+        "fSuspensionBiasFront": 0.5,
+        "fSuspensionUpperLimit": 0.25,
+        "fTractionLossMult": 0.15000000596046,
+        "fSuspensionCompDamp": 1.10000002384185,
+        "fAntiRollBarForce": 0.60000002384185,
+        "fSuspensionReboundDamp": 1.39999997615814,
+        "fSuspensionForce": 1.20000004768371,
+        "fBrakeBiasFront": 0.75,
+        "fDriveBiasFront": 0.7,
+        "fTractionBiasFront": 0.50999999046325
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "handling": {
+        "fTractionLossMult": 0.8,
+        "fSuspensionForce": 3.49999999999999,
+        "fDriveBiasFront": 0.5,
+        "fSuspensionLowerLimit": -0.10000000149011,
+        "fSuspensionBiasFront": 0.50000001192091,
+        "fSuspensionCompDamp": 2.30000009536742,
+        "fAntiRollBarBiasFront": 0.55000001192092,
+        "fSuspensionRaise": 0.01999999955298,
+        "fSuspensionUpperLimit": 0.07999999821186,
+        "fSteeringLock": 40.0,
+        "fAntiRollBarForce": 1.20000004768371,
+        "fBrakeBiasFront": 0.45,
+        "fSuspensionReboundDamp": 3.20000028610229,
+        "fCamberStiffnesss": 0.0,
+        "fTractionBiasFront": 0.46
+    },
+    "stance": {
+        "wheelSize": 1.05,
+        "wheelWidth": 1.0,
+        "yRot": {
+            "0": 0.0,
+            "1": -0.0,
+            "2": 0.0,
+            "3": -0.0
+        },
+        "xOff": {
+            "0": -0.8247332572937,
+            "1": 0.8247332572937,
+            "2": -0.8247332572937,
+            "3": 0.8247332572937
+        }
+    },
+    "engine": {
+        "build": {
+            "conrods": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "aspiration": {
+                "size": 0.005,
+                "system": "twin",
+                "quality": 0.6,
+                "typeof": "turbocharger"
+            },
+            "valves": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "crankshaft": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "pistons": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "fuelDelivery": {
+                "quality": 0.5
+            },
+            "block": {
+                "bore": 0.3,
+                "cylinders": 12,
+                "stroke": 0.3,
+                "quality": 0.3,
+                "layout": "v90"
+            },
+            "heads": {
+                "vvl": true,
+                "quality": 0.5,
+                "valves": 4,
+                "layout": "pushrod"
+            }
+        },
+        "sound": "488sound",
+        "tune": {
+            "nitrous": {
+                "rampEnd": 1.0,
+                "rampEndBoost": 1.0,
+                "rampStartBoost": 1.0,
+                "rampStart": 0.3
+            },
+            "fuel": {
+                "timing": 0.5,
+                "limiter": 0.46,
+                "afRatio": 0.49
+            },
+            "aspiration": {
+                "turboBoost2": 0.5,
+                "superchargerSize": 0.25,
+                "superchargerBoost": 0.25,
+                "turboBoost1": 0.5,
+                "turboSize2": 0.5,
+                "turboSize1": 0.5
+            },
+            "heads": {
+                "compRatio": 0.43,
+                "camProfile": 0.4,
+                "vvlProfile": 0.61,
+                "airflow": 0.38
+            }
+        }
+    }
+}

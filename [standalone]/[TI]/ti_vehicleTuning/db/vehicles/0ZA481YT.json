@@ -1,0 +1,83 @@
+{
+    "engine": {
+        "build": {
+            "pistons": {
+                "quality": 0.75,
+                "material": "steel"
+            },
+            "heads": {
+                "quality": 0.8,
+                "valves": 4,
+                "vvl": true,
+                "layout": "dohc"
+            },
+            "valves": {
+                "quality": 0.75,
+                "material": "steel"
+            },
+            "nitrous": {
+                "quality": 100,
+                "size": 0.75
+            },
+            "fuelDelivery": {
+                "quality": 0.8
+            },
+            "conrods": {
+                "quality": 0.5,
+                "material": "steel"
+            },
+            "block": {
+                "quality": 0.3,
+                "cylinders": 8,
+                "bore": 0.64,
+                "layout": "v60",
+                "stroke": 0.69
+            },
+            "aspiration": {
+                "typeof": "supercharger",
+                "quality": 0.75,
+                "size": 0.009,
+                "system": "centrifugal"
+            },
+            "crankshaft": {
+                "quality": 0.75,
+                "material": "steel"
+            }
+        },
+        "nitrousLevel": 0,
+        "sound": ""
+    },
+    "stance": {
+        "wheelSize": 0.85,
+        "yRot": {
+            "3": 0.00177306274417,
+            "2": -0.00262900302186,
+            "1": 0.00208993139676,
+            "0": -0.00133102445397
+        },
+        "wheelWidth": 0.61,
+        "xOff": {
+            "3": 0.88553804159164,
+            "2": -0.88709843158721,
+            "1": 0.87197566032409,
+            "0": -0.87407398223876
+        }
+    },
+    "handling": {
+        "fSuspensionLowerLimit": -0.18000000715255,
+        "fSteeringLock": 45.0,
+        "fCamberStiffnesss": 0.0,
+        "fSuspensionRaise": 0.0,
+        "fTractionLossMult": 0.0,
+        "fSuspensionBiasFront": 0.51999998092651,
+        "fSuspensionCompDamp": 0.89999997615814,
+        "fAntiRollBarBiasFront": 0.60000002384185,
+        "fDriveBiasFront": 0.5,
+        "fAntiRollBarForce": 0.89999997615814,
+        "fSuspensionReboundDamp": 1.39999997615814,
+        "fSuspensionForce": 1.39999997615814,
+        "fBrakeBiasFront": 0.64999997615814,
+        "fSuspensionUpperLimit": 0.10000000149011,
+        "fTractionBiasFront": 0.5
+    }
+}

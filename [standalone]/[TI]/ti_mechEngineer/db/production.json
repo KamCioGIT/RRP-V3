@@ -1,4 +1,69 @@
 {
+    "PHM32568": [],
+    "RZA15795": [
+        {
+            "typeof": "engine",
+            "item": {
+                "variant": "",
+                "name": "rs6",
+                "label": "RS6",
+                "sound": "ars7",
+                "block": {
+                    "stats": {
+                        "quality": 70,
+                        "bore": 84,
+                        "stroke": 89,
+                        "material": "steel",
+                        "cylinders": 8,
+                        "layout": "v90"
+                    },
+                    "label": "RS6",
+                    "name": "rs6"
+                }
+            }
+        },
+        {
+            "category": "conrods",
+            "typeof": "component",
+            "item": {
+                "stats": {
+                    "quality": 50,
+                    "length": 93,
+                    "material": "steel"
+                },
+                "label": "RS7?",
+                "name": "rs7?"
+            }
+        },
+        {
+            "category": "conrods",
+            "typeof": "component",
+            "item": {
+                "stats": {
+                    "quality": 50,
+                    "length": 50,
+                    "material": "steel"
+                },
+                "label": "RS&???",
+                "name": "rs&???"
+            }
+        }
+    ],
+    "QVB49381": [
+        {
+            "typeof": "component",
+            "category": "conrods",
+            "item": {
+                "label": "BMW",
+                "name": "bmw",
+                "stats": {
+                    "quality": 60,
+                    "length": 60,
+                    "material": "steel"
+                }
+            }
+        }
+    ],
     "MDR89087": [
         {
             "time": 1707785507,
@@ -6,37 +71,79 @@
             "recipe": "pistons",
             "category": "pistons",
             "item": {
-                "name": "pistons flat 6",
                 "stats": {
-                    "material": "steel",
+                    "quality": 100,
                     "diameter": 60,
-                    "quality": 100
+                    "material": "steel"
                 },
-                "label": "PISTONS FLAT 6"
+                "label": "PISTONS FLAT 6",
+                "name": "pistons flat 6"
             }
         },
         {
             "typeof": "engine",
             "item": {
-                "name": "flat 6",
-                "sound": "",
                 "variant": "",
+                "name": "flat 6",
                 "label": "FLAT 6",
+                "sound": "",
                 "block": {
-                    "name": "flat 6",
                     "stats": {
-                        "layout": "flat",
-                        "bore": 60,
-                        "cylinders": 6,
-                        "material": "steel",
                         "quality": 100,
-                        "stroke": 60
+                        "bore": 60,
+                        "stroke": 60,
+                        "material": "steel",
+                        "cylinders": 6,
+                        "layout": "flat"
                     },
-                    "label": "FLAT 6"
+                    "label": "FLAT 6",
+                    "name": "flat 6"
                 }
             }
         }
     ],
-    "QVB49381": [],
-    "NUQ33554": []
+    "NUQ33554": [],
+    "MTZ51435": [
+        {
+            "category": "conrods",
+            "typeof": "component",
+            "item": {
+                "stats": {
+                    "quality": 50,
+                    "length": 84,
+                    "material": "steel"
+                },
+                "label": "DICKHEAD",
+                "name": "dickhead"
+            }
+        }
+    ],
+    "VWX42996": [
+        {
+            "category": "conrods",
+            "typeof": "component",
+            "item": {
+                "stats": {
+                    "quality": 80,
+                    "length": 85,
+                    "material": "steel"
+                },
+                "label": "RS6 X",
+                "name": "rs6 x"
+            }
+        },
+        {
+            "category": "conrods",
+            "typeof": "component",
+            "item": {
+                "stats": {
+                    "quality": 75,
+                    "length": 120,
+                    "material": "steel"
+                },
+                "label": "RS6",
+                "name": "rs6"
+            }
+        }
+    ]
 }

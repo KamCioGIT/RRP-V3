@@ -1,0 +1,125 @@
+{
+    "fuel": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "quality": 75,
+            "material": "aluminum"
+        },
+        "name": "pickup truck"
+    },
+    "intercooler": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "quality": 75,
+            "size": 900,
+            "material": "aluminum"
+        },
+        "name": "pickup truck"
+    },
+    "sound": "bcontinentalgt",
+    "name": "pickup truck",
+    "pistons": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "diameter": 60,
+            "quality": 75,
+            "material": "aluminum"
+        },
+        "name": "pickup truck"
+    },
+    "label": "PICKUP TRUCK",
+    "valves": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "quality": 75,
+            "material": "aluminum"
+        },
+        "name": "pickup truck"
+    },
+    "aspiration": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "turbine": 60,
+            "method": "twin",
+            "compressor2": 60,
+            "compressor": 60,
+            "material": "aluminum",
+            "turbine2": 60,
+            "quality": 75,
+            "system": "turbocharger"
+        },
+        "name": "pickup truck"
+    },
+    "heads": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "vvl": true,
+            "material": "aluminum",
+            "config": "sohc",
+            "valves": 4,
+            "quality": 75
+        },
+        "name": "pickup truck"
+    },
+    "block": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "bore": 60,
+            "material": "aluminum",
+            "stroke": 60,
+            "cylinders": 6,
+            "quality": 75,
+            "layout": "v60"
+        },
+        "name": "pickup truck"
+    },
+    "variant": "",
+    "crankshaft": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "quality": 75,
+            "material": "aluminum"
+        },
+        "name": "pickup truck"
+    },
+    "intake": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "system": "race",
+            "quality": 75,
+            "material": "aluminum"
+        },
+        "name": "pickup truck"
+    },
+    "exhaust": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "system": "twin",
+            "material": "aluminum",
+            "quality": 75,
+            "cats": "200cpsi",
+            "mufflers": "straightThrough",
+            "diameter": 60
+        },
+        "name": "pickup truck"
+    },
+    "conrods": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "length": 60,
+            "quality": 60,
+            "material": "aluminum"
+        },
+        "name": "pickup truck"
+    },
+    "headers": {
+        "label": "PICKUP TRUCK",
+        "stats": {
+            "quality": 75,
+            "system": "raceTube",
+            "diameter": 60,
+            "material": "aluminum"
+        },
+        "name": "pickup truck"
+    }
+}

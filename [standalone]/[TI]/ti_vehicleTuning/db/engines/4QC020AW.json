@@ -1,0 +1,123 @@
+{
+    "fuel": {
+        "label": "G WAGON",
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    },
+    "intercooler": {
+        "label": "G WAGON",
+        "stats": {
+            "quality": 50,
+            "size": 800,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    },
+    "sound": "toysupmk4",
+    "name": "g wagon",
+    "pistons": {
+        "label": "G WAGON",
+        "stats": {
+            "diameter": 50,
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    },
+    "valves": {
+        "label": "G WAGON",
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    },
+    "intake": {
+        "label": "G WAGON",
+        "stats": {
+            "system": "standard",
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    },
+    "aspiration": {
+        "label": "G WAGON",
+        "stats": {
+            "turbine": 50,
+            "method": "single",
+            "compressor": 50,
+            "system": "turbocharger",
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    },
+    "heads": {
+        "label": "G WAGON",
+        "stats": {
+            "vvl": true,
+            "material": "steel",
+            "config": "sohc",
+            "valves": 4,
+            "quality": 50
+        },
+        "name": "g wagon"
+    },
+    "block": {
+        "label": "G WAGON",
+        "stats": {
+            "bore": 50,
+            "material": "steel",
+            "stroke": 50,
+            "cylinders": 6,
+            "quality": 50,
+            "layout": "inline"
+        },
+        "name": "g wagon"
+    },
+    "variant": "",
+    "crankshaft": {
+        "label": "G WAGON",
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    },
+    "exhaust": {
+        "label": "G WAGON",
+        "stats": {
+            "system": "twin",
+            "material": "steel",
+            "quality": 50,
+            "cats": "none",
+            "mufflers": "straightThrough",
+            "diameter": 50
+        },
+        "name": "g wagon"
+    },
+    "label": "G WAGON",
+    "conrods": {
+        "label": "G WAGON",
+        "stats": {
+            "length": 50,
+            "quality": 50,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    },
+    "headers": {
+        "label": "G WAGON",
+        "stats": {
+            "quality": 50,
+            "system": "raceTube",
+            "diameter": 50,
+            "material": "steel"
+        },
+        "name": "g wagon"
+    }
+}

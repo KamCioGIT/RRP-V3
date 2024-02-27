@@ -1,0 +1,122 @@
+{
+    "variant": "",
+    "intake": {
+        "stats": {
+            "material": "steel",
+            "quality": 50,
+            "system": "race"
+        },
+        "label": "AYAAN",
+        "name": "ayaan"
+    },
+    "aspiration": {
+        "stats": {
+            "compressor": 100,
+            "quality": 50,
+            "material": "steel",
+            "method": "centrifugal",
+            "system": "supercharger"
+        },
+        "label": "AYAAN",
+        "name": "ayaan"
+    },
+    "name": "ayaan",
+    "exhaust": {
+        "stats": {
+            "mufflers": "straightThrough",
+            "quality": 50,
+            "diameter": 100,
+            "cats": "300cpsi",
+            "material": "steel",
+            "system": "twin"
+        },
+        "label": "AYAAN",
+        "name": "ayaan"
+    },
+    "valves": {
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "label": "AYAAN",
+        "name": "ayaan"
+    },
+    "label": "AYAAN",
+    "intercooler": {
+        "stats": {
+            "material": "steel",
+            "quality": 50,
+            "size": 650
+        },
+        "label": "AYAAN",
+        "name": "ayaan"
+    },
+    "headers": {
+        "stats": {
+            "quality": 50,
+            "material": "steel",
+            "diameter": 70,
+            "system": "raceTube"
+        },
+        "label": "HEADER",
+        "name": "header"
+    },
+    "heads": {
+        "stats": {
+            "vvl": true,
+            "quality": 50,
+            "config": "dohc",
+            "valves": 4,
+            "material": "steel"
+        },
+        "label": "AYAAN HEAD",
+        "name": "ayaan head"
+    },
+    "fuel": {
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "label": "AYAAN FUEL",
+        "name": "ayaan fuel"
+    },
+    "crankshaft": {
+        "stats": {
+            "quality": 50,
+            "material": "steel"
+        },
+        "label": "AYAAN CRANK",
+        "name": "ayaan crank"
+    },
+    "pistons": {
+        "stats": {
+            "material": "steel",
+            "diameter": 70,
+            "quality": 50
+        },
+        "label": "AYAAN",
+        "name": "ayaan"
+    },
+    "block": {
+        "stats": {
+            "stroke": 70,
+            "quality": 50,
+            "cylinders": 6,
+            "bore": 70,
+            "material": "steel",
+            "layout": "inline"
+        },
+        "label": "AYAAN",
+        "name": "ayaan"
+    },
+    "conrods": {
+        "stats": {
+            "material": "steel",
+            "length": 70,
+            "quality": 50
+        },
+        "label": "AYAAN CON",
+        "name": "ayaan con"
+    },
+    "sound": "BTYPE2"
+}

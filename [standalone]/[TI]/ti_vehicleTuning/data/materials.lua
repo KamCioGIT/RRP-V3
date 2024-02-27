@@ -6,7 +6,7 @@ Materials = {
         prestige = 0.3,
     },
 
-    aluminium = {
+    aluminum = {
         label = "Aluminum",
         strength = 0.4,
         weight = 0.25,
@@ -50,7 +50,7 @@ Materials = {
 }
 
 Materials.steel = Materials.steel
-Materials.aluminum = Materials.aluminium
+Materials.aluminum = Materials.aluminum
 Materials.forgedSteel = Materials.forgedSteel
 Materials.titanium = Materials.titanium
 -- Materials.super = Materials.super

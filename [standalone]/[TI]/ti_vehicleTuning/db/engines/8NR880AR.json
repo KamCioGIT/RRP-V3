@@ -1,0 +1,125 @@
+{
+    "pistons": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "material": "steel",
+            "diameter": 50,
+            "quality": 50
+        }
+    },
+    "valves": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "material": "steel",
+            "quality": 50
+        }
+    },
+    "block": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "material": "steel",
+            "quality": 50,
+            "bore": 50,
+            "layout": "v90",
+            "stroke": 50,
+            "cylinders": 12
+        }
+    },
+    "crankshaft": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "material": "steel",
+            "quality": 50
+        }
+    },
+    "aspiration": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "method": "twin",
+            "material": "steel",
+            "turbine2": 50,
+            "quality": 60,
+            "turbine": 50,
+            "compressor2": 50,
+            "compressor": 50,
+            "system": "turbocharger"
+        }
+    },
+    "exhaust": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "material": "steel",
+            "diameter": 50,
+            "mufflers": "straightThrough",
+            "cats": "300cpsi",
+            "quality": 60,
+            "system": "twin"
+        }
+    },
+    "intake": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "material": "steel",
+            "system": "race",
+            "quality": 50
+        }
+    },
+    "fuel": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "material": "steel",
+            "quality": 50
+        }
+    },
+    "conrods": {
+        "name": "see???",
+        "label": "SEE???",
+        "stats": {
+            "material": "steel",
+            "quality": 50,
+            "length": 50
+        }
+    },
+    "variant": "",
+    "headers": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "system": "raceTube",
+            "material": "steel",
+            "diameter": 50,
+            "quality": 50
+        }
+    },
+    "label": "BMW",
+    "name": "bmw",
+    "sound": "488sound",
+    "intercooler": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "material": "steel",
+            "size": 1500,
+            "quality": 50
+        }
+    },
+    "heads": {
+        "name": "bmw",
+        "label": "BMW",
+        "stats": {
+            "valves": 4,
+            "vvl": true,
+            "quality": 50,
+            "config": "pushrod",
+            "material": "steel"
+        }
+    }
+}
